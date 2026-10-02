@@ -97,7 +97,8 @@
   "country": "אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
-  "fact": "מערכת השוניות הגדולה בעולם — נראית מהחלל."
+  "fact": "מערכת השוניות הגדולה בעולם — נראית מהחלל.",
+  "pick": true
  },
  {
   "id": "twelve-apostles",
@@ -247,7 +248,8 @@
   "country": "ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "easy",
-  "fact": "אפשר לקפוץ ממנו בחבל מגובה 192 מטר."
+  "fact": "אפשר לקפוץ ממנו בחבל מגובה 192 מטר.",
+  "pick": true
  },
  {
   "id": "djenne-mosque",
@@ -467,7 +469,8 @@
   "country": "פולינזיה הצרפתית",
   "category": "africa-oceania",
   "difficulty": "medium",
-  "fact": "אי בצורת לב עם פסגות חדות ומפרצים עמוקים."
+  "fact": "אי בצורת לב עם פסגות חדות ומפרצים עמוקים.",
+  "pick": true
  },
  {
   "id": "bo-kaap",
@@ -557,7 +560,8 @@
   "country": "מדגסקר",
   "category": "africa-oceania",
   "difficulty": "medium",
-  "fact": "יער של מחטי אבן גיר חדות כתער."
+  "fact": "יער של מחטי אבן גיר חדות כתער.",
+  "pick": true
  },
  {
   "id": "pancake-rocks",
@@ -618,7 +622,8 @@
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מעיינות חומציים בצבעי צהוב וירוק, מהמקומות החמים בעולם.",
-  "search": "Dallol hydrothermal Ethiopia"
+  "search": "Dallol hydrothermal Ethiopia",
+  "pick": true
  },
  {
   "id": "kolmanskop",
@@ -631,7 +636,8 @@
   "fact": "עיירת יהלומים נטושה שהחול ממלא את בתיה.",
   "exclude": [
    "01Kolmannskuppe.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "lake-retba",
@@ -651,7 +657,8 @@
   "country": "נמיביה",
   "category": "africa-oceania",
   "difficulty": "pro",
-  "fact": "\"המטרהורן של נמיביה\" — פסגות גרניט במדבר."
+  "fact": "\"המטרהורן של נמיביה\" — פסגות גרניט במדבר.",
+  "pick": true
  },
  {
   "id": "ennedi",
@@ -661,7 +668,8 @@
   "country": "צ'אד",
   "category": "africa-oceania",
   "difficulty": "pro",
-  "fact": "קשתות סלע וציורי סלע בלב הסהרה."
+  "fact": "קשתות סלע וציורי סלע בלב הסהרה.",
+  "pick": true
  },
  {
   "id": "fasil-ghebbi",
@@ -671,7 +679,8 @@
   "country": "אתיופיה",
   "category": "africa-oceania",
   "difficulty": "pro",
-  "fact": "טירות מהמאה ה-17 שזכו לכינוי \"קמלוט של אפריקה\"."
+  "fact": "טירות מהמאה ה-17 שזכו לכינוי \"קמלוט של אפריקה\".",
+  "pick": true
  },
  {
   "id": "great-zimbabwe",
@@ -681,7 +690,8 @@
   "country": "זימבבואה",
   "category": "africa-oceania",
   "difficulty": "pro",
-  "fact": "חומות אבן ענקיות בלי טיט — והמדינה נקראה על שמן."
+  "fact": "חומות אבן ענקיות בלי טיט — והמדינה נקראה על שמן.",
+  "pick": true
  },
  {
   "id": "chinguetti",

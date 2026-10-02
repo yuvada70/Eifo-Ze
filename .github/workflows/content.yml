@@ -34,6 +34,10 @@ jobs:
       - name: sheets (generated)
         if: inputs.task == 'resolve' || inputs.task == 'all'
         run: python3 scripts/contact_sheets.py scripts/out/places.generated.json review
+      - name: candidate sheets
+        if: inputs.task == 'resolve' || inputs.task == 'all'
+        run: |
+          if [ "$(cat scripts/out/candidates.json)" != "{}" ]; then python3 scripts/contact_sheets.py scripts/out/candidates.json review/candidates; fi
       - name: sheets (data)
         if: inputs.task == 'sheets'
         run: python3 scripts/contact_sheets.py data/places.json review

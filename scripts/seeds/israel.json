@@ -7,7 +7,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "easy",
-  "fact": "שריד מקיר התמך של הר הבית שהרחיב הורדוס, לפני כ-2,000 שנה."
+  "fact": "שריד מקיר התמך של הר הבית שהרחיב הורדוס, לפני כ-2,000 שנה.",
+  "pick": true
  },
  {
   "id": "dome-of-the-rock",
@@ -20,7 +21,8 @@
   "fact": "הושלמה בסביבות שנת 691, והיא מהמבנים האסלאמיים העתיקים בעולם שעדיין עומדים על תלם.",
   "exclude": [
    "قبة الصخرة من الناحية الشرقية.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "masada",
@@ -71,7 +73,8 @@
   "category": "israel",
   "difficulty": "easy",
   "fact": "19 טרסות יורדות במדרון הכרמל אל מקדש הבאב; אתר מורשת עולמית מאז 2008.",
-  "search": "Terraces Bahai Faith Haifa"
+  "search": "Terraces Bahai Faith Haifa",
+  "pick": true
  },
  {
   "id": "caesarea",
@@ -104,7 +107,8 @@
   "fact": "הגלים חצבו בסלע הגיר מערות ומנהרות, ויורדים אליהן ברכבל קצר ותלול.",
   "exclude": [
    "Visual Intelligence Division, October 2019. VIII.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "knesset",
@@ -175,7 +179,8 @@
   "category": "israel",
   "difficulty": "easy",
   "fact": "נווה מדבר עם מפלים, יעלים ושפנים — וגם בית כנסת עתיק עם רצפת פסיפס.",
-  "search": "Ein Gedi nature reserve"
+  "search": "Ein Gedi nature reserve",
+  "pick": true
  },
  {
   "id": "timna-park",
@@ -195,7 +200,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "easy",
-  "fact": "מתחת לעיר העות'מאנית השתמרה כמעט בשלמותה עיר הצלבנים."
+  "fact": "מתחת לעיר העות'מאנית השתמרה כמעט בשלמותה עיר הצלבנים.",
+  "pick": true
  },
  {
   "id": "sea-of-galilee",
@@ -318,7 +324,8 @@
   "fact": "עיר רומית-ביזנטית שעמודיה קרסו ברעידת האדמה של שנת 749.",
   "exclude": [
    "110132 beit-shan landscapes PikiWiki Israel.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "avdat",
@@ -429,7 +436,8 @@
   "category": "israel",
   "difficulty": "medium",
   "fact": "מושבה טמפלרית מ-1871 שבתיה שוחזרו בלב העיר המודרנית.",
-  "search": "Sarona Tel Aviv Templer colony"
+  "search": "Sarona Tel Aviv Templer colony",
+  "pick": true
  },
  {
   "id": "neve-tzedek",
@@ -500,7 +508,8 @@
   "category": "israel",
   "difficulty": "medium",
   "fact": "השמורה הראשונה בישראל, ותחנת עצירה למיליוני ציפורים נודדות.",
-  "search": "Hula nature reserve Israel"
+  "search": "Hula nature reserve Israel",
+  "pick": true
  },
  {
   "id": "sde-boker",
@@ -533,7 +542,8 @@
   "fact": "לפי המסורת, כאן נשא ישו את \"הדרשה על ההר\".",
   "exclude": [
    "Berg der Seligpreisungen BW 5.JPG"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "apollonia",
@@ -544,7 +554,8 @@
   "category": "israel",
   "difficulty": "medium",
   "fact": "מבצר צלבני על מצוק הכורכר מעל הים.",
-  "search": "Apollonia Arsuf national park"
+  "search": "Apollonia Arsuf national park",
+  "pick": true
  },
  {
   "id": "ashkelon-park",
@@ -594,7 +605,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "medium",
-  "fact": "אחד משערי חומות העיר העתיקה; ממנו יצאה הדרך ליפו."
+  "fact": "אחד משערי חומות העיר העתיקה; ממנו יצאה הדרך ליפו.",
+  "pick": true
  },
  {
   "id": "damascus-gate",
@@ -634,7 +646,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "עיר נבטית-ביזנטית במדבר, שחקלאיה אספו מי שיטפונות."
+  "fact": "עיר נבטית-ביזנטית במדבר, שחקלאיה אספו מי שיטפונות.",
+  "pick": true
  },
  {
   "id": "nahal-mearot",
@@ -648,14 +661,14 @@
  },
  {
   "id": "korazim",
-  "wiki": "Korazim National Park",
+  "wiki": "Chorazin",
   "name": "כורזים",
   "city": "הגליל העליון",
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
   "fact": "עיירה יהודית עתיקה שנבנתה כולה מבזלת שחורה.",
-  "search": "Korazim ancient village national park"
+  "pick": true
  },
  {
   "id": "tel-arad",
@@ -665,7 +678,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "במצודה נמצא מקדש קטן עם מזבח — נדיר בממלכת יהודה."
+  "fact": "במצודה נמצא מקדש קטן עם מזבח — נדיר בממלכת יהודה.",
+  "pick": true
  },
  {
   "id": "beit-shearim",
@@ -726,7 +740,8 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "קבורים בו המשוררת רחל ואנשי העלייה השנייה, על שפת הכנרת.",
-  "search": "Kinneret cemetery"
+  "search": "Kinneret cemetery",
+  "pick": true
  },
  {
   "id": "safed",
@@ -746,7 +761,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "הבריטים כלאו כאן עולים \"בלתי לגליים\" לפני קום המדינה."
+  "fact": "הבריטים כלאו כאן עולים \"בלתי לגליים\" לפני קום המדינה.",
+  "pick": true
  },
  {
   "id": "ein-hod",
@@ -797,7 +813,8 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "כאן מגדלים ומשיבים לטבע בעלי חיים מדבריים כמו ראם ופרא.",
-  "search": "Hai-Bar Yotvata"
+  "search": "Hai-Bar Yotvata",
+  "pick": true
  },
  {
   "id": "tel-beer-sheba",
@@ -830,7 +847,8 @@
   "fact": "כפר צ'רקסי — אחד משניים בלבד בישראל.",
   "exclude": [
    "Kafrkama.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "ramat-hanadiv",
@@ -890,7 +908,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "מאגר מים תת-קרקעי מהמאה ה-8 שבו שטים היום בסירות."
+  "fact": "מאגר מים תת-קרקעי מהמאה ה-8 שבו שטים היום בסירות.",
+  "pick": true
  },
  {
   "id": "siloam-tunnel",
@@ -900,7 +919,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "נחצבה בימי חזקיהו, ועל קירה נמצאה כתובת עברית עתיקה המתארת את סיום החציבה."
+  "fact": "נחצבה בימי חזקיהו, ועל קירה נמצאה כתובת עברית עתיקה המתארת את סיום החציבה.",
+  "pick": true
  },
  {
   "id": "tel-hazor",
@@ -920,6 +940,7 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "ברצפת בית הכנסת פסיפס גלגל המזלות מהמאה ה-6."
+  "fact": "ברצפת בית הכנסת פסיפס גלגל המזלות מהמאה ה-6.",
+  "pick": true
  }
 ]

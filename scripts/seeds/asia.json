@@ -137,7 +137,8 @@
   "country": "הודו",
   "category": "asia",
   "difficulty": "easy",
-  "fact": "נבנה לזכר ביקור המלך ג'ורג' החמישי ב-1911."
+  "fact": "נבנה לזכר ביקור המלך ג'ורג' החמישי ב-1911.",
+  "pick": true
  },
  {
   "id": "golden-temple",
@@ -160,7 +161,8 @@
   "fact": "בו אחד משטיחי הקטיפה הגדולים בעולם שנארגו ביד.",
   "exclude": [
    "Sheikh Zayed Mosque Silhouette.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "burj-al-arab",
@@ -260,7 +262,8 @@
   "country": "הודו",
   "category": "asia",
   "difficulty": "easy",
-  "fact": "בית תפילה בהאי בצורת פרח לוטוס."
+  "fact": "בית תפילה בהאי בצורת פרח לוטוס.",
+  "pick": true
  },
  {
   "id": "itsukushima",
@@ -374,7 +377,8 @@
   "category": "asia",
   "difficulty": "medium",
   "fact": "עיר נמל עתיקה שמתמלאת בלילה בפנסי משי צבעוניים.",
-  "search": "Hoi An ancient town Vietnam"
+  "search": "Hoi An ancient town Vietnam",
+  "pick": true
  },
  {
   "id": "hawa-mahal",
@@ -464,7 +468,8 @@
   "country": "דרום קוריאה",
   "category": "asia",
   "difficulty": "medium",
-  "fact": "הארמון הראשי של שושלת ג'וסון, מ-1395."
+  "fact": "הארמון הראשי של שושלת ג'וסון, מ-1395.",
+  "pick": true
  },
  {
   "id": "n-seoul-tower",
@@ -474,7 +479,8 @@
   "country": "דרום קוריאה",
   "category": "asia",
   "difficulty": "medium",
-  "fact": "זוגות תולים על הגדר שלו מנעולי אהבה."
+  "fact": "זוגות תולים על הגדר שלו מנעולי אהבה.",
+  "pick": true
  },
  {
   "id": "pamukkale",
@@ -647,7 +653,8 @@
   "fact": "המערה הגדולה בעולם — יש בה ג'ונגל ועננים משלה.",
   "exclude": [
    "Son Doong Cave 5.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "jiuzhaigou",
@@ -747,7 +754,8 @@
   "country": "מיאנמר",
   "category": "asia",
   "difficulty": "pro",
-  "fact": "סלע מצופה זהב שנראה כאילו עומד ליפול מהצוק."
+  "fact": "סלע מצופה זהב שנראה כאילו עומד ליפול מהצוק.",
+  "pick": true
  },
  {
   "id": "plain-of-jars",
@@ -827,7 +835,8 @@
   "country": "ערב הסעודית",
   "category": "asia",
   "difficulty": "pro",
-  "fact": "קברים נבטיים חצובים, \"אחותה הדרומית\" של פטרה."
+  "fact": "קברים נבטיים חצובים, \"אחותה הדרומית\" של פטרה.",
+  "pick": true
  },
  {
   "id": "kuwait-towers",

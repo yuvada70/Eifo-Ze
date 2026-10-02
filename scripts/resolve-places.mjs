@@ -143,6 +143,7 @@ async function categoryFiles(category) {
 }
 
 const prepared = [];
+const pickExtras = new Map();
 for (const seed of seeds) {
   const { lang, title } = parseWiki(seed);
   const wiki = wikiData.get(`${lang}:${title}`);
@@ -153,6 +154,12 @@ for (const seed of seeds) {
 
   let candidates = [];
   if (seed.file) candidates.push(seed.file);
+  if (seed.pick && commonsCategory) {
+    // מצב בחירה ידנית: מוסיפים קבצים מהקטגוריה, ומועמדות שעוברות נשמרות ל-candidates.json לסקירה.
+    const files = (await categoryFiles(commonsCategory)).filter((f) => PHOTO_EXT.test(f) && !BAD_FILE.test(f));
+    pickExtras.set(seed.id, files.slice(0, 60));
+    await sleep(100);
+  }
   if (seed.alt && commonsCategory) {
     const files = (await categoryFiles(commonsCategory)).filter((f) => PHOTO_EXT.test(f) && !BAD_FILE.test(f) && !wdImages.includes(f));
     // מדלגים על הראשונים (בדרך כלל הצילומים הסטנדרטיים) ולוקחים כמה מאמצע הרשימה.
@@ -168,7 +175,13 @@ for (const seed of seeds) {
     (f) => PHOTO_EXT.test(f) && (seed.file === f || !BAD_FILE.test(f)) && !excluded.has(f),
   );
 
-  prepared.push({ seed, wiki, wdCoord, candidates: candidates.slice(0, 25), commonsCategory, wdImages });
+  candidates = candidates.slice(0, 25);
+  for (const f of pickExtras.get(seed.id) ?? []) {
+    const name = shared.normalizeCommonsFileName(f);
+    const excludedHere = new Set((seed.exclude ?? []).map((x) => shared.normalizeCommonsFileName(x)));
+    if (!candidates.includes(name) && !excludedHere.has(name)) candidates.push(name);
+  }
+  prepared.push({ seed, wiki, wdCoord, candidates, commonsCategory, wdImages });
 }
 
 let info = await commonsImageInfo(prepared.flatMap((p) => p.candidates));
@@ -198,6 +211,14 @@ if (extra.length) {
   const more = await commonsImageInfo(extra);
   info = new Map([...info, ...more]);
 }
+
+/* מועמדות לבחירה ידנית (seed.pick) — עד 8 שעוברות את בדיקת הרישיון. */
+const pickReport = {};
+for (const { seed, candidates } of prepared) {
+  if (!seed.pick) continue;
+  pickReport[seed.id] = candidates.filter((file) => passes(file, seed) === null).slice(0, 8);
+}
+writeFileSync(path.join(OUT_DIR, 'candidates.json'), `${JSON.stringify(pickReport, null, 2)}\n`);
 
 /* ── 4. הרכבת הרשומות ──────────────────────────────────────────────── */
 

@@ -22,7 +22,12 @@ COLS, ROWS = 4, 4
 CELL_W, CELL_H, LABEL_H = 400, 300, 26
 UA = "EifoZeBot/1.0 (https://github.com/yuvada70/Eifo-Ze; content review)"
 
-places = json.load(open(SRC, encoding="utf-8"))["places"]
+data = json.load(open(SRC, encoding="utf-8"))
+if isinstance(data, dict) and "places" in data:
+    entries = [(p["id"], p["image"]["file"]) for p in data["places"]]
+else:
+    # candidates.json: {id: [file, ...]} — מועמדות לבחירה ידנית
+    entries = [(f"{pid}#{k}", f) for pid, files in data.items() for k, f in enumerate(files)]
 
 
 def url_for(file):
@@ -30,10 +35,10 @@ def url_for(file):
     return "https://commons.wikimedia.org/wiki/Special:FilePath/" + urllib.parse.quote(name) + "?width=500"
 
 
-def fetch(place):
+def fetch(entry):
     for attempt in range(4):
         try:
-            req = urllib.request.Request(url_for(place["image"]["file"]), headers={"User-Agent": UA})
+            req = urllib.request.Request(url_for(entry[1]), headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=40) as res:
                 img = Image.open(io.BytesIO(res.read())).convert("RGB")
                 img.thumbnail((CELL_W, CELL_H))
@@ -41,12 +46,12 @@ def fetch(place):
         except Exception as error:  # noqa: BLE001
             time.sleep(2 * (attempt + 1))
             last = error
-    print("FAILED", place["id"], last, flush=True)
+    print("FAILED", entry[0], last, flush=True)
     return None
 
 
 with ThreadPoolExecutor(max_workers=4) as pool:
-    images = list(pool.map(fetch, places))
+    images = list(pool.map(fetch, entries))
 
 import os
 
@@ -58,10 +63,10 @@ except TypeError:
 
 per_sheet = COLS * ROWS
 index_lines = []
-for sheet_no in range(0, len(places), per_sheet):
+for sheet_no in range(0, len(entries), per_sheet):
     sheet = Image.new("RGB", (COLS * CELL_W, ROWS * (CELL_H + LABEL_H)), (20, 20, 20))
     draw = ImageDraw.Draw(sheet)
-    for k, (place, img) in enumerate(zip(places[sheet_no : sheet_no + per_sheet], images[sheet_no : sheet_no + per_sheet])):
+    for k, (entry, img) in enumerate(zip(entries[sheet_no : sheet_no + per_sheet], images[sheet_no : sheet_no + per_sheet])):
         x = (k % COLS) * CELL_W
         y = (k // COLS) * (CELL_H + LABEL_H)
         if img is not None:
@@ -69,7 +74,7 @@ for sheet_no in range(0, len(places), per_sheet):
         else:
             draw.text((x + 10, y + CELL_H // 2), "LOAD FAILED", fill=(255, 80, 80), font=font)
         draw.rectangle([x, y + CELL_H, x + CELL_W, y + CELL_H + LABEL_H], fill=(0, 0, 0))
-        draw.text((x + 6, y + CELL_H + 3), f"{sheet_no + k}: {place['id']}", fill=(255, 255, 0), font=font)
+        draw.text((x + 6, y + CELL_H + 3), f"{sheet_no + k}: {entry[0]}", fill=(255, 255, 0), font=font)
     name = f"sheet-{sheet_no // per_sheet:02d}.jpg"
     sheet.save(os.path.join(OUT, name), quality=72)
     index_lines.append(name)

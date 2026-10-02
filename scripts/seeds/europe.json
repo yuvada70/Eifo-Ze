@@ -177,7 +177,8 @@
   "country": "צ'כיה",
   "category": "europe",
   "difficulty": "easy",
-  "fact": "לאורכו עומדים 30 פסלים בסגנון הבארוק."
+  "fact": "לאורכו עומדים 30 פסלים בסגנון הבארוק.",
+  "pick": true
  },
  {
   "id": "grand-canal",
@@ -197,7 +198,8 @@
   "country": "יוון",
   "category": "europe",
   "difficulty": "easy",
-  "fact": "הבתים הלבנים בנויים על שפת לוע געשי שקרס לתוך הים."
+  "fact": "הבתים הלבנים בנויים על שפת לוע געשי שקרס לתוך הים.",
+  "pick": true
  },
  {
   "id": "mont-saint-michel",
@@ -350,7 +352,8 @@
   "fact": "הצוקים מתנשאים עד כ-214 מטר מעל האוקיינוס האטלנטי.",
   "exclude": [
    "Ireland Cliffs of Moher BW 2025-09-11 14-27-51.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "dubrovnik-walls",
@@ -503,7 +506,8 @@
   "fact": "כאן תלוי \"משמר הלילה\" של רמברנדט.",
   "exclude": [
    "Rijksmuseum in Amsterdam.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "sacre-coeur",
@@ -723,7 +727,8 @@
   "country": "ספרד",
   "category": "europe",
   "difficulty": "pro",
-  "fact": "\"החדש\" נבנה במאה ה-18, מעל ערוץ בעומק כ-100 מטר."
+  "fact": "\"החדש\" נבנה במאה ה-18, מעל ערוץ בעומק כ-100 מטר.",
+  "pick": true
  },
  {
   "id": "eilean-donan",
@@ -774,7 +779,8 @@
   "category": "europe",
   "difficulty": "pro",
   "fact": "כפר דייגים מתחת לפסגות חדות מעל חוג הקוטב.",
-  "search": "Reine Lofoten village"
+  "search": "Reine Lofoten village",
+  "pick": true
  },
  {
   "id": "valletta",
@@ -804,7 +810,8 @@
   "country": "בריטניה",
   "category": "europe",
   "difficulty": "pro",
-  "fact": "קשת אבן גיר טבעית שנוצרה מפעולת הים."
+  "fact": "קשת אבן גיר טבעית שנוצרה מפעולת הים.",
+  "pick": true
  },
  {
   "id": "matera",
@@ -824,7 +831,8 @@
   "country": "איטליה",
   "category": "europe",
   "difficulty": "pro",
-  "fact": "בתים עגולים עם גגות חרוטיים שנבנו בלי טיט."
+  "fact": "בתים עגולים עם גגות חרוטיים שנבנו בלי טיט.",
+  "pick": true
  },
  {
   "id": "guggenheim-bilbao",

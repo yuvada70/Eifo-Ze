@@ -147,7 +147,8 @@
   "country": "צ'ילה",
   "category": "americas",
   "difficulty": "easy",
-  "fact": "כמעט 1,000 פסלים ענקיים שגילפו תושבי האי מאבן געשית."
+  "fact": "כמעט 1,000 פסלים ענקיים שגילפו תושבי האי מאבן געשית.",
+  "pick": true
  },
  {
   "id": "panama-canal",
@@ -357,7 +358,8 @@
   "country": "ארצות הברית",
   "category": "americas",
   "difficulty": "medium",
-  "fact": "המונומנט הלאומי הראשון של ארצות הברית (1906)."
+  "fact": "המונומנט הלאומי הראשון של ארצות הברית (1906).",
+  "pick": true
  },
  {
   "id": "hoover-dam",
@@ -397,7 +399,8 @@
   "country": "קנדה",
   "category": "americas",
   "difficulty": "medium",
-  "fact": "נקרא על שם בתה של המלכה ויקטוריה."
+  "fact": "נקרא על שם בתה של המלכה ויקטוריה.",
+  "pick": true
  },
  {
   "id": "tikal",
@@ -427,7 +430,8 @@
   "country": "קולומביה",
   "category": "americas",
   "difficulty": "medium",
-  "fact": "עיר קולוניאלית מבוצרת עם מרפסות פרחים צבעוניות."
+  "fact": "עיר קולוניאלית מבוצרת עם מרפסות פרחים צבעוניות.",
+  "pick": true
  },
  {
   "id": "torres-del-paine",
@@ -470,7 +474,8 @@
   "fact": "רחוב הבתים הצבעוניים של שכונת לה בוקה.",
   "exclude": [
    "2018-10-19 La Boca, Buenos Aires, Argentina (Martin Rulsch) 10.jpg"
-  ]
+  ],
+  "pick": true
  },
  {
   "id": "el-capitolio-havana",
@@ -554,7 +559,8 @@
   "search": "Uros floating islands Titicaca",
   "lat": -15.8188,
   "lng": -69.9693,
-  "note": "קואורדינטות הוזנו ידנית (מרכז קבוצת האיים ליד פונו) — כדאי לאמת"
+  "note": "קואורדינטות הוזנו ידנית (מרכז קבוצת האיים ליד פונו) — כדאי לאמת",
+  "pick": true
  },
  {
   "id": "vinicunca",
@@ -675,7 +681,8 @@
   "category": "americas",
   "difficulty": "pro",
   "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז.",
-  "search": "Marble Caves General Carrera Lake"
+  "search": "Marble Caves General Carrera Lake",
+  "pick": true
  },
  {
   "id": "kaieteur",
