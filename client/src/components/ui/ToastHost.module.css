@@ -1,6 +1,7 @@
 .host {
   position: fixed;
-  inset-block-end: calc(var(--space-5) + var(--safe-bottom));
+  /* למעלה גם בטלפון — בתחתית המסך יושב כפתור "אישור". */
+  inset-block-start: calc(var(--space-7) + var(--safe-top));
   inset-inline: var(--space-4);
   z-index: var(--z-toast);
   display: flex;
