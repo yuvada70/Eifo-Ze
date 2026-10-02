@@ -191,7 +191,7 @@
  },
  {
   "id": "oia",
-  "wiki": "Oia",
+  "wiki": "Oia, Greece",
   "name": "אויה",
   "city": "סנטוריני",
   "country": "יוון",
@@ -767,7 +767,8 @@
   "country": "נורווגיה",
   "category": "europe",
   "difficulty": "pro",
-  "fact": "כפר דייגים מתחת לפסגות חדות מעל חוג הקוטב."
+  "fact": "כפר דייגים מתחת לפסגות חדות מעל חוג הקוטב.",
+  "search": "Reine Lofoten village"
  },
  {
   "id": "valletta",
@@ -811,7 +812,7 @@
  },
  {
   "id": "alberobello",
-  "wiki": "Trulli of Alberobello",
+  "wiki": "Alberobello",
   "name": "בתי הטרולי",
   "city": "אלברובלו",
   "country": "איטליה",

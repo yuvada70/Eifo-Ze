@@ -67,7 +67,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "easy",
-  "fact": "19 טרסות יורדות במדרון הכרמל אל מקדש הבאב; אתר מורשת עולמית מאז 2008."
+  "fact": "19 טרסות יורדות במדרון הכרמל אל מקדש הבאב; אתר מורשת עולמית מאז 2008.",
+  "search": "Terraces Bahai Faith Haifa"
  },
  {
   "id": "caesarea",
@@ -167,7 +168,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "easy",
-  "fact": "נווה מדבר עם מפלים, יעלים ושפנים — וגם בית כנסת עתיק עם רצפת פסיפס."
+  "fact": "נווה מדבר עם מפלים, יעלים ושפנים — וגם בית כנסת עתיק עם רצפת פסיפס.",
+  "search": "Ein Gedi nature reserve"
  },
  {
   "id": "timna-park",
@@ -417,7 +419,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "medium",
-  "fact": "מושבה טמפלרית מ-1871 שבתיה שוחזרו בלב העיר המודרנית."
+  "fact": "מושבה טמפלרית מ-1871 שבתיה שוחזרו בלב העיר המודרנית.",
+  "search": "Sarona Tel Aviv Templer colony"
  },
  {
   "id": "neve-tzedek",
@@ -487,7 +490,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "medium",
-  "fact": "השמורה הראשונה בישראל, ותחנת עצירה למיליוני ציפורים נודדות."
+  "fact": "השמורה הראשונה בישראל, ותחנת עצירה למיליוני ציפורים נודדות.",
+  "search": "Hula nature reserve Israel"
  },
  {
   "id": "sde-boker",
@@ -527,7 +531,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "medium",
-  "fact": "מבצר צלבני על מצוק הכורכר מעל הים."
+  "fact": "מבצר צלבני על מצוק הכורכר מעל הים.",
+  "search": "Apollonia Arsuf national park"
  },
  {
   "id": "ashkelon-park",
@@ -637,7 +642,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "עיירה יהודית עתיקה שנבנתה כולה מבזלת שחורה."
+  "fact": "עיירה יהודית עתיקה שנבנתה כולה מבזלת שחורה.",
+  "search": "Korazim ancient village national park"
  },
  {
   "id": "tel-arad",
@@ -707,7 +713,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "קבורים בו המשוררת רחל ואנשי העלייה השנייה, על שפת הכנרת."
+  "fact": "קבורים בו המשוררת רחל ואנשי העלייה השנייה, על שפת הכנרת.",
+  "search": "Kinneret cemetery"
  },
  {
   "id": "safed",
@@ -777,7 +784,8 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "כאן מגדלים ומשיבים לטבע בעלי חיים מדבריים כמו ראם ופרא."
+  "fact": "כאן מגדלים ומשיבים לטבע בעלי חיים מדבריים כמו ראם ופרא.",
+  "search": "Hai-Bar Yotvata"
  },
  {
   "id": "tel-beer-sheba",

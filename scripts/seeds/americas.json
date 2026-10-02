@@ -141,7 +141,7 @@
  },
  {
   "id": "moai",
-  "wiki": "Moai",
+  "wiki": "Ahu Tongariki",
   "name": "פסלי המואי",
   "city": "אי הפסחא",
   "country": "צ'ילה",
@@ -391,7 +391,7 @@
  },
  {
   "id": "lake-louise",
-  "wiki": "Lake Louise",
+  "wiki": "Lake Louise (Alberta)",
   "name": "אגם לואיז",
   "city": "אלברטה",
   "country": "קנדה",
@@ -421,7 +421,7 @@
  },
  {
   "id": "cartagena",
-  "wiki": "Walled City of Cartagena",
+  "wiki": "Cartagena, Colombia",
   "name": "העיר העתיקה של קרטחנה",
   "city": "קרטחנה",
   "country": "קולומביה",
@@ -547,7 +547,8 @@
   "country": "פרו",
   "category": "americas",
   "difficulty": "medium",
-  "fact": "איים מלאכותיים שנבנו מקני טוטורה."
+  "fact": "איים מלאכותיים שנבנו מקני טוטורה.",
+  "search": "Uros floating islands Titicaca"
  },
  {
   "id": "vinicunca",
@@ -667,7 +668,8 @@
   "country": "צ'ילה",
   "category": "americas",
   "difficulty": "pro",
-  "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז."
+  "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז.",
+  "search": "Marble Caves General Carrera Lake"
  },
  {
   "id": "kaieteur",

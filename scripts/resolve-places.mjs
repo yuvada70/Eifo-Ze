@@ -61,7 +61,7 @@ for (const [lang, titles] of byLang) {
   for (const group of chunk([...titles], 50)) {
     const url =
       `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1` +
-      '&prop=coordinates|pageimages|pageprops&piprop=original&ppprop=wikibase_item&colimit=max' +
+      '&prop=coordinates|pageimages|pageprops&piprop=original&ppprop=wikibase_item|disambiguation&colimit=max' +
       `&titles=${encodeURIComponent(group.join('|'))}`;
     const data = await fetchJson(url);
     const alias = new Map();
@@ -73,6 +73,7 @@ for (const [lang, titles] of byLang) {
       const source = page.original?.source;
       wikiData.set(`${lang}:${original}`, {
         missing: Boolean(page.missing),
+        disambiguation: page.pageprops?.disambiguation !== undefined,
         coord: coord ? { lat: coord.lat, lng: coord.lon } : null,
         pageImage: source ? decodeURIComponent(source.split('/').pop()).replace(/_/g, ' ') : null,
         qid: page.pageprops?.wikibase_item ?? null,
@@ -83,6 +84,37 @@ for (const [lang, titles] of byLang) {
 }
 
 /* ── 2. Wikidata: P625, P18, P373 ──────────────────────────────────── */
+
+/* חיפוש חלופי לערכים חסרים או עמודי פירושונים: הערך הראשון בתוצאות. */
+for (const seed of seeds) {
+  const { lang, title } = parseWiki(seed);
+  const entry = wikiData.get(`${lang}:${title}`);
+  if (entry && !entry.missing && !entry.disambiguation && (entry.coord || entry.qid)) continue;
+  const query = seed.search ?? title;
+  const search = await fetchJson(
+    `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&list=search&srlimit=1&srsearch=${encodeURIComponent(query)}`,
+  );
+  const found = search.query?.search?.[0]?.title;
+  if (!found || found === title) continue;
+  const data = await fetchJson(
+    `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1` +
+      '&prop=coordinates|pageimages|pageprops&piprop=original&ppprop=wikibase_item|disambiguation&colimit=max' +
+      `&titles=${encodeURIComponent(found)}`,
+  );
+  const page = data.query?.pages?.[0];
+  if (!page || page.missing) continue;
+  const coord = page.coordinates?.find((c) => c.primary !== false) ?? page.coordinates?.[0];
+  const source = page.original?.source;
+  wikiData.set(`${lang}:${title}`, {
+    missing: false,
+    resolvedTitle: page.title,
+    coord: coord ? { lat: coord.lat, lng: coord.lon } : null,
+    pageImage: source ? decodeURIComponent(source.split('/').pop()).replace(/_/g, ' ') : null,
+    qid: page.pageprops?.wikibase_item ?? null,
+  });
+  console.log(`🔎 ${seed.id}: "${title}" → "${page.title}"`);
+  await sleep(150);
+}
 
 const qids = [...new Set([...wikiData.values()].map((w) => w.qid).filter(Boolean))];
 const entities = new Map();
@@ -134,20 +166,46 @@ for (const seed of seeds) {
     (f) => PHOTO_EXT.test(f) && (seed.file === f || !BAD_FILE.test(f)),
   );
 
-  prepared.push({ seed, wiki, wdCoord, candidates: candidates.slice(0, 25), commonsCategory });
+  prepared.push({ seed, wiki, wdCoord, candidates: candidates.slice(0, 25), commonsCategory, wdImages });
 }
 
-const info = await commonsImageInfo(prepared.flatMap((p) => p.candidates));
+let info = await commonsImageInfo(prepared.flatMap((p) => p.candidates));
+
+function passes(file, seed) {
+  const meta = info.get(file);
+  if (!meta?.exists) return 'missing';
+  if (!shared.isAllowedLicense(meta.license)) return `license "${meta.license}"`;
+  if (!/^image\/(jpeg|png|webp|tiff)/.test(meta.mime)) return `mime ${meta.mime}`;
+  if (meta.width < 800 && file !== seed.file) return `width ${meta.width}`;
+  return null;
+}
+
+/* אף מועמדת לא עברה — מנסים קבצים מקטגוריית Commons של המקום. */
+const extra = [];
+for (const item of prepared) {
+  if (item.candidates.some((file) => passes(file, item.seed) === null) || !item.commonsCategory) continue;
+  const files = (await categoryFiles(item.commonsCategory)).filter((f) => PHOTO_EXT.test(f) && !BAD_FILE.test(f));
+  item.candidates.push(...files.slice(0, 30).map((f) => shared.normalizeCommonsFileName(f)));
+  extra.push(...item.candidates);
+  await sleep(100);
+}
+if (extra.length) {
+  const more = await commonsImageInfo(extra);
+  info = new Map([...info, ...more]);
+}
 
 /* ── 4. הרכבת הרשומות ──────────────────────────────────────────────── */
 
+const placeNotesPrefix = new Map();
 const places = [];
 const failures = [];
 const notes = [];
 
 for (const { seed, wiki, wdCoord, candidates } of prepared) {
+  if (wiki?.resolvedTitle) placeNotesPrefix.set(seed.id, `ערך הוויקיפדיה נמצא בחיפוש: ${wiki.resolvedTitle}`);
   const problems = [];
   const placeNotes = seed.note ? [seed.note] : [];
+  if (placeNotesPrefix.has(seed.id)) placeNotes.push(placeNotesPrefix.get(seed.id));
 
   if (!wiki || wiki.missing) problems.push(`ערך ויקיפדיה לא נמצא: ${seed.wiki}`);
 
@@ -175,19 +233,20 @@ for (const { seed, wiki, wdCoord, candidates } of prepared) {
   }
 
   let chosen = null;
+  const rejected = [];
   for (const file of candidates) {
-    const meta = info.get(file);
-    if (!meta?.exists) continue;
-    if (!shared.isAllowedLicense(meta.license)) continue;
-    if (!/^image\/(jpeg|png|webp|tiff)/.test(meta.mime)) continue;
-    if (meta.width < 800 && file !== seed.file) continue;
-    chosen = { file, meta };
+    const reason = passes(file, seed);
+    if (reason) {
+      rejected.push(`${file} (${reason})`);
+      continue;
+    }
+    chosen = { file, meta: info.get(file) };
     break;
   }
   if (seed.file && chosen?.file !== shared.normalizeCommonsFileName(seed.file)) {
     placeNotes.push(`הקובץ שנבחר ידנית (${seed.file}) לא עבר בדיקה — נבחרה תמונה חלופית`);
   }
-  if (!chosen) problems.push(`לא נמצאה תמונה ברישיון חופשי (נבדקו ${candidates.length})`);
+  if (!chosen) problems.push(`לא נמצאה תמונה ברישיון חופשי (נבדקו ${candidates.length}: ${rejected.slice(0, 4).join(', ')})`);
 
   if (problems.length) {
     failures.push({ id: seed.id, wiki: seed.wiki, problems });
