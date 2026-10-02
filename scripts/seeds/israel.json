@@ -8,7 +8,7 @@
   "category": "israel",
   "difficulty": "easy",
   "fact": "שריד מקיר התמך של הר הבית שהרחיב הורדוס, לפני כ-2,000 שנה.",
-  "pick": true
+  "file": "Il Muro del Pianto - panoramio.jpg"
  },
  {
   "id": "dome-of-the-rock",
@@ -22,7 +22,7 @@
   "exclude": [
    "قبة الصخرة من الناحية الشرقية.jpg"
   ],
-  "pick": true
+  "file": "خريف..قبة الصخرة.jpg"
  },
  {
   "id": "masada",
@@ -74,7 +74,7 @@
   "difficulty": "easy",
   "fact": "19 טרסות יורדות במדרון הכרמל אל מקדש הבאב; אתר מורשת עולמית מאז 2008.",
   "search": "Terraces Bahai Faith Haifa",
-  "pick": true
+  "file": "Bahai Terraces.jpg"
  },
  {
   "id": "caesarea",
@@ -108,7 +108,7 @@
   "exclude": [
    "Visual Intelligence Division, October 2019. VIII.jpg"
   ],
-  "pick": true
+  "file": "Rosh Hanikra in summer 2011 (2).JPG"
  },
  {
   "id": "knesset",
@@ -180,7 +180,7 @@
   "difficulty": "easy",
   "fact": "נווה מדבר עם מפלים, יעלים ושפנים — וגם בית כנסת עתיק עם רצפת פסיפס.",
   "search": "Ein Gedi nature reserve",
-  "pick": true
+  "file": "En Gedi Waterfall.jpg"
  },
  {
   "id": "timna-park",
@@ -201,7 +201,7 @@
   "category": "israel",
   "difficulty": "easy",
   "fact": "מתחת לעיר העות'מאנית השתמרה כמעט בשלמותה עיר הצלבנים.",
-  "pick": true
+  "file": "01עכו.jpg"
  },
  {
   "id": "sea-of-galilee",
@@ -314,20 +314,6 @@
   "fact": "מהנמלים העתיקים בעולם — כבר בתנ\"ך יונה הנביא יוצא ממנו לדרכו."
  },
  {
-  "id": "beit-shean",
-  "wiki": "Beit She'an National Park",
-  "name": "בית שאן העתיקה",
-  "city": "בית שאן",
-  "country": "ישראל",
-  "category": "israel",
-  "difficulty": "medium",
-  "fact": "עיר רומית-ביזנטית שעמודיה קרסו ברעידת האדמה של שנת 749.",
-  "exclude": [
-   "110132 beit-shan landscapes PikiWiki Israel.jpg"
-  ],
-  "pick": true
- },
- {
   "id": "avdat",
   "wiki": "Avdat",
   "name": "עבדת",
@@ -437,7 +423,7 @@
   "difficulty": "medium",
   "fact": "מושבה טמפלרית מ-1871 שבתיה שוחזרו בלב העיר המודרנית.",
   "search": "Sarona Tel Aviv Templer colony",
-  "pick": true
+  "file": "Another house in Sarona.JPG"
  },
  {
   "id": "neve-tzedek",
@@ -509,7 +495,7 @@
   "difficulty": "medium",
   "fact": "השמורה הראשונה בישראל, ותחנת עצירה למיליוני ציפורים נודדות.",
   "search": "Hula nature reserve Israel",
-  "pick": true
+  "file": "1643 עגורים באגמון החולה.jpg"
  },
  {
   "id": "sde-boker",
@@ -543,7 +529,7 @@
   "exclude": [
    "Berg der Seligpreisungen BW 5.JPG"
   ],
-  "pick": true
+  "file": "Bananas beside Beatitudes 0874 (507825345).jpg"
  },
  {
   "id": "apollonia",
@@ -555,7 +541,7 @@
   "difficulty": "medium",
   "fact": "מבצר צלבני על מצוק הכורכר מעל הים.",
   "search": "Apollonia Arsuf national park",
-  "pick": true
+  "file": "147631 apollonia PikiWiki Israel.jpg"
  },
  {
   "id": "ashkelon-park",
@@ -606,7 +592,7 @@
   "category": "israel",
   "difficulty": "medium",
   "fact": "אחד משערי חומות העיר העתיקה; ממנו יצאה הדרך ליפו.",
-  "pick": true
+  "file": "148150 jerusalem-jaffa gate night view PikiWiki Israel.jpg"
  },
  {
   "id": "damascus-gate",
@@ -647,7 +633,7 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "עיר נבטית-ביזנטית במדבר, שחקלאיה אספו מי שיטפונות.",
-  "pick": true
+  "file": "97912 shivta national park PikiWiki Israel.jpg"
  },
  {
   "id": "nahal-mearot",
@@ -668,7 +654,7 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "עיירה יהודית עתיקה שנבנתה כולה מבזלת שחורה.",
-  "pick": true
+  "file": "107188 korzim the ancient synagogue PikiWiki Israel.jpg"
  },
  {
   "id": "tel-arad",
@@ -679,7 +665,7 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "במצודה נמצא מקדש קטן עם מזבח — נדיר בממלכת יהודה.",
-  "pick": true
+  "file": "Arad vue générale.jpg"
  },
  {
   "id": "beit-shearim",
@@ -732,18 +718,6 @@
   "fact": "מצוק תלול מעל הכנרת, ובו מערות שנחצבו כמבצר."
  },
  {
-  "id": "kinneret-cemetery",
-  "wiki": "Kinneret Cemetery",
-  "name": "בית הקברות כנרת",
-  "city": "עמק הירדן",
-  "country": "ישראל",
-  "category": "israel",
-  "difficulty": "pro",
-  "fact": "קבורים בו המשוררת רחל ואנשי העלייה השנייה, על שפת הכנרת.",
-  "search": "Kinneret cemetery",
-  "pick": true
- },
- {
   "id": "safed",
   "wiki": "Safed",
   "name": "צפת",
@@ -762,7 +736,7 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "הבריטים כלאו כאן עולים \"בלתי לגליים\" לפני קום המדינה.",
-  "pick": true
+  "file": "123505 illegal immigration museum in atlit PikiWiki Israel.jpg"
  },
  {
   "id": "ein-hod",
@@ -814,7 +788,7 @@
   "difficulty": "pro",
   "fact": "כאן מגדלים ומשיבים לטבע בעלי חיים מדבריים כמו ראם ופרא.",
   "search": "Hai-Bar Yotvata",
-  "pick": true
+  "file": "Reem-Lavan002.jpg"
  },
  {
   "id": "tel-beer-sheba",
@@ -848,7 +822,7 @@
   "exclude": [
    "Kafrkama.jpg"
   ],
-  "pick": true
+  "file": "96951 in the kfar kama PikiWiki Israel.jpg"
  },
  {
   "id": "ramat-hanadiv",
@@ -901,17 +875,6 @@
   "fact": "הצריח הגבוה הוא כמעט כל מה שנותר עומד מהמסגד הלבן מימי הביניים."
  },
  {
-  "id": "pool-of-arches",
-  "wiki": "Pool of the Arches",
-  "name": "בריכת הקשתות",
-  "city": "רמלה",
-  "country": "ישראל",
-  "category": "israel",
-  "difficulty": "pro",
-  "fact": "מאגר מים תת-קרקעי מהמאה ה-8 שבו שטים היום בסירות.",
-  "pick": true
- },
- {
   "id": "siloam-tunnel",
   "wiki": "Siloam tunnel",
   "name": "נקבת השילוח",
@@ -920,7 +883,7 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "נחצבה בימי חזקיהו, ועל קירה נמצאה כתובת עברית עתיקה המתארת את סיום החציבה.",
-  "pick": true
+  "file": "City of David 405.jpg"
  },
  {
   "id": "tel-hazor",
@@ -931,16 +894,5 @@
   "category": "israel",
   "difficulty": "pro",
   "fact": "העיר הכנענית הגדולה בארץ, ואתר מורשת עולמית."
- },
- {
-  "id": "beit-alpha",
-  "wiki": "Beit Alpha",
-  "name": "בית הכנסת בית אלפא",
-  "city": "עמק המעיינות",
-  "country": "ישראל",
-  "category": "israel",
-  "difficulty": "pro",
-  "fact": "ברצפת בית הכנסת פסיפס גלגל המזלות מהמאה ה-6.",
-  "pick": true
  }
 ]

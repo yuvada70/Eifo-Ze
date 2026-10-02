@@ -178,7 +178,7 @@
   "category": "europe",
   "difficulty": "easy",
   "fact": "לאורכו עומדים 30 פסלים בסגנון הבארוק.",
-  "pick": true
+  "file": "01 610 Karlsbrücke, Prager Burg.jpg"
  },
  {
   "id": "grand-canal",
@@ -199,7 +199,7 @@
   "category": "europe",
   "difficulty": "easy",
   "fact": "הבתים הלבנים בנויים על שפת לוע געשי שקרס לתוך הים.",
-  "pick": true
+  "file": "\"Das ikonische Oia auf Santorin.\" 05.jpg"
  },
  {
   "id": "mont-saint-michel",
@@ -353,7 +353,7 @@
   "exclude": [
    "Ireland Cliffs of Moher BW 2025-09-11 14-27-51.jpg"
   ],
-  "pick": true
+  "file": "2007 Cliffs of Moher (02).jpg"
  },
  {
   "id": "dubrovnik-walls",
@@ -494,20 +494,6 @@
   "category": "europe",
   "difficulty": "medium",
   "fact": "כאן שמורים תכשיטי הכתר הבריטי."
- },
- {
-  "id": "rijksmuseum",
-  "wiki": "Rijksmuseum",
-  "name": "הרייקסמוזיאום",
-  "city": "אמסטרדם",
-  "country": "הולנד",
-  "category": "europe",
-  "difficulty": "medium",
-  "fact": "כאן תלוי \"משמר הלילה\" של רמברנדט.",
-  "exclude": [
-   "Rijksmuseum in Amsterdam.jpg"
-  ],
-  "pick": true
  },
  {
   "id": "sacre-coeur",
@@ -728,7 +714,7 @@
   "category": "europe",
   "difficulty": "pro",
   "fact": "\"החדש\" נבנה במאה ה-18, מעל ערוץ בעומק כ-100 מטר.",
-  "pick": true
+  "file": "29400 Ronda, Málaga, Spain - panoramio (28).jpg"
  },
  {
   "id": "eilean-donan",
@@ -780,7 +766,7 @@
   "difficulty": "pro",
   "fact": "כפר דייגים מתחת לפסגות חדות מעל חוג הקוטב.",
   "search": "Reine Lofoten village",
-  "pick": true
+  "file": "Reine i Lofoten LC0148.jpg"
  },
  {
   "id": "valletta",
@@ -811,7 +797,7 @@
   "category": "europe",
   "difficulty": "pro",
   "fact": "קשת אבן גיר טבעית שנוצרה מפעולת הים.",
-  "pick": true
+  "file": "20210528 Durdle Door-10.jpg"
  },
  {
   "id": "matera",
@@ -832,7 +818,7 @@
   "category": "europe",
   "difficulty": "pro",
   "fact": "בתים עגולים עם גגות חרוטיים שנבנו בלי טיט.",
-  "pick": true
+  "file": "Alberobello - Carrer2.jpg"
  },
  {
   "id": "guggenheim-bilbao",

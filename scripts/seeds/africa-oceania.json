@@ -90,17 +90,6 @@
   "fact": "כל המקדש נחתך לגושים והועבר למקום גבוה יותר בשנות ה-60."
  },
  {
-  "id": "great-barrier-reef",
-  "wiki": "Great Barrier Reef",
-  "name": "שונית המחסום הגדולה",
-  "city": "קווינסלנד",
-  "country": "אוסטרליה",
-  "category": "africa-oceania",
-  "difficulty": "easy",
-  "fact": "מערכת השוניות הגדולה בעולם — נראית מהחלל.",
-  "pick": true
- },
- {
   "id": "twelve-apostles",
   "wiki": "The Twelve Apostles (Victoria)",
   "name": "שנים-עשר השליחים",
@@ -249,7 +238,7 @@
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "אפשר לקפוץ ממנו בחבל מגובה 192 מטר.",
-  "pick": true
+  "file": "01 Auckland New Zealand-4364.jpg"
  },
  {
   "id": "djenne-mosque",
@@ -470,7 +459,7 @@
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "אי בצורת לב עם פסגות חדות ומפרצים עמוקים.",
-  "pick": true
+  "file": "Barrière de corail de Moorea, Polynesie Française.jpg"
  },
  {
   "id": "bo-kaap",
@@ -561,7 +550,7 @@
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "יער של מחטי אבן גיר חדות כתער.",
-  "pick": true
+  "file": "Big Tsingy, Madagascar (24082669822).jpg"
  },
  {
   "id": "pancake-rocks",
@@ -623,7 +612,7 @@
   "difficulty": "pro",
   "fact": "מעיינות חומציים בצבעי צהוב וירוק, מהמקומות החמים בעולם.",
   "search": "Dallol hydrothermal Ethiopia",
-  "pick": true
+  "file": "A Sulphur Pond, Danakil Depression, Ethiopia.jpg"
  },
  {
   "id": "kolmanskop",
@@ -637,7 +626,7 @@
   "exclude": [
    "01Kolmannskuppe.jpg"
   ],
-  "pick": true
+  "file": "Ghost Town (37051953173).jpg"
  },
  {
   "id": "lake-retba",
@@ -658,7 +647,7 @@
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "\"המטרהורן של נמיביה\" — פסגות גרניט במדבר.",
-  "pick": true
+  "file": "2008-06-28 08-18-02 Namibia Erongo Usakos.JPG"
  },
  {
   "id": "ennedi",
@@ -669,7 +658,7 @@
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "קשתות סלע וציורי סלע בלב הסהרה.",
-  "pick": true
+  "file": "Elephant Rock (24112218442).jpg"
  },
  {
   "id": "fasil-ghebbi",
@@ -680,7 +669,7 @@
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "טירות מהמאה ה-17 שזכו לכינוי \"קמלוט של אפריקה\".",
-  "pick": true
+  "file": "Fasil Ghebbi (6821473537).jpg"
  },
  {
   "id": "great-zimbabwe",
@@ -691,7 +680,7 @@
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "חומות אבן ענקיות בלי טיט — והמדינה נקראה על שמן.",
-  "pick": true
+  "file": "ASC Leiden - Rietveld Collection - East Africa 1975 - 05 - 033 - A wall of the ruins of Great Zimbabwe - Masvingo, Zimbabwe.jpg"
  },
  {
   "id": "chinguetti",

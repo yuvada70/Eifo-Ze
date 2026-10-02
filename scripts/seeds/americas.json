@@ -148,7 +148,7 @@
   "category": "americas",
   "difficulty": "easy",
   "fact": "כמעט 1,000 פסלים ענקיים שגילפו תושבי האי מאבן געשית.",
-  "pick": true
+  "file": "Easter Island Ahu (2006).jpg"
  },
  {
   "id": "panama-canal",
@@ -359,7 +359,7 @@
   "category": "americas",
   "difficulty": "medium",
   "fact": "המונומנט הלאומי הראשון של ארצות הברית (1906).",
-  "pick": true
+  "file": "2003-08-16 Devils Tower 5.jpg"
  },
  {
   "id": "hoover-dam",
@@ -400,7 +400,7 @@
   "category": "americas",
   "difficulty": "medium",
   "fact": "נקרא על שם בתה של המלכה ויקטוריה.",
-  "pick": true
+  "file": "20250902 Canon R5 Lake Louise-5830.jpg"
  },
  {
   "id": "tikal",
@@ -431,7 +431,7 @@
   "category": "americas",
   "difficulty": "medium",
   "fact": "עיר קולוניאלית מבוצרת עם מרפסות פרחים צבעוניות.",
-  "pick": true
+  "file": "View of Cartagena from Convento de Santa Cruz de la Popa 01.jpg"
  },
  {
   "id": "torres-del-paine",
@@ -475,7 +475,7 @@
   "exclude": [
    "2018-10-19 La Boca, Buenos Aires, Argentina (Martin Rulsch) 10.jpg"
   ],
-  "pick": true
+  "file": "2018-10-19 La Boca, Buenos Aires, Argentina (Martin Rulsch) 17.jpg"
  },
  {
   "id": "el-capitolio-havana",
@@ -560,7 +560,7 @@
   "lat": -15.8188,
   "lng": -69.9693,
   "note": "קואורדינטות הוזנו ידנית (מרכז קבוצת האיים ליד פונו) — כדאי לאמת",
-  "pick": true
+  "file": "051 People Uros Islands of Reeds Lake Titicaca Peru 3102 (15182111835).jpg"
  },
  {
   "id": "vinicunca",
@@ -682,7 +682,7 @@
   "difficulty": "pro",
   "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז.",
   "search": "Marble Caves General Carrera Lake",
-  "pick": true
+  "file": "Calipso.JPG"
  },
  {
   "id": "kaieteur",

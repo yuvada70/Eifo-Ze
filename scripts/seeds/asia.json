@@ -138,7 +138,7 @@
   "category": "asia",
   "difficulty": "easy",
   "fact": "נבנה לזכר ביקור המלך ג'ורג' החמישי ב-1911.",
-  "pick": true
+  "file": "Arch-monument - Gate Way of India.jpg"
  },
  {
   "id": "golden-temple",
@@ -162,7 +162,7 @@
   "exclude": [
    "Sheikh Zayed Mosque Silhouette.jpg"
   ],
-  "pick": true
+  "file": "Abu dhabi, Moschea dello Sceicco Zayed, atrio della sala di preghiera 01.jpg"
  },
  {
   "id": "burj-al-arab",
@@ -263,7 +263,7 @@
   "category": "asia",
   "difficulty": "easy",
   "fact": "בית תפילה בהאי בצורת פרח לוטוס.",
-  "pick": true
+  "file": "Bahai Lotus Temple.jpg"
  },
  {
   "id": "itsukushima",
@@ -378,7 +378,7 @@
   "difficulty": "medium",
   "fact": "עיר נמל עתיקה שמתמלאת בלילה בפנסי משי צבעוניים.",
   "search": "Hoi An ancient town Vietnam",
-  "pick": true
+  "file": "Hội An, Ancient Town, 2020-01 CN-06.jpg"
  },
  {
   "id": "hawa-mahal",
@@ -469,7 +469,7 @@
   "category": "asia",
   "difficulty": "medium",
   "fact": "הארמון הראשי של שושלת ג'וסון, מ-1395.",
-  "pick": true
+  "file": "Another Gyeongbokgung Building (1509812218).jpg"
  },
  {
   "id": "n-seoul-tower",
@@ -480,7 +480,7 @@
   "category": "asia",
   "difficulty": "medium",
   "fact": "זוגות תולים על הגדר שלו מנעולי אהבה.",
-  "pick": true
+  "file": "N Seoul Tower (13952097192).jpg"
  },
  {
   "id": "pamukkale",
@@ -654,7 +654,7 @@
   "exclude": [
    "Son Doong Cave 5.jpg"
   ],
-  "pick": true
+  "file": "A Beam Through the Darkness - Son Doong Cave.jpg"
  },
  {
   "id": "jiuzhaigou",
@@ -747,17 +747,6 @@
   "fact": "באר מדרגות מעוטרת במאות פסלים, מופיעה על שטר של 100 רופי."
  },
  {
-  "id": "golden-rock",
-  "wiki": "Kyaiktiyo Pagoda",
-  "name": "הסלע המוזהב",
-  "city": "מדינת מון",
-  "country": "מיאנמר",
-  "category": "asia",
-  "difficulty": "pro",
-  "fact": "סלע מצופה זהב שנראה כאילו עומד ליפול מהצוק.",
-  "pick": true
- },
- {
   "id": "plain-of-jars",
   "wiki": "Plain of Jars",
   "name": "מישור הכדים",
@@ -836,7 +825,7 @@
   "category": "asia",
   "difficulty": "pro",
   "fact": "קברים נבטיים חצובים, \"אחותה הדרומית\" של פטרה.",
-  "pick": true
+  "file": "20141006 143132 resized.jpg"
  },
  {
   "id": "kuwait-towers",
