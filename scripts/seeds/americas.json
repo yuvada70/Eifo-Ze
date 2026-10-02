@@ -551,7 +551,10 @@
   "category": "americas",
   "difficulty": "medium",
   "fact": "איים מלאכותיים שנבנו מקני טוטורה.",
-  "search": "Uros floating islands Titicaca"
+  "search": "Uros floating islands Titicaca",
+  "lat": -15.8188,
+  "lng": -69.9693,
+  "note": "קואורדינטות הוזנו ידנית (מרכז קבוצת האיים ליד פונו) — כדאי לאמת"
  },
  {
   "id": "vinicunca",
