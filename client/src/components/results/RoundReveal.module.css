@@ -31,6 +31,7 @@
 
 .stacked {
   grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
   grid-template-rows: auto minmax(240px, 1fr) auto;
 }
 
@@ -72,6 +73,7 @@
 }
 
 .fact {
+  overflow-wrap: anywhere;
   margin: 4px 0 0;
   font-size: var(--text-sm);
   color: var(--color-text);

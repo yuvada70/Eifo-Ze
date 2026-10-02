@@ -15,7 +15,7 @@
 
 import { writeFileSync } from 'node:fs';
 
-import { PLACES_FILE, commonsImageInfo, fetchWithRetry, loadShared, mapLimit, readPlaces } from './lib.mjs';
+import { PLACES_FILE, commonsImageInfo, fetchWithRetry, loadShared, mapLimit, readPlaces, sleep } from './lib.mjs';
 
 const args = process.argv.slice(2);
 const jsonIndex = args.indexOf('--json');
@@ -31,7 +31,8 @@ console.log(`בודק ${places.length} תמונות…`);
 const files = places.map((place) => shared.normalizeCommonsFileName(place.image.file));
 const info = await commonsImageInfo(files);
 
-const report = await mapLimit(places, 6, async (place) => {
+const report = await mapLimit(places, 3, async (place) => {
+  await sleep(150);
   const name = shared.normalizeCommonsFileName(place.image.file);
   const meta = info.get(name);
   const problems = [];
@@ -49,7 +50,7 @@ const report = await mapLimit(places, 6, async (place) => {
 
   const url = shared.commonsImageUrl(name, shared.ROUND_IMAGE_WIDTH);
   try {
-    const response = await fetchWithRetry(url, { method: 'GET' }, 4);
+    const response = await fetchWithRetry(url, { method: 'GET' }, 7);
     const type = response.headers.get('content-type') ?? '';
     if (!response.ok) problems.push(`הכתובת החזירה HTTP ${response.status}`);
     else if (!type.startsWith('image/')) problems.push(`הכתובת לא החזירה תמונה (${type})`);

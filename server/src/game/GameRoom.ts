@@ -344,7 +344,7 @@ export class GameRoom {
 
     const pool = selectPlacePool(this.places.all(), this.settings.category, this.settings.difficulty);
     if (pool.length === 0) throw new GameError('NO_PLACES');
-    this.questions = shuffle(pool).slice(0, this.settings.roundCount);
+    this.questions = pickRounds(pool, this.settings.roundCount, this.settings.category === 'mixed');
     if (this.questions.length < this.settings.roundCount) {
       this.listeners.onNotice?.(
         this,
@@ -744,6 +744,32 @@ function isValidCategory(value: unknown): value is ContentCategory {
 
 function isValidDifficulty(value: unknown): value is Difficulty {
   return typeof value === 'string' && (DIFFICULTIES as readonly string[]).includes(value);
+}
+
+/**
+ * בוחר את המקומות לסיבובים, בלי חזרות.
+ * ב"מעורב" — סבב בין האזורים בסדר אקראי, כדי שמשחק לא ייצא בטעות
+ * כמעט כולו מאזור אחד.
+ */
+export function pickRounds(pool: readonly Place[], count: number, balanceRegions: boolean): Place[] {
+  if (!balanceRegions) return shuffle(pool).slice(0, count);
+
+  const byRegion = new Map<string, Place[]>();
+  for (const place of shuffle(pool)) {
+    const list = byRegion.get(place.category) ?? [];
+    list.push(place);
+    byRegion.set(place.category, list);
+  }
+  const queues = shuffle([...byRegion.values()]);
+  const picked: Place[] = [];
+  while (picked.length < count && queues.some((queue) => queue.length > 0)) {
+    for (const queue of queues) {
+      const next = queue.shift();
+      if (next) picked.push(next);
+      if (picked.length >= count) break;
+    }
+  }
+  return shuffle(picked);
 }
 
 /** ערבוב Fisher–Yates — ללא חזרות, כל מקום מופיע לכל היותר פעם אחת. */

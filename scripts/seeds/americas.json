@@ -682,7 +682,10 @@
   "difficulty": "pro",
   "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז.",
   "search": "Marble Caves General Carrera Lake",
-  "file": "Calipso.JPG"
+  "file": "Calipso.JPG",
+  "lat": -46.6497,
+  "lng": -72.6178,
+  "note": "קואורדינטות הוזנו ידנית — המערות ליד פוארטו ריו טרנקילו (הערך בוויקיפדיה הוא של האגם כולו). כדאי לאמת"
  },
  {
   "id": "kaieteur",

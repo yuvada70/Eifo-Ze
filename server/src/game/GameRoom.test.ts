@@ -4,7 +4,7 @@ import { describe, it } from 'node:test';
 import type { Place } from '@eifo/shared';
 
 import { inMemoryPlaces } from '../content/placesStore.js';
-import { GameError, GameRoom, normalizeSettings, type RoomListeners, type Scheduler } from './GameRoom.js';
+import { GameError, GameRoom, normalizeSettings, pickRounds, type RoomListeners, type Scheduler } from './GameRoom.js';
 
 /** שעון מדומה עם תור טיימרים. */
 function fakeScheduler() {
@@ -164,5 +164,23 @@ describe('GameRoom', () => {
     const { room } = setup({ category: 'americas', difficulty: 'pro' });
     room.addPlayer('אליס', 's1');
     assert.throws(() => room.start(), (error: GameError) => error.code === 'NO_PLACES');
+  });
+});
+
+describe('pickRounds', () => {
+  it('balances regions in mixed games and never repeats a place', () => {
+    const pool = [
+      ...Array.from({ length: 30 }, (_, i) => place(`il-${i}`, 'israel', 'easy', 31, 35)),
+      ...Array.from({ length: 5 }, (_, i) => place(`eu-${i}`, 'europe', 'easy', 48, 2)),
+      ...Array.from({ length: 5 }, (_, i) => place(`as-${i}`, 'asia', 'easy', 27, 78)),
+    ];
+    for (let run = 0; run < 50; run += 1) {
+      const picked = pickRounds(pool, 9, true);
+      assert.equal(picked.length, 9);
+      assert.equal(new Set(picked.map((p) => p.id)).size, 9);
+      assert.equal(picked.filter((p) => p.category === 'israel').length, 3);
+    }
+    const all = pickRounds(pool, 100, true);
+    assert.equal(all.length, 40);
   });
 });

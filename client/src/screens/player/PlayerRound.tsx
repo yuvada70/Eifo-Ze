@@ -37,6 +37,9 @@ export function PlayerRound(): JSX.Element {
 
   const [pending, setPending] = useState<LatLng | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  /** הסיבוב שבו האישור התקבל בשרת — כדי שהמסך לא "יחזור" לכפתור האישור
+   *  בחלון הקצר שבין סגירת הסיבוב (אחרי האישור האחרון) לבין מסך החשיפה. */
+  const [confirmedRound, setConfirmedRound] = useState<number | null>(null);
 
   /* איפוס בכל סיבוב חדש. */
   useEffect(() => {
@@ -44,7 +47,7 @@ export function PlayerRound(): JSX.Element {
     setSubmitting(false);
   }, [round?.index]);
 
-  const answered = self?.hasAnswered ?? false;
+  const answered = (self?.hasAnswered ?? false) || (round !== null && confirmedRound === round.index);
   const canPick = isQuestion && !isPaused && !answered && !submitting;
 
   const handlePick = useCallback(
@@ -77,9 +80,13 @@ export function PlayerRound(): JSX.Element {
   const confirm = async () => {
     if (!pending || answered || submitting) return;
     setSubmitting(true);
+    const roundIndex = round?.index ?? null;
     const result = await submitGuess(pending);
     setSubmitting(false);
-    if (result.ok) navigator.vibrate?.([10, 40, 10]);
+    if (result.ok) {
+      setConfirmedRound(roundIndex);
+      navigator.vibrate?.([10, 40, 10]);
+    }
   };
 
   const selection = answered ? (self?.currentGuess ?? pending) : pending;
