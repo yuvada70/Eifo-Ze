@@ -157,7 +157,10 @@
   "country": "איחוד האמירויות",
   "category": "asia",
   "difficulty": "easy",
-  "fact": "בו אחד משטיחי הקטיפה הגדולים בעולם שנארגו ביד."
+  "fact": "בו אחד משטיחי הקטיפה הגדולים בעולם שנארגו ביד.",
+  "exclude": [
+   "Sheikh Zayed Mosque Silhouette.jpg"
+  ]
  },
  {
   "id": "burj-al-arab",
@@ -638,7 +641,10 @@
   "country": "וייטנאם",
   "category": "asia",
   "difficulty": "pro",
-  "fact": "המערה הגדולה בעולם — יש בה ג'ונגל ועננים משלה."
+  "fact": "המערה הגדולה בעולם — יש בה ג'ונגל ועננים משלה.",
+  "exclude": [
+   "Son Doong Cave 5.jpg"
+  ]
  },
  {
   "id": "jiuzhaigou",

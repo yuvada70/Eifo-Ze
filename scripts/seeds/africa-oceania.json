@@ -628,7 +628,10 @@
   "country": "נמיביה",
   "category": "africa-oceania",
   "difficulty": "pro",
-  "fact": "עיירת יהלומים נטושה שהחול ממלא את בתיה."
+  "fact": "עיירת יהלומים נטושה שהחול ממלא את בתיה.",
+  "exclude": [
+   "01Kolmannskuppe.jpg"
+  ]
  },
  {
   "id": "lake-retba",

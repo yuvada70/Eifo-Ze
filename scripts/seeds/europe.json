@@ -347,7 +347,10 @@
   "country": "אירלנד",
   "category": "europe",
   "difficulty": "medium",
-  "fact": "הצוקים מתנשאים עד כ-214 מטר מעל האוקיינוס האטלנטי."
+  "fact": "הצוקים מתנשאים עד כ-214 מטר מעל האוקיינוס האטלנטי.",
+  "exclude": [
+   "Ireland Cliffs of Moher BW 2025-09-11 14-27-51.jpg"
+  ]
  },
  {
   "id": "dubrovnik-walls",
@@ -497,7 +500,10 @@
   "country": "הולנד",
   "category": "europe",
   "difficulty": "medium",
-  "fact": "כאן תלוי \"משמר הלילה\" של רמברנדט."
+  "fact": "כאן תלוי \"משמר הלילה\" של רמברנדט.",
+  "exclude": [
+   "Rijksmuseum in Amsterdam.jpg"
+  ]
  },
  {
   "id": "sacre-coeur",

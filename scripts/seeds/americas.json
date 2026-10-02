@@ -467,7 +467,10 @@
   "country": "ארגנטינה",
   "category": "americas",
   "difficulty": "medium",
-  "fact": "רחוב הבתים הצבעוניים של שכונת לה בוקה."
+  "fact": "רחוב הבתים הצבעוניים של שכונת לה בוקה.",
+  "exclude": [
+   "2018-10-19 La Boca, Buenos Aires, Argentina (Martin Rulsch) 10.jpg"
+  ]
  },
  {
   "id": "el-capitolio-havana",

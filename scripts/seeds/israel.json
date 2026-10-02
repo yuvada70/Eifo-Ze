@@ -17,7 +17,10 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "easy",
-  "fact": "הושלמה בסביבות שנת 691, והיא מהמבנים האסלאמיים העתיקים בעולם שעדיין עומדים על תלם."
+  "fact": "הושלמה בסביבות שנת 691, והיא מהמבנים האסלאמיים העתיקים בעולם שעדיין עומדים על תלם.",
+  "exclude": [
+   "قبة الصخرة من الناحية الشرقية.jpg"
+  ]
  },
  {
   "id": "masada",
@@ -98,7 +101,10 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "easy",
-  "fact": "הגלים חצבו בסלע הגיר מערות ומנהרות, ויורדים אליהן ברכבל קצר ותלול."
+  "fact": "הגלים חצבו בסלע הגיר מערות ומנהרות, ויורדים אליהן ברכבל קצר ותלול.",
+  "exclude": [
+   "Visual Intelligence Division, October 2019. VIII.jpg"
+  ]
  },
  {
   "id": "knesset",
@@ -309,7 +315,10 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "medium",
-  "fact": "עיר רומית-ביזנטית שעמודיה קרסו ברעידת האדמה של שנת 749."
+  "fact": "עיר רומית-ביזנטית שעמודיה קרסו ברעידת האדמה של שנת 749.",
+  "exclude": [
+   "110132 beit-shan landscapes PikiWiki Israel.jpg"
+  ]
  },
  {
   "id": "avdat",
@@ -521,7 +530,10 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "medium",
-  "fact": "לפי המסורת, כאן נשא ישו את \"הדרשה על ההר\"."
+  "fact": "לפי המסורת, כאן נשא ישו את \"הדרשה על ההר\".",
+  "exclude": [
+   "Berg der Seligpreisungen BW 5.JPG"
+  ]
  },
  {
   "id": "apollonia",
@@ -815,7 +827,10 @@
   "country": "ישראל",
   "category": "israel",
   "difficulty": "pro",
-  "fact": "כפר צ'רקסי — אחד משניים בלבד בישראל."
+  "fact": "כפר צ'רקסי — אחד משניים בלבד בישראל.",
+  "exclude": [
+   "Kafrkama.jpg"
+  ]
  },
  {
   "id": "ramat-hanadiv",

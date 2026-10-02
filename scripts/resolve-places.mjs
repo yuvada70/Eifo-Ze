@@ -162,8 +162,10 @@ for (const seed of seeds) {
   }
   candidates.push(...wdImages);
   if (wiki?.pageImage) candidates.push(wiki.pageImage);
+  // exclude: קבצים שנפסלו בסקירה ידנית (שלט שחושף את התשובה, צילום חלש וכו').
+  const excluded = new Set((seed.exclude ?? []).map((f) => shared.normalizeCommonsFileName(f)));
   candidates = [...new Set(candidates.map((f) => shared.normalizeCommonsFileName(f)))].filter(
-    (f) => PHOTO_EXT.test(f) && (seed.file === f || !BAD_FILE.test(f)),
+    (f) => PHOTO_EXT.test(f) && (seed.file === f || !BAD_FILE.test(f)) && !excluded.has(f),
   );
 
   prepared.push({ seed, wiki, wdCoord, candidates: candidates.slice(0, 25), commonsCategory, wdImages });
@@ -184,7 +186,10 @@ function passes(file, seed) {
 const extra = [];
 for (const item of prepared) {
   if (item.candidates.some((file) => passes(file, item.seed) === null) || !item.commonsCategory) continue;
-  const files = (await categoryFiles(item.commonsCategory)).filter((f) => PHOTO_EXT.test(f) && !BAD_FILE.test(f));
+  const excluded = new Set((item.seed.exclude ?? []).map((f) => shared.normalizeCommonsFileName(f)));
+  const files = (await categoryFiles(item.commonsCategory)).filter(
+    (f) => PHOTO_EXT.test(f) && !BAD_FILE.test(f) && !excluded.has(shared.normalizeCommonsFileName(f)),
+  );
   item.candidates.push(...files.slice(0, 30).map((f) => shared.normalizeCommonsFileName(f)));
   extra.push(...item.candidates);
   await sleep(100);
