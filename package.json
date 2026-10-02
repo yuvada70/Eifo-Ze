@@ -1,0 +1,33 @@
+{
+  "name": "eifo-ze",
+  "version": "1.0.0",
+  "private": true,
+  "description": "איפה זה? — משחק טריוויה גיאוגרפי מרובה משתתפים בזמן אמת",
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:server dev:client",
+    "dev:server": "npm run dev --workspace @eifo/server",
+    "dev:client": "npm run dev --workspace @eifo/client",
+    "build": "npm run build --workspace @eifo/shared && npm run build --workspace @eifo/client && npm run build --workspace @eifo/server",
+    "start": "npm run start --workspace @eifo/server",
+    "typecheck": "npm-run-all --serial typecheck:*",
+    "typecheck:shared": "npm run typecheck --workspace @eifo/shared",
+    "typecheck:server": "npm run build --workspace @eifo/shared && npm run typecheck --workspace @eifo/server",
+    "typecheck:client": "npm run typecheck --workspace @eifo/client",
+    "test": "npm run build --workspace @eifo/shared && npm run test --workspace @eifo/shared && npm run test --workspace @eifo/server",
+    "check:images": "npm run build --workspace @eifo/shared && node scripts/check-images.mjs",
+    "validate:places": "npm run build --workspace @eifo/shared && node scripts/validate-places.mjs"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.3"
+  }
+}

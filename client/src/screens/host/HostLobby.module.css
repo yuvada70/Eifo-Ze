@@ -1,0 +1,214 @@
+.page {
+  display: grid;
+  flex: 1;
+  overflow-y: auto;
+  grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
+  gap: var(--space-6);
+  width: 100%;
+  max-width: var(--content-max);
+  min-height: 0;
+  padding: calc(var(--space-5) + var(--safe-top)) var(--space-5) calc(var(--space-5) + var(--safe-bottom));
+  margin-inline: auto;
+}
+
+/* ── צד ההצטרפות ───────────────────────────────────────────── */
+
+.joinPane {
+  display: flex;
+  align-items: flex-start;
+}
+
+.codeCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.codeLabel {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.08em;
+}
+
+.code {
+  font-size: var(--text-5xl);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-primary);
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 40px rgb(33 212 180 / 45%);
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.code:hover {
+  transform: scale(1.03);
+}
+
+.urlRow {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  width: 100%;
+  padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3);
+  background: var(--color-surface-strong);
+  border-radius: var(--radius-pill);
+}
+
+.url {
+  flex: 1;
+  overflow: hidden;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.instructions {
+  font-size: var(--text-sm);
+  color: var(--color-text-subtle);
+}
+
+/* ── צד המשתתפים ───────────────────────────────────────────── */
+
+.playersPane {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  min-height: 0;
+}
+
+.playersHeader {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.playersTitle {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+  font-size: var(--text-2xl);
+}
+
+.playersCount {
+  padding: var(--space-1) var(--space-4);
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: var(--radius-pill);
+}
+
+.playersHint {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.playersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-3);
+  min-height: 0;
+  padding-block-end: var(--space-4);
+  overflow-y: auto;
+}
+
+.playerCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: center;
+  padding: var(--space-4) var(--space-2);
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.playerName {
+  width: 100%;
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kick {
+  position: absolute;
+  inset-block-start: var(--space-2);
+  inset-inline-end: var(--space-2);
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+  border-radius: 50%;
+  opacity: 0;
+  transition:
+    opacity var(--duration-base) var(--ease-out),
+    color var(--duration-base) var(--ease-out),
+    background-color var(--duration-base) var(--ease-out);
+}
+
+.playerCard:hover .kick,
+.kick:focus-visible {
+  opacity: 1;
+}
+
+.kick:hover {
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+
+/* ── מסכים צרים ────────────────────────────────────────────── */
+
+@media (max-width: 980px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .code {
+    font-size: var(--text-4xl);
+  }
+
+  .headerActions {
+    width: 100%;
+  }
+
+  .headerActions > *:last-child {
+    flex: 1;
+  }
+}
+
+.poolWarning {
+  margin: var(--space-2) 0 0;
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.playToo {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  text-align: center;
+}

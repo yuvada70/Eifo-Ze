@@ -1,0 +1,902 @@
+[
+ {
+  "id": "western-wall",
+  "wiki": "Western Wall",
+  "name": "הכותל המערבי",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "שריד מקיר התמך של הר הבית שהרחיב הורדוס, לפני כ-2,000 שנה."
+ },
+ {
+  "id": "dome-of-the-rock",
+  "wiki": "Dome of the Rock",
+  "name": "כיפת הסלע",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הושלמה בסביבות שנת 691, והיא מהמבנים האסלאמיים העתיקים בעולם שעדיין עומדים על תלם."
+ },
+ {
+  "id": "masada",
+  "wiki": "Masada",
+  "name": "מצדה",
+  "city": "מדבר יהודה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הורדוס בנה כאן ארמון על צוק המתנשא כ-400 מטר מעל ים המלח."
+ },
+ {
+  "id": "holy-sepulchre",
+  "wiki": "Church of the Holy Sepulchre",
+  "name": "כנסיית הקבר",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "כמה עדות נוצריות חולקות בה את השליטה, ומפתח השער מוחזק בידי משפחה מוסלמית כבר מאות שנים."
+ },
+ {
+  "id": "tower-of-david",
+  "wiki": "Tower of David",
+  "name": "מגדל דוד",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הצריח המוכר נבנה בתקופה העות'מאנית — כ-2,500 שנה אחרי ימי דוד המלך."
+ },
+ {
+  "id": "azrieli-center",
+  "wiki": "Azrieli Center",
+  "name": "מרכז עזריאלי",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "שלושת המגדלים בנויים בצורות שונות: עגול, משולש ומרובע."
+ },
+ {
+  "id": "bahai-gardens",
+  "wiki": "Terraces of the Bahá'í Faith",
+  "name": "הגנים הבהאיים",
+  "city": "חיפה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "19 טרסות יורדות במדרון הכרמל אל מקדש הבאב; אתר מורשת עולמית מאז 2008."
+ },
+ {
+  "id": "caesarea",
+  "wiki": "Caesarea Maritima",
+  "name": "קיסריה העתיקה",
+  "city": "קיסריה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הורדוס בנה כאן נמל מלאכותי ענק וקרא לעיר על שם הקיסר אוגוסטוס."
+ },
+ {
+  "id": "jaffa-clock-tower",
+  "wiki": "Jaffa Clock Tower",
+  "name": "מגדל השעון ביפו",
+  "city": "תל אביב-יפו",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "נבנה בתחילת המאה ה-20 לכבוד 25 שנים לשלטונו של הסולטן עבדול חמיד השני."
+ },
+ {
+  "id": "rosh-hanikra",
+  "wiki": "Rosh HaNikra grottoes",
+  "name": "נקרות ראש הנקרה",
+  "city": "ראש הנקרה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הגלים חצבו בסלע הגיר מערות ומנהרות, ויורדים אליהן ברכבל קצר ותלול."
+ },
+ {
+  "id": "knesset",
+  "wiki": "Knesset",
+  "name": "משכן הכנסת",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הבניין בגבעת רם נחנך ב-1966, ובו גם שטיחי קיר וויטראז'ים של מרק שאגאל."
+ },
+ {
+  "id": "mount-of-olives",
+  "wiki": "Mount of Olives",
+  "name": "הר הזיתים",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "על מדרונותיו בית קברות יהודי ששימש ברציפות כ-3,000 שנה."
+ },
+ {
+  "id": "makhtesh-ramon",
+  "wiki": "Makhtesh Ramon",
+  "name": "מכתש רמון",
+  "city": "מצפה רמון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "המכתש הגדול בעולם — כ-40 ק\"מ אורכו — נוצר מסחיפה ולא מפגיעת מטאוריט."
+ },
+ {
+  "id": "yad-vashem",
+  "wiki": "Yad Vashem",
+  "name": "יד ושם",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הוקם בחוק הכנסת ב-1953 כמוסד הלאומי להנצחת השואה."
+ },
+ {
+  "id": "mahane-yehuda",
+  "wiki": "Mahane Yehuda Market",
+  "name": "שוק מחנה יהודה",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "בלילות תריסי הדוכנים הופכים לגלריה של דיוקנאות מרוססים."
+ },
+ {
+  "id": "shrine-of-the-book",
+  "wiki": "Shrine of the Book",
+  "name": "היכל הספר",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "כיפת הבניין מעוצבת כמכסה של הכדים שבהם נמצאו מגילות ים המלח."
+ },
+ {
+  "id": "ein-gedi",
+  "wiki": "Ein Gedi",
+  "name": "עין גדי",
+  "city": "ים המלח",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "נווה מדבר עם מפלים, יעלים ושפנים — וגם בית כנסת עתיק עם רצפת פסיפס."
+ },
+ {
+  "id": "timna-park",
+  "wiki": "Timna Valley",
+  "name": "פארק תמנע",
+  "city": "ערבה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "כאן נכרתה נחושת כבר בעולם העתיק, ו\"עמודי שלמה\" נוצרו מסחיפה של אבן חול."
+ },
+ {
+  "id": "acre-old-city",
+  "wiki": "Old City of Acre",
+  "name": "העיר העתיקה של עכו",
+  "city": "עכו",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "מתחת לעיר העות'מאנית השתמרה כמעט בשלמותה עיר הצלבנים."
+ },
+ {
+  "id": "sea-of-galilee",
+  "wiki": "Sea of Galilee",
+  "name": "הכנרת",
+  "city": "טבריה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "אגם המים המתוקים הנמוך בעולם — יותר מ-200 מטר מתחת לפני הים."
+ },
+ {
+  "id": "dead-sea",
+  "wiki": "Dead Sea",
+  "name": "ים המלח",
+  "city": "ים המלח",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "חופיו הם הנקודה הנמוכה ביותר ביבשה — כ-430 מטר מתחת לפני הים."
+ },
+ {
+  "id": "basilica-annunciation",
+  "wiki": "Basilica of the Annunciation",
+  "name": "כנסיית הבשורה",
+  "city": "נצרת",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "הכנסייה הנוכחית נחנכה ב-1969, מעל המקום שבו לפי המסורת התבשרה מרים."
+ },
+ {
+  "id": "mount-hermon",
+  "wiki": "Mount Hermon",
+  "name": "הר החרמון",
+  "city": "רמת הגולן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "ההר הגבוה בשטח שבשליטת ישראל, ובו אתר הסקי היחיד בארץ."
+ },
+ {
+  "id": "banias",
+  "wiki": "Banias",
+  "name": "הבניאס",
+  "city": "רמת הגולן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "אחד ממקורות הירדן; השם נגזר מהאל היווני פאן שמקדשו עמד כאן."
+ },
+ {
+  "id": "rabin-square",
+  "wiki": "Rabin Square",
+  "name": "כיכר רבין",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "נקראה \"כיכר מלכי ישראל\" עד שהוסב שמה לאחר רצח רבין ב-1995."
+ },
+ {
+  "id": "white-city",
+  "wiki": "White City (Tel Aviv)",
+  "name": "העיר הלבנה",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "כ-4,000 מבנים בסגנון הבינלאומי; אתר מורשת עולמית מאז 2003."
+ },
+ {
+  "id": "chords-bridge",
+  "wiki": "Jerusalem Chords Bridge",
+  "name": "גשר המיתרים",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "תכנן אותו האדריכל סנטיאגו קלטרווה, והוא נחנך ב-2008 לרכבת הקלה."
+ },
+ {
+  "id": "eilat",
+  "wiki": "Eilat",
+  "name": "אילת",
+  "city": "אילת",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "העיר הדרומית ביותר בישראל, על חוף מפרץ אילת בים סוף."
+ },
+ {
+  "id": "church-of-all-nations",
+  "wiki": "Church of All Nations",
+  "name": "כנסיית כל העמים",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "נבנתה ב-1924 בתרומות ממדינות רבות, ומכאן שמה."
+ },
+ {
+  "id": "jaffa-port",
+  "wiki": "Jaffa Port",
+  "name": "נמל יפו",
+  "city": "תל אביב-יפו",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "easy",
+  "fact": "מהנמלים העתיקים בעולם — כבר בתנ\"ך יונה הנביא יוצא ממנו לדרכו."
+ },
+ {
+  "id": "beit-shean",
+  "wiki": "Beit She'an National Park",
+  "name": "בית שאן העתיקה",
+  "city": "בית שאן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "עיר רומית-ביזנטית שעמודיה קרסו ברעידת האדמה של שנת 749."
+ },
+ {
+  "id": "avdat",
+  "wiki": "Avdat",
+  "name": "עבדת",
+  "city": "הנגב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "עיר נבטית על דרך הבשמים, ואתר מורשת עולמית."
+ },
+ {
+  "id": "beit-guvrin",
+  "wiki": "Beit Guvrin-Maresha National Park",
+  "name": "מערות בית גוברין",
+  "city": "בית גוברין",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מאות מערות פעמון נחצבו כאן בסלע הגיר הרך."
+ },
+ {
+  "id": "nimrod-fortress",
+  "wiki": "Nimrod Fortress",
+  "name": "מבצר נמרוד",
+  "city": "רמת הגולן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מבצר מימי הביניים ששמר על הדרך לדמשק, על שלוחה של החרמון."
+ },
+ {
+  "id": "zippori",
+  "wiki": "Zippori National Park",
+  "name": "ציפורי",
+  "city": "הגליל התחתון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "כאן נמצא פסיפס האישה המכונה \"המונה ליזה של הגליל\"."
+ },
+ {
+  "id": "megiddo",
+  "wiki": "Tel Megiddo",
+  "name": "תל מגידו",
+  "city": "עמק יזרעאל",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "השם \"ארמגדון\" שבברית החדשה נגזר מ\"הר מגידו\"."
+ },
+ {
+  "id": "capernaum",
+  "wiki": "Capernaum",
+  "name": "כפר נחום",
+  "city": "חוף הכנרת",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "בית הכנסת העתיק נבנה מאבן גיר לבנה בלב סביבה של בזלת שחורה."
+ },
+ {
+  "id": "ein-avdat",
+  "wiki": "Ein Avdat",
+  "name": "עין עבדת",
+  "city": "הנגב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "קניון עמוק עם מעיינות ובריכות מים בלב המדבר."
+ },
+ {
+  "id": "soreq-cave",
+  "wiki": "Avshalom Cave",
+  "name": "מערת הנטיפים",
+  "city": "בית שמש",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "התגלתה במקרה ב-1968, כשפיצוץ במחצבה חשף את פתחה."
+ },
+ {
+  "id": "khan-al-umdan",
+  "wiki": "Khan al-Umdan",
+  "name": "חאן אל-עומדאן",
+  "city": "עכו",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "\"חאן העמודים\" — פונדק דרכים עות'מאני גדול ליד הנמל."
+ },
+ {
+  "id": "tel-aviv-port",
+  "wiki": "Tel Aviv Port",
+  "name": "נמל תל אביב",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "הנמל נפתח ב-1936 ונסגר לפעילות ימית ב-1965; היום טיילת ובילוי."
+ },
+ {
+  "id": "sarona",
+  "wiki": "Sarona (Tel Aviv)",
+  "name": "שרונה",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מושבה טמפלרית מ-1871 שבתיה שוחזרו בלב העיר המודרנית."
+ },
+ {
+  "id": "neve-tzedek",
+  "wiki": "Neve Tzedek",
+  "name": "נווה צדק",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "הוקמה ב-1887 כשכונה יהודית מחוץ ליפו — עוד לפני שנוסדה תל אביב."
+ },
+ {
+  "id": "german-colony-haifa",
+  "wiki": "German Colony, Haifa",
+  "name": "המושבה הגרמנית",
+  "city": "חיפה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "הטמפלרים הקימו אותה ב-1868, בציר ישר שמוביל אל הגנים הבהאיים."
+ },
+ {
+  "id": "stella-maris",
+  "wiki": "Stella Maris Monastery",
+  "name": "מנזר סטלה מאריס",
+  "city": "חיפה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מנזר כרמליתי על כף הכרמל, מעל מערה המיוחסת לאליהו הנביא."
+ },
+ {
+  "id": "mount-tabor",
+  "wiki": "Mount Tabor",
+  "name": "הר תבור",
+  "city": "הגליל התחתון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "הר מבודד בצורת כיפה, ועל פסגתו כנסיית ההשתנות."
+ },
+ {
+  "id": "gamla",
+  "wiki": "Gamla",
+  "name": "גמלא",
+  "city": "רמת הגולן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "עיר יהודית על רכס דמוי דבשת גמל, שנכבשה בידי הרומאים ב-67 לספירה."
+ },
+ {
+  "id": "montfort",
+  "wiki": "Montfort Castle",
+  "name": "מבצר מונפור",
+  "city": "הגליל המערבי",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מבצר של המסדר הטבטוני מהמאה ה-13, מעל נחל כזיב."
+ },
+ {
+  "id": "hula-reserve",
+  "wiki": "Hula Nature Reserve",
+  "name": "שמורת החולה",
+  "city": "עמק החולה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "השמורה הראשונה בישראל, ותחנת עצירה למיליוני ציפורים נודדות."
+ },
+ {
+  "id": "sde-boker",
+  "wiki": "Sde Boker",
+  "name": "שדה בוקר",
+  "city": "הנגב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "הקיבוץ שאליו פרש דוד בן-גוריון, וליד הצריף שלו גם קברו."
+ },
+ {
+  "id": "tabgha",
+  "wiki": "Church of the Multiplication",
+  "name": "כנסיית הלחם והדגים",
+  "city": "טבחה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "ברצפתה פסיפס מפורסם של סל לחם ושני דגים."
+ },
+ {
+  "id": "mount-of-beatitudes",
+  "wiki": "Mount of Beatitudes",
+  "name": "הר האושר",
+  "city": "חוף הכנרת",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "לפי המסורת, כאן נשא ישו את \"הדרשה על ההר\"."
+ },
+ {
+  "id": "apollonia",
+  "wiki": "Apollonia (Arsuf)",
+  "name": "אפולוניה",
+  "city": "הרצליה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מבצר צלבני על מצוק הכורכר מעל הים."
+ },
+ {
+  "id": "ashkelon-park",
+  "wiki": "Ashkelon National Park",
+  "name": "הגן הלאומי אשקלון",
+  "city": "אשקלון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "כאן נמצא אחד משערי הקשת העתיקים בעולם, בן כ-3,800 שנה."
+ },
+ {
+  "id": "tel-dan",
+  "wiki": "Tel Dan",
+  "name": "תל דן",
+  "city": "הגליל העליון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "בשמורה זורם מעיין דן, המקור הגדול של הירדן."
+ },
+ {
+  "id": "hamat-gader",
+  "wiki": "Hamat Gader",
+  "name": "חמת גדר",
+  "city": "רמת הגולן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "מעיינות חמים שהרומאים בנו לידם מרחצאות מפוארים."
+ },
+ {
+  "id": "dizengoff-square",
+  "wiki": "Dizengoff Square",
+  "name": "כיכר דיזנגוף",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "נקראת על שם צינה דיזנגוף, אשתו של ראש העיר הראשון."
+ },
+ {
+  "id": "jaffa-gate",
+  "wiki": "Jaffa Gate",
+  "name": "שער יפו",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "אחד משערי חומות העיר העתיקה; ממנו יצאה הדרך ליפו."
+ },
+ {
+  "id": "damascus-gate",
+  "wiki": "Damascus Gate",
+  "name": "שער שכם",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "השער המפואר בחומות שבנה סולימאן המפואר במאה ה-16."
+ },
+ {
+  "id": "carmel-market",
+  "wiki": "Carmel Market",
+  "name": "שוק הכרמל",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "medium",
+  "fact": "השוק הגדול בתל אביב, שהוקם בשנות ה-20 של המאה ה-20."
+ },
+ {
+  "id": "mamshit",
+  "wiki": "Mamshit",
+  "name": "ממשית",
+  "city": "הנגב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "העיר הנבטית הקטנה ביותר, ובה כנסיות עם רצפות פסיפס."
+ },
+ {
+  "id": "shivta",
+  "wiki": "Shivta",
+  "name": "שבטה",
+  "city": "הנגב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "עיר נבטית-ביזנטית במדבר, שחקלאיה אספו מי שיטפונות."
+ },
+ {
+  "id": "nahal-mearot",
+  "wiki": "Nahal Me'arot Nature Reserve",
+  "name": "מערות נחל מערות",
+  "city": "הכרמל",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "במערות נמצאו עדויות לחיי אדם לאורך כחצי מיליון שנה."
+ },
+ {
+  "id": "korazim",
+  "wiki": "Korazim National Park",
+  "name": "כורזים",
+  "city": "הגליל העליון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "עיירה יהודית עתיקה שנבנתה כולה מבזלת שחורה."
+ },
+ {
+  "id": "tel-arad",
+  "wiki": "Tel Arad",
+  "name": "תל ערד",
+  "city": "הנגב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "במצודה נמצא מקדש קטן עם מזבח — נדיר בממלכת יהודה."
+ },
+ {
+  "id": "beit-shearim",
+  "wiki": "Beit She'arim National Park",
+  "name": "בית שערים",
+  "city": "עמק יזרעאל",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "נקברו כאן רבי יהודה הנשיא ורבים מבני דורו, במערות קבורה חצובות."
+ },
+ {
+  "id": "sataf",
+  "wiki": "Sataf",
+  "name": "סטף",
+  "city": "הרי ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "טרסות חקלאיות משוחזרות סביב שני מעיינות."
+ },
+ {
+  "id": "ein-karem",
+  "wiki": "Ein Karem",
+  "name": "עין כרם",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "כפר ציורי בין גבעות, ובו כנסיות המיוחסות ליוחנן המטביל."
+ },
+ {
+  "id": "hurshat-tal",
+  "wiki": "Hurshat Tal",
+  "name": "חורשת טל",
+  "city": "הגליל העליון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "חורשת אלונים עתיקים לצד בריכה בצורת קשת."
+ },
+ {
+  "id": "mount-arbel",
+  "wiki": "Mount Arbel",
+  "name": "הר ארבל",
+  "city": "הגליל התחתון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "מצוק תלול מעל הכנרת, ובו מערות שנחצבו כמבצר."
+ },
+ {
+  "id": "kinneret-cemetery",
+  "wiki": "Kinneret Cemetery",
+  "name": "בית הקברות כנרת",
+  "city": "עמק הירדן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "קבורים בו המשוררת רחל ואנשי העלייה השנייה, על שפת הכנרת."
+ },
+ {
+  "id": "safed",
+  "wiki": "Safed",
+  "name": "צפת",
+  "city": "צפת",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "מרכז הקבלה במאה ה-16 ואחת מארבע ערי הקודש."
+ },
+ {
+  "id": "atlit-camp",
+  "wiki": "Atlit detainee camp",
+  "name": "מחנה המעפילים עתלית",
+  "city": "עתלית",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "הבריטים כלאו כאן עולים \"בלתי לגליים\" לפני קום המדינה."
+ },
+ {
+  "id": "ein-hod",
+  "wiki": "Ein Hod",
+  "name": "עין הוד",
+  "city": "הכרמל",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "כפר אמנים שנוסד ב-1953 על ידי מרסל ינקו."
+ },
+ {
+  "id": "zichron-yaakov",
+  "wiki": "Zikhron Ya'akov",
+  "name": "זכרון יעקב",
+  "city": "זכרון יעקב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "נקראה על שם אביו של הברון רוטשילד, יעקב."
+ },
+ {
+  "id": "rosh-pinna",
+  "wiki": "Rosh Pinna",
+  "name": "ראש פינה",
+  "city": "הגליל העליון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "מהמושבות הראשונות בארץ, שנוסדה ב-1882."
+ },
+ {
+  "id": "metula",
+  "wiki": "Metula",
+  "name": "מטולה",
+  "city": "הגליל העליון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "הישוב הצפוני ביותר בישראל."
+ },
+ {
+  "id": "hai-bar-yotvata",
+  "wiki": "Hai-Bar Yotvata Nature Reserve",
+  "name": "חי-בר יטבתה",
+  "city": "הערבה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "כאן מגדלים ומשיבים לטבע בעלי חיים מדבריים כמו ראם ופרא."
+ },
+ {
+  "id": "tel-beer-sheba",
+  "wiki": "Tel Be'er Sheva",
+  "name": "תל באר שבע",
+  "city": "באר שבע",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "עיר מתוכננת מתקופת המקרא, עם מערכת מים חצובה מרשימה."
+ },
+ {
+  "id": "yehiam",
+  "wiki": "Yehiam Fortress",
+  "name": "מבצר יחיעם",
+  "city": "הגליל המערבי",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "מבצר צלבני ששוקם במאה ה-18 בידי השליט הבדואי דאהר אל-עמר."
+ },
+ {
+  "id": "kfar-kama",
+  "wiki": "Kfar Kama",
+  "name": "כפר כמא",
+  "city": "הגליל התחתון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "כפר צ'רקסי — אחד משניים בלבד בישראל."
+ },
+ {
+  "id": "ramat-hanadiv",
+  "wiki": "Ramat HaNadiv",
+  "name": "רמת הנדיב",
+  "city": "זכרון יעקב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "גן הזיכרון שבו קבורים הברון רוטשילד ורעייתו."
+ },
+ {
+  "id": "gan-hashlosha",
+  "wiki": "Gan HaShlosha National Park",
+  "name": "גן השלושה",
+  "city": "עמק המעיינות",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "הבריכות הטבעיות שומרות על טמפרטורה של כ-28 מעלות כל השנה."
+ },
+ {
+  "id": "yarkon-park",
+  "wiki": "Yarkon Park",
+  "name": "פארק הירקון",
+  "city": "תל אביב",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "הפארק העירוני הגדול בתל אביב, לאורך נחל הירקון."
+ },
+ {
+  "id": "degania",
+  "wiki": "Degania Alef",
+  "name": "דגניה א'",
+  "city": "עמק הירדן",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "\"אם הקבוצות\" — הקבוצה הראשונה בארץ, שנוסדה ב-1910."
+ },
+ {
+  "id": "white-tower-ramla",
+  "wiki": "White Mosque (Ramla)",
+  "name": "המגדל הלבן",
+  "city": "רמלה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "הצריח הגבוה הוא כמעט כל מה שנותר עומד מהמסגד הלבן מימי הביניים."
+ },
+ {
+  "id": "pool-of-arches",
+  "wiki": "Pool of the Arches",
+  "name": "בריכת הקשתות",
+  "city": "רמלה",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "מאגר מים תת-קרקעי מהמאה ה-8 שבו שטים היום בסירות."
+ },
+ {
+  "id": "siloam-tunnel",
+  "wiki": "Siloam tunnel",
+  "name": "נקבת השילוח",
+  "city": "ירושלים",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "נחצבה בימי חזקיהו, ועל קירה נמצאה כתובת עברית עתיקה המתארת את סיום החציבה."
+ },
+ {
+  "id": "tel-hazor",
+  "wiki": "Tel Hazor",
+  "name": "תל חצור",
+  "city": "הגליל העליון",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "העיר הכנענית הגדולה בארץ, ואתר מורשת עולמית."
+ },
+ {
+  "id": "beit-alpha",
+  "wiki": "Beit Alpha",
+  "name": "בית הכנסת בית אלפא",
+  "city": "עמק המעיינות",
+  "country": "ישראל",
+  "category": "israel",
+  "difficulty": "pro",
+  "fact": "ברצפת בית הכנסת פסיפס גלגל המזלות מהמאה ה-6."
+ }
+]

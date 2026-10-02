@@ -1,0 +1,60 @@
+.app {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/*
+ * כפתורי ההעדפות יושבים בפינה התחתונה: הפינה העליונה תפוסה
+ * בכל המסכים (מונה סיבובים, בקרות מנהל), והתחתונה פנויה.
+ */
+.overlay {
+  position: fixed;
+  inset-block-end: calc(var(--space-3) + var(--safe-bottom));
+  inset-inline-start: var(--space-3);
+  z-index: var(--z-header);
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  pointer-events: none;
+}
+
+.overlay > * {
+  pointer-events: auto;
+}
+
+.preferences {
+  display: flex;
+  gap: var(--space-1);
+}
+
+.preferenceButton {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  font-size: var(--text-sm);
+  background: rgb(14 22 38 / 70%);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  opacity: 0.55;
+  transition:
+    opacity var(--duration-base) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+  backdrop-filter: blur(8px);
+}
+
+.preferenceButton:hover {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+/* במסך השחקן התחתית תפוסה בכפתור "אישור" — הכפתורים עוברים לפינה העליונה. */
+.overlayTop {
+  inset-block-end: auto;
+  inset-block-start: calc(var(--space-3) + var(--safe-top));
+  inset-inline-start: auto;
+  inset-inline-end: var(--space-3);
+}

@@ -1,0 +1,282 @@
+.page {
+  display: grid;
+  flex: 1;
+  min-height: 0;
+  grid-template-areas:
+    'header header'
+    'stage scoreboard';
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
+  gap: var(--space-5);
+  width: 100%;
+  max-width: var(--content-max);
+  padding: calc(var(--space-4) + var(--safe-top)) var(--space-5) calc(var(--space-4) + var(--safe-bottom));
+  margin-inline: auto;
+}
+
+/* ── כותרת ─────────────────────────────────────────────────── */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: header;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress {
+  display: flex;
+  gap: var(--space-2);
+  align-items: baseline;
+}
+
+.progressLabel {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-subtle);
+}
+
+.progressValue {
+  font-size: var(--text-xl);
+  font-weight: 900;
+}
+
+.progressTotal {
+  font-size: var(--text-base);
+  color: var(--color-text-subtle);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.confirm {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  padding-inline-start: var(--space-3);
+  background: var(--color-danger-soft);
+  border-radius: var(--radius-pill);
+}
+
+.confirmText {
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+/* ── במה מרכזית ────────────────────────────────────────────── */
+
+.stage {
+  display: flex;
+  grid-area: stage;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+.photo {
+  flex: 1;
+  min-height: 0;
+}
+
+.questionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.revealPane {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.revealPane > :first-child {
+  flex: 1;
+  min-height: 0;
+}
+
+.nextIn {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.prompt {
+  font-size: var(--text-2xl);
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.locationName {
+  font-size: var(--text-5xl);
+  line-height: 1.05;
+  background: linear-gradient(120deg, #fff, var(--color-primary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.answered {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: center;
+  width: min(340px, 80vw);
+}
+
+.answeredBar {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  background: var(--color-surface-strong);
+  border-radius: var(--radius-pill);
+}
+
+.answeredFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--radius-pill);
+}
+
+.answeredText {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* ── הפוגה וספירה ──────────────────────────────────────────── */
+
+.intermission,
+.countdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.intermissionIcon {
+  font-size: var(--text-4xl);
+}
+
+.intermissionText {
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+}
+
+.countdownLabel {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.countdownNumber {
+  display: block;
+  font-size: var(--text-6xl);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-primary);
+  text-shadow: 0 0 60px rgb(33 212 180 / 55%);
+}
+
+/* ── לוח ניקוד ─────────────────────────────────────────────── */
+
+.scoreboard {
+  display: flex;
+  grid-area: scoreboard;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-height: 0;
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.scoreboardTitle {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+
+.scoreList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.scoreRow {
+  display: grid;
+  grid-template-columns: 1.5rem auto 1fr auto;
+  gap: var(--space-2);
+  align-items: center;
+  padding: var(--space-2);
+  border-radius: var(--radius-sm);
+}
+
+.scoreRow:nth-child(odd) {
+  background: var(--color-surface);
+}
+
+.scoreRank {
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--color-text-subtle);
+  text-align: center;
+}
+
+.scoreName {
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scoreValue {
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+/* ── מסכים צרים ────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .page {
+    grid-template-areas:
+      'header'
+      'stage'
+      'scoreboard';
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    grid-template-columns: 1fr;
+  }
+
+  .locationName {
+    font-size: var(--text-3xl);
+  }
+
+  .scoreboard {
+    max-height: 30dvh;
+  }
+}

@@ -1,0 +1,902 @@
+[
+ {
+  "id": "statue-of-liberty",
+  "wiki": "Statue of Liberty",
+  "name": "פסל החירות",
+  "city": "ניו יורק",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "מתנה מצרפת ב-1886; צבעו הירוק הוא תחמוצת של נחושת."
+ },
+ {
+  "id": "golden-gate",
+  "wiki": "Golden Gate Bridge",
+  "name": "גשר שער הזהב",
+  "city": "סן פרנסיסקו",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "צבעו הרשמי נקרא \"כתום בינלאומי\"."
+ },
+ {
+  "id": "christ-the-redeemer",
+  "wiki": "Christ the Redeemer (statue)",
+  "name": "פסל ישו הגואל",
+  "city": "ריו דה ז'ניירו",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "עומד על פסגת הר קורקובדו בגובה כ-700 מטר."
+ },
+ {
+  "id": "machu-picchu",
+  "wiki": "Machu Picchu",
+  "name": "מאצ'ו פיצ'ו",
+  "city": "קוסקו",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "עיר אינקה בהרי האנדים שהתגלתה לעולם ב-1911."
+ },
+ {
+  "id": "grand-canyon",
+  "wiki": "Grand Canyon",
+  "name": "הגרנד קניון",
+  "city": "אריזונה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "נהר הקולורדו חצב אותו במשך מיליוני שנים, עד עומק של כ-1.8 ק\"מ."
+ },
+ {
+  "id": "niagara-falls",
+  "wiki": "Niagara Falls",
+  "name": "מפלי הניאגרה",
+  "city": "ניאגרה",
+  "country": "ארצות הברית / קנדה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "המפלים יושבים על הגבול בין ארצות הברית לקנדה."
+ },
+ {
+  "id": "empire-state",
+  "wiki": "Empire State Building",
+  "name": "בניין האמפייר סטייט",
+  "city": "ניו יורק",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "נבנה בתוך כשנה בלבד ונפתח ב-1931."
+ },
+ {
+  "id": "white-house",
+  "wiki": "White House",
+  "name": "הבית הלבן",
+  "city": "וושינגטון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "כל נשיאי ארצות הברית גרו בו, חוץ מג'ורג' וושינגטון."
+ },
+ {
+  "id": "mount-rushmore",
+  "wiki": "Mount Rushmore",
+  "name": "הר ראשמור",
+  "city": "דקוטה הדרומית",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "ראשי ארבעה נשיאים, כל אחד בגובה של כ-18 מטר."
+ },
+ {
+  "id": "chichen-itza",
+  "wiki": "Chichen Itza",
+  "name": "צ'יצ'ן איצה",
+  "city": "יוקטן",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "בימי השוויון, הצל על מדרגות הפירמידה נראה כמו נחש יורד."
+ },
+ {
+  "id": "cn-tower",
+  "wiki": "CN Tower",
+  "name": "מגדל CN",
+  "city": "טורונטו",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "במשך יותר מ-30 שנה היה המבנה העצמאי הגבוה בעולם."
+ },
+ {
+  "id": "space-needle",
+  "wiki": "Space Needle",
+  "name": "ספייס נידל",
+  "city": "סיאטל",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "נבנה ליריד העולמי של 1962."
+ },
+ {
+  "id": "iguazu-falls",
+  "wiki": "Iguazu Falls",
+  "name": "מפלי איגואסו",
+  "city": "מיסיונס",
+  "country": "ארגנטינה / ברזיל",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "כ-275 מפלים על הגבול בין ארגנטינה לברזיל."
+ },
+ {
+  "id": "sugarloaf",
+  "wiki": "Sugarloaf Mountain",
+  "name": "הר סוכר",
+  "city": "ריו דה ז'ניירו",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "עולים אליו ברכבל מאז 1912."
+ },
+ {
+  "id": "moai",
+  "wiki": "Moai",
+  "name": "פסלי המואי",
+  "city": "אי הפסחא",
+  "country": "צ'ילה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "כמעט 1,000 פסלים ענקיים שגילפו תושבי האי מאבן געשית."
+ },
+ {
+  "id": "panama-canal",
+  "wiki": "Panama Canal",
+  "name": "תעלת פנמה",
+  "city": "פנמה",
+  "country": "פנמה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "תאי שיט מרימים את הספינות כ-26 מטר מעל פני הים."
+ },
+ {
+  "id": "lincoln-memorial",
+  "wiki": "Lincoln Memorial",
+  "name": "אנדרטת לינקולן",
+  "city": "וושינגטון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "כאן נשא מרטין לותר קינג את נאום \"יש לי חלום\"."
+ },
+ {
+  "id": "us-capitol",
+  "wiki": "United States Capitol",
+  "name": "הקפיטול",
+  "city": "וושינגטון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "בית הקונגרס של ארצות הברית."
+ },
+ {
+  "id": "gateway-arch",
+  "wiki": "Gateway Arch",
+  "name": "קשת השער",
+  "city": "סנט לואיס",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "הקשת הגבוהה בעולם — 192 מטר."
+ },
+ {
+  "id": "teotihuacan",
+  "wiki": "Pyramid of the Sun",
+  "name": "פירמידת השמש",
+  "city": "טאוטיהואקן",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "אחת הפירמידות הגדולות בעולם, ליד מקסיקו סיטי."
+ },
+ {
+  "id": "copacabana",
+  "wiki": "Copacabana, Rio de Janeiro",
+  "name": "חוף קופקבנה",
+  "city": "ריו דה ז'ניירו",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "הטיילת מרוצפת בדוגמת גלים בשחור-לבן."
+ },
+ {
+  "id": "old-faithful",
+  "wiki": "Old Faithful",
+  "name": "גייזר אולד פייתפול",
+  "city": "ילוסטון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "מתפרץ בערך כל שעה וחצי, בדיוק מפתיע."
+ },
+ {
+  "id": "angel-falls",
+  "wiki": "Angel Falls",
+  "name": "מפלי אנחל",
+  "city": "קנאימה",
+  "country": "ונצואלה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "המפל הגבוה בעולם — כ-979 מטר מהשפה ועד למטה."
+ },
+ {
+  "id": "salar-de-uyuni",
+  "wiki": "Salar de Uyuni",
+  "name": "סלאר דה אויוני",
+  "city": "פוטוסי",
+  "country": "בוליביה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "מישור המלח הגדול בעולם הופך למראה ענקית אחרי גשם."
+ },
+ {
+  "id": "perito-moreno",
+  "wiki": "Perito Moreno Glacier",
+  "name": "קרחון פריטו מורנו",
+  "city": "פטגוניה",
+  "country": "ארגנטינה",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "קיר קרח בגובה כ-70 מטר שגושים ענקיים מתנתקים ממנו."
+ },
+ {
+  "id": "washington-monument",
+  "wiki": "Washington Monument",
+  "name": "אנדרטת וושינגטון",
+  "city": "וושינגטון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "האובליסק הגבוה בעולם, כ-169 מטר."
+ },
+ {
+  "id": "brooklyn-bridge",
+  "wiki": "Brooklyn Bridge",
+  "name": "גשר ברוקלין",
+  "city": "ניו יורק",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "כשנפתח ב-1883 היה גשר התלייה הארוך בעולם."
+ },
+ {
+  "id": "chrysler-building",
+  "wiki": "Chrysler Building",
+  "name": "בניין קרייזלר",
+  "city": "ניו יורק",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "יצירת מופת של סגנון הארט דקו."
+ },
+ {
+  "id": "alcatraz",
+  "wiki": "Alcatraz Island",
+  "name": "אלקטרז",
+  "city": "סן פרנסיסקו",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "כלא פדרלי על אי במפרץ, שבו ישב אל קפונה."
+ },
+ {
+  "id": "central-park",
+  "wiki": "Bethesda Terrace and Fountain",
+  "name": "מזרקת בת׳סדה בסנטרל פארק",
+  "city": "ניו יורק",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "easy",
+  "fact": "הפסל \"מלאך המים\" שבמרכז המזרקה פוסל בידי אמה סטבינס ב-1873."
+ },
+ {
+  "id": "monument-valley",
+  "wiki": "Monument Valley",
+  "name": "עמק המונומנטים",
+  "city": "יוטה / אריזונה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "צוקי אבן חול אדומים שהופיעו באינספור מערבונים."
+ },
+ {
+  "id": "antelope-canyon",
+  "wiki": "Antelope Canyon",
+  "name": "קניון האנטילופה",
+  "city": "אריזונה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "קניון צר שקרני אור חודרות אליו מלמעלה."
+ },
+ {
+  "id": "horseshoe-bend",
+  "wiki": "Horseshoe Bend (Arizona)",
+  "name": "עיקול הפרסה",
+  "city": "אריזונה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "נהר הקולורדו מתפתל כאן בצורת פרסה, 300 מטר מתחת לשפה."
+ },
+ {
+  "id": "half-dome",
+  "wiki": "Half Dome",
+  "name": "חצי הכיפה",
+  "city": "יוסמיטי",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "כיפת גרניט שנראית כאילו נחתכה לשניים."
+ },
+ {
+  "id": "delicate-arch",
+  "wiki": "Delicate Arch",
+  "name": "הקשת העדינה",
+  "city": "יוטה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "מופיעה על לוחיות הרישוי של יוטה."
+ },
+ {
+  "id": "devils-tower",
+  "wiki": "Devils Tower",
+  "name": "מגדל השטן",
+  "city": "ויומינג",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "המונומנט הלאומי הראשון של ארצות הברית (1906)."
+ },
+ {
+  "id": "hoover-dam",
+  "wiki": "Hoover Dam",
+  "name": "סכר הובר",
+  "city": "נבדה / אריזונה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "יצר את אגם מיד, מאגר המים הגדול בארצות הברית."
+ },
+ {
+  "id": "chateau-frontenac",
+  "wiki": "Château Frontenac",
+  "name": "שאטו פרונטנאק",
+  "city": "קוויבק סיטי",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "מכונה המלון המצולם ביותר בעולם."
+ },
+ {
+  "id": "moraine-lake",
+  "wiki": "Moraine Lake",
+  "name": "אגם מורן",
+  "city": "אלברטה",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "צבעו הטורקיז נובע מאבקת סלע עדינה מהקרחונים."
+ },
+ {
+  "id": "lake-louise",
+  "wiki": "Lake Louise",
+  "name": "אגם לואיז",
+  "city": "אלברטה",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "נקרא על שם בתה של המלכה ויקטוריה."
+ },
+ {
+  "id": "tikal",
+  "wiki": "Tikal",
+  "name": "טיקל",
+  "city": "פטן",
+  "country": "גואטמלה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "עיר מאיה שפירמידותיה מזדקרות מעל הג'ונגל."
+ },
+ {
+  "id": "palenque",
+  "wiki": "Palenque",
+  "name": "פלנקה",
+  "city": "צ'יאפס",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "עיר מאיה שבה נמצא קברו של המלך פקאל."
+ },
+ {
+  "id": "cartagena",
+  "wiki": "Walled City of Cartagena",
+  "name": "העיר העתיקה של קרטחנה",
+  "city": "קרטחנה",
+  "country": "קולומביה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "עיר קולוניאלית מבוצרת עם מרפסות פרחים צבעוניות."
+ },
+ {
+  "id": "torres-del-paine",
+  "wiki": "Torres del Paine National Park",
+  "name": "טורס דל פאינה",
+  "city": "פטגוניה",
+  "country": "צ'ילה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "שלושה מגדלי גרניט מעל אגם קרחוני."
+ },
+ {
+  "id": "fitz-roy",
+  "wiki": "Monte Fitz Roy",
+  "name": "הר פיץ רוי",
+  "city": "פטגוניה",
+  "country": "ארגנטינה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "המקור לקו ההרים בלוגו של פטגוניה."
+ },
+ {
+  "id": "valle-de-la-luna",
+  "wiki": "Valle de la Luna (Chile)",
+  "name": "עמק הירח",
+  "city": "מדבר אטקמה",
+  "country": "צ'ילה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "באחד המדבריות היבשים בעולם, הנוף נראה כמו פני הירח."
+ },
+ {
+  "id": "caminito",
+  "wiki": "Caminito",
+  "name": "קמיניטו",
+  "city": "בואנוס איירס",
+  "country": "ארגנטינה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "רחוב הבתים הצבעוניים של שכונת לה בוקה."
+ },
+ {
+  "id": "el-capitolio-havana",
+  "wiki": "El Capitolio",
+  "name": "הקפיטוליו",
+  "city": "הוואנה",
+  "country": "קובה",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "נבנה ב-1929 בהשראת הקפיטול בוושינגטון."
+ },
+ {
+  "id": "bryce-canyon",
+  "wiki": "Bryce Canyon National Park",
+  "name": "קניון בראיס",
+  "city": "יוטה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "אלפי \"הודוס\" — עמודי סלע כתומים דקים."
+ },
+ {
+  "id": "cliff-palace",
+  "wiki": "Cliff Palace",
+  "name": "ארמון הצוק",
+  "city": "מסה ורדה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "כפר של בני הפואבלו שנבנה בתוך מצוק לפני כ-800 שנה."
+ },
+ {
+  "id": "flatiron",
+  "wiki": "Flatiron Building",
+  "name": "בניין הפלטירון",
+  "city": "ניו יורק",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "צורתו המשולשת מזכירה מגהץ."
+ },
+ {
+  "id": "fallingwater",
+  "wiki": "Fallingwater",
+  "name": "בית המפל",
+  "city": "פנסילבניה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "פרנק לויד רייט בנה את הבית ממש מעל מפל מים."
+ },
+ {
+  "id": "chapultepec-castle",
+  "wiki": "Chapultepec Castle",
+  "name": "טירת צ'פולטפק",
+  "city": "מקסיקו סיטי",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "הטירה היחידה בצפון אמריקה ששימשה מגורים למלכים."
+ },
+ {
+  "id": "bellas-artes",
+  "wiki": "Palacio de Bellas Artes",
+  "name": "ארמון האמנויות היפות",
+  "city": "מקסיקו סיטי",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "בתוכו ציורי קיר של דייגו ריברה."
+ },
+ {
+  "id": "uros-islands",
+  "wiki": "Uros",
+  "name": "האיים הצפים של האורוס",
+  "city": "אגם טיטיקקה",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "איים מלאכותיים שנבנו מקני טוטורה."
+ },
+ {
+  "id": "vinicunca",
+  "wiki": "Vinicunca",
+  "name": "הר הקשת",
+  "city": "קוסקו",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "פסים בצבעים שונים של מינרלים, בגובה יותר מ-5,000 מטר."
+ },
+ {
+  "id": "pelourinho",
+  "wiki": "Pelourinho",
+  "name": "פלורינו",
+  "city": "סלבדור",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "רובע קולוניאלי צבעוני בעיר הבירה הראשונה של ברזיל."
+ },
+ {
+  "id": "brasilia-cathedral",
+  "wiki": "Cathedral of Brasília",
+  "name": "הקתדרלה של ברזיליה",
+  "city": "ברזיליה",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "תכנן אוסקר נימאייר — 16 עמודים מעוקלים כמו ידיים מושטות לשמיים."
+ },
+ {
+  "id": "mendenhall",
+  "wiki": "Mendenhall Glacier",
+  "name": "קרחון מנדנהול",
+  "city": "ג'ונו",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "קרחון באורך כ-20 ק\"מ שמגיע עד שולי ג'ונו, בירת אלסקה."
+ },
+ {
+  "id": "santa-monica-pier",
+  "wiki": "Santa Monica Pier",
+  "name": "מזח סנטה מוניקה",
+  "city": "סנטה מוניקה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "medium",
+  "fact": "כאן מסתיים רשמית כביש 66 ההיסטורי."
+ },
+ {
+  "id": "mono-lake",
+  "wiki": "Mono Lake",
+  "name": "אגם מונו",
+  "city": "קליפורניה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "מגדלי טופה לבנים שנוצרו מתחת למים ונחשפו כשהאגם ירד."
+ },
+ {
+  "id": "the-wave",
+  "wiki": "The Wave (Arizona)",
+  "name": "הגל",
+  "city": "אריזונה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "רק כמה עשרות מבקרים בהגרלה מקבלים אישור להגיע בכל יום."
+ },
+ {
+  "id": "grand-prismatic",
+  "wiki": "Grand Prismatic Spring",
+  "name": "המעיין הפריזמטי הגדול",
+  "city": "ילוסטון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "צבעי הקשת נוצרים מחיידקים שחיים במים החמים."
+ },
+ {
+  "id": "crater-lake",
+  "wiki": "Crater Lake",
+  "name": "אגם הלוע",
+  "city": "אורגון",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "האגם העמוק בארצות הברית, בתוך הר געש שקרס."
+ },
+ {
+  "id": "racetrack-playa",
+  "wiki": "Racetrack Playa",
+  "name": "הרייסטרק פלאיה",
+  "city": "עמק המוות",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "סלעים \"נעים\" לבד ומשאירים שובל — בזכות שכבות קרח דקות."
+ },
+ {
+  "id": "cano-cristales",
+  "wiki": "Caño Cristales",
+  "name": "קניו קריסטלס",
+  "city": "מטה",
+  "country": "קולומביה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "\"נהר חמשת הצבעים\" — צמח מים הופך אותו לאדום."
+ },
+ {
+  "id": "marble-caves",
+  "wiki": "Marble Caves",
+  "name": "מערות השיש",
+  "city": "אגם חנרל קררה",
+  "country": "צ'ילה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז."
+ },
+ {
+  "id": "kaieteur",
+  "wiki": "Kaieteur Falls",
+  "name": "מפלי קאיטור",
+  "city": "פוטארו-סיפארוני",
+  "country": "גיאנה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "מהמפלים החזקים בעולם בנפילה חד-שלבית."
+ },
+ {
+  "id": "mount-roraima",
+  "wiki": "Mount Roraima",
+  "name": "הר רוראימה",
+  "city": "גראן סבנה",
+  "country": "ונצואלה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "הר שולחן שטוח שהשראה ל\"העולם האבוד\" של קונן דויל."
+ },
+ {
+  "id": "lencois",
+  "wiki": "Lençóis Maranhenses National Park",
+  "name": "לנסואיס מרנייסס",
+  "city": "מרניאו",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "דיונות לבנות עם לגונות של מי גשמים ביניהן."
+ },
+ {
+  "id": "chan-chan",
+  "wiki": "Chan Chan",
+  "name": "צ'אן צ'אן",
+  "city": "טרוחיו",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "העיר הגדולה ביותר מבוץ באמריקה הקדם-קולומביאנית."
+ },
+ {
+  "id": "nazca-lines",
+  "wiki": "Nazca Lines",
+  "name": "קווי נסקה",
+  "city": "נסקה",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "ציורי ענק במדבר שנראים במלואם רק מהאוויר."
+ },
+ {
+  "id": "huacachina",
+  "wiki": "Huacachina",
+  "name": "ואקצ'ינה",
+  "city": "איקה",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "נווה מדבר קטן מוקף דיונות ענק."
+ },
+ {
+  "id": "sacsayhuaman",
+  "wiki": "Sacsayhuamán",
+  "name": "סקסאיוואמן",
+  "city": "קוסקו",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "אבני ענק משתלבות בדיוק כזה שאי אפשר להכניס ביניהן להב."
+ },
+ {
+  "id": "hierve-el-agua",
+  "wiki": "Hierve el Agua",
+  "name": "יירבה אל אגואה",
+  "city": "אואחקה",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "\"מפלים מאובנים\" של משקעי מינרלים על צלע ההר."
+ },
+ {
+  "id": "ik-kil",
+  "wiki": "Ik Kil",
+  "name": "סנוטה איק קיל",
+  "city": "יוקטן",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "בור שקיעה טבעי עם מים שקופים ושורשים שמשתלשלים."
+ },
+ {
+  "id": "spotted-lake",
+  "wiki": "Spotted Lake",
+  "name": "האגם המנומר",
+  "city": "קולומביה הבריטית",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "בקיץ המים מתאדים ומשאירים עיגולים צבעוניים של מינרלים."
+ },
+ {
+  "id": "hopewell-rocks",
+  "wiki": "Hopewell Rocks",
+  "name": "סלעי הופוול",
+  "city": "ניו ברנזוויק",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "במפרץ פנדי — הגאות הגבוהה בעולם — הסלעים נראים כמו עציצים."
+ },
+ {
+  "id": "peggys-cove",
+  "wiki": "Peggy's Cove",
+  "name": "פגיז קוב",
+  "city": "נובה סקוטיה",
+  "country": "קנדה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "כפר דייגים עם מגדלור על סלעי גרניט."
+ },
+ {
+  "id": "valparaiso",
+  "wiki": "Valparaíso",
+  "name": "ולפראיסו",
+  "city": "ולפראיסו",
+  "country": "צ'ילה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "בתים צבעוניים על גבעות, ומעליות רכבל עתיקות."
+ },
+ {
+  "id": "guanajuato",
+  "wiki": "Guanajuato (city)",
+  "name": "גואנחואטו",
+  "city": "גואנחואטו",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "עיר מכרות כסף עם מנהרות תת-קרקעיות לתנועה."
+ },
+ {
+  "id": "copan",
+  "wiki": "Copán",
+  "name": "קופאן",
+  "city": "קופאן",
+  "country": "הונדורס",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "עיר מאיה עם מדרגות ההירוגליפים הארוכות ביותר."
+ },
+ {
+  "id": "teatro-amazonas",
+  "wiki": "Amazon Theatre",
+  "name": "תיאטרון האמזונס",
+  "city": "מנאוס",
+  "country": "ברזיל",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "בית אופרה מפואר בלב ג'ונגל האמזונס, מתקופת הגומי."
+ },
+ {
+  "id": "shiprock",
+  "wiki": "Shiprock",
+  "name": "שיפרוק",
+  "city": "ניו מקסיקו",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "שארית של צוואר געשי שמזדקרת מהמישור."
+ },
+ {
+  "id": "ollantaytambo",
+  "wiki": "Ollantaytambo",
+  "name": "אויאנטאיטמבו",
+  "city": "העמק הקדוש",
+  "country": "פרו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "עיירת אינקה עם טרסות ענק על צלע ההר."
+ },
+ {
+  "id": "white-sands",
+  "wiki": "White Sands National Park",
+  "name": "החולות הלבנים",
+  "city": "ניו מקסיקו",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "שדה הדיונות הגדול בעולם מגבס."
+ },
+ {
+  "id": "fly-geyser",
+  "wiki": "Fly Geyser",
+  "name": "גייזר פליי",
+  "city": "נבדה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "נוצר בטעות ב-1964 מקידוח באר, והפך לצבעוני."
+ },
+ {
+  "id": "salt-cathedral",
+  "wiki": "Salt Cathedral of Zipaquirá",
+  "name": "קתדרלת המלח",
+  "city": "זיפקירה",
+  "country": "קולומביה",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "כנסייה שנחצבה 200 מטר מתחת לאדמה במכרה מלח."
+ },
+ {
+  "id": "tulum",
+  "wiki": "Tulum",
+  "name": "טולום",
+  "city": "קינטנה רו",
+  "country": "מקסיקו",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "עיר מאיה מוקפת חומה על צוק מעל הים הקריבי."
+ },
+ {
+  "id": "bodie",
+  "wiki": "Bodie, California",
+  "name": "בודי",
+  "city": "קליפורניה",
+  "country": "ארצות הברית",
+  "category": "americas",
+  "difficulty": "pro",
+  "fact": "עיירת רפאים מתקופת הבהלה לזהב, שנשמרה \"כמו שהייתה\"."
+ }
+]

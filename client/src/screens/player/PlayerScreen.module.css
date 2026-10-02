@@ -1,0 +1,19 @@
+/*
+ * מסכי המשחק תופסים בדיוק את גובה החלון ולא יותר.
+ * זה מה שמאפשר למפה למלא את המקום שנותר בלי לגלוש מחוץ למסך —
+ * גובה סופי אצל ההורה הוא תנאי לכך ש-flex:1 אצל הצאצא יעבוד.
+ */
+.screen {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.stage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}

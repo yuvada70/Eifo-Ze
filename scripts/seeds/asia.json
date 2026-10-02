@@ -1,0 +1,902 @@
+[
+ {
+  "id": "taj-mahal",
+  "wiki": "Taj Mahal",
+  "name": "טאג' מהאל",
+  "city": "אגרה",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "מאוזוליאום משיש לבן שבנה הקיסר שאה ג'האן לזכר אשתו."
+ },
+ {
+  "id": "great-wall",
+  "wiki": "Great Wall of China",
+  "name": "החומה הסינית",
+  "city": "בדאלינג",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "כל קטעי החומה יחד משתרעים על יותר מ-20,000 ק\"מ."
+ },
+ {
+  "id": "mount-fuji",
+  "wiki": "Mount Fuji",
+  "name": "הר פוג'י",
+  "city": "הונשו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "ההר הגבוה ביפן (3,776 מ'), והוא הר געש פעיל."
+ },
+ {
+  "id": "petra",
+  "wiki": "Petra",
+  "name": "פטרה",
+  "city": "ואדי מוסא",
+  "country": "ירדן",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "\"העיר הוורודה\" של הנבטים, חצובה בסלע אבן חול."
+ },
+ {
+  "id": "burj-khalifa",
+  "wiki": "Burj Khalifa",
+  "name": "בורג' ח'ליפה",
+  "city": "דובאי",
+  "country": "איחוד האמירויות",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "הבניין הגבוה בעולם — 828 מטר."
+ },
+ {
+  "id": "angkor-wat",
+  "wiki": "Angkor Wat",
+  "name": "אנגקור ואט",
+  "city": "סיאם ריפ",
+  "country": "קמבודיה",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "המבנה הדתי הגדול בעולם, ומופיע על דגל קמבודיה."
+ },
+ {
+  "id": "forbidden-city",
+  "wiki": "Forbidden City",
+  "name": "העיר האסורה",
+  "city": "בייג'ינג",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "ארמון הקיסרים של סין במשך כ-500 שנה."
+ },
+ {
+  "id": "marina-bay-sands",
+  "wiki": "Marina Bay Sands",
+  "name": "מרינה ביי סנדס",
+  "city": "סינגפור",
+  "country": "סינגפור",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "על שלושת המגדלים מונחת \"ספינה\" עם בריכת אינסוף."
+ },
+ {
+  "id": "petronas-towers",
+  "wiki": "Petronas Towers",
+  "name": "מגדלי פטרונס",
+  "city": "קואלה לומפור",
+  "country": "מלזיה",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "היו הבניינים הגבוהים בעולם בשנים 1998–2004."
+ },
+ {
+  "id": "fushimi-inari",
+  "wiki": "Fushimi Inari-taisha",
+  "name": "מקדש פושימי אינרי",
+  "city": "קיוטו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "אלפי שערי טוריי כתומים יוצרים מנהרות על צלע ההר."
+ },
+ {
+  "id": "kinkaku-ji",
+  "wiki": "Kinkaku-ji",
+  "name": "מקדש ביתן הזהב",
+  "city": "קיוטו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "שתי הקומות העליונות מצופות עלי זהב."
+ },
+ {
+  "id": "terracotta-army",
+  "wiki": "Terracotta Army",
+  "name": "צבא הטרקוטה",
+  "city": "שיאן",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "אלפי לוחמי חרס בגודל טבעי, ולכל אחד פנים שונות."
+ },
+ {
+  "id": "potala-palace",
+  "wiki": "Potala Palace",
+  "name": "ארמון פוטלה",
+  "city": "להסה",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "מושבו של הדלאי לאמה, בגובה של כ-3,700 מטר."
+ },
+ {
+  "id": "gateway-of-india",
+  "wiki": "Gateway of India",
+  "name": "שער הודו",
+  "city": "מומבאי",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "נבנה לזכר ביקור המלך ג'ורג' החמישי ב-1911."
+ },
+ {
+  "id": "golden-temple",
+  "wiki": "Golden Temple",
+  "name": "מקדש הזהב",
+  "city": "אמריטסר",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "המקדש הקדוש ביותר לסיקים, והמטבח שלו מאכיל עשרות אלפים בחינם בכל יום."
+ },
+ {
+  "id": "sheikh-zayed-mosque",
+  "wiki": "Sheikh Zayed Grand Mosque",
+  "name": "מסגד שייח' זאיד",
+  "city": "אבו דאבי",
+  "country": "איחוד האמירויות",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "בו אחד משטיחי הקטיפה הגדולים בעולם שנארגו ביד."
+ },
+ {
+  "id": "burj-al-arab",
+  "wiki": "Burj Al Arab",
+  "name": "בורג' אל-ערב",
+  "city": "דובאי",
+  "country": "איחוד האמירויות",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "בנוי על אי מלאכותי בצורת מפרש."
+ },
+ {
+  "id": "ha-long-bay",
+  "wiki": "Hạ Long Bay",
+  "name": "מפרץ הא לונג",
+  "city": "קוואנג נין",
+  "country": "וייטנאם",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "כ-1,600 איים וצוקי גיר מזדקרים מהים."
+ },
+ {
+  "id": "oriental-pearl-tower",
+  "wiki": "Oriental Pearl Tower",
+  "name": "מגדל הפנינה המזרחית",
+  "city": "שנגחאי",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "מגדל טלוויזיה עם כדורים ורודים, סמל של שנגחאי."
+ },
+ {
+  "id": "victoria-harbour",
+  "wiki": "Victoria Harbour",
+  "name": "נמל ויקטוריה",
+  "city": "הונג קונג",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "מדי ערב מתקיים כאן מופע אורות על גורדי השחקים."
+ },
+ {
+  "id": "mount-everest",
+  "wiki": "Mount Everest",
+  "name": "הר האוורסט",
+  "city": "הרי ההימלאיה",
+  "country": "נפאל",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "ההר הגבוה בעולם — 8,849 מטר."
+ },
+ {
+  "id": "borobudur",
+  "wiki": "Borobudur",
+  "name": "בורובודור",
+  "city": "ג'אווה",
+  "country": "אינדונזיה",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "מקדש בודהיסטי ענק עם 72 סטופות בצורת פעמון."
+ },
+ {
+  "id": "shwedagon",
+  "wiki": "Shwedagon Pagoda",
+  "name": "פגודת שוודגון",
+  "city": "יאנגון",
+  "country": "מיאנמר",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "הסטופה מצופה זהב, ובראשה אלפי יהלומים ואבני חן."
+ },
+ {
+  "id": "grand-palace-bangkok",
+  "wiki": "Grand Palace",
+  "name": "הארמון המלכותי",
+  "city": "בנגקוק",
+  "country": "תאילנד",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "בו נמצא פסל בודהה האזמרגד, הקדוש ביותר בתאילנד."
+ },
+ {
+  "id": "wat-arun",
+  "wiki": "Wat Arun",
+  "name": "ואט ארון",
+  "city": "בנגקוק",
+  "country": "תאילנד",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "\"מקדש השחר\", מעוטר בחרסינה צבעונית."
+ },
+ {
+  "id": "lotus-temple",
+  "wiki": "Lotus Temple",
+  "name": "מקדש הלוטוס",
+  "city": "ניו דלהי",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "בית תפילה בהאי בצורת פרח לוטוס."
+ },
+ {
+  "id": "itsukushima",
+  "wiki": "Itsukushima Shrine",
+  "name": "מקדש איצוקושימה",
+  "city": "מיאג'ימה",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "שער הטוריי האדום \"צף\" על המים בזמן הגאות."
+ },
+ {
+  "id": "cappadocia",
+  "wiki": "Göreme",
+  "name": "גורמה",
+  "city": "קפדוקיה",
+  "country": "טורקיה",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "\"ארובות פיות\" מסלע געשי, ומאות כדורים פורחים בזריחה."
+ },
+ {
+  "id": "tokyo-skytree",
+  "wiki": "Tokyo Skytree",
+  "name": "טוקיו סקיטרי",
+  "city": "טוקיו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "מגדל השידור הגבוה בעולם — 634 מטר."
+ },
+ {
+  "id": "gardens-by-the-bay",
+  "wiki": "Gardens by the Bay",
+  "name": "גני המפרץ",
+  "city": "סינגפור",
+  "country": "סינגפור",
+  "category": "asia",
+  "difficulty": "easy",
+  "fact": "\"עצי-על\" מלאכותיים בגובה עד 50 מטר מכוסים בצמחים."
+ },
+ {
+  "id": "bagan",
+  "wiki": "Bagan",
+  "name": "באגאן",
+  "city": "מנדליי",
+  "country": "מיאנמר",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "במישור פזורים יותר מ-2,000 מקדשים ופגודות עתיקים."
+ },
+ {
+  "id": "chocolate-hills",
+  "wiki": "Chocolate Hills",
+  "name": "גבעות השוקולד",
+  "city": "בוהול",
+  "country": "הפיליפינים",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "יותר מ-1,200 גבעות שמשחימות בעונה היבשה."
+ },
+ {
+  "id": "banaue",
+  "wiki": "Banaue Rice Terraces",
+  "name": "טרסות האורז של באנאואה",
+  "city": "לוזון",
+  "country": "הפיליפינים",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "טרסות שנחצבו בהרים לפני כאלפיים שנה."
+ },
+ {
+  "id": "leshan-buddha",
+  "wiki": "Leshan Giant Buddha",
+  "name": "הבודהה הענק של לשאן",
+  "city": "לשאן",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "פסל בגובה 71 מטר שנחצב בצוק מעל מפגש נהרות."
+ },
+ {
+  "id": "zhangjiajie",
+  "wiki": "Zhangjiajie National Forest Park",
+  "name": "ז'אנגג'יאג'יה",
+  "city": "הונאן",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "עמודי אבן החול כאן היו השראה להרים המרחפים בסרט \"אווטאר\"."
+ },
+ {
+  "id": "li-river",
+  "wiki": "Li River",
+  "name": "נהר לי",
+  "city": "גווילין",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "הנוף שלו מופיע על השטר של 20 יואן."
+ },
+ {
+  "id": "hoi-an",
+  "wiki": "Hội An",
+  "name": "הוי אן",
+  "city": "קוואנג נאם",
+  "country": "וייטנאם",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "עיר נמל עתיקה שמתמלאת בלילה בפנסי משי צבעוניים."
+ },
+ {
+  "id": "hawa-mahal",
+  "wiki": "Hawa Mahal",
+  "name": "הווה מהאל",
+  "city": "ג'איפור",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "\"ארמון הרוחות\" — 953 חלונות קטנים שדרכם צפו נשות החצר ברחוב."
+ },
+ {
+  "id": "qutb-minar",
+  "wiki": "Qutb Minar",
+  "name": "קוטב מינאר",
+  "city": "דלהי",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "צריח לבנים בגובה 73 מטר מהמאה ה-13."
+ },
+ {
+  "id": "humayuns-tomb",
+  "wiki": "Humayun's Tomb",
+  "name": "קבר הומאיון",
+  "city": "דלהי",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "השראה לטאג' מהאל, שנבנה כשישים שנה אחריו."
+ },
+ {
+  "id": "registan",
+  "wiki": "Registan",
+  "name": "הרגיסטאן",
+  "city": "סמרקנד",
+  "country": "אוזבקיסטן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "כיכר שמוקפת בשלוש מדרסות מעוטרות באריחים כחולים."
+ },
+ {
+  "id": "naqsh-e-jahan",
+  "wiki": "Naqsh-e Jahan Square",
+  "name": "כיכר נקש-א-ג'האן",
+  "city": "אספהאן",
+  "country": "איראן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "מהכיכרות הגדולות בעולם, מוקפת מסגדים וארמון."
+ },
+ {
+  "id": "persepolis",
+  "wiki": "Persepolis",
+  "name": "פרספוליס",
+  "city": "פארס",
+  "country": "איראן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "בירת הטקסים של האימפריה הפרסית, שנשרפה בידי אלכסנדר מוקדון."
+ },
+ {
+  "id": "himeji-castle",
+  "wiki": "Himeji Castle",
+  "name": "טירת הימג'י",
+  "city": "הימג'י",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "מכונה \"טירת העגור הלבן\" ושרדה מלחמות ורעידות אדמה."
+ },
+ {
+  "id": "todai-ji",
+  "wiki": "Tōdai-ji",
+  "name": "מקדש טודאי-ג'י",
+  "city": "נארה",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "בתוכו פסל בודהה מברונזה בגובה כ-15 מטר; צבאים מסתובבים בחצר."
+ },
+ {
+  "id": "gyeongbokgung",
+  "wiki": "Gyeongbokgung",
+  "name": "ארמון גיונגבוקגונג",
+  "city": "סיאול",
+  "country": "דרום קוריאה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "הארמון הראשי של שושלת ג'וסון, מ-1395."
+ },
+ {
+  "id": "n-seoul-tower",
+  "wiki": "N Seoul Tower",
+  "name": "מגדל סיאול",
+  "city": "סיאול",
+  "country": "דרום קוריאה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "זוגות תולים על הגדר שלו מנעולי אהבה."
+ },
+ {
+  "id": "pamukkale",
+  "wiki": "Pamukkale",
+  "name": "פאמוקלה",
+  "city": "דניזלי",
+  "country": "טורקיה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "\"טירת הכותנה\" — טרסות לבנות של משקעי סידן ממעיינות חמים."
+ },
+ {
+  "id": "library-of-celsus",
+  "wiki": "Library of Celsus",
+  "name": "ספריית קלסוס",
+  "city": "אפסוס",
+  "country": "טורקיה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "הספרייה החזיקה כ-12,000 מגילות; חזיתה שוחזרה בשנות ה-70."
+ },
+ {
+  "id": "wadi-rum",
+  "wiki": "Wadi Rum",
+  "name": "ואדי רם",
+  "city": "עקבה",
+  "country": "ירדן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "\"עמק הירח\" — שם צולמו סרטים כמו \"המאדים\" ו\"חולית\"."
+ },
+ {
+  "id": "sigiriya",
+  "wiki": "Sigiriya",
+  "name": "סיגיריה",
+  "city": "מחוז מרכזי",
+  "country": "סרי לנקה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "מבצר מלכותי על ראש סלע בגובה כ-200 מטר."
+ },
+ {
+  "id": "tanah-lot",
+  "wiki": "Tanah Lot",
+  "name": "טנה לוט",
+  "city": "באלי",
+  "country": "אינדונזיה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "מקדש על סלע בים, שהופך לאי בגאות."
+ },
+ {
+  "id": "batu-caves",
+  "wiki": "Batu Caves",
+  "name": "מערות באטו",
+  "city": "סלנגור",
+  "country": "מלזיה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "272 מדרגות צבעוניות עולות אל מקדש הינדי במערת גיר."
+ },
+ {
+  "id": "merlion",
+  "wiki": "Merlion Park",
+  "name": "המרליון",
+  "city": "סינגפור",
+  "country": "סינגפור",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "יצור עם ראש אריה וגוף של דג — סמלה של סינגפור."
+ },
+ {
+  "id": "mehrangarh",
+  "wiki": "Mehrangarh",
+  "name": "מבצר מהרנגרה",
+  "city": "ג'ודפור",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "מתנשא מעל \"העיר הכחולה\" של ג'ודפור."
+ },
+ {
+  "id": "temple-of-heaven",
+  "wiki": "Temple of Heaven",
+  "name": "מקדש השמיים",
+  "city": "בייג'ינג",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "כאן התפללו הקיסרים ליבול טוב."
+ },
+ {
+  "id": "arashiyama",
+  "wiki": "Arashiyama",
+  "name": "ארשיאמה",
+  "city": "קיוטו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "ידוע ביער הבמבוק הגבוה שלו."
+ },
+ {
+  "id": "ulun-danu-bratan",
+  "wiki": "Pura Ulun Danu Bratan",
+  "name": "פורה אולון דנו בראטן",
+  "city": "באלי",
+  "country": "אינדונזיה",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "מקדש מים על שפת אגם הרי."
+ },
+ {
+  "id": "jaisalmer-fort",
+  "wiki": "Jaisalmer Fort",
+  "name": "מבצר ג'איסלמר",
+  "city": "ג'איסלמר",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "\"מבצר הזהב\" — עדיין גרים בו אלפי אנשים."
+ },
+ {
+  "id": "sultan-qaboos-mosque",
+  "wiki": "Sultan Qaboos Grand Mosque",
+  "name": "המסגד הגדול של סולטן קאבוס",
+  "city": "מוסקט",
+  "country": "עומאן",
+  "category": "asia",
+  "difficulty": "medium",
+  "fact": "בו נברשת קריסטל ענקית באורך 14 מטר."
+ },
+ {
+  "id": "darvaza",
+  "wiki": "Darvaza gas crater",
+  "name": "מכתש הגז דרוואזה",
+  "city": "דרוואזה",
+  "country": "טורקמניסטן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "מכונה \"שער הגיהינום\" — מכתש גז שבוער ברציפות מאז 1971."
+ },
+ {
+  "id": "mount-kailash",
+  "wiki": "Mount Kailash",
+  "name": "הר קאילש",
+  "city": "טיבט",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "הר קדוש לארבע דתות, ואיש לא טיפס לפסגתו."
+ },
+ {
+  "id": "socotra",
+  "wiki": "Socotra",
+  "name": "סוקוטרה",
+  "city": "סוקוטרה",
+  "country": "תימן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "כאן גדלים \"עצי דם הדרקון\" בצורת מטרייה."
+ },
+ {
+  "id": "son-doong",
+  "wiki": "Sơn Đoòng cave",
+  "name": "מערת סון דונג",
+  "city": "קוואנג בין",
+  "country": "וייטנאם",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "המערה הגדולה בעולם — יש בה ג'ונגל ועננים משלה."
+ },
+ {
+  "id": "jiuzhaigou",
+  "wiki": "Jiuzhaigou",
+  "name": "ג'יוז'איגו",
+  "city": "סצ'ואן",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "אגמים בצבעי טורקיז ואזמרגד בין הרים."
+ },
+ {
+  "id": "tigers-nest",
+  "wiki": "Paro Taktsang",
+  "name": "מנזר קן הנמר",
+  "city": "פארו",
+  "country": "בהוטן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "נבנה על צוק כ-900 מטר מעל העמק."
+ },
+ {
+  "id": "itchan-kala",
+  "wiki": "Itchan Kala",
+  "name": "איצ'אן קלעה",
+  "city": "חיווה",
+  "country": "אוזבקיסטן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "עיר פנימית מבוצרת על דרך המשי."
+ },
+ {
+  "id": "shibam",
+  "wiki": "Shibam",
+  "name": "שיבאם",
+  "city": "חדרמאוט",
+  "country": "תימן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "\"מנהטן של המדבר\" — גורדי שחקים מבוץ מהמאה ה-16."
+ },
+ {
+  "id": "kelimutu",
+  "wiki": "Kelimutu",
+  "name": "קלימוטו",
+  "city": "פלורס",
+  "country": "אינדונזיה",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "שלושה אגמי לוע שמשנים את צבעם."
+ },
+ {
+  "id": "mount-bromo",
+  "wiki": "Mount Bromo",
+  "name": "הר ברומו",
+  "city": "ג'אווה",
+  "country": "אינדונזיה",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "הר געש פעיל בתוך \"ים חול\" של קלדרה ענקית."
+ },
+ {
+  "id": "ellora",
+  "wiki": "Ellora Caves",
+  "name": "מערות אלורה",
+  "city": "מהרשטרה",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "מקדש קאילסה נחצב כולו מגוש סלע אחד, מלמעלה למטה."
+ },
+ {
+  "id": "meenakshi",
+  "wiki": "Meenakshi Temple",
+  "name": "מקדש מינאקשי",
+  "city": "מדוראי",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "מגדלי השער מכוסים באלפי פסלים צבעוניים."
+ },
+ {
+  "id": "rani-ki-vav",
+  "wiki": "Rani ki vav",
+  "name": "באר המדרגות ראני קי ואב",
+  "city": "פטאן",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "באר מדרגות מעוטרת במאות פסלים, מופיעה על שטר של 100 רופי."
+ },
+ {
+  "id": "golden-rock",
+  "wiki": "Kyaiktiyo Pagoda",
+  "name": "הסלע המוזהב",
+  "city": "מדינת מון",
+  "country": "מיאנמר",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "סלע מצופה זהב שנראה כאילו עומד ליפול מהצוק."
+ },
+ {
+  "id": "plain-of-jars",
+  "wiki": "Plain of Jars",
+  "name": "מישור הכדים",
+  "city": "שיאנג קוואנג",
+  "country": "לאוס",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "אלפי כדי אבן ענקיים, ואיש אינו יודע בדיוק למה שימשו."
+ },
+ {
+  "id": "seongsan",
+  "wiki": "Seongsan Ilchulbong",
+  "name": "סונגסאן אילצ'ולבונג",
+  "city": "ג'ג'ו",
+  "country": "דרום קוריאה",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "\"פסגת הזריחה\" — לוע געשי שעלה מהים."
+ },
+ {
+  "id": "shirakawa-go",
+  "wiki": "Shirakawa-gō",
+  "name": "שיראקאווה-גו",
+  "city": "גיפו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "בתי חווה עם גגות קש תלולים כמו כפות ידיים בתפילה."
+ },
+ {
+  "id": "nikko-toshogu",
+  "wiki": "Nikkō Tōshō-gū",
+  "name": "מקדש טושוגו",
+  "city": "ניקו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "כאן מופיעים שלושת הקופים \"לא רואה, לא שומע, לא מדבר\"."
+ },
+ {
+  "id": "matsumoto-castle",
+  "wiki": "Matsumoto Castle",
+  "name": "טירת מטסומוטו",
+  "city": "מטסומוטו",
+  "country": "יפן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "\"טירת העורב\" השחורה, מהטירות המקוריות ביפן."
+ },
+ {
+  "id": "nasir-al-mulk",
+  "wiki": "Nasir al-Mulk Mosque",
+  "name": "המסגד הוורוד",
+  "city": "שיראז",
+  "country": "איראן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "בבוקר האור דרך הוויטראז'ים צובע את השטיחים בכל הצבעים."
+ },
+ {
+  "id": "baalbek",
+  "wiki": "Baalbek",
+  "name": "בעל בכ",
+  "city": "בעלבכ",
+  "country": "לבנון",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "במקדש הרומי שבו אבנים במשקל מאות טונות."
+ },
+ {
+  "id": "hegra",
+  "wiki": "Hegra (Mada'in Salih)",
+  "name": "חגרה (מדאין סאלח)",
+  "city": "אל-עולא",
+  "country": "ערב הסעודית",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "קברים נבטיים חצובים, \"אחותה הדרומית\" של פטרה."
+ },
+ {
+  "id": "kuwait-towers",
+  "wiki": "Kuwait Towers",
+  "name": "מגדלי כווית",
+  "city": "כווית סיטי",
+  "country": "כווית",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "הכדורים מכוסים באלפי דיסקיות פלדה צבעוניות."
+ },
+ {
+  "id": "zhangye-danxia",
+  "wiki": "Zhangye National Geopark",
+  "name": "הרי הקשת של ג'אנגיה",
+  "city": "גאנסו",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "שכבות אבן חול בצבעים של קשת בענן."
+ },
+ {
+  "id": "hanging-temple",
+  "wiki": "Hanging Temple",
+  "name": "המקדש התלוי",
+  "city": "שאנשי",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "מקדש בן 1,500 שנה שתלוי על צלע צוק."
+ },
+ {
+  "id": "huangshan",
+  "wiki": "Huangshan",
+  "name": "ההר הצהוב",
+  "city": "אנחווי",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "פסגות גרניט מעל ים עננים — השראה לציור הסיני."
+ },
+ {
+  "id": "yuanyang-terraces",
+  "wiki": "Honghe Hani Rice Terraces",
+  "name": "טרסות האורז של יואניאנג",
+  "city": "יונאן",
+  "country": "סין",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "אלפי טרסות שמשקפות את השמיים כמו מראות."
+ },
+ {
+  "id": "ajanta",
+  "wiki": "Ajanta Caves",
+  "name": "מערות אג'נטה",
+  "city": "מהרשטרה",
+  "country": "הודו",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "ציורי קיר בודהיסטיים בני כאלפיים שנה בתוך מערות."
+ },
+ {
+  "id": "po-i-kalyan",
+  "wiki": "Po-i-Kalyan",
+  "name": "מתחם פוי קליאן",
+  "city": "בוכרה",
+  "country": "אוזבקיסטן",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "הצריח הגדול שרד את ג'ינגיס חאן, שהחריב את שאר העיר."
+ },
+ {
+  "id": "mount-ararat",
+  "wiki": "Mount Ararat",
+  "name": "הר אררט",
+  "city": "אגרי",
+  "country": "טורקיה",
+  "category": "asia",
+  "difficulty": "pro",
+  "fact": "לפי המסורת, כאן נחה תיבת נח."
+ }
+]

@@ -1,0 +1,32 @@
+# Blueprint לפריסה ב-Render — https://render.com/docs/blueprint-spec
+#
+# מחבר את הרפוזיטורי הזה לשירות web יחיד שנבנה מה-Dockerfile הקיים.
+# Render מזריק אוטומטית PORT ו-RENDER_EXTERNAL_URL לשירות; השרת קורא
+# את שניהם (ראו server/src/config.ts), ולכן אין צורך בהגדרה ידנית
+# של אף משתנה סביבה כדי שהמשחק יעבוד.
+services:
+  - type: web
+    name: eifo-ze
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    # תוכנית free: ללא עלות, אבל השירות "נרדם" אחרי כ-15 דקות ללא
+    # תעבורה ומתעורר בהשהיה של כמה שניות בבקשה הבאה — מספיק בהחלט
+    # למשחק שנפתח מדי פעם, אבל שווה לדעת לפני אירוע חשוב. אפשר
+    # לשנות בכל רגע ל-starter (משלם, תמיד פעיל) ב-Dashboard או כאן.
+    plan: free
+    region: frankfurt
+    healthCheckPath: /healthz
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Render כבר עומד מאחורי פרוקסי HTTPS משלו; זה מוודא שהשרת
+      # יסמוך על כותרות X-Forwarded-* שהוא שולח (רשת אמצעית לכתובת
+      # הבסיס, בנוסף ל-RENDER_EXTERNAL_URL שכבר פותר את זה ישירות).
+      - key: TRUST_PROXY
+        value: "true"
+      # סיסמת מסך הניהול (/admin). sync: false — Render יבקש להזין אותה
+      # בעת יצירת השירות, והיא לא נשמרת ב-repo.
+      - key: ADMIN_PASSWORD
+        sync: false

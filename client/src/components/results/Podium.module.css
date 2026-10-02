@@ -1,0 +1,145 @@
+.podium {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  max-width: 760px;
+  min-height: 340px;
+  margin-inline: auto;
+}
+
+.column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 220px;
+}
+
+/* המדרגה לעולם אינה נדחסת — הגובה שלה הוא המידע החזותי עצמו. */
+.winner,
+.block {
+  flex: 0 0 auto;
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  align-items: center;
+  text-align: center;
+}
+
+.medal {
+  font-size: var(--text-3xl);
+  line-height: 1;
+  filter: drop-shadow(0 4px 12px rgb(0 0 0 / 45%));
+}
+
+.place1 .medal {
+  font-size: var(--text-4xl);
+  animation: shine 2.6s var(--ease-out) infinite;
+}
+
+@keyframes shine {
+  0%,
+  100% {
+    transform: rotate(-6deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(6deg) scale(1.08);
+  }
+}
+
+.name {
+  max-width: 12ch;
+  overflow: hidden;
+  font-size: var(--text-lg);
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.place1 .name {
+  font-size: var(--text-xl);
+}
+
+.me {
+  color: var(--color-primary);
+}
+
+.points {
+  font-size: var(--text-xl);
+  font-weight: 900;
+  color: var(--color-accent);
+}
+
+.pointsUnit {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.detail {
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+}
+
+/* ── עמודות הפודיום ────────────────────────────────────────── */
+
+.block {
+  position: relative;
+  display: grid;
+  box-sizing: content-box;
+  place-items: center;
+  width: 100%;
+  min-height: 40px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  box-shadow: inset 0 2px 0 rgb(255 255 255 / 22%), var(--shadow-md);
+}
+
+.blockRank {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  color: rgb(8 16 31 / 45%);
+}
+
+.place1 .block {
+  background: linear-gradient(180deg, var(--color-gold), #d9a02d);
+}
+
+.place2 .block {
+  background: linear-gradient(180deg, var(--color-silver), #8fa2bb);
+}
+
+.place3 .block {
+  background: linear-gradient(180deg, var(--color-bronze), #b06d38);
+}
+
+@media (max-width: 560px) {
+  .podium {
+    gap: var(--space-2);
+    min-height: 280px;
+  }
+
+  .name {
+    max-width: 8ch;
+    font-size: var(--text-sm);
+  }
+
+  .place1 .name {
+    font-size: var(--text-base);
+  }
+
+  .points {
+    font-size: var(--text-base);
+  }
+
+  .detail {
+    display: none;
+  }
+}

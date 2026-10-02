@@ -1,0 +1,40 @@
+# בדיקות בכל דחיפה: טיפוסים, בדיקות יחידה, אימות מבני של המאגר,
+# ובדיקה שכל תמונה במאגר באמת נטענת מ-Wikimedia Commons.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run validate:places
+
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: בדיקת תמונות
+        run: npm run check:images -- --json image-report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: image-report
+          path: image-report.json

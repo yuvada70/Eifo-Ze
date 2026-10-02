@@ -1,0 +1,902 @@
+[
+ {
+  "id": "eiffel-tower",
+  "wiki": "Eiffel Tower",
+  "name": "מגדל אייפל",
+  "city": "פריז",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "נבנה לתערוכה העולמית של 1889, ותוכנן להיות מפורק אחרי 20 שנה."
+ },
+ {
+  "id": "colosseum",
+  "wiki": "Colosseum",
+  "name": "הקולוסיאום",
+  "city": "רומא",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "האמפיתיאטרון הגדול ביותר שנבנה אי פעם, עם מקום לעשרות אלפי צופים."
+ },
+ {
+  "id": "big-ben",
+  "wiki": "Big Ben",
+  "name": "ביג בן",
+  "city": "לונדון",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "\"ביג בן\" הוא בעצם שם הפעמון הגדול; המגדל נקרא מגדל אליזבת."
+ },
+ {
+  "id": "leaning-tower-pisa",
+  "wiki": "Leaning Tower of Pisa",
+  "name": "המגדל הנטוי של פיזה",
+  "city": "פיזה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "התחיל לנטות כבר בזמן הבנייה במאה ה-12, בגלל קרקע רכה."
+ },
+ {
+  "id": "sagrada-familia",
+  "wiki": "Sagrada Família",
+  "name": "סגרדה פמיליה",
+  "city": "ברצלונה",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "גאודי החל לעבוד עליה ב-1883 — והבנייה נמשכת עד היום."
+ },
+ {
+  "id": "parthenon",
+  "wiki": "Parthenon",
+  "name": "הפרתנון",
+  "city": "אתונה",
+  "country": "יוון",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "מקדש לאלה אתנה שנבנה על האקרופוליס במאה ה-5 לפני הספירה."
+ },
+ {
+  "id": "brandenburg-gate",
+  "wiki": "Brandenburg Gate",
+  "name": "שער ברנדנבורג",
+  "city": "ברלין",
+  "country": "גרמניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "במשך שנים עמד ממש על הקו שחילק את ברלין לשתיים."
+ },
+ {
+  "id": "tower-bridge",
+  "wiki": "Tower Bridge",
+  "name": "גשר המצודה",
+  "city": "לונדון",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "שני חלקי הכביש מתרוממים כדי לאפשר לספינות לעבור בתמזה."
+ },
+ {
+  "id": "neuschwanstein",
+  "wiki": "Neuschwanstein Castle",
+  "name": "טירת נוישוונשטיין",
+  "city": "בוואריה",
+  "country": "גרמניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "הטירה של לודוויג השני היוותה השראה לטירה של דיסני."
+ },
+ {
+  "id": "louvre-pyramid",
+  "wiki": "Louvre Pyramid",
+  "name": "פירמידת הלובר",
+  "city": "פריז",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "פירמידת הזכוכית של האדריכל איי. אם. פיי נחנכה ב-1989."
+ },
+ {
+  "id": "arc-de-triomphe",
+  "wiki": "Arc de Triomphe",
+  "name": "שער הניצחון",
+  "city": "פריז",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "נפוליאון הזמין אותו ב-1806 לכבוד ניצחונות צבאו."
+ },
+ {
+  "id": "notre-dame",
+  "wiki": "Notre-Dame de Paris",
+  "name": "קתדרלת נוטרדאם",
+  "city": "פריז",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "נפתחה מחדש ב-2024 אחרי השריפה הגדולה של 2019."
+ },
+ {
+  "id": "stonehenge",
+  "wiki": "Stonehenge",
+  "name": "סטונהנג'",
+  "city": "וילטשייר",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "חלק מהאבנים הובאו מוויילס, מרחק של כ-250 ק\"מ."
+ },
+ {
+  "id": "st-basils",
+  "wiki": "Saint Basil's Cathedral",
+  "name": "כנסיית בזיל הקדוש",
+  "city": "מוסקבה",
+  "country": "רוסיה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "נבנתה בהוראת איוואן האיום במאה ה-16, בכיפות בצורת בצל."
+ },
+ {
+  "id": "trevi-fountain",
+  "wiki": "Trevi Fountain",
+  "name": "מזרקת טרווי",
+  "city": "רומא",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "המטבעות שמושלכים אליה — אלפי אירו ביום — נתרמים לצדקה."
+ },
+ {
+  "id": "st-peters",
+  "wiki": "St. Peter's Basilica",
+  "name": "בזיליקת פטרוס הקדוש",
+  "city": "הוותיקן",
+  "country": "הוותיקן",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "הכיפה שלה תוכננה בידי מיכלאנג'לו."
+ },
+ {
+  "id": "atomium",
+  "wiki": "Atomium",
+  "name": "האטומיום",
+  "city": "בריסל",
+  "country": "בלגיה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "מודל של גביש ברזל מוגדל פי 165 מיליארד, שנבנה לתערוכת 1958."
+ },
+ {
+  "id": "charles-bridge",
+  "wiki": "Charles Bridge",
+  "name": "גשר קארל",
+  "city": "פראג",
+  "country": "צ'כיה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "לאורכו עומדים 30 פסלים בסגנון הבארוק."
+ },
+ {
+  "id": "grand-canal",
+  "wiki": "Grand Canal (Venice)",
+  "name": "התעלה הגדולה",
+  "city": "ונציה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "\"הכביש הראשי\" של ונציה, שלאורכו כ-170 מבנים היסטוריים."
+ },
+ {
+  "id": "oia",
+  "wiki": "Oia",
+  "name": "אויה",
+  "city": "סנטוריני",
+  "country": "יוון",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "הבתים הלבנים בנויים על שפת לוע געשי שקרס לתוך הים."
+ },
+ {
+  "id": "mont-saint-michel",
+  "wiki": "Mont-Saint-Michel",
+  "name": "מון סן מישל",
+  "city": "נורמנדי",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "בגאות הים המנזר הופך לאי."
+ },
+ {
+  "id": "buckingham-palace",
+  "wiki": "Buckingham Palace",
+  "name": "ארמון בקינגהאם",
+  "city": "לונדון",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "יש בו 775 חדרים, כולל 78 חדרי רחצה."
+ },
+ {
+  "id": "hagia-sophia",
+  "wiki": "Hagia Sophia",
+  "name": "איה סופיה",
+  "city": "איסטנבול",
+  "country": "טורקיה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "נבנתה ככנסייה ב-537, הפכה למסגד, למוזיאון — ושוב למסגד."
+ },
+ {
+  "id": "matterhorn",
+  "wiki": "Matterhorn",
+  "name": "המטרהורן",
+  "city": "צרמט",
+  "country": "שווייץ",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "הפירמידה ההררית מופיעה על אריזת שוקולד טובלרון."
+ },
+ {
+  "id": "little-mermaid",
+  "wiki": "The Little Mermaid (statue)",
+  "name": "פסל בת הים הקטנה",
+  "city": "קופנהגן",
+  "country": "דנמרק",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "פסל ברונזה קטן מ-1913, בהשראת האגדה של הנס כריסטיאן אנדרסן."
+ },
+ {
+  "id": "moscow-kremlin",
+  "wiki": "Moscow Kremlin",
+  "name": "הקרמלין",
+  "city": "מוסקבה",
+  "country": "רוסיה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "מצודה עם חומה באורך של יותר משני ק\"מ ו-20 מגדלים."
+ },
+ {
+  "id": "alhambra",
+  "wiki": "Alhambra",
+  "name": "אלהמברה",
+  "city": "גרנדה",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "ארמון מוסלמי מפואר מימי הביניים, על רקע הרי סיירה נבדה."
+ },
+ {
+  "id": "edinburgh-castle",
+  "wiki": "Edinburgh Castle",
+  "name": "טירת אדינבורו",
+  "city": "אדינבורו",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "יושבת על סלע געשי כבוי בלב העיר."
+ },
+ {
+  "id": "cologne-cathedral",
+  "wiki": "Cologne Cathedral",
+  "name": "קתדרלת קלן",
+  "city": "קלן",
+  "country": "גרמניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "בנייתה החלה ב-1248 והסתיימה רק ב-1880."
+ },
+ {
+  "id": "westminster-abbey",
+  "wiki": "Westminster Abbey",
+  "name": "מנזר וסטמינסטר",
+  "city": "לונדון",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "easy",
+  "fact": "כאן מוכתרים מלכי אנגליה מאז 1066."
+ },
+ {
+  "id": "park-guell",
+  "wiki": "Park Güell",
+  "name": "פארק גואל",
+  "city": "ברצלונה",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "גאודי עיצב את הפארק עם פסיפסי קרמיקה צבעוניים ולטאה מפורסמת."
+ },
+ {
+  "id": "astronomical-clock",
+  "wiki": "Prague astronomical clock",
+  "name": "השעון האסטרונומי",
+  "city": "פראג",
+  "country": "צ'כיה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "פועל מאז 1410 — השעון האסטרונומי העתיק בעולם שעדיין עובד."
+ },
+ {
+  "id": "hungarian-parliament",
+  "wiki": "Hungarian Parliament Building",
+  "name": "בניין הפרלמנט ההונגרי",
+  "city": "בודפשט",
+  "country": "הונגריה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "הבניין הגדול בהונגריה, על גדת הדנובה."
+ },
+ {
+  "id": "schonbrunn",
+  "wiki": "Schönbrunn Palace",
+  "name": "ארמון שנברון",
+  "city": "וינה",
+  "country": "אוסטריה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "ארמון הקיץ של ההבסבורגים, עם 1,441 חדרים."
+ },
+ {
+  "id": "cliffs-of-moher",
+  "wiki": "Cliffs of Moher",
+  "name": "צוקי מוהר",
+  "city": "מחוז קלייר",
+  "country": "אירלנד",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "הצוקים מתנשאים עד כ-214 מטר מעל האוקיינוס האטלנטי."
+ },
+ {
+  "id": "dubrovnik-walls",
+  "wiki": "Walls of Dubrovnik",
+  "name": "חומות דוברובניק",
+  "city": "דוברובניק",
+  "country": "קרואטיה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "חומות באורך כשני ק\"מ שמקיפות את כל העיר העתיקה."
+ },
+ {
+  "id": "lake-bled",
+  "wiki": "Lake Bled",
+  "name": "אגם בלד",
+  "city": "בלד",
+  "country": "סלובניה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "באי הקטן שבאגם עומדת כנסייה, ומגיעים אליה בסירות חתירה."
+ },
+ {
+  "id": "manarola",
+  "wiki": "Manarola",
+  "name": "מנרולה",
+  "city": "צ'ינקווה טרה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "אחד מחמשת הכפרים הצבעוניים של צ'ינקווה טרה."
+ },
+ {
+  "id": "versailles",
+  "wiki": "Palace of Versailles",
+  "name": "ארמון ורסאי",
+  "city": "ורסאי",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "באולם המראות נחתם ב-1919 הסכם השלום שסיים את מלחמת העולם הראשונה."
+ },
+ {
+  "id": "florence-cathedral",
+  "wiki": "Florence Cathedral",
+  "name": "הדואומו של פירנצה",
+  "city": "פירנצה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "הכיפה של ברונלסקי נבנתה ללא פיגומים מהקרקע."
+ },
+ {
+  "id": "rialto-bridge",
+  "wiki": "Rialto Bridge",
+  "name": "גשר ריאלטו",
+  "city": "ונציה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "גשר האבן העתיק ביותר על התעלה הגדולה."
+ },
+ {
+  "id": "belem-tower",
+  "wiki": "Belém Tower",
+  "name": "מגדל בלם",
+  "city": "ליסבון",
+  "country": "פורטוגל",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "ממנו יצאו המגלים הפורטוגלים להפלגות בעידן התגליות."
+ },
+ {
+  "id": "pena-palace",
+  "wiki": "Pena Palace",
+  "name": "ארמון פנה",
+  "city": "סינטרה",
+  "country": "פורטוגל",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "ארמון צבעוני בסגנון רומנטי על ראש גבעה."
+ },
+ {
+  "id": "plaza-de-espana-seville",
+  "wiki": "Plaza de España, Seville",
+  "name": "פלאסה דה אספניה",
+  "city": "סביליה",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "לאורך הקיר — אריחים צבועים לכל אחד ממחוזות ספרד."
+ },
+ {
+  "id": "kinderdijk",
+  "wiki": "Kinderdijk",
+  "name": "קינדרדייק",
+  "city": "דרום הולנד",
+  "country": "הולנד",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "19 טחנות רוח מהמאה ה-18 ששימשו לניקוז מים."
+ },
+ {
+  "id": "hallstatt",
+  "wiki": "Hallstatt",
+  "name": "הלשטאט",
+  "city": "זלצקמרגוט",
+  "country": "אוסטריה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "הכפר כל כך מצולם, שבסין בנו לו העתק מלא."
+ },
+ {
+  "id": "meteora",
+  "wiki": "Meteora",
+  "name": "מטאורה",
+  "city": "תסליה",
+  "country": "יוון",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "מנזרים שנבנו על ראשי עמודי סלע; פעם עלו אליהם רק בסלים וחבלים."
+ },
+ {
+  "id": "giants-causeway",
+  "wiki": "Giant's Causeway",
+  "name": "מסלול הענקים",
+  "city": "צפון אירלנד",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "כ-40,000 עמודי בזלת משושים שנוצרו מהתקררות לבה."
+ },
+ {
+  "id": "tower-of-london",
+  "wiki": "Tower of London",
+  "name": "מצודת לונדון",
+  "city": "לונדון",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "כאן שמורים תכשיטי הכתר הבריטי."
+ },
+ {
+  "id": "rijksmuseum",
+  "wiki": "Rijksmuseum",
+  "name": "הרייקסמוזיאום",
+  "city": "אמסטרדם",
+  "country": "הולנד",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "כאן תלוי \"משמר הלילה\" של רמברנדט."
+ },
+ {
+  "id": "sacre-coeur",
+  "wiki": "Sacré-Cœur, Paris",
+  "name": "בזיליקת סקרה-קר",
+  "city": "פריז",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "בנויה מאבן גיר שמלבינה עם הזמן בגשם."
+ },
+ {
+  "id": "pont-du-gard",
+  "wiki": "Pont du Gard",
+  "name": "פון דו גאר",
+  "city": "נים",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "אמת מים רומית בת שלוש קומות, בת כ-2,000 שנה."
+ },
+ {
+  "id": "grand-place",
+  "wiki": "Grand-Place",
+  "name": "הכיכר הגדולה",
+  "city": "בריסל",
+  "country": "בלגיה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "פעם בשנתיים מכסים את רצפתה בשטיח ענק של פרחים."
+ },
+ {
+  "id": "nyhavn",
+  "wiki": "Nyhavn",
+  "name": "ניהאון",
+  "city": "קופנהגן",
+  "country": "דנמרק",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "הנס כריסטיאן אנדרסן גר בכמה מהבתים הצבעוניים שלאורך התעלה."
+ },
+ {
+  "id": "milan-cathedral",
+  "wiki": "Milan Cathedral",
+  "name": "הדואומו של מילאנו",
+  "city": "מילאנו",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "על הגג שלה יותר מ-3,000 פסלים."
+ },
+ {
+  "id": "preikestolen",
+  "wiki": "Preikestolen",
+  "name": "פרייקסטולן",
+  "city": "רוגלנד",
+  "country": "נורווגיה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "\"סלע הדוכן\" — מצוק שטוח כ-600 מטר מעל הפיורד."
+ },
+ {
+  "id": "segovia-aqueduct",
+  "wiki": "Aqueduct of Segovia",
+  "name": "אמת המים של סגוביה",
+  "city": "סגוביה",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "נבנתה בידי הרומאים מאבני גרניט — בלי טיט ביניהן."
+ },
+ {
+  "id": "chain-bridge",
+  "wiki": "Széchenyi Chain Bridge",
+  "name": "גשר השרשרת",
+  "city": "בודפשט",
+  "country": "הונגריה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "הגשר הקבוע הראשון שחיבר בין בודה לפשט."
+ },
+ {
+  "id": "bran-castle",
+  "wiki": "Bran Castle",
+  "name": "טירת בראן",
+  "city": "טרנסילבניה",
+  "country": "רומניה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "מכונה \"הטירה של דרקולה\", אם כי לסיפור אין קשר ממשי אליה."
+ },
+ {
+  "id": "st-marks-basilica",
+  "wiki": "St Mark's Basilica",
+  "name": "בזיליקת סן מרקו",
+  "city": "ונציה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "medium",
+  "fact": "תקרותיה מכוסות פסיפסי זהב, ולכן כונתה \"כנסיית הזהב\"."
+ },
+ {
+  "id": "hallgrimskirkja",
+  "wiki": "Hallgrímskirkja",
+  "name": "כנסיית הלגרים",
+  "city": "רייקיאוויק",
+  "country": "איסלנד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "החזית מעוצבת בהשראת עמודי בזלת שנוצרו מלבה."
+ },
+ {
+  "id": "bay-of-kotor",
+  "wiki": "Bay of Kotor",
+  "name": "מפרץ קוטור",
+  "city": "קוטור",
+  "country": "מונטנגרו",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "מפרץ מפותל בין הרים תלולים, שמזכיר פיורד."
+ },
+ {
+  "id": "sedlec-ossuary",
+  "wiki": "Sedlec Ossuary",
+  "name": "כנסיית העצמות",
+  "city": "קוטנה הורה",
+  "country": "צ'כיה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "מעוטרת בעצמות של עשרות אלפי בני אדם, כולל נברשת."
+ },
+ {
+  "id": "hill-of-crosses",
+  "wiki": "Hill of Crosses",
+  "name": "גבעת הצלבים",
+  "city": "שיאוליאי",
+  "country": "ליטא",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "מאות אלפי צלבים הוצבו כאן לאורך השנים."
+ },
+ {
+  "id": "stari-most",
+  "wiki": "Stari Most",
+  "name": "הגשר העתיק",
+  "city": "מוסטאר",
+  "country": "בוסניה והרצגובינה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "נהרס במלחמה ב-1993 ונבנה מחדש מאבנים שנמשו מהנהר."
+ },
+ {
+  "id": "skellig-michael",
+  "wiki": "Skellig Michael",
+  "name": "סקליג מייקל",
+  "city": "מחוז קרי",
+  "country": "אירלנד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "אי סלעי עם מנזר עתיק, שהופיע בסרטי \"מלחמת הכוכבים\"."
+ },
+ {
+  "id": "tallinn-old-town",
+  "wiki": "Tallinn Old Town",
+  "name": "העיר העתיקה של טאלין",
+  "city": "טאלין",
+  "country": "אסטוניה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "מהערים מימי הביניים השמורות ביותר בצפון אירופה."
+ },
+ {
+  "id": "plitvice",
+  "wiki": "Plitvice Lakes National Park",
+  "name": "אגמי פליטביצה",
+  "city": "ליקה",
+  "country": "קרואטיה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "16 אגמים מדורגים המחוברים במפלים."
+ },
+ {
+  "id": "wieliczka",
+  "wiki": "Wieliczka Salt Mine",
+  "name": "מכרה המלח וייליצ'קה",
+  "city": "קרקוב",
+  "country": "פולין",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "בעומק המכרה קפלה שלמה — כולל נברשות — חצובה מגביש מלח."
+ },
+ {
+  "id": "chambord",
+  "wiki": "Château de Chambord",
+  "name": "טירת שאמבור",
+  "city": "עמק הלואר",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "במרכזה מדרגות כפולות ששני אנשים יכולים לעלות בהן בלי להיפגש."
+ },
+ {
+  "id": "carcassonne",
+  "wiki": "Cité de Carcassonne",
+  "name": "קרקסון",
+  "city": "אוקסיטניה",
+  "country": "צרפת",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "עיר מבוצרת עם 52 מגדלים וחומה כפולה."
+ },
+ {
+  "id": "puente-nuevo",
+  "wiki": "Puente Nuevo",
+  "name": "הגשר החדש של רונדה",
+  "city": "רונדה",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "\"החדש\" נבנה במאה ה-18, מעל ערוץ בעומק כ-100 מטר."
+ },
+ {
+  "id": "eilean-donan",
+  "wiki": "Eilean Donan",
+  "name": "אילן דונן",
+  "city": "היילנדס",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "טירה על אי קטן שמחובר ליבשה בגשר אבן."
+ },
+ {
+  "id": "kylemore-abbey",
+  "wiki": "Kylemore Abbey",
+  "name": "מנזר קיילמור",
+  "city": "קונמרה",
+  "country": "אירלנד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "טירה מהמאה ה-19 שהפכה למנזר בנדיקטיני."
+ },
+ {
+  "id": "trakai-castle",
+  "wiki": "Trakai Island Castle",
+  "name": "טירת טראקאי",
+  "city": "טראקאי",
+  "country": "ליטא",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "טירה של לבנים אדומות על אי באגם."
+ },
+ {
+  "id": "bryggen",
+  "wiki": "Bryggen",
+  "name": "בריגן",
+  "city": "ברגן",
+  "country": "נורווגיה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "בתי עץ צבעוניים של סוחרי הליגה ההנזאית."
+ },
+ {
+  "id": "reine",
+  "wiki": "Reine",
+  "name": "ריינה",
+  "city": "איי לופוטן",
+  "country": "נורווגיה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "כפר דייגים מתחת לפסגות חדות מעל חוג הקוטב."
+ },
+ {
+  "id": "valletta",
+  "wiki": "Valletta",
+  "name": "ואלטה",
+  "city": "ואלטה",
+  "country": "מלטה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "אחת מבירות האיחוד האירופי הקטנות ביותר, שנבנתה בידי אבירי מסדר יוחנן."
+ },
+ {
+  "id": "monemvasia",
+  "wiki": "Monemvasia",
+  "name": "מונמוואסיה",
+  "city": "פלופונס",
+  "country": "יוון",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "עיר מבוצרת על סלע מול החוף, שמחוברת ליבשה בשביל צר."
+ },
+ {
+  "id": "durdle-door",
+  "wiki": "Durdle Door",
+  "name": "דרדל דור",
+  "city": "דורסט",
+  "country": "בריטניה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "קשת אבן גיר טבעית שנוצרה מפעולת הים."
+ },
+ {
+  "id": "matera",
+  "wiki": "Sassi di Matera",
+  "name": "הסאסי של מטרה",
+  "city": "מטרה",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "בתי מערות שבהם גרו אנשים עד שנות ה-50 של המאה ה-20."
+ },
+ {
+  "id": "alberobello",
+  "wiki": "Trulli of Alberobello",
+  "name": "בתי הטרולי",
+  "city": "אלברובלו",
+  "country": "איטליה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "בתים עגולים עם גגות חרוטיים שנבנו בלי טיט."
+ },
+ {
+  "id": "guggenheim-bilbao",
+  "wiki": "Guggenheim Museum Bilbao",
+  "name": "מוזיאון גוגנהיים",
+  "city": "בילבאו",
+  "country": "ספרד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "מצופה בלוחות טיטניום מתעקלים, בתכנון פרנק גרי."
+ },
+ {
+  "id": "peles-castle",
+  "wiki": "Peleș Castle",
+  "name": "טירת פלש",
+  "city": "סינאיה",
+  "country": "רומניה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "הטירה הראשונה באירופה שקיבלה תאורה חשמלית מלאה."
+ },
+ {
+  "id": "rila-monastery",
+  "wiki": "Rila Monastery",
+  "name": "מנזר רילה",
+  "city": "הרי רילה",
+  "country": "בולגריה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "המנזר האורתודוקסי הגדול בבולגריה, עם קירות מצוירים בצבעים עזים."
+ },
+ {
+  "id": "kizhi",
+  "wiki": "Kizhi Pogost",
+  "name": "כנסיות קיז'י",
+  "city": "קרליה",
+  "country": "רוסיה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "כנסייה בת 22 כיפות שנבנתה מעץ — לפי המסורת בלי מסמר אחד."
+ },
+ {
+  "id": "cesky-krumlov",
+  "wiki": "Český Krumlov",
+  "name": "צ'סקי קרומלוב",
+  "city": "בוהמיה",
+  "country": "צ'כיה",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "עיירה מימי הביניים בלולאה של נהר הוולטבה."
+ },
+ {
+  "id": "kirkjufell",
+  "wiki": "Kirkjufell",
+  "name": "קירקיופל",
+  "city": "חצי האי סנייפלסנס",
+  "country": "איסלנד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "\"הר הכנסייה\" — מהנופים המצולמים ביותר באיסלנד."
+ },
+ {
+  "id": "seljalandsfoss",
+  "wiki": "Seljalandsfoss",
+  "name": "מפל סליאלנדספוס",
+  "city": "דרום איסלנד",
+  "country": "איסלנד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "אפשר ללכת בשביל מאחורי מסך המים."
+ },
+ {
+  "id": "rock-of-cashel",
+  "wiki": "Rock of Cashel",
+  "name": "סלע קשל",
+  "city": "מחוז טיפררי",
+  "country": "אירלנד",
+  "category": "europe",
+  "difficulty": "pro",
+  "fact": "מושבם של מלכי מנסטר, ובהמשך מרכז כנסייתי."
+ }
+]

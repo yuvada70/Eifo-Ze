@@ -1,0 +1,15 @@
+{
+  "name": "איפה זה? — טריוויה גיאוגרפית",
+  "short_name": "איפה זה?",
+  "description": "משחק קבוצתי: רואים תמונה של מקום מפורסם ומנחשים על מפת העולם איפה הוא.",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070c17",
+  "theme_color": "#070c17",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

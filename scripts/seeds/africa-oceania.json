@@ -1,0 +1,902 @@
+[
+ {
+  "id": "giza-pyramids",
+  "wiki": "Great Pyramid of Giza",
+  "name": "הפירמידה הגדולה של גיזה",
+  "city": "גיזה",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "היחידה משבעת פלאי תבל העתיקים שעדיין עומדת."
+ },
+ {
+  "id": "sphinx",
+  "wiki": "Great Sphinx of Giza",
+  "name": "הספינקס הגדול",
+  "city": "גיזה",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "פסל עם גוף אריה וראש אדם, שנחצב מסלע אחד."
+ },
+ {
+  "id": "sydney-opera-house",
+  "wiki": "Sydney Opera House",
+  "name": "בית האופרה של סידני",
+  "city": "סידני",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "הגגות מכוסים ביותר ממיליון אריחים לבנים."
+ },
+ {
+  "id": "harbour-bridge",
+  "wiki": "Sydney Harbour Bridge",
+  "name": "גשר נמל סידני",
+  "city": "סידני",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "מכונה \"קולב הבגדים\"; אפשר לטפס על הקשת שלו."
+ },
+ {
+  "id": "uluru",
+  "wiki": "Uluru",
+  "name": "אולורו",
+  "city": "הטריטוריה הצפונית",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "סלע אבן חול ענק שמשנה את צבעו בזריחה ובשקיעה, וקדוש לאבוריג'ינים."
+ },
+ {
+  "id": "victoria-falls",
+  "wiki": "Victoria Falls",
+  "name": "מפלי ויקטוריה",
+  "city": "ליווינגסטון",
+  "country": "זמביה / זימבבואה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "המקומיים קוראים להם \"העשן שרועם\"."
+ },
+ {
+  "id": "table-mountain",
+  "wiki": "Table Mountain",
+  "name": "הר השולחן",
+  "city": "קייפטאון",
+  "country": "דרום אפריקה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "בימים מסוימים ענן שטוח מכסה אותו כמו מפה על שולחן."
+ },
+ {
+  "id": "kilimanjaro",
+  "wiki": "Mount Kilimanjaro",
+  "name": "הר קילימנג'רו",
+  "city": "קילימנג'רו",
+  "country": "טנזניה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "ההר הגבוה באפריקה — 5,895 מטר."
+ },
+ {
+  "id": "abu-simbel",
+  "wiki": "Abu Simbel temples",
+  "name": "מקדשי אבו סימבל",
+  "city": "אסואן",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "כל המקדש נחתך לגושים והועבר למקום גבוה יותר בשנות ה-60."
+ },
+ {
+  "id": "great-barrier-reef",
+  "wiki": "Great Barrier Reef",
+  "name": "שונית המחסום הגדולה",
+  "city": "קווינסלנד",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "מערכת השוניות הגדולה בעולם — נראית מהחלל."
+ },
+ {
+  "id": "twelve-apostles",
+  "wiki": "The Twelve Apostles (Victoria)",
+  "name": "שנים-עשר השליחים",
+  "city": "ויקטוריה",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "עמודי אבן גיר בים, שלמרות השם היו תמיד פחות משנים-עשר."
+ },
+ {
+  "id": "milford-sound",
+  "wiki": "Milford Sound",
+  "name": "מילפורד סאונד",
+  "city": "פיורדלנד",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "פיורד שרודיארד קיפלינג כינה \"הפלא השמיני\"."
+ },
+ {
+  "id": "hassan-ii-mosque",
+  "wiki": "Hassan II Mosque",
+  "name": "מסגד חסן השני",
+  "city": "קזבלנקה",
+  "country": "מרוקו",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "הצריח שלו, כ-210 מטר, מהגבוהים בעולם; חלק מהמסגד בנוי מעל הים."
+ },
+ {
+  "id": "jemaa-el-fnaa",
+  "wiki": "Jemaa el-Fnaa",
+  "name": "כיכר ג'מע אל-פנא",
+  "city": "מרקש",
+  "country": "מרוקו",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "בערב הכיכר מתמלאת דוכני אוכל, מספרי סיפורים ומקסימי נחשים."
+ },
+ {
+  "id": "chefchaouen",
+  "wiki": "Chefchaouen",
+  "name": "שפשאוון",
+  "city": "הרי הריף",
+  "country": "מרוקו",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "\"העיר הכחולה\" — כמעט כל הבתים צבועים בגוני תכלת."
+ },
+ {
+  "id": "karnak",
+  "wiki": "Karnak",
+  "name": "קרנק",
+  "city": "לוקסור",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "באולם העמודים הגדול 134 עמודי אבן ענקיים."
+ },
+ {
+  "id": "ngorongoro",
+  "wiki": "Ngorongoro Conservation Area",
+  "name": "מכתש נגורונגורו",
+  "city": "ארושה",
+  "country": "טנזניה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "קלדרה ענקית שהפכה לביתם של אלפי בעלי חיים."
+ },
+ {
+  "id": "bora-bora",
+  "wiki": "Bora Bora",
+  "name": "בורה בורה",
+  "city": "איי החברה",
+  "country": "פולינזיה הצרפתית",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "לגונה טורקיז סביב הר געש כבוי."
+ },
+ {
+  "id": "bondi-beach",
+  "wiki": "Bondi Beach",
+  "name": "חוף בונדי",
+  "city": "סידני",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "החוף המפורסם באוסטרליה, עם בריכת מי ים על הסלעים."
+ },
+ {
+  "id": "avenue-of-baobabs",
+  "wiki": "Avenue of the Baobabs",
+  "name": "שדרת הבאובבים",
+  "city": "מורונדבה",
+  "country": "מדגסקר",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "עצי באובב בני מאות שנים לצד דרך עפר."
+ },
+ {
+  "id": "cape-of-good-hope",
+  "wiki": "Cape of Good Hope",
+  "name": "כף התקווה הטובה",
+  "city": "קייפטאון",
+  "country": "דרום אפריקה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "ברתולומיאו דיאש הקיף אותו ב-1488."
+ },
+ {
+  "id": "valley-of-the-kings",
+  "wiki": "Valley of the Kings",
+  "name": "עמק המלכים",
+  "city": "לוקסור",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "כאן נמצא ב-1922 קברו של תות-ענח-אמון."
+ },
+ {
+  "id": "luxor-temple",
+  "wiki": "Luxor Temple",
+  "name": "מקדש לוקסור",
+  "city": "לוקסור",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "האובליסק שהיה לצדו עומד היום בכיכר הקונקורד בפריז."
+ },
+ {
+  "id": "aoraki",
+  "wiki": "Aoraki / Mount Cook",
+  "name": "הר קוק (אאוראקי)",
+  "city": "האלפים הדרומיים",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "ההר הגבוה בניו זילנד; אדמונד הילרי התאמן כאן."
+ },
+ {
+  "id": "sky-tower",
+  "wiki": "Sky Tower (Auckland)",
+  "name": "מגדל סקיי",
+  "city": "אוקלנד",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "אפשר לקפוץ ממנו בחבל מגובה 192 מטר."
+ },
+ {
+  "id": "djenne-mosque",
+  "wiki": "Great Mosque of Djenné",
+  "name": "המסגד הגדול של ג'נה",
+  "city": "ג'נה",
+  "country": "מאלי",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "המבנה הגדול בעולם מלבני בוץ, ששופץ כל שנה בחג קהילתי."
+ },
+ {
+  "id": "three-sisters",
+  "wiki": "Three Sisters (Australia)",
+  "name": "שלוש האחיות",
+  "city": "ההרים הכחולים",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "שלושה צוקי אבן חול שלפי האגדה האבוריג'ינית היו אחיות."
+ },
+ {
+  "id": "erg-chebbi",
+  "wiki": "Erg Chebbi",
+  "name": "ערג שבי",
+  "city": "מרזוגה",
+  "country": "מרוקו",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "דיונות חול בגובה של עד כ-150 מטר בשולי הסהרה."
+ },
+ {
+  "id": "pohutu-geyser",
+  "wiki": "Pōhutu Geyser",
+  "name": "גייזר פוהוטו",
+  "city": "רוטורואה",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "הגייזר הפעיל הגדול בחצי הכדור הדרומי."
+ },
+ {
+  "id": "stone-town",
+  "wiki": "Stone Town",
+  "name": "סטון טאון",
+  "city": "זנזיבר",
+  "country": "טנזניה",
+  "category": "africa-oceania",
+  "difficulty": "easy",
+  "fact": "דלתות עץ מגולפות מעטרות את סמטאות העיר העתיקה."
+ },
+ {
+  "id": "deadvlei",
+  "wiki": "Deadvlei",
+  "name": "דדוולי",
+  "city": "נמיב",
+  "country": "נמיביה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "עצים מתים בני מאות שנים על רקע דיונות אדומות שהן מהגבוהות בעולם."
+ },
+ {
+  "id": "fish-river-canyon",
+  "wiki": "Fish River Canyon",
+  "name": "קניון פיש ריבר",
+  "city": "קרס",
+  "country": "נמיביה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "הקניון הגדול באפריקה."
+ },
+ {
+  "id": "lalibela",
+  "wiki": "Church of Saint George, Lalibela",
+  "name": "כנסיית גיאורגיוס הקדוש",
+  "city": "לליבלה",
+  "country": "אתיופיה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "כנסייה בצורת צלב שנחצבה כלפי מטה בתוך הסלע."
+ },
+ {
+  "id": "ait-benhaddou",
+  "wiki": "Aït Benhaddou",
+  "name": "קסר איט בן חדו",
+  "city": "וארזאזאת",
+  "country": "מרוקו",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "כפר מבוצר מבוץ שבו צולמו \"גלדיאטור\" ו\"משחקי הכס\"."
+ },
+ {
+  "id": "leptis-magna",
+  "wiki": "Leptis Magna",
+  "name": "לפטיס מגנה",
+  "city": "ח'ומס",
+  "country": "לוב",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "מהערים הרומיות השמורות ביותר בים התיכון."
+ },
+ {
+  "id": "djinguereber",
+  "wiki": "Djinguereber Mosque",
+  "name": "מסגד ג'ינגריבר",
+  "city": "טימבוקטו",
+  "country": "מאלי",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "נבנה מבוץ ועץ ב-1327."
+ },
+ {
+  "id": "okavango",
+  "wiki": "Okavango Delta",
+  "name": "דלתת האוקבנגו",
+  "city": "נגמילנד",
+  "country": "בוטסואנה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "נהר ששוקע במדבר קלהארי במקום להגיע לים."
+ },
+ {
+  "id": "blyde-river-canyon",
+  "wiki": "Blyde River Canyon",
+  "name": "קניון בלייד ריבר",
+  "city": "מפומלנגה",
+  "country": "דרום אפריקה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "מהקניונים הגדולים בעולם, ומהירוקים שבהם."
+ },
+ {
+  "id": "lake-tekapo",
+  "wiki": "Church of the Good Shepherd, Lake Tekapo",
+  "name": "כנסיית הרועה הטוב",
+  "city": "אגם טקאפו",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "כנסיית אבן קטנה מול אגם טורקיז והרי האלפים הדרומיים."
+ },
+ {
+  "id": "emerald-lakes",
+  "wiki": "Emerald Lakes",
+  "name": "אגמי האזמרגד",
+  "city": "טונגרירו",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "אגמים ירוקים בתוך לועות געשיים, על המסלול הרגלי המפורסם בניו זילנד."
+ },
+ {
+  "id": "pinnacles",
+  "wiki": "Pinnacles Desert",
+  "name": "מדבר הפינקלים",
+  "city": "נאמבונג",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "אלפי עמודי אבן גיר מזדקרים מהחול הצהוב."
+ },
+ {
+  "id": "wave-rock",
+  "wiki": "Wave Rock",
+  "name": "סלע הגל",
+  "city": "היידן",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "צוק גרניט בצורת גל ענק שעומד להישבר."
+ },
+ {
+  "id": "kata-tjuta",
+  "wiki": "Kata Tjuta",
+  "name": "קטה ג'וטה",
+  "city": "הטריטוריה הצפונית",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "36 כיפות סלע ענקיות, לא רחוק מאולורו."
+ },
+ {
+  "id": "kings-canyon",
+  "wiki": "Kings Canyon (Northern Territory)",
+  "name": "קינגס קניון",
+  "city": "הטריטוריה הצפונית",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "קירות אבן חול אדומים בגובה יותר מ-100 מטר."
+ },
+ {
+  "id": "whitehaven",
+  "wiki": "Whitehaven Beach",
+  "name": "חוף וייטהייבן",
+  "city": "איי ויטסנדיי",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "החול הוא כמעט סיליקה טהורה — לבן ולא מתחמם."
+ },
+ {
+  "id": "port-arthur",
+  "wiki": "Port Arthur, Tasmania",
+  "name": "פורט ארתור",
+  "city": "טסמניה",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "מושבת עונשין בריטית מהמאה ה-19."
+ },
+ {
+  "id": "moorea",
+  "wiki": "Moorea",
+  "name": "מוראה",
+  "city": "איי החברה",
+  "country": "פולינזיה הצרפתית",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "אי בצורת לב עם פסגות חדות ומפרצים עמוקים."
+ },
+ {
+  "id": "bo-kaap",
+  "wiki": "Bo-Kaap",
+  "name": "בו-קאפ",
+  "city": "קייפטאון",
+  "country": "דרום אפריקה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "שכונה של בתים בצבעים עזים למרגלות הר השולחן."
+ },
+ {
+  "id": "kairouan-mosque",
+  "wiki": "Great Mosque of Kairouan",
+  "name": "המסגד הגדול של קירואן",
+  "city": "קירואן",
+  "country": "תוניסיה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "מהמסגדים העתיקים בצפון אפריקה, מהמאה ה-7."
+ },
+ {
+  "id": "el-djem",
+  "wiki": "Amphitheatre of El Jem",
+  "name": "האמפיתיאטרון של אל-ג'ם",
+  "city": "אל-ג'ם",
+  "country": "תוניסיה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "אמפיתיאטרון רומי ענק שעומד בלב עיירה קטנה."
+ },
+ {
+  "id": "sidi-bou-said",
+  "wiki": "Sidi Bou Said",
+  "name": "סידי בו סעיד",
+  "city": "תוניס",
+  "country": "תוניסיה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "כפר לבן-כחול על צוק מעל הים התיכון."
+ },
+ {
+  "id": "volubilis",
+  "wiki": "Volubilis",
+  "name": "וולוביליס",
+  "city": "מקנס",
+  "country": "מרוקו",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "עיר רומית עם פסיפסים שנשארו במקומם."
+ },
+ {
+  "id": "bent-pyramid",
+  "wiki": "Bent Pyramid",
+  "name": "הפירמידה העקומה",
+  "city": "דהשור",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "זווית הדפנות משתנה באמצע הגובה — אולי כדי שלא תקרוס."
+ },
+ {
+  "id": "philae",
+  "wiki": "Philae",
+  "name": "מקדש פילאה",
+  "city": "אסואן",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "המקדש הועבר אבן אחר אבן לאי סמוך כדי להציל אותו מהצפה."
+ },
+ {
+  "id": "djoser-pyramid",
+  "wiki": "Pyramid of Djoser",
+  "name": "פירמידת ג'וסר",
+  "city": "סקארה",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "הפירמידה המדורגת היא הפירמידה העתיקה ביותר במצרים."
+ },
+ {
+  "id": "tsingy",
+  "wiki": "Tsingy de Bemaraha National Park",
+  "name": "צינגי דה במרהה",
+  "city": "מהג'נגה",
+  "country": "מדגסקר",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "יער של מחטי אבן גיר חדות כתער."
+ },
+ {
+  "id": "pancake-rocks",
+  "wiki": "Pancake Rocks",
+  "name": "סלעי הפנקייק",
+  "city": "פונקאיקי",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "שכבות אבן גיר שנראות כמו ערימות של פנקייקים."
+ },
+ {
+  "id": "wineglass-bay",
+  "wiki": "Wineglass Bay",
+  "name": "מפרץ וויינגלאס",
+  "city": "טסמניה",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "מפרץ מושלם בצורת חצי עיגול."
+ },
+ {
+  "id": "kruger-park",
+  "wiki": "Kruger National Park",
+  "name": "פארק קרוגר",
+  "city": "מפומלנגה",
+  "country": "דרום אפריקה",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "מהשמורות הגדולות באפריקה, ובה כל \"החמישייה הגדולה\"."
+ },
+ {
+  "id": "mount-taranaki",
+  "wiki": "Mount Taranaki",
+  "name": "הר טרנאקי",
+  "city": "טרנאקי",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "medium",
+  "fact": "הר געש סימטרי כמעט לחלוטין, ש\"שיחק\" את הר פוג'י בסרט \"הסמוראי האחרון\"."
+ },
+ {
+  "id": "richat",
+  "wiki": "Richat Structure",
+  "name": "עין הסהרה (מבנה ריצ'אט)",
+  "city": "אדראר",
+  "country": "מאוריטניה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "מבנה מעגלי בקוטר כ-40 ק\"מ שנראה היטב מהחלל."
+ },
+ {
+  "id": "dallol",
+  "wiki": "Dallol (hydrothermal field)",
+  "name": "דאלול",
+  "city": "שקע דנקיל",
+  "country": "אתיופיה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "מעיינות חומציים בצבעי צהוב וירוק, מהמקומות החמים בעולם."
+ },
+ {
+  "id": "kolmanskop",
+  "wiki": "Kolmanskop",
+  "name": "קולמנסקופ",
+  "city": "לודריץ",
+  "country": "נמיביה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "עיירת יהלומים נטושה שהחול ממלא את בתיה."
+ },
+ {
+  "id": "lake-retba",
+  "wiki": "Lake Retba",
+  "name": "האגם הוורוד",
+  "city": "דקר",
+  "country": "סנגל",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "אצה מיוחדת צובעת את מי האגם בוורוד."
+ },
+ {
+  "id": "spitzkoppe",
+  "wiki": "Spitzkoppe",
+  "name": "שפיצקופה",
+  "city": "ארונגו",
+  "country": "נמיביה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "\"המטרהורן של נמיביה\" — פסגות גרניט במדבר."
+ },
+ {
+  "id": "ennedi",
+  "wiki": "Ennedi Plateau",
+  "name": "רמת אנדי",
+  "city": "אנדי",
+  "country": "צ'אד",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "קשתות סלע וציורי סלע בלב הסהרה."
+ },
+ {
+  "id": "fasil-ghebbi",
+  "wiki": "Fasil Ghebbi",
+  "name": "מצודת פאסיל גבי",
+  "city": "גונדר",
+  "country": "אתיופיה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "טירות מהמאה ה-17 שזכו לכינוי \"קמלוט של אפריקה\"."
+ },
+ {
+  "id": "great-zimbabwe",
+  "wiki": "Great Zimbabwe",
+  "name": "זימבבואה הגדולה",
+  "city": "מסווינגו",
+  "country": "זימבבואה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "חומות אבן ענקיות בלי טיט — והמדינה נקראה על שמן."
+ },
+ {
+  "id": "chinguetti",
+  "wiki": "Chinguetti",
+  "name": "שינגטי",
+  "city": "אדראר",
+  "country": "מאוריטניה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "עיר מדברית עם ספריות של כתבי יד עתיקים."
+ },
+ {
+  "id": "ghadames",
+  "wiki": "Ghadames",
+  "name": "ע'דאמס",
+  "city": "ע'דאמס",
+  "country": "לוב",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "\"פנינת המדבר\" — עיר עם סמטאות מקורות שמגינות מהחום."
+ },
+ {
+  "id": "siwa",
+  "wiki": "Siwa Oasis",
+  "name": "נווה המדבר סיווה",
+  "city": "מטרוח",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "כאן, לפי המסורת, אלכסנדר מוקדון ביקר באורקל של אמון."
+ },
+ {
+  "id": "white-desert",
+  "wiki": "White Desert National Park",
+  "name": "המדבר הלבן",
+  "city": "פראפרה",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "סלעי גיר לבנים שהרוח פיסלה לצורות של פטריות."
+ },
+ {
+  "id": "nyiragongo",
+  "wiki": "Mount Nyiragongo",
+  "name": "הר ניראגונגו",
+  "city": "צפון קיבו",
+  "country": "הרפובליקה הדמוקרטית של קונגו",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "בלוע שלו אחד מאגמי הלבה הגדולים בעולם."
+ },
+ {
+  "id": "lake-hillier",
+  "wiki": "Lake Hillier",
+  "name": "אגם הילייר",
+  "city": "מערב אוסטרליה",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "אגם ורוד-מסטיק לצד האוקיינוס הכחול."
+ },
+ {
+  "id": "purnululu",
+  "wiki": "Purnululu National Park",
+  "name": "באנגל באנגל",
+  "city": "קימברלי",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "כיפות אבן חול עם פסים כתומים ושחורים כמו כוורות."
+ },
+ {
+  "id": "horizontal-falls",
+  "wiki": "Horizontal Falls",
+  "name": "המפלים האופקיים",
+  "city": "קימברלי",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "הגאות דוחפת מים דרך מצרים צרים ויוצרת \"מפלים\" אופקיים."
+ },
+ {
+  "id": "karijini",
+  "wiki": "Karijini National Park",
+  "name": "קריג'יני",
+  "city": "פילבארה",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "ערוצים צרים עם בריכות שחייה בין סלעים אדומים."
+ },
+ {
+  "id": "balls-pyramid",
+  "wiki": "Ball's Pyramid",
+  "name": "הפירמידה של בול",
+  "city": "האי לורד האו",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "שארית של הר געש בגובה 562 מטר שבולטת מהאוקיינוס."
+ },
+ {
+  "id": "moeraki-boulders",
+  "wiki": "Moeraki Boulders",
+  "name": "סלעי מוארקי",
+  "city": "אוטגו",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "סלעים כדוריים ענקיים פזורים על החוף."
+ },
+ {
+  "id": "waitomo",
+  "wiki": "Waitomo Glowworm Caves",
+  "name": "מערות וייטומו",
+  "city": "וייטומו",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "אלפי תולעים זוהרות מאירות את תקרת המערה."
+ },
+ {
+  "id": "champagne-pool",
+  "wiki": "Champagne Pool",
+  "name": "בריכת השמפניה",
+  "city": "ואי-או-טאפו",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "מעיין חם שמבעבע פחמן דו-חמצני כמו שמפניה."
+ },
+ {
+  "id": "rock-islands",
+  "wiki": "Rock Islands",
+  "name": "איי הסלע",
+  "city": "קורור",
+  "country": "פלאו",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "מאות איי גיר קטנים בצורת פטריות."
+ },
+ {
+  "id": "mount-yasur",
+  "wiki": "Mount Yasur",
+  "name": "הר יאסור",
+  "city": "טאנה",
+  "country": "ונואטו",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "הר געש שמתפרץ ברציפות מאות שנים, ואפשר לעמוד על שפת הלוע."
+ },
+ {
+  "id": "nan-madol",
+  "wiki": "Nan Madol",
+  "name": "ננ מדול",
+  "city": "פונפיי",
+  "country": "מיקרונזיה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "עיר עתיקה שנבנתה על כמאה איים מלאכותיים מעמודי בזלת."
+ },
+ {
+  "id": "hamelin-pool",
+  "wiki": "Hamelin Pool Marine Nature Reserve",
+  "name": "סטרומטוליטים של המלין פול",
+  "city": "מפרץ הכריש",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "\"סלעים חיים\" של חיידקים — אחת מצורות החיים העתיקות על כדור הארץ."
+ },
+ {
+  "id": "cape-reinga",
+  "wiki": "Cape Reinga",
+  "name": "כף ריינגה",
+  "city": "נורת'לנד",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "כאן נפגשים הים הטסמני והאוקיינוס השקט."
+ },
+ {
+  "id": "wadi-al-hitan",
+  "wiki": "Wadi Al-Hitan",
+  "name": "ואדי אל-חיתאן",
+  "city": "פאיום",
+  "country": "מצרים",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "\"עמק הלווייתנים\" — מאובנים של לווייתנים קדומים עם רגליים."
+ },
+ {
+  "id": "zuma-rock",
+  "wiki": "Zuma Rock",
+  "name": "סלע זומה",
+  "city": "ניז'ר",
+  "country": "ניגריה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "מונוליט ענק שמופיע על שטר של 100 נאירה."
+ },
+ {
+  "id": "kalbarri",
+  "wiki": "Kalbarri National Park",
+  "name": "קלבארי",
+  "city": "מערב אוסטרליה",
+  "country": "אוסטרליה",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "\"חלון הטבע\" — קשת אבן חול שממסגרת את הנהר."
+ },
+ {
+  "id": "tunnel-beach",
+  "wiki": "Tunnel Beach",
+  "name": "חוף המנהרה",
+  "city": "דנידין",
+  "country": "ניו זילנד",
+  "category": "africa-oceania",
+  "difficulty": "pro",
+  "fact": "מנהרה שנחצבה ביד במאה ה-19 מובילה לחוף נסתר."
+ }
+]

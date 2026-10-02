@@ -1,0 +1,25 @@
+{
+  "name": "@eifo/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "לוגיקה, טיפוסים ונתונים המשותפים לשרת וללקוח",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test \"src/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.3",
+    "tsx": "^4.19.2"
+  }
+}

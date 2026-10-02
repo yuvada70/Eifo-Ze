@@ -1,0 +1,125 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  width: 100%;
+  /* על מסך רחב או מקרן, טבלה במלוא הרוחב יוצרת פערים ענקיים
+     בין השם לניקוד וקשה לקרוא אותה בשורה אחת. */
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 3rem 1fr 6rem 7rem 4.5rem;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration-base) var(--ease-out);
+}
+
+.compact .row {
+  grid-template-columns: 2.25rem 1fr 4.5rem;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.head {
+  padding-block: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-text-subtle);
+  background: none;
+  border: none;
+}
+
+.rank {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.player {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  min-width: 0;
+}
+
+.name {
+  overflow: hidden;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.youTag {
+  flex-shrink: 0;
+  padding: 2px var(--space-2);
+  font-size: var(--text-2xs);
+  font-weight: 800;
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-radius: var(--radius-pill);
+}
+
+.numeric {
+  text-align: end;
+}
+
+.points {
+  font-size: var(--text-lg);
+  font-weight: 900;
+  color: var(--color-primary);
+}
+
+.muted {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* ── הדגשות ────────────────────────────────────────────────── */
+
+.me {
+  background: var(--color-primary-soft);
+  border-color: rgb(33 212 180 / 45%);
+}
+
+.podium1 {
+  background: linear-gradient(90deg, rgb(255 210 87 / 16%), var(--color-surface));
+  border-color: rgb(255 210 87 / 45%);
+}
+
+.podium1 .rank,
+.podium2 .rank,
+.podium3 .rank {
+  font-size: var(--text-xl);
+}
+
+.podium2 {
+  background: linear-gradient(90deg, rgb(216 226 240 / 12%), var(--color-surface));
+  border-color: rgb(216 226 240 / 32%);
+}
+
+.podium3 {
+  background: linear-gradient(90deg, rgb(224 149 92 / 14%), var(--color-surface));
+  border-color: rgb(224 149 92 / 34%);
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 2.5rem 1fr 5rem;
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+
+  .row > :nth-child(4),
+  .row > :nth-child(5) {
+    display: none;
+  }
+}

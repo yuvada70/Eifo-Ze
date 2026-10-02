@@ -1,0 +1,68 @@
+.wrapper {
+  position: relative;
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+}
+
+.track {
+  fill: none;
+  stroke: rgb(255 255 255 / 10%);
+}
+
+.progress {
+  fill: none;
+  stroke: var(--color-primary);
+  stroke-linecap: round;
+  transition:
+    stroke-dashoffset 120ms linear,
+    stroke var(--duration-base) var(--ease-out);
+  filter: drop-shadow(0 0 8px rgb(33 212 180 / 55%));
+}
+
+.center {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+
+.seconds {
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-text);
+}
+
+.label {
+  font-size: var(--text-2xs);
+  font-weight: 600;
+  color: var(--color-text-subtle);
+  letter-spacing: 0.04em;
+}
+
+/* שלוש השניות האחרונות — אדום ופעימה. */
+.urgent .progress {
+  stroke: var(--color-danger);
+  filter: drop-shadow(0 0 10px rgb(255 107 107 / 65%));
+}
+
+.urgent .seconds {
+  color: var(--color-danger);
+  animation: heartbeat 1s var(--ease-spring) infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  18% {
+    transform: scale(1.18);
+  }
+
+  36% {
+    transform: scale(1);
+  }
+}

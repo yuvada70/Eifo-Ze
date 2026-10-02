@@ -1,0 +1,105 @@
+.page {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: calc(var(--space-5) + var(--safe-top)) var(--space-4) calc(var(--space-5) + var(--safe-bottom));
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  width: 100%;
+  max-width: 420px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  font-size: var(--text-4xl);
+  filter: drop-shadow(0 8px 24px rgb(33 212 180 / 40%));
+}
+
+.title {
+  font-size: var(--text-2xl);
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+}
+
+.card {
+  padding: var(--space-5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  /* 16px לפחות — מונע זום אוטומטי ב-iOS בעת מיקוד בשדה. */
+  font-size: max(16px, var(--text-lg));
+  font-weight: 600;
+  background: var(--color-surface-strong);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration-base) var(--ease-out);
+}
+
+.input::placeholder {
+  font-weight: 400;
+  color: var(--color-text-subtle);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.codeInput {
+  font-size: var(--text-2xl);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.error {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+  border-radius: var(--radius-sm);
+}
+
+.footnote {
+  font-size: var(--text-xs);
+  color: var(--color-text-subtle);
+  text-align: center;
+}

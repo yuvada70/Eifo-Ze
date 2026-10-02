@@ -1,0 +1,53 @@
+# כלי תוכן שרצים ידנית (Actions → Content tools → Run workflow):
+#   resolve — בונה רשומות ממאגר הזרעים בעזרת Wikipedia/Wikidata/Commons
+#   sheets  — גיליונות סקירה של כל התמונות במאגר (לבדיקת שלטים/כיתובים)
+#   check   — בדיקת תמונות מלאה
+# התוצאות נדחפות לענף content-bot (לא ל-main).
+name: Content tools
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: resolve | sheets | check | all
+        required: true
+        default: all
+
+permissions:
+  contents: write
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build --workspace @eifo/shared
+      - run: pip install pillow
+      - name: resolve
+        if: inputs.task == 'resolve' || inputs.task == 'all'
+        run: node scripts/resolve-places.mjs
+      - name: sheets (generated)
+        if: inputs.task == 'resolve' || inputs.task == 'all'
+        run: python3 scripts/contact_sheets.py scripts/out/places.generated.json review
+      - name: sheets (data)
+        if: inputs.task == 'sheets'
+        run: python3 scripts/contact_sheets.py data/places.json review
+      - name: check
+        if: inputs.task == 'check'
+        run: node scripts/check-images.mjs --json scripts/out/image-report.json || true
+      - name: check generated
+        if: inputs.task == 'all'
+        run: node scripts/check-images.mjs scripts/out/places.generated.json --json scripts/out/image-report.json || true
+      - name: push results to content-bot
+        run: |
+          git config user.name "eifo-content-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B content-bot
+          git add -f scripts/out review 2>/dev/null || true
+          git commit -m "content: ${{ inputs.task }} (${{ github.run_id }})" || echo "nothing to commit"
+          git push -f origin content-bot
