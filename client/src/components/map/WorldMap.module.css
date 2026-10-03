@@ -39,41 +39,15 @@
 
 .pinHead {
   position: absolute;
-  inset-inline-start: 0;
+  left: 0;
   top: 0;
   width: 26px;
   height: 26px;
   border-radius: 50% 50% 50% 0;
   transform: rotate(-45deg);
-  background: hsl(var(--hue) 78% 48%);
+  background: hsl(165 78% 42%);
   border: 3px solid #fff;
   box-shadow: 0 3px 8px rgb(0 0 0 / 45%);
-  left: 0;
-}
-
-.pinEmphasized .pinHead {
-  width: 30px;
-  height: 30px;
-  top: -4px;
-  left: -2px;
-  border-width: 3px;
-  box-shadow: 0 0 0 3px hsl(var(--hue) 78% 48% / 45%), 0 4px 10px rgb(0 0 0 / 50%);
-}
-
-.pinLabel {
-  position: absolute;
-  top: -24px;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: rgb(8 16 31 / 85%);
-  color: #fff;
-  direction: rtl;
-  pointer-events: none;
 }
 
 .truth {

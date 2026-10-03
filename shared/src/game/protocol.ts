@@ -6,7 +6,6 @@
  * או שגיאה מתורגמת לעברית — אין "שגיאות שקטות".
  */
 
-import type { LatLng } from '../geo/coordinates.js';
 import type {
   GameResults,
   GameSettings,
@@ -93,9 +92,9 @@ export interface ClientToServerEvents {
     payload: { readonly code: string; readonly playerToken: string },
     ack: (response: Ack<JoinGameResponse>) => void,
   ) => void;
-  /** אישור ניחוש. נשלח פעם אחת בסיבוב — אחרי אישור לא ניתן לשנות. */
-  'player:guess': (
-    payload: { readonly roundIndex: number; readonly point: LatLng },
+  /** בחירת אחת מארבע האפשרויות. ננעלת מיד — אי אפשר לשנות. */
+  'player:answer': (
+    payload: { readonly roundIndex: number; readonly choice: number },
     ack: (response: Ack<{ readonly accepted: true }>) => void,
   ) => void;
   'player:leave': (ack: (response: Ack<null>) => void) => void;
@@ -126,7 +125,7 @@ export const ERROR_MESSAGES: Readonly<Record<ErrorCode, string>> = {
   NOT_ENOUGH_PLAYERS: 'צריך לפחות שחקן אחד כדי להתחיל',
   NOT_AUTHORIZED: 'אין הרשאה לפעולה הזו',
   ROUND_CLOSED: 'הזמן נגמר — התשובה לא נקלטה',
-  ALREADY_ANSWERED: 'כבר אישרת ניחוש בסיבוב הזה',
+  ALREADY_ANSWERED: 'כבר בחרת תשובה בסיבוב הזה',
   NO_PLACES: 'אין מקומות במאגר לשילוב שנבחר',
   RATE_LIMITED: 'יותר מדי בקשות, נסו שוב בעוד רגע',
   SERVER_ERROR: 'אירעה שגיאה בשרת',

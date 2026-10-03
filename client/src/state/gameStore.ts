@@ -10,7 +10,6 @@ import { create } from 'zustand';
 import type {
   GameResults,
   GameSettings,
-  LatLng,
   PlayerPrivateState,
   PublicGameState,
 } from '@eifo/shared';
@@ -79,7 +78,8 @@ interface GameStoreActions {
   /* ── פעולות שחקן ── */
   joinGame(code: string, name: string): Promise<ActionResult>;
   restorePlayerSession(): Promise<boolean>;
-  submitGuess(point: LatLng): Promise<ActionResult>;
+  /** בחירת אפשרות — ננעלת מיד. */
+  submitAnswer(choice: number): Promise<ActionResult>;
   leaveGame(): Promise<void>;
 
   /* ── ממשק ── */
@@ -300,25 +300,23 @@ export const useGameStore = create<GameStore>((set, get) => ({
     return true;
   },
 
-  async submitGuess(point) {
+  async submitAnswer(choice) {
     const { room } = get();
     if (!room?.round) return { ok: false, message: 'אין סיבוב פעיל' };
 
-    // עדכון אופטימי: הסמן מופיע מיד, בלי להמתין לרשת.
-    set((current) =>
-      current.self ? { self: { ...current.self, hasAnswered: true, currentGuess: point } } : current,
-    );
+    // עדכון אופטימי: הבחירה ננעלת על המסך מיד, בלי להמתין לרשת.
+    set((current) => (current.self ? { self: { ...current.self, hasAnswered: true, choice } } : current));
 
-    const response = await request<{ accepted: true }>('player:guess', {
+    const response = await request<{ accepted: true }>('player:answer', {
       roundIndex: room.round.index,
-      point,
+      choice,
     });
 
     if (!response.ok) {
       if (response.error !== 'ALREADY_ANSWERED') {
-        // הניחוש לא נקלט — מחזירים את המסך למצב "טרם אושר".
+        // הבחירה לא נקלטה — מחזירים את המסך למצב "טרם נענה".
         set((current) =>
-          current.self ? { self: { ...current.self, hasAnswered: false, currentGuess: null } } : current,
+          current.self ? { self: { ...current.self, hasAnswered: false, choice: null } } : current,
         );
       }
       get().pushToast('error', response.message);
@@ -374,10 +372,6 @@ async function runHostCommand(
 }
 
 /* ────────────────────────── בוררים (selectors) ────────────────────────── */
-
-/** האם המשחק בשלב שבו השחקן אמור לסמן על המפה. */
-export const selectIsRoundActive = (store: GameStore): boolean =>
-  store.room?.phase === 'question' && store.room.round !== null;
 
 /** השחקן הנוכחי מתוך רשימת השחקנים הציבורית. */
 export const selectMe = (store: GameStore) =>

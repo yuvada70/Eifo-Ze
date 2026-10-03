@@ -7,7 +7,7 @@
  */
 
 import { motion } from 'framer-motion';
-import { formatDistance, type LeaderboardEntry } from '@eifo/shared';
+import type { LeaderboardEntry } from '@eifo/shared';
 
 import { AvatarBadge } from '../ui/misc';
 import styles from './Podium.module.css';
@@ -72,9 +72,7 @@ export function Podium({ entries, highlightPlayerId = null }: PodiumProps): JSX.
                 {entry.totalPoints.toLocaleString('he-IL')}
                 <span className={styles.pointsUnit}> נק׳</span>
               </span>
-              {entry.averageDistanceKm !== null ? (
-                <span className={styles.detail}>ממוצע {formatDistance(entry.averageDistanceKm)}</span>
-              ) : null}
+              <span className={styles.detail}>✓ {entry.correctAnswers} תשובות נכונות</span>
             </motion.div>
 
             <motion.div

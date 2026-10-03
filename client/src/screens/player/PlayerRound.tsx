@@ -1,19 +1,17 @@
 /**
  * מסך המשחק של השחקן.
  *
- * בטלפון: התמונה למעלה, המפה למטה, וכפתור "אישור" גדול בתחתית.
- * השחקן מקיש על המפה כדי לסמן (אפשר להקיש שוב כדי להזיז), גורר
- * ומגדיל כרצונו — וכל זה מקומי בלבד. רק הלחיצה על "אישור" שולחת
- * את הניחוש לשרת, פעם אחת בסיבוב.
+ * בטלפון: התמונה בחלק העליון, ומתחתיה ארבעה כפתורים גדולים. לחיצה על
+ * אפשרות בוחרת ונועלת אותה מיד — אין כפתור "אישור" נפרד. ככל שעונים
+ * מהר יותר (ונכון), מקבלים יותר נקודות.
  *
- * אחרי שהסיבוב נסגר מוצגת החשיפה: המקום האמיתי, הניחושים והמרחקים.
+ * אחרי שהסיבוב נסגר מוצגת החשיפה: התשובה הנכונה, מי בחר מה, ומפה קטנה.
  */
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import type { LatLng } from '@eifo/shared';
 
-import { WorldMap } from '../../components/map/WorldMap';
+import { OptionButtons } from '../../components/options/OptionButtons';
 import { PlacePhoto } from '../../components/place/PlacePhoto';
 import { RoundReveal } from '../../components/results/RoundReveal';
 import { TimerRing } from '../../components/ui/TimerRing';
@@ -26,7 +24,7 @@ export function PlayerRound(): JSX.Element {
   const room = useGameStore((store) => store.room)!;
   const self = useGameStore((store) => store.self);
   const playerId = useGameStore((store) => store.playerId);
-  const submitGuess = useGameStore((store) => store.submitGuess);
+  const submitAnswer = useGameStore((store) => store.submitAnswer);
   const me = useGameStore(selectMe);
 
   const playSound = useSound();
@@ -35,37 +33,24 @@ export function PlayerRound(): JSX.Element {
   const isPaused = room.phase === 'paused';
   const isQuestion = room.phase === 'question' && round !== null;
 
-  const [pending, setPending] = useState<LatLng | null>(null);
-  const [submitting, setSubmitting] = useState(false);
-  /** הסיבוב שבו האישור התקבל בשרת — כדי שהמסך לא "יחזור" לכפתור האישור
-   *  בחלון הקצר שבין סגירת הסיבוב (אחרי האישור האחרון) לבין מסך החשיפה. */
-  const [confirmedRound, setConfirmedRound] = useState<number | null>(null);
+  /**
+   * הבחירה המקומית בסיבוב הנוכחי. נשמרת גם אחרי שהשרת סוגר את הסיבוב
+   * (כשהשחקן האחרון ענה), כדי שהכפתורים לא "יתאפסו" לרגע לפני החשיפה.
+   */
+  const [localChoice, setLocalChoice] = useState<{ round: number; choice: number } | null>(null);
 
-  /* איפוס בכל סיבוב חדש. */
-  useEffect(() => {
-    setPending(null);
-    setSubmitting(false);
-  }, [round?.index]);
+  const choice =
+    round && localChoice?.round === round.index ? localChoice.choice : self?.hasAnswered ? (self.choice ?? null) : null;
+  const answered = choice !== null;
 
-  const answered = (self?.hasAnswered ?? false) || (round !== null && confirmedRound === round.index);
-  const canPick = isQuestion && !isPaused && !answered && !submitting;
-
-  const handlePick = useCallback(
-    (point: LatLng) => {
-      if (!canPick) return;
-      setPending(point);
-    },
-    [canPick],
-  );
-
-  /* משוב חושי בסימון הראשון בכל סיבוב. */
-  const feedbackRoundRef = useRef<number | null>(null);
-  useEffect(() => {
-    if (!pending || !round || feedbackRoundRef.current === round.index) return;
-    feedbackRoundRef.current = round.index;
+  const choose = async (index: number) => {
+    if (!round || answered || !isQuestion || isPaused) return;
+    setLocalChoice({ round: round.index, choice: index });
     playSound('place');
     navigator.vibrate?.(15);
-  }, [pending, playSound, round]);
+    const result = await submitAnswer(index);
+    if (!result.ok) setLocalChoice(null);
+  };
 
   /* צליל חשיפה. */
   const revealSoundRef = useRef<number | null>(null);
@@ -77,19 +62,6 @@ export function PlayerRound(): JSX.Element {
 
   useTickingSound(round?.endsAt ?? 0, isQuestion && !isPaused && !answered);
 
-  const confirm = async () => {
-    if (!pending || answered || submitting) return;
-    setSubmitting(true);
-    const roundIndex = round?.index ?? null;
-    const result = await submitGuess(pending);
-    setSubmitting(false);
-    if (result.ok) {
-      setConfirmedRound(roundIndex);
-      navigator.vibrate?.([10, 40, 10]);
-    }
-  };
-
-  const selection = answered ? (self?.currentGuess ?? pending) : pending;
   const roundNumber = (round?.index ?? reveal?.index ?? room.completedRounds) + 1;
 
   return (
@@ -101,7 +73,7 @@ export function PlayerRound(): JSX.Element {
         </span>
 
         {isQuestion && round ? (
-          <TimerRing startsAt={round.startsAt} endsAt={round.endsAt} size={52} paused={isPaused} />
+          <TimerRing startsAt={round.startsAt} endsAt={round.endsAt} size={48} paused={isPaused} />
         ) : (
           <span className={styles.headerSpacer} />
         )}
@@ -132,7 +104,6 @@ export function PlayerRound(): JSX.Element {
             <RoundReveal
               round={reveal}
               players={room.players}
-              view={room.mapView}
               category={room.settings.category}
               highlightPlayerId={playerId}
               layout="stacked"
@@ -155,34 +126,20 @@ export function PlayerRound(): JSX.Element {
               <PlacePhoto image={round.image} />
             </div>
 
-            <div className={styles.mapArea}>
-              <WorldMap
-                view={room.mapView}
-                resetKey={round.index}
-                onPick={canPick ? handlePick : undefined}
-                selection={selection}
-                selectionHue={me?.avatar.hue ?? 165}
-                ariaLabel="מפת העולם — הקישו כדי לסמן איפה צולמה התמונה"
+            <p className={styles.question}>איפה צולמה התמונה?</p>
+
+            <div className={styles.options}>
+              <OptionButtons
+                options={round.options}
+                onChoose={(index) => void choose(index)}
+                chosen={choice}
+                disabled={!isQuestion || isPaused}
               />
-              {isPaused ? <div className={styles.veil}>המשחק מושהה</div> : null}
             </div>
 
-            <footer className={styles.footer}>
-              {answered ? (
-                <div className={styles.done} role="status" data-testid="answered">
-                  ✓ הניחוש אושר — ממתינים לשאר השחקנים…
-                </div>
-              ) : (
-                <button
-                  className={styles.confirm}
-                  disabled={!pending || !isQuestion || isPaused || submitting}
-                  onClick={() => void confirm()}
-                  data-testid="confirm-guess"
-                >
-                  {submitting ? 'שולח…' : pending ? 'אישור ✓' : 'הקישו על המפה כדי לסמן'}
-                </button>
-              )}
-            </footer>
+            <p className={`${styles.status} ${answered ? styles.statusDone : ''}`} role="status" data-testid={answered ? 'answered' : undefined}>
+              {isPaused ? 'המשחק מושהה' : answered ? '🔒 הבחירה ננעלה — ממתינים לשאר השחקנים…' : 'מהר יותר = יותר נקודות ⚡'}
+            </p>
           </motion.section>
         ) : (
           <motion.div key="paused" className={styles.center} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -213,7 +170,7 @@ function BigCountdown({ endsAt }: { endsAt: number }): JSX.Element {
   );
 }
 
-/** תקתוק בכל אחת מחמש השניות האחרונות, כל עוד לא אושר ניחוש. */
+/** תקתוק בכל אחת מחמש השניות האחרונות, כל עוד לא נבחרה תשובה. */
 function useTickingSound(endsAt: number, active: boolean): void {
   const playSound = useSound();
   const { remainingMs } = useCountdown(endsAt - 5_000, endsAt, !active);

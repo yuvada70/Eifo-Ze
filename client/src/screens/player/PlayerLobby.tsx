@@ -50,15 +50,15 @@ export function PlayerLobby(): JSX.Element {
           </li>
           <li>
             <span className={styles.step}>2</span>
-            יש לכם {seconds} שניות לסמן על המפה איפה זה — וללחוץ "אישור".
+            בוחרים מתוך ארבע אפשרויות איפה זה — יש לכם {seconds} שניות.
           </li>
           <li>
             <span className={styles.step}>3</span>
-            ככל שהניחוש קרוב יותר למקום האמיתי — יותר נקודות.
+            תשובה נכונה מזכה בנקודות, ותשובה מהירה — בעוד יותר.
           </li>
         </ol>
         <p className={styles.rulesFoot}>
-          {room.totalRounds} סיבובים · אפשר להזיז את הסימון עד שלוחצים "אישור"
+          {room.totalRounds} סיבובים · הבחירה ננעלת ברגע הלחיצה
         </p>
       </Card>
 

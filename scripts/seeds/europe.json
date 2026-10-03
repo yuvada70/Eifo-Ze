@@ -5,6 +5,7 @@
   "name": "מגדל אייפל",
   "city": "פריז",
   "country": "צרפת",
+  "answerLabel": "פריז, צרפת",
   "category": "europe",
   "difficulty": "easy",
   "fact": "נבנה לתערוכה העולמית של 1889, ותוכנן להיות מפורק אחרי 20 שנה."
@@ -15,6 +16,7 @@
   "name": "הקולוסיאום",
   "city": "רומא",
   "country": "איטליה",
+  "answerLabel": "רומא, איטליה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "האמפיתיאטרון הגדול ביותר שנבנה אי פעם, עם מקום לעשרות אלפי צופים."
@@ -25,6 +27,7 @@
   "name": "ביג בן",
   "city": "לונדון",
   "country": "בריטניה",
+  "answerLabel": "לונדון, בריטניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "\"ביג בן\" הוא בעצם שם הפעמון הגדול; המגדל נקרא מגדל אליזבת."
@@ -35,6 +38,7 @@
   "name": "המגדל הנטוי של פיזה",
   "city": "פיזה",
   "country": "איטליה",
+  "answerLabel": "פיזה, איטליה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "התחיל לנטות כבר בזמן הבנייה במאה ה-12, בגלל קרקע רכה."
@@ -45,6 +49,7 @@
   "name": "סגרדה פמיליה",
   "city": "ברצלונה",
   "country": "ספרד",
+  "answerLabel": "ברצלונה, ספרד",
   "category": "europe",
   "difficulty": "easy",
   "fact": "גאודי החל לעבוד עליה ב-1883 — והבנייה נמשכת עד היום."
@@ -55,6 +60,7 @@
   "name": "הפרתנון",
   "city": "אתונה",
   "country": "יוון",
+  "answerLabel": "אתונה, יוון",
   "category": "europe",
   "difficulty": "easy",
   "fact": "מקדש לאלה אתנה שנבנה על האקרופוליס במאה ה-5 לפני הספירה."
@@ -65,6 +71,7 @@
   "name": "שער ברנדנבורג",
   "city": "ברלין",
   "country": "גרמניה",
+  "answerLabel": "ברלין, גרמניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "במשך שנים עמד ממש על הקו שחילק את ברלין לשתיים."
@@ -75,6 +82,7 @@
   "name": "גשר המצודה",
   "city": "לונדון",
   "country": "בריטניה",
+  "answerLabel": "לונדון, בריטניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "שני חלקי הכביש מתרוממים כדי לאפשר לספינות לעבור בתמזה."
@@ -85,6 +93,7 @@
   "name": "טירת נוישוונשטיין",
   "city": "בוואריה",
   "country": "גרמניה",
+  "answerLabel": "בוואריה, גרמניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "הטירה של לודוויג השני היוותה השראה לטירה של דיסני."
@@ -95,6 +104,7 @@
   "name": "פירמידת הלובר",
   "city": "פריז",
   "country": "צרפת",
+  "answerLabel": "פריז, צרפת",
   "category": "europe",
   "difficulty": "easy",
   "fact": "פירמידת הזכוכית של האדריכל איי. אם. פיי נחנכה ב-1989."
@@ -105,6 +115,7 @@
   "name": "שער הניצחון",
   "city": "פריז",
   "country": "צרפת",
+  "answerLabel": "פריז, צרפת",
   "category": "europe",
   "difficulty": "easy",
   "fact": "נפוליאון הזמין אותו ב-1806 לכבוד ניצחונות צבאו."
@@ -115,6 +126,7 @@
   "name": "קתדרלת נוטרדאם",
   "city": "פריז",
   "country": "צרפת",
+  "answerLabel": "פריז, צרפת",
   "category": "europe",
   "difficulty": "easy",
   "fact": "נפתחה מחדש ב-2024 אחרי השריפה הגדולה של 2019."
@@ -125,6 +137,7 @@
   "name": "סטונהנג'",
   "city": "וילטשייר",
   "country": "בריטניה",
+  "answerLabel": "וילטשייר, בריטניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "חלק מהאבנים הובאו מוויילס, מרחק של כ-250 ק\"מ."
@@ -135,6 +148,7 @@
   "name": "כנסיית בזיל הקדוש",
   "city": "מוסקבה",
   "country": "רוסיה",
+  "answerLabel": "מוסקבה, רוסיה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "נבנתה בהוראת איוואן האיום במאה ה-16, בכיפות בצורת בצל."
@@ -145,6 +159,7 @@
   "name": "מזרקת טרווי",
   "city": "רומא",
   "country": "איטליה",
+  "answerLabel": "רומא, איטליה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "המטבעות שמושלכים אליה — אלפי אירו ביום — נתרמים לצדקה."
@@ -155,6 +170,7 @@
   "name": "בזיליקת פטרוס הקדוש",
   "city": "הוותיקן",
   "country": "הוותיקן",
+  "answerLabel": "הוותיקן",
   "category": "europe",
   "difficulty": "easy",
   "fact": "הכיפה שלה תוכננה בידי מיכלאנג'לו."
@@ -165,6 +181,7 @@
   "name": "האטומיום",
   "city": "בריסל",
   "country": "בלגיה",
+  "answerLabel": "בריסל, בלגיה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "מודל של גביש ברזל מוגדל פי 165 מיליארד, שנבנה לתערוכת 1958."
@@ -175,6 +192,7 @@
   "name": "גשר קארל",
   "city": "פראג",
   "country": "צ'כיה",
+  "answerLabel": "פראג, צ׳כיה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "לאורכו עומדים 30 פסלים בסגנון הבארוק.",
@@ -186,6 +204,7 @@
   "name": "התעלה הגדולה",
   "city": "ונציה",
   "country": "איטליה",
+  "answerLabel": "ונציה, איטליה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "\"הכביש הראשי\" של ונציה, שלאורכו כ-170 מבנים היסטוריים."
@@ -196,6 +215,7 @@
   "name": "אויה",
   "city": "סנטוריני",
   "country": "יוון",
+  "answerLabel": "סנטוריני, יוון",
   "category": "europe",
   "difficulty": "easy",
   "fact": "הבתים הלבנים בנויים על שפת לוע געשי שקרס לתוך הים.",
@@ -207,6 +227,7 @@
   "name": "מון סן מישל",
   "city": "נורמנדי",
   "country": "צרפת",
+  "answerLabel": "נורמנדי, צרפת",
   "category": "europe",
   "difficulty": "easy",
   "fact": "בגאות הים המנזר הופך לאי."
@@ -217,6 +238,7 @@
   "name": "ארמון בקינגהאם",
   "city": "לונדון",
   "country": "בריטניה",
+  "answerLabel": "לונדון, בריטניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "יש בו 775 חדרים, כולל 78 חדרי רחצה."
@@ -227,6 +249,7 @@
   "name": "איה סופיה",
   "city": "איסטנבול",
   "country": "טורקיה",
+  "answerLabel": "איסטנבול, טורקיה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "נבנתה ככנסייה ב-537, הפכה למסגד, למוזיאון — ושוב למסגד."
@@ -237,6 +260,7 @@
   "name": "המטרהורן",
   "city": "צרמט",
   "country": "שווייץ",
+  "answerLabel": "צרמט, שווייץ",
   "category": "europe",
   "difficulty": "easy",
   "fact": "הפירמידה ההררית מופיעה על אריזת שוקולד טובלרון."
@@ -247,6 +271,7 @@
   "name": "פסל בת הים הקטנה",
   "city": "קופנהגן",
   "country": "דנמרק",
+  "answerLabel": "קופנהגן, דנמרק",
   "category": "europe",
   "difficulty": "easy",
   "fact": "פסל ברונזה קטן מ-1913, בהשראת האגדה של הנס כריסטיאן אנדרסן."
@@ -257,6 +282,7 @@
   "name": "הקרמלין",
   "city": "מוסקבה",
   "country": "רוסיה",
+  "answerLabel": "מוסקבה, רוסיה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "מצודה עם חומה באורך של יותר משני ק\"מ ו-20 מגדלים."
@@ -267,6 +293,7 @@
   "name": "אלהמברה",
   "city": "גרנדה",
   "country": "ספרד",
+  "answerLabel": "גרנדה, ספרד",
   "category": "europe",
   "difficulty": "easy",
   "fact": "ארמון מוסלמי מפואר מימי הביניים, על רקע הרי סיירה נבדה."
@@ -277,6 +304,7 @@
   "name": "טירת אדינבורו",
   "city": "אדינבורו",
   "country": "בריטניה",
+  "answerLabel": "אדינבורו, בריטניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "יושבת על סלע געשי כבוי בלב העיר."
@@ -287,6 +315,7 @@
   "name": "קתדרלת קלן",
   "city": "קלן",
   "country": "גרמניה",
+  "answerLabel": "קלן, גרמניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "בנייתה החלה ב-1248 והסתיימה רק ב-1880."
@@ -297,6 +326,7 @@
   "name": "מנזר וסטמינסטר",
   "city": "לונדון",
   "country": "בריטניה",
+  "answerLabel": "לונדון, בריטניה",
   "category": "europe",
   "difficulty": "easy",
   "fact": "כאן מוכתרים מלכי אנגליה מאז 1066."
@@ -307,6 +337,7 @@
   "name": "פארק גואל",
   "city": "ברצלונה",
   "country": "ספרד",
+  "answerLabel": "ברצלונה, ספרד",
   "category": "europe",
   "difficulty": "medium",
   "fact": "גאודי עיצב את הפארק עם פסיפסי קרמיקה צבעוניים ולטאה מפורסמת."
@@ -317,6 +348,7 @@
   "name": "השעון האסטרונומי",
   "city": "פראג",
   "country": "צ'כיה",
+  "answerLabel": "פראג, צ׳כיה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "פועל מאז 1410 — השעון האסטרונומי העתיק בעולם שעדיין עובד."
@@ -327,6 +359,7 @@
   "name": "בניין הפרלמנט ההונגרי",
   "city": "בודפשט",
   "country": "הונגריה",
+  "answerLabel": "בודפשט, הונגריה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "הבניין הגדול בהונגריה, על גדת הדנובה."
@@ -337,6 +370,7 @@
   "name": "ארמון שנברון",
   "city": "וינה",
   "country": "אוסטריה",
+  "answerLabel": "וינה, אוסטריה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "ארמון הקיץ של ההבסבורגים, עם 1,441 חדרים."
@@ -347,6 +381,7 @@
   "name": "צוקי מוהר",
   "city": "מחוז קלייר",
   "country": "אירלנד",
+  "answerLabel": "מחוז קלייר, אירלנד",
   "category": "europe",
   "difficulty": "medium",
   "fact": "הצוקים מתנשאים עד כ-214 מטר מעל האוקיינוס האטלנטי.",
@@ -361,6 +396,7 @@
   "name": "חומות דוברובניק",
   "city": "דוברובניק",
   "country": "קרואטיה",
+  "answerLabel": "דוברובניק, קרואטיה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "חומות באורך כשני ק\"מ שמקיפות את כל העיר העתיקה."
@@ -371,6 +407,7 @@
   "name": "אגם בלד",
   "city": "בלד",
   "country": "סלובניה",
+  "answerLabel": "בלד, סלובניה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "באי הקטן שבאגם עומדת כנסייה, ומגיעים אליה בסירות חתירה."
@@ -381,6 +418,7 @@
   "name": "מנרולה",
   "city": "צ'ינקווה טרה",
   "country": "איטליה",
+  "answerLabel": "ליגוריה, איטליה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "אחד מחמשת הכפרים הצבעוניים של צ'ינקווה טרה."
@@ -391,6 +429,7 @@
   "name": "ארמון ורסאי",
   "city": "ורסאי",
   "country": "צרפת",
+  "answerLabel": "ורסאי, צרפת",
   "category": "europe",
   "difficulty": "medium",
   "fact": "באולם המראות נחתם ב-1919 הסכם השלום שסיים את מלחמת העולם הראשונה."
@@ -401,6 +440,7 @@
   "name": "הדואומו של פירנצה",
   "city": "פירנצה",
   "country": "איטליה",
+  "answerLabel": "פירנצה, איטליה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "הכיפה של ברונלסקי נבנתה ללא פיגומים מהקרקע."
@@ -411,6 +451,7 @@
   "name": "גשר ריאלטו",
   "city": "ונציה",
   "country": "איטליה",
+  "answerLabel": "ונציה, איטליה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "גשר האבן העתיק ביותר על התעלה הגדולה."
@@ -421,6 +462,7 @@
   "name": "מגדל בלם",
   "city": "ליסבון",
   "country": "פורטוגל",
+  "answerLabel": "ליסבון, פורטוגל",
   "category": "europe",
   "difficulty": "medium",
   "fact": "ממנו יצאו המגלים הפורטוגלים להפלגות בעידן התגליות."
@@ -431,6 +473,7 @@
   "name": "ארמון פנה",
   "city": "סינטרה",
   "country": "פורטוגל",
+  "answerLabel": "סינטרה, פורטוגל",
   "category": "europe",
   "difficulty": "medium",
   "fact": "ארמון צבעוני בסגנון רומנטי על ראש גבעה."
@@ -441,6 +484,7 @@
   "name": "פלאסה דה אספניה",
   "city": "סביליה",
   "country": "ספרד",
+  "answerLabel": "סביליה, ספרד",
   "category": "europe",
   "difficulty": "medium",
   "fact": "לאורך הקיר — אריחים צבועים לכל אחד ממחוזות ספרד."
@@ -451,6 +495,7 @@
   "name": "קינדרדייק",
   "city": "דרום הולנד",
   "country": "הולנד",
+  "answerLabel": "דרום הולנד, הולנד",
   "category": "europe",
   "difficulty": "medium",
   "fact": "19 טחנות רוח מהמאה ה-18 ששימשו לניקוז מים."
@@ -461,6 +506,7 @@
   "name": "הלשטאט",
   "city": "זלצקמרגוט",
   "country": "אוסטריה",
+  "answerLabel": "זלצקמרגוט, אוסטריה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "הכפר כל כך מצולם, שבסין בנו לו העתק מלא."
@@ -471,6 +517,7 @@
   "name": "מטאורה",
   "city": "תסליה",
   "country": "יוון",
+  "answerLabel": "תסליה, יוון",
   "category": "europe",
   "difficulty": "medium",
   "fact": "מנזרים שנבנו על ראשי עמודי סלע; פעם עלו אליהם רק בסלים וחבלים."
@@ -481,6 +528,7 @@
   "name": "מסלול הענקים",
   "city": "צפון אירלנד",
   "country": "בריטניה",
+  "answerLabel": "צפון אירלנד, בריטניה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "כ-40,000 עמודי בזלת משושים שנוצרו מהתקררות לבה."
@@ -491,6 +539,7 @@
   "name": "מצודת לונדון",
   "city": "לונדון",
   "country": "בריטניה",
+  "answerLabel": "לונדון, בריטניה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "כאן שמורים תכשיטי הכתר הבריטי."
@@ -501,6 +550,7 @@
   "name": "בזיליקת סקרה-קר",
   "city": "פריז",
   "country": "צרפת",
+  "answerLabel": "פריז, צרפת",
   "category": "europe",
   "difficulty": "medium",
   "fact": "בנויה מאבן גיר שמלבינה עם הזמן בגשם."
@@ -511,6 +561,7 @@
   "name": "פון דו גאר",
   "city": "נים",
   "country": "צרפת",
+  "answerLabel": "נים, צרפת",
   "category": "europe",
   "difficulty": "medium",
   "fact": "אמת מים רומית בת שלוש קומות, בת כ-2,000 שנה."
@@ -521,6 +572,7 @@
   "name": "הכיכר הגדולה",
   "city": "בריסל",
   "country": "בלגיה",
+  "answerLabel": "בריסל, בלגיה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "פעם בשנתיים מכסים את רצפתה בשטיח ענק של פרחים."
@@ -531,6 +583,7 @@
   "name": "ניהאון",
   "city": "קופנהגן",
   "country": "דנמרק",
+  "answerLabel": "קופנהגן, דנמרק",
   "category": "europe",
   "difficulty": "medium",
   "fact": "הנס כריסטיאן אנדרסן גר בכמה מהבתים הצבעוניים שלאורך התעלה."
@@ -541,6 +594,7 @@
   "name": "הדואומו של מילאנו",
   "city": "מילאנו",
   "country": "איטליה",
+  "answerLabel": "מילאנו, איטליה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "על הגג שלה יותר מ-3,000 פסלים."
@@ -551,6 +605,7 @@
   "name": "פרייקסטולן",
   "city": "רוגלנד",
   "country": "נורווגיה",
+  "answerLabel": "רוגלנד, נורווגיה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "\"סלע הדוכן\" — מצוק שטוח כ-600 מטר מעל הפיורד."
@@ -561,6 +616,7 @@
   "name": "אמת המים של סגוביה",
   "city": "סגוביה",
   "country": "ספרד",
+  "answerLabel": "סגוביה, ספרד",
   "category": "europe",
   "difficulty": "medium",
   "fact": "נבנתה בידי הרומאים מאבני גרניט — בלי טיט ביניהן."
@@ -571,6 +627,7 @@
   "name": "גשר השרשרת",
   "city": "בודפשט",
   "country": "הונגריה",
+  "answerLabel": "בודפשט, הונגריה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "הגשר הקבוע הראשון שחיבר בין בודה לפשט."
@@ -581,6 +638,7 @@
   "name": "טירת בראן",
   "city": "טרנסילבניה",
   "country": "רומניה",
+  "answerLabel": "טרנסילבניה, רומניה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "מכונה \"הטירה של דרקולה\", אם כי לסיפור אין קשר ממשי אליה."
@@ -591,6 +649,7 @@
   "name": "בזיליקת סן מרקו",
   "city": "ונציה",
   "country": "איטליה",
+  "answerLabel": "ונציה, איטליה",
   "category": "europe",
   "difficulty": "medium",
   "fact": "תקרותיה מכוסות פסיפסי זהב, ולכן כונתה \"כנסיית הזהב\"."
@@ -601,6 +660,7 @@
   "name": "כנסיית הלגרים",
   "city": "רייקיאוויק",
   "country": "איסלנד",
+  "answerLabel": "רייקיאוויק, איסלנד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "החזית מעוצבת בהשראת עמודי בזלת שנוצרו מלבה."
@@ -611,6 +671,7 @@
   "name": "מפרץ קוטור",
   "city": "קוטור",
   "country": "מונטנגרו",
+  "answerLabel": "קוטור, מונטנגרו",
   "category": "europe",
   "difficulty": "pro",
   "fact": "מפרץ מפותל בין הרים תלולים, שמזכיר פיורד."
@@ -621,6 +682,7 @@
   "name": "כנסיית העצמות",
   "city": "קוטנה הורה",
   "country": "צ'כיה",
+  "answerLabel": "קוטנה הורה, צ׳כיה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "מעוטרת בעצמות של עשרות אלפי בני אדם, כולל נברשת."
@@ -631,6 +693,7 @@
   "name": "גבעת הצלבים",
   "city": "שיאוליאי",
   "country": "ליטא",
+  "answerLabel": "שיאוליאי, ליטא",
   "category": "europe",
   "difficulty": "pro",
   "fact": "מאות אלפי צלבים הוצבו כאן לאורך השנים."
@@ -641,6 +704,7 @@
   "name": "הגשר העתיק",
   "city": "מוסטאר",
   "country": "בוסניה והרצגובינה",
+  "answerLabel": "מוסטאר, בוסניה והרצגובינה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "נהרס במלחמה ב-1993 ונבנה מחדש מאבנים שנמשו מהנהר."
@@ -651,6 +715,7 @@
   "name": "סקליג מייקל",
   "city": "מחוז קרי",
   "country": "אירלנד",
+  "answerLabel": "מחוז קרי, אירלנד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "אי סלעי עם מנזר עתיק, שהופיע בסרטי \"מלחמת הכוכבים\"."
@@ -661,6 +726,7 @@
   "name": "העיר העתיקה של טאלין",
   "city": "טאלין",
   "country": "אסטוניה",
+  "answerLabel": "טאלין, אסטוניה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "מהערים מימי הביניים השמורות ביותר בצפון אירופה."
@@ -671,6 +737,7 @@
   "name": "אגמי פליטביצה",
   "city": "ליקה",
   "country": "קרואטיה",
+  "answerLabel": "ליקה, קרואטיה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "16 אגמים מדורגים המחוברים במפלים."
@@ -681,6 +748,7 @@
   "name": "מכרה המלח וייליצ'קה",
   "city": "קרקוב",
   "country": "פולין",
+  "answerLabel": "קרקוב, פולין",
   "category": "europe",
   "difficulty": "pro",
   "fact": "בעומק המכרה קפלה שלמה — כולל נברשות — חצובה מגביש מלח."
@@ -691,6 +759,7 @@
   "name": "טירת שאמבור",
   "city": "עמק הלואר",
   "country": "צרפת",
+  "answerLabel": "עמק הלואר, צרפת",
   "category": "europe",
   "difficulty": "pro",
   "fact": "במרכזה מדרגות כפולות ששני אנשים יכולים לעלות בהן בלי להיפגש."
@@ -701,6 +770,7 @@
   "name": "קרקסון",
   "city": "אוקסיטניה",
   "country": "צרפת",
+  "answerLabel": "קרקסון, צרפת",
   "category": "europe",
   "difficulty": "pro",
   "fact": "עיר מבוצרת עם 52 מגדלים וחומה כפולה."
@@ -711,6 +781,7 @@
   "name": "הגשר החדש של רונדה",
   "city": "רונדה",
   "country": "ספרד",
+  "answerLabel": "רונדה, ספרד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "\"החדש\" נבנה במאה ה-18, מעל ערוץ בעומק כ-100 מטר.",
@@ -722,6 +793,7 @@
   "name": "אילן דונן",
   "city": "היילנדס",
   "country": "בריטניה",
+  "answerLabel": "היילנדס הסקוטיים, בריטניה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "טירה על אי קטן שמחובר ליבשה בגשר אבן."
@@ -732,6 +804,7 @@
   "name": "מנזר קיילמור",
   "city": "קונמרה",
   "country": "אירלנד",
+  "answerLabel": "קונמרה, אירלנד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "טירה מהמאה ה-19 שהפכה למנזר בנדיקטיני."
@@ -742,6 +815,7 @@
   "name": "טירת טראקאי",
   "city": "טראקאי",
   "country": "ליטא",
+  "answerLabel": "טראקאי, ליטא",
   "category": "europe",
   "difficulty": "pro",
   "fact": "טירה של לבנים אדומות על אי באגם."
@@ -752,6 +826,7 @@
   "name": "בריגן",
   "city": "ברגן",
   "country": "נורווגיה",
+  "answerLabel": "ברגן, נורווגיה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "בתי עץ צבעוניים של סוחרי הליגה ההנזאית."
@@ -762,6 +837,7 @@
   "name": "ריינה",
   "city": "איי לופוטן",
   "country": "נורווגיה",
+  "answerLabel": "איי לופוטן, נורווגיה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "כפר דייגים מתחת לפסגות חדות מעל חוג הקוטב.",
@@ -774,6 +850,7 @@
   "name": "ואלטה",
   "city": "ואלטה",
   "country": "מלטה",
+  "answerLabel": "ואלטה, מלטה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "אחת מבירות האיחוד האירופי הקטנות ביותר, שנבנתה בידי אבירי מסדר יוחנן."
@@ -784,6 +861,7 @@
   "name": "מונמוואסיה",
   "city": "פלופונס",
   "country": "יוון",
+  "answerLabel": "פלופונס, יוון",
   "category": "europe",
   "difficulty": "pro",
   "fact": "עיר מבוצרת על סלע מול החוף, שמחוברת ליבשה בשביל צר."
@@ -794,6 +872,7 @@
   "name": "דרדל דור",
   "city": "דורסט",
   "country": "בריטניה",
+  "answerLabel": "דורסט, בריטניה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "קשת אבן גיר טבעית שנוצרה מפעולת הים.",
@@ -805,6 +884,7 @@
   "name": "הסאסי של מטרה",
   "city": "מטרה",
   "country": "איטליה",
+  "answerLabel": "מטרה, איטליה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "בתי מערות שבהם גרו אנשים עד שנות ה-50 של המאה ה-20."
@@ -815,6 +895,7 @@
   "name": "בתי הטרולי",
   "city": "אלברובלו",
   "country": "איטליה",
+  "answerLabel": "אלברובלו, איטליה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "בתים עגולים עם גגות חרוטיים שנבנו בלי טיט.",
@@ -826,6 +907,7 @@
   "name": "מוזיאון גוגנהיים",
   "city": "בילבאו",
   "country": "ספרד",
+  "answerLabel": "בילבאו, ספרד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "מצופה בלוחות טיטניום מתעקלים, בתכנון פרנק גרי."
@@ -836,6 +918,7 @@
   "name": "טירת פלש",
   "city": "סינאיה",
   "country": "רומניה",
+  "answerLabel": "סינאיה, רומניה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "הטירה הראשונה באירופה שקיבלה תאורה חשמלית מלאה."
@@ -846,6 +929,7 @@
   "name": "מנזר רילה",
   "city": "הרי רילה",
   "country": "בולגריה",
+  "answerLabel": "הרי רילה, בולגריה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "המנזר האורתודוקסי הגדול בבולגריה, עם קירות מצוירים בצבעים עזים."
@@ -856,6 +940,7 @@
   "name": "כנסיות קיז'י",
   "city": "קרליה",
   "country": "רוסיה",
+  "answerLabel": "קרליה, רוסיה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "כנסייה בת 22 כיפות שנבנתה מעץ — לפי המסורת בלי מסמר אחד."
@@ -866,6 +951,7 @@
   "name": "צ'סקי קרומלוב",
   "city": "בוהמיה",
   "country": "צ'כיה",
+  "answerLabel": "בוהמיה הדרומית, צ׳כיה",
   "category": "europe",
   "difficulty": "pro",
   "fact": "עיירה מימי הביניים בלולאה של נהר הוולטבה."
@@ -876,6 +962,7 @@
   "name": "קירקיופל",
   "city": "חצי האי סנייפלסנס",
   "country": "איסלנד",
+  "answerLabel": "סנייפלסנס, איסלנד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "\"הר הכנסייה\" — מהנופים המצולמים ביותר באיסלנד."
@@ -886,6 +973,7 @@
   "name": "מפל סליאלנדספוס",
   "city": "דרום איסלנד",
   "country": "איסלנד",
+  "answerLabel": "דרום איסלנד, איסלנד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "אפשר ללכת בשביל מאחורי מסך המים."
@@ -896,6 +984,7 @@
   "name": "סלע קשל",
   "city": "מחוז טיפררי",
   "country": "אירלנד",
+  "answerLabel": "מחוז טיפררי, אירלנד",
   "category": "europe",
   "difficulty": "pro",
   "fact": "מושבם של מלכי מנסטר, ובהמשך מרכז כנסייתי."

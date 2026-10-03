@@ -5,7 +5,7 @@
 
 import { useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { formatDistance } from '@eifo/shared';
+import { formatSeconds } from '@eifo/shared';
 
 import { Leaderboard } from '../../components/results/Leaderboard';
 import { Podium } from '../../components/results/Podium';
@@ -42,10 +42,9 @@ export function HostResults(): JSX.Element {
   }
 
   const winner = results.leaderboard[0];
-  const distances = results.rounds.flatMap((round) =>
-    round.guesses.map((guess) => guess.distanceKm).filter((value): value is number => value !== null),
-  );
-  const average = distances.length > 0 ? distances.reduce((sum, value) => sum + value, 0) / distances.length : null;
+  const allAnswers = results.rounds.flatMap((round) => round.answers);
+  const correctShare =
+    allAnswers.length > 0 ? Math.round((100 * allAnswers.filter((answer) => answer.correct).length) / allAnswers.length) : 0;
 
   return (
     <div className={styles.page}>
@@ -76,31 +75,28 @@ export function HostResults(): JSX.Element {
           <div className={styles.summaryStats}>
             <Stat label="שחקנים" value={results.leaderboard.length} />
             <Stat label="סיבובים" value={results.rounds.length} />
-            <Stat label="מרחק ממוצע" value={average === null ? '—' : formatDistance(average)} tone="primary" />
+            <Stat label="תשובות נכונות" value={`${correctShare}%`} tone="primary" />
           </div>
           <Leaderboard entries={results.leaderboard} />
 
           <h2 className={styles.roundsTitle}>המקומות במשחק</h2>
           <ol className={styles.rounds}>
             {results.rounds.map((round) => {
-              const best = [...round.guesses]
-                .filter((guess) => guess.distanceKm !== null)
-                .sort((a, b) => a.distanceKm! - b.distanceKm!)[0];
+              const fastest = round.answers
+                .filter((answer) => answer.correct && answer.elapsedMs !== null)
+                .sort((a, b) => a.elapsedMs! - b.elapsedMs!)[0];
               return (
                 <li key={round.index} className={styles.roundRow}>
                   <span className={styles.roundName}>
                     {round.place.name}
-                    <small>
-                      {' '}
-                      · {round.place.city}, {round.place.country}
-                    </small>
+                    <small> · {round.options[round.correctIndex]}</small>
                   </span>
-                  {best ? (
+                  {fastest ? (
                     <span className={styles.roundBest}>
-                      הכי קרוב: {playersById.get(best.playerId)?.name ?? 'שחקן'} ({formatDistance(best.distanceKm!)})
+                      הכי מהיר/ה: {playersById.get(fastest.playerId)?.name ?? 'שחקן'} ({formatSeconds(fastest.elapsedMs!)})
                     </span>
                   ) : (
-                    <span className={styles.roundBest}>אף אחד לא ניחש</span>
+                    <span className={styles.roundBest}>אף אחד לא צדק</span>
                   )}
                 </li>
               );

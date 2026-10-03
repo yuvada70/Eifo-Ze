@@ -23,6 +23,7 @@ import {
   countPools,
   normalizeCommonsFileName,
   placeImage,
+  suggestAnswerLabel,
   suggestPlaceId,
   validatePlace,
   validatePlacesFile,
@@ -57,6 +58,10 @@ interface FormState {
   name: string;
   city: string;
   country: string;
+  /** טקסט התשובה שמוצג באפשרויות הבחירה. */
+  answerLabel: string;
+  /** האם המשתמש ערך את טקסט התשובה ידנית (ואז לא מחליפים אותו בהצעה). */
+  answerLabelEdited: boolean;
   category: Region;
   difficulty: Difficulty;
   file: string;
@@ -72,6 +77,8 @@ const EMPTY_FORM: FormState = {
   name: '',
   city: '',
   country: '',
+  answerLabel: '',
+  answerLabelEdited: false,
   category: 'europe',
   difficulty: 'easy',
   file: '',
@@ -233,8 +240,16 @@ export function AdminScreen(): JSX.Element {
     return [...matches].reverse().sort((a, b) => Number(changed.has(b.id)) - Number(changed.has(a.id)));
   }, [draft, search]);
 
+  /** עדכון שדה. עיר, מדינה וקטגוריה מעדכנות גם את ההצעה לטקסט התשובה. */
   const update = <K extends keyof FormState>(key: K, value: FormState[K]) =>
-    setForm((current) => ({ ...current, [key]: value }));
+    setForm((current) => {
+      const next = { ...current, [key]: value };
+      if (!next.answerLabelEdited && (key === 'city' || key === 'country' || key === 'category')) {
+        next.answerLabel = suggestAnswerLabel(next.city, next.country, next.category);
+      }
+      return next;
+    });
+  const suggestedLabel = suggestAnswerLabel(form.city, form.country, form.category);
 
   const normalizedFile = normalizeCommonsFileName(form.file);
   const preview = normalizedFile
@@ -243,6 +258,7 @@ export function AdminScreen(): JSX.Element {
         name: '',
         city: '',
         country: '',
+        answerLabel: '',
         category: form.category,
         difficulty: form.difficulty,
         lat: 0,
@@ -280,6 +296,7 @@ export function AdminScreen(): JSX.Element {
       name: form.name.trim(),
       city: form.city.trim(),
       country: form.country.trim(),
+      answerLabel: form.answerLabel.trim(),
       category: form.category,
       difficulty: form.difficulty,
       lat: form.position ? Math.round(form.position.lat * 1e5) / 1e5 : Number.NaN,
@@ -318,6 +335,8 @@ export function AdminScreen(): JSX.Element {
       name: place.name,
       city: place.city,
       country: place.country,
+      answerLabel: place.answerLabel,
+      answerLabelEdited: place.answerLabel !== suggestAnswerLabel(place.city, place.country, place.category),
       category: place.category,
       difficulty: place.difficulty,
       file: place.image.file,
@@ -498,6 +517,33 @@ export function AdminScreen(): JSX.Element {
               </Field>
             </div>
 
+            <Field
+              label={
+                form.category === 'israel'
+                  ? 'טקסט התשובה באפשרויות — שם היישוב או האזור, בלי "ישראל"'
+                  : 'טקסט התשובה באפשרויות — "עיר, מדינה" או "אזור, מדינה"'
+              }
+            >
+              <div className={styles.inline}>
+                <input
+                  className={styles.input}
+                  value={form.answerLabel}
+                  onChange={(e) => setForm((current) => ({ ...current, answerLabel: e.target.value, answerLabelEdited: true }))}
+                  placeholder={suggestedLabel || 'פריז, צרפת'}
+                  data-testid="f-answer-label"
+                />
+                {form.answerLabelEdited && suggestedLabel && suggestedLabel !== form.answerLabel ? (
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setForm((current) => ({ ...current, answerLabel: suggestedLabel, answerLabelEdited: false }))}
+                  >
+                    הצעה: {suggestedLabel}
+                  </Button>
+                ) : null}
+              </div>
+            </Field>
+
             <Field label="שם הקובץ ב-Wikimedia Commons (או הקישור לדף הקובץ)">
               <div className={styles.inline}>
                 <input
@@ -566,8 +612,7 @@ export function AdminScreen(): JSX.Element {
               view={form.category === 'israel' ? 'israel' : 'world'}
               onPick={(point) => update('position', point)}
               selection={form.position}
-              fitKey={form.id}
-              truth={null}
+              focusKey={form.id}
               ariaLabel="בחירת מיקום המקום על המפה"
             />
           </div>
@@ -624,7 +669,7 @@ export function AdminScreen(): JSX.Element {
               <div className={styles.itemText}>
                 <strong>{place.name}</strong>
                 <span className={styles.muted}>
-                  {place.city}, {place.country} · {CATEGORY_LABELS[place.category]} · {DIFFICULTY_LABELS[place.difficulty]}
+                  🎯 {place.answerLabel} · {CATEGORY_LABELS[place.category]} · {DIFFICULTY_LABELS[place.difficulty]}
                 </span>
                 {place.note ? <span className={styles.note}>⚠️ {place.note}</span> : null}
               </div>

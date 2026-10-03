@@ -47,6 +47,7 @@ function place(id: string, category: Place['category'], difficulty: Place['diffi
     difficulty,
     lat,
     lng,
+    answerLabel: `${id}-city, ${category}`,
     image: { file: `${id}.jpg`, author: 'צלם', license: 'CC BY-SA 4.0' },
     fact: 'עובדה',
   };
@@ -107,20 +108,35 @@ describe('GameRoom', () => {
       const state = room.getPublicState();
       assert.equal(state.phase, 'question');
       assert.ok(state.round);
-      // בזמן סיבוב לא נחשף שום פרט על המקום מלבד התמונה.
-      assert.equal(JSON.stringify(state).includes('"lat"'), false);
+      assert.equal(state.round.options.length, 4);
+      assert.equal(new Set(state.round.options).size, 4);
+      // בזמן סיבוב לא נחשף שום פרט על המקום או על התשובה הנכונה.
+      const json = JSON.stringify(state);
+      assert.equal(json.includes('"lat"'), false);
+      assert.equal(json.includes('correctIndex'), false);
 
-      room.submitGuess(alice.id, index, { lat: 48.85, lng: 2.29 });
-      assert.throws(() => room.submitGuess(alice.id, index, { lat: 0, lng: 0 }), (error: GameError) => error.code === 'ALREADY_ANSWERED');
-      room.submitGuess(bob.id, index, { lat: 0, lng: 0 });
+      clock.advance(3_000);
+      // אליס עונה נכון אחרי 3 שניות, בוב טועה.
+      // התשובה הנכונה לפי קובץ התמונה (כך גם שחקן אמיתי "יודע" אותה).
+      const shown = PLACES.find((p) => state.round!.image.url.includes(`/${p.id}.jpg`))!;
+      const correctLabel = state.round.options.indexOf(shown.answerLabel);
+      assert.ok(correctLabel >= 0);
+      room.submitAnswer(alice.id, index, correctLabel);
+      assert.throws(() => room.submitAnswer(alice.id, index, 0), (error: GameError) => error.code === 'ALREADY_ANSWERED');
+      room.submitAnswer(bob.id, index, (correctLabel + 1) % 4);
 
-      // כולם אישרו → הסיבוב נסגר מיד ועובר לחשיפה.
+      // כולם ענו → הסיבוב נסגר מיד ועובר לחשיפה.
       const reveal = room.getPublicState();
       assert.equal(reveal.phase, 'reveal');
       assert.ok(reveal.reveal);
       seen.add(reveal.reveal.place.id);
-      const aliceGuess = reveal.reveal.guesses.find((guess) => guess.playerId === alice.id)!;
-      assert.ok(aliceGuess.distanceKm !== null && aliceGuess.points > 0);
+      assert.equal(reveal.reveal.options[reveal.reveal.correctIndex], reveal.reveal.place.answerLabel);
+      const aliceAnswer = reveal.reveal.answers.find((a) => a.playerId === alice.id)!;
+      const bobAnswer = reveal.reveal.answers.find((a) => a.playerId === bob.id)!;
+      assert.equal(aliceAnswer.correct, true);
+      assert.equal(aliceAnswer.points, 940); // 400 + 600 × (1 − 3/30)
+      assert.equal(bobAnswer.correct, false);
+      assert.equal(bobAnswer.points, 0);
 
       clock.advance(15_000);
     }
@@ -130,23 +146,33 @@ describe('GameRoom', () => {
     const results = room.getResults()!;
     assert.equal(results.rounds.length, 3);
     assert.equal(results.leaderboard[0]!.player.id, alice.id);
+    assert.equal(results.leaderboard[0]!.correctAnswers, 3);
+    assert.equal(results.leaderboard[1]!.correctAnswers, 0);
   });
 
-  it('closes the round on timeout and gives 0 to players who did not confirm', () => {
+  it('rejects invalid choices', () => {
+    const { room } = setup({ category: 'europe', roundCount: 1, countdownMs: 0 });
+    const alice = room.addPlayer('אליס', 's1');
+    room.start();
+    for (const bad of [-1, 4, 1.5, '1', null]) {
+      assert.throws(() => room.submitAnswer(alice.id, 0, bad), (error: GameError) => error.code === 'INVALID_INPUT');
+    }
+  });
+
+  it('closes the round on timeout and gives 0 to players who did not answer', () => {
     const { room, clock } = setup({ category: 'israel', roundCount: 1, countdownMs: 0 });
     const alice = room.addPlayer('אליס', 's1');
     room.addPlayer('בוב', 's2');
     room.start();
-    room.submitGuess(alice.id, 0, { lat: 31.77, lng: 35.23 });
+    room.submitAnswer(alice.id, 0, 0);
     assert.equal(room.getPublicState().phase, 'question');
 
     clock.advance(30_000);
     const state = room.getPublicState();
     assert.equal(state.phase, 'reveal');
-    assert.equal(state.mapView, 'israel');
-    const bob = state.reveal!.guesses.find((guess) => guess.playerId !== alice.id)!;
+    const bob = state.reveal!.answers.find((answer) => answer.playerId !== alice.id)!;
     assert.equal(bob.points, 0);
-    assert.equal(bob.distanceKm, null);
+    assert.equal(bob.choice, null);
   });
 
   it('host skip advances from reveal to the next round', () => {

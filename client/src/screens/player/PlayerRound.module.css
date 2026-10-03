@@ -55,13 +55,13 @@
   flex: 1;
   min-height: 0;
   display: grid;
-  /* עמודה מפורשת: בלעדיה שורת קרדיט ארוכה מותחת את הרשת מעבר לרוחב המסך. */
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: minmax(0, 0.85fr) minmax(0, 1.15fr) auto;
+  grid-template-rows: minmax(0, 1fr) auto auto auto;
   grid-template-areas:
     'photo'
-    'map'
-    'footer';
+    'question'
+    'options'
+    'status';
   gap: var(--space-2);
 }
 
@@ -71,68 +71,32 @@
   min-width: 0;
 }
 
-.mapArea {
-  grid-area: map;
-  position: relative;
-  min-height: 0;
+.question {
+  grid-area: question;
+  margin: 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+}
+
+.options {
+  grid-area: options;
   min-width: 0;
 }
 
-.veil {
-  position: absolute;
-  inset: 0;
-  z-index: 1000;
-  display: grid;
-  place-items: center;
-  background: rgb(7 12 23 / 60%);
-  font-weight: 800;
-  border-radius: var(--radius-lg);
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.confirm {
-  width: 100%;
-  min-height: 60px;
-  border: none;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-strong));
-  color: var(--color-text-inverse);
-  font: inherit;
-  font-size: var(--text-xl);
-  font-weight: 900;
-  cursor: pointer;
-  box-shadow: 0 8px 24px rgb(33 212 180 / 30%);
-  touch-action: manipulation;
-  transition: transform 0.1s ease, opacity 0.2s ease;
-}
-
-.confirm:active:not(:disabled) {
-  transform: scale(0.98);
-}
-
-.confirm:disabled {
-  cursor: default;
-  background: var(--color-surface-strong);
-  color: var(--color-text-muted);
-  box-shadow: none;
-  font-size: var(--text-base);
-  font-weight: 700;
-}
-
-.done {
-  min-height: 60px;
-  display: grid;
-  place-items: center;
+.status {
+  grid-area: status;
+  margin: 0;
+  min-height: 1.4em;
   text-align: center;
-  border-radius: var(--radius-lg);
-  background: var(--color-primary-soft);
-  border: 1px solid var(--color-primary);
+  font-size: var(--text-sm);
+  color: var(--color-text-subtle);
+}
+
+.statusDone {
   color: var(--color-primary);
-  font-weight: 800;
-  padding: 0 var(--space-3);
+  font-weight: 700;
 }
 
 .reveal {
@@ -180,11 +144,15 @@
 
 @media (min-width: 900px) {
   .play {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
-    grid-template-rows: minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto auto auto minmax(0, 1fr);
     grid-template-areas:
-      'photo map'
-      'photo footer';
+      'photo .'
+      'photo question'
+      'photo options'
+      'photo status'
+      'photo .';
+    column-gap: var(--space-5);
   }
 
   .reveal {

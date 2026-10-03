@@ -7,7 +7,7 @@
  * כך שקובץ שעבר אימות במסך הניהול תמיד ייטען גם בשרת.
  */
 
-import { isValidLatLng, type LatLng } from '../geo/coordinates.js';
+import { haversineDistanceKm, isValidLatLng, type LatLng } from '../geo/coordinates.js';
 
 /** אזור גיאוגרפי — הקטגוריה של מקום במאגר. */
 export type Region = 'israel' | 'europe' | 'asia' | 'americas' | 'africa-oceania';
@@ -47,9 +47,9 @@ export const DIFFICULTY_LABELS: Readonly<Record<Difficulty, string>> = {
 };
 
 export const DIFFICULTY_DESCRIPTIONS: Readonly<Record<Difficulty, string>> = {
-  easy: 'מקומות מפורסמים מאוד',
-  medium: 'מוכרים, אבל פחות מובנים מאליהם',
-  pro: 'מאתגרים, או מזווית לא שגרתית',
+  easy: 'מקומות מפורסמים מאוד, ומסיחים מיבשות אחרות',
+  medium: 'מקומות מוכרים פחות, ומסיחים מעורבים',
+  pro: 'מקומות מאתגרים, ומסיחים מאותה מדינה או מאותו אזור',
 };
 
 /** רישיונות חופשיים שמותר להשתמש בהם. */
@@ -73,6 +73,11 @@ export interface Place {
   readonly name: string;
   readonly city: string;
   readonly country: string;
+  /**
+   * הטקסט שמוצג כתשובה באפשרויות הבחירה: "עיר, מדינה", או "אזור, מדינה"
+   * במקומות טבע; בישראל — שם היישוב או האזור בלבד.
+   */
+  readonly answerLabel: string;
   readonly category: Region;
   readonly difficulty: Difficulty;
   /** קואורדינטות WGS84. */
@@ -171,6 +176,11 @@ export function validatePlace(value: unknown): string[] {
   if (!nonEmptyString(place['name'], 80)) problems.push('חסר שם');
   if (!nonEmptyString(place['city'], 80)) problems.push('חסרה עיר');
   if (!nonEmptyString(place['country'], 80)) problems.push('חסרה מדינה');
+  if (!nonEmptyString(place['answerLabel'], 60)) problems.push('חסר טקסט תשובה (answerLabel)');
+  else if (place['category'] === 'israel' && /ישראל\s*$/.test(String(place['answerLabel'])))
+    problems.push('בקטגוריית ישראל טקסט התשובה הוא שם היישוב או האזור בלבד, בלי "ישראל"');
+  else if (place['category'] !== 'israel' && !String(place['answerLabel']).includes(',') && place['answerLabel'] !== place['country'])
+    problems.push('טקסט התשובה צריך להיות בפורמט "עיר, מדינה"');
   if (typeof place['category'] !== 'string' || !(REGIONS as readonly string[]).includes(place['category'])) problems.push('קטגוריה לא תקינה');
   if (typeof place['difficulty'] !== 'string' || !(DIFFICULTIES as readonly string[]).includes(place['difficulty'])) problems.push('דרגה לא תקינה');
   if (!isValidLatLng({ lat: place['lat'], lng: place['lng'] })) problems.push('קואורדינטות לא תקינות');
@@ -262,4 +272,155 @@ export function suggestPlaceId(seed: string, existing: ReadonlySet<string>): str
     counter += 1;
   }
   return candidate;
+}
+
+/* ──────────────────────────── טקסט התשובה ──────────────────────────── */
+
+/** קיצורי שמות מדינות לטקסט התשובה. */
+const COUNTRY_SHORT: Readonly<Record<string, string>> = {
+  'ארצות הברית': 'ארה״ב',
+  'הרפובליקה הדמוקרטית של קונגו': 'קונגו',
+};
+
+/** מחליף גרש ASCII בגרש עברי, ומכווץ רווחים. */
+function tidyLabel(text: string): string {
+  return text.replace(/'/g, '׳').replace(/\s+/g, ' ').trim();
+}
+
+/** הצעה לטקסט התשובה לפי העיר והמדינה (משמש את מסך הניהול). */
+export function suggestAnswerLabel(city: string, country: string, category: Region): string {
+  const cleanCity = tidyLabel(city);
+  if (category === 'israel') return cleanCity;
+  const cleanCountry = tidyLabel(COUNTRY_SHORT[country.trim()] ?? country);
+  if (!cleanCity) return cleanCountry;
+  if (!cleanCountry || cleanCity === cleanCountry) return cleanCity;
+  return `${cleanCity}, ${cleanCountry}`;
+}
+
+/** מפתח השוואה בין טקסטים של תשובות (רווחים, גרשיים וסימני פיסוק). */
+export function labelKey(label: string): string {
+  return tidyLabel(label).replace(/[״"]/g, '"').replace(/[–-]/g, '-').toLocaleLowerCase('he');
+}
+
+/**
+ * הטקסט שמוצג לשחקן. מקום בישראל שמופיע במשחק שאינו בקטגוריית ישראל
+ * (למשל "מעורב") מקבל ", ישראל" — כדי שכל האפשרויות יהיו באותו פורמט.
+ */
+export function displayLabel(place: Place, category: ContentCategory): string {
+  if (place.category === 'israel' && category !== 'israel') return `${place.answerLabel}, ישראל`;
+  return place.answerLabel;
+}
+
+/* ──────────────────────────── מסיחים ──────────────────────────── */
+
+/** יבשת — לצורך דרגות הקושי של המסיחים. */
+export type Continent = 'europe' | 'asia' | 'americas' | 'africa' | 'oceania';
+
+const OCEANIA_COUNTRIES = new Set(['אוסטרליה', 'ניו זילנד', 'פולינזיה הצרפתית', 'פלאו', 'ונואטו', 'מיקרונזיה']);
+
+export function continentOf(place: Place): Continent {
+  if (place.category === 'israel') return 'asia';
+  if (place.category === 'africa-oceania') return OCEANIA_COUNTRIES.has(place.country) ? 'oceania' : 'africa';
+  return place.category;
+}
+
+/** מספר האפשרויות בכל סיבוב. */
+export const OPTION_COUNT = 4;
+
+export interface RoundOptions {
+  /** ארבעת הטקסטים, בסדר אקראי. */
+  readonly options: readonly string[];
+  /** האינדקס של התשובה הנכונה. */
+  readonly correctIndex: number;
+}
+
+type Rng = () => number;
+
+function shuffled<T>(items: readonly T[], rng: Rng): T[] {
+  const out = [...items];
+  for (let i = out.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(rng() * (i + 1));
+    const tmp = out[i]!;
+    out[i] = out[j]!;
+    out[j] = tmp;
+  }
+  return out;
+}
+
+function distanceKm(a: Place, b: Place): number {
+  return haversineDistanceKm({ lat: a.lat, lng: a.lng }, { lat: b.lat, lng: b.lng });
+}
+
+/**
+ * בונה את ארבע האפשרויות לסיבוב: התשובה הנכונה ושלושה מסיחים מהמאגר.
+ *
+ * כללים קבועים: מסיח לעולם אינו זהה לתשובה (מקומות שחולקים את אותו
+ * טקסט תשובה — למשל מגדל אייפל והלובר — לא משמשים מסיחים זה לזה),
+ * ואין שתי אפשרויות זהות באותו סיבוב.
+ *
+ * לפי דרגה:
+ *  • קל — מסיחים מיבשות אחרות; בישראל: מקומות רחוקים.
+ *  • בינוני — תערובת: אחד-שניים מאותה יבשת והשאר ממקומות אחרים.
+ *  • מקצוענים — מאותה מדינה, ואחר כך מהקרובים ביותר באותה יבשת;
+ *    בישראל: היישובים והאזורים הקרובים ביותר.
+ */
+export function buildRoundOptions(
+  answer: Place,
+  allPlaces: readonly Place[],
+  difficulty: Difficulty,
+  category: ContentCategory,
+  rng: Rng = Math.random,
+): RoundOptions {
+  const correct = displayLabel(answer, category);
+  const used = new Set([labelKey(correct)]);
+
+  // מועמדים: מקום אחד לכל טקסט תשובה, בלי הטקסט הנכון.
+  const israelOnly = category === 'israel';
+  const byLabel = new Map<string, { place: Place; label: string }>();
+  for (const place of shuffled(allPlaces, rng)) {
+    if (israelOnly && place.category !== 'israel') continue;
+    const label = displayLabel(place, category);
+    const key = labelKey(label);
+    if (used.has(key) || byLabel.has(key)) continue;
+    byLabel.set(key, { place, label });
+  }
+  const candidates = [...byLabel.values()];
+  const picked: { place: Place; label: string }[] = [];
+  const take = (list: readonly { place: Place; label: string }[], count: number) => {
+    for (const item of list) {
+      if (picked.length >= OPTION_COUNT - 1 || count <= 0) return;
+      const key = labelKey(item.label);
+      if (used.has(key)) continue;
+      used.add(key);
+      picked.push(item);
+      count -= 1;
+    }
+  };
+  const nearestFirst = (list: readonly { place: Place; label: string }[]) =>
+    [...list].sort((a, b) => distanceKm(answer, a.place) - distanceKm(answer, b.place));
+
+  if (israelOnly) {
+    if (difficulty === 'easy') take(candidates.filter((c) => distanceKm(answer, c.place) >= 50), 3);
+    else if (difficulty === 'pro') take(shuffled(nearestFirst(candidates).slice(0, 6), rng), 3);
+    else take(candidates, 3);
+  } else {
+    const continent = continentOf(answer);
+    const sameContinent = candidates.filter((c) => continentOf(c.place) === continent);
+    const otherContinent = candidates.filter((c) => continentOf(c.place) !== continent);
+    if (difficulty === 'easy') {
+      take(otherContinent, 3);
+    } else if (difficulty === 'medium') {
+      const near = rng() < 0.5 ? 1 : 2;
+      take(sameContinent.filter((c) => c.place.country !== answer.country), near);
+      take(otherContinent, 3);
+    } else {
+      take(candidates.filter((c) => c.place.country === answer.country), 3);
+      take(shuffled(nearestFirst(sameContinent).slice(0, 8), rng), 3);
+    }
+  }
+  // גיבוי: אם הכללים לא הספיקו (מאגר קטן) — משלימים מכל השאר.
+  take(candidates, 3);
+
+  const options = shuffled([correct, ...picked.map((item) => item.label)], rng);
+  return { options, correctIndex: options.indexOf(correct) };
 }

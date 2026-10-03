@@ -5,6 +5,7 @@
   "name": "הכותל המערבי",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "שריד מקיר התמך של הר הבית שהרחיב הורדוס, לפני כ-2,000 שנה.",
@@ -16,6 +17,7 @@
   "name": "כיפת הסלע",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הושלמה בסביבות שנת 691, והיא מהמבנים האסלאמיים העתיקים בעולם שעדיין עומדים על תלם.",
@@ -30,6 +32,7 @@
   "name": "מצדה",
   "city": "מדבר יהודה",
   "country": "ישראל",
+  "answerLabel": "מדבר יהודה",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הורדוס בנה כאן ארמון על צוק המתנשא כ-400 מטר מעל ים המלח."
@@ -40,6 +43,7 @@
   "name": "כנסיית הקבר",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "כמה עדות נוצריות חולקות בה את השליטה, ומפתח השער מוחזק בידי משפחה מוסלמית כבר מאות שנים."
@@ -50,6 +54,7 @@
   "name": "מגדל דוד",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הצריח המוכר נבנה בתקופה העות'מאנית — כ-2,500 שנה אחרי ימי דוד המלך."
@@ -60,6 +65,7 @@
   "name": "מרכז עזריאלי",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "easy",
   "fact": "שלושת המגדלים בנויים בצורות שונות: עגול, משולש ומרובע."
@@ -70,6 +76,7 @@
   "name": "הגנים הבהאיים",
   "city": "חיפה",
   "country": "ישראל",
+  "answerLabel": "חיפה",
   "category": "israel",
   "difficulty": "easy",
   "fact": "19 טרסות יורדות במדרון הכרמל אל מקדש הבאב; אתר מורשת עולמית מאז 2008.",
@@ -82,6 +89,7 @@
   "name": "קיסריה העתיקה",
   "city": "קיסריה",
   "country": "ישראל",
+  "answerLabel": "קיסריה",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הורדוס בנה כאן נמל מלאכותי ענק וקרא לעיר על שם הקיסר אוגוסטוס."
@@ -92,6 +100,7 @@
   "name": "מגדל השעון ביפו",
   "city": "תל אביב-יפו",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "easy",
   "fact": "נבנה בתחילת המאה ה-20 לכבוד 25 שנים לשלטונו של הסולטן עבדול חמיד השני."
@@ -102,6 +111,7 @@
   "name": "נקרות ראש הנקרה",
   "city": "ראש הנקרה",
   "country": "ישראל",
+  "answerLabel": "ראש הנקרה",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הגלים חצבו בסלע הגיר מערות ומנהרות, ויורדים אליהן ברכבל קצר ותלול.",
@@ -116,6 +126,7 @@
   "name": "משכן הכנסת",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הבניין בגבעת רם נחנך ב-1966, ובו גם שטיחי קיר וויטראז'ים של מרק שאגאל."
@@ -126,6 +137,7 @@
   "name": "הר הזיתים",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "על מדרונותיו בית קברות יהודי ששימש ברציפות כ-3,000 שנה."
@@ -136,6 +148,7 @@
   "name": "מכתש רמון",
   "city": "מצפה רמון",
   "country": "ישראל",
+  "answerLabel": "מצפה רמון",
   "category": "israel",
   "difficulty": "easy",
   "fact": "המכתש הגדול בעולם — כ-40 ק\"מ אורכו — נוצר מסחיפה ולא מפגיעת מטאוריט."
@@ -146,6 +159,7 @@
   "name": "יד ושם",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הוקם בחוק הכנסת ב-1953 כמוסד הלאומי להנצחת השואה."
@@ -156,6 +170,7 @@
   "name": "שוק מחנה יהודה",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "בלילות תריסי הדוכנים הופכים לגלריה של דיוקנאות מרוססים."
@@ -166,6 +181,7 @@
   "name": "היכל הספר",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "כיפת הבניין מעוצבת כמכסה של הכדים שבהם נמצאו מגילות ים המלח."
@@ -176,6 +192,7 @@
   "name": "עין גדי",
   "city": "ים המלח",
   "country": "ישראל",
+  "answerLabel": "ים המלח",
   "category": "israel",
   "difficulty": "easy",
   "fact": "נווה מדבר עם מפלים, יעלים ושפנים — וגם בית כנסת עתיק עם רצפת פסיפס.",
@@ -188,6 +205,7 @@
   "name": "פארק תמנע",
   "city": "ערבה",
   "country": "ישראל",
+  "answerLabel": "הערבה",
   "category": "israel",
   "difficulty": "easy",
   "fact": "כאן נכרתה נחושת כבר בעולם העתיק, ו\"עמודי שלמה\" נוצרו מסחיפה של אבן חול."
@@ -198,6 +216,7 @@
   "name": "העיר העתיקה של עכו",
   "city": "עכו",
   "country": "ישראל",
+  "answerLabel": "עכו",
   "category": "israel",
   "difficulty": "easy",
   "fact": "מתחת לעיר העות'מאנית השתמרה כמעט בשלמותה עיר הצלבנים.",
@@ -209,6 +228,7 @@
   "name": "הכנרת",
   "city": "טבריה",
   "country": "ישראל",
+  "answerLabel": "חוף הכנרת",
   "category": "israel",
   "difficulty": "easy",
   "fact": "אגם המים המתוקים הנמוך בעולם — יותר מ-200 מטר מתחת לפני הים."
@@ -219,6 +239,7 @@
   "name": "ים המלח",
   "city": "ים המלח",
   "country": "ישראל",
+  "answerLabel": "ים המלח",
   "category": "israel",
   "difficulty": "easy",
   "fact": "חופיו הם הנקודה הנמוכה ביותר ביבשה — כ-430 מטר מתחת לפני הים."
@@ -229,6 +250,7 @@
   "name": "כנסיית הבשורה",
   "city": "נצרת",
   "country": "ישראל",
+  "answerLabel": "נצרת",
   "category": "israel",
   "difficulty": "easy",
   "fact": "הכנסייה הנוכחית נחנכה ב-1969, מעל המקום שבו לפי המסורת התבשרה מרים."
@@ -239,6 +261,7 @@
   "name": "הר החרמון",
   "city": "רמת הגולן",
   "country": "ישראל",
+  "answerLabel": "רמת הגולן",
   "category": "israel",
   "difficulty": "easy",
   "fact": "ההר הגבוה בשטח שבשליטת ישראל, ובו אתר הסקי היחיד בארץ."
@@ -249,6 +272,7 @@
   "name": "הבניאס",
   "city": "רמת הגולן",
   "country": "ישראל",
+  "answerLabel": "רמת הגולן",
   "category": "israel",
   "difficulty": "easy",
   "fact": "אחד ממקורות הירדן; השם נגזר מהאל היווני פאן שמקדשו עמד כאן."
@@ -259,6 +283,7 @@
   "name": "כיכר רבין",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "easy",
   "fact": "נקראה \"כיכר מלכי ישראל\" עד שהוסב שמה לאחר רצח רבין ב-1995."
@@ -269,6 +294,7 @@
   "name": "העיר הלבנה",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "easy",
   "fact": "כ-4,000 מבנים בסגנון הבינלאומי; אתר מורשת עולמית מאז 2003."
@@ -279,6 +305,7 @@
   "name": "גשר המיתרים",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "תכנן אותו האדריכל סנטיאגו קלטרווה, והוא נחנך ב-2008 לרכבת הקלה."
@@ -289,6 +316,7 @@
   "name": "אילת",
   "city": "אילת",
   "country": "ישראל",
+  "answerLabel": "אילת",
   "category": "israel",
   "difficulty": "easy",
   "fact": "העיר הדרומית ביותר בישראל, על חוף מפרץ אילת בים סוף."
@@ -299,6 +327,7 @@
   "name": "כנסיית כל העמים",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "easy",
   "fact": "נבנתה ב-1924 בתרומות ממדינות רבות, ומכאן שמה."
@@ -309,6 +338,7 @@
   "name": "נמל יפו",
   "city": "תל אביב-יפו",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "easy",
   "fact": "מהנמלים העתיקים בעולם — כבר בתנ\"ך יונה הנביא יוצא ממנו לדרכו."
@@ -319,6 +349,7 @@
   "name": "עבדת",
   "city": "הנגב",
   "country": "ישראל",
+  "answerLabel": "הנגב",
   "category": "israel",
   "difficulty": "medium",
   "fact": "עיר נבטית על דרך הבשמים, ואתר מורשת עולמית."
@@ -329,6 +360,7 @@
   "name": "מערות בית גוברין",
   "city": "בית גוברין",
   "country": "ישראל",
+  "answerLabel": "בית גוברין",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מאות מערות פעמון נחצבו כאן בסלע הגיר הרך."
@@ -339,6 +371,7 @@
   "name": "מבצר נמרוד",
   "city": "רמת הגולן",
   "country": "ישראל",
+  "answerLabel": "רמת הגולן",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מבצר מימי הביניים ששמר על הדרך לדמשק, על שלוחה של החרמון."
@@ -349,6 +382,7 @@
   "name": "ציפורי",
   "city": "הגליל התחתון",
   "country": "ישראל",
+  "answerLabel": "הגליל התחתון",
   "category": "israel",
   "difficulty": "medium",
   "fact": "כאן נמצא פסיפס האישה המכונה \"המונה ליזה של הגליל\"."
@@ -359,6 +393,7 @@
   "name": "תל מגידו",
   "city": "עמק יזרעאל",
   "country": "ישראל",
+  "answerLabel": "עמק יזרעאל",
   "category": "israel",
   "difficulty": "medium",
   "fact": "השם \"ארמגדון\" שבברית החדשה נגזר מ\"הר מגידו\"."
@@ -369,6 +404,7 @@
   "name": "כפר נחום",
   "city": "חוף הכנרת",
   "country": "ישראל",
+  "answerLabel": "חוף הכנרת",
   "category": "israel",
   "difficulty": "medium",
   "fact": "בית הכנסת העתיק נבנה מאבן גיר לבנה בלב סביבה של בזלת שחורה."
@@ -379,6 +415,7 @@
   "name": "עין עבדת",
   "city": "הנגב",
   "country": "ישראל",
+  "answerLabel": "הנגב",
   "category": "israel",
   "difficulty": "medium",
   "fact": "קניון עמוק עם מעיינות ובריכות מים בלב המדבר."
@@ -389,6 +426,7 @@
   "name": "מערת הנטיפים",
   "city": "בית שמש",
   "country": "ישראל",
+  "answerLabel": "בית שמש",
   "category": "israel",
   "difficulty": "medium",
   "fact": "התגלתה במקרה ב-1968, כשפיצוץ במחצבה חשף את פתחה."
@@ -399,6 +437,7 @@
   "name": "חאן אל-עומדאן",
   "city": "עכו",
   "country": "ישראל",
+  "answerLabel": "עכו",
   "category": "israel",
   "difficulty": "medium",
   "fact": "\"חאן העמודים\" — פונדק דרכים עות'מאני גדול ליד הנמל."
@@ -409,6 +448,7 @@
   "name": "נמל תל אביב",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "medium",
   "fact": "הנמל נפתח ב-1936 ונסגר לפעילות ימית ב-1965; היום טיילת ובילוי."
@@ -419,6 +459,7 @@
   "name": "שרונה",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מושבה טמפלרית מ-1871 שבתיה שוחזרו בלב העיר המודרנית.",
@@ -431,6 +472,7 @@
   "name": "נווה צדק",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "medium",
   "fact": "הוקמה ב-1887 כשכונה יהודית מחוץ ליפו — עוד לפני שנוסדה תל אביב."
@@ -441,6 +483,7 @@
   "name": "המושבה הגרמנית",
   "city": "חיפה",
   "country": "ישראל",
+  "answerLabel": "חיפה",
   "category": "israel",
   "difficulty": "medium",
   "fact": "הטמפלרים הקימו אותה ב-1868, בציר ישר שמוביל אל הגנים הבהאיים."
@@ -451,6 +494,7 @@
   "name": "מנזר סטלה מאריס",
   "city": "חיפה",
   "country": "ישראל",
+  "answerLabel": "חיפה",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מנזר כרמליתי על כף הכרמל, מעל מערה המיוחסת לאליהו הנביא."
@@ -461,6 +505,7 @@
   "name": "הר תבור",
   "city": "הגליל התחתון",
   "country": "ישראל",
+  "answerLabel": "הגליל התחתון",
   "category": "israel",
   "difficulty": "medium",
   "fact": "הר מבודד בצורת כיפה, ועל פסגתו כנסיית ההשתנות."
@@ -471,6 +516,7 @@
   "name": "גמלא",
   "city": "רמת הגולן",
   "country": "ישראל",
+  "answerLabel": "רמת הגולן",
   "category": "israel",
   "difficulty": "medium",
   "fact": "עיר יהודית על רכס דמוי דבשת גמל, שנכבשה בידי הרומאים ב-67 לספירה."
@@ -481,6 +527,7 @@
   "name": "מבצר מונפור",
   "city": "הגליל המערבי",
   "country": "ישראל",
+  "answerLabel": "הגליל המערבי",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מבצר של המסדר הטבטוני מהמאה ה-13, מעל נחל כזיב."
@@ -491,6 +538,7 @@
   "name": "שמורת החולה",
   "city": "עמק החולה",
   "country": "ישראל",
+  "answerLabel": "עמק החולה",
   "category": "israel",
   "difficulty": "medium",
   "fact": "השמורה הראשונה בישראל, ותחנת עצירה למיליוני ציפורים נודדות.",
@@ -503,6 +551,7 @@
   "name": "שדה בוקר",
   "city": "הנגב",
   "country": "ישראל",
+  "answerLabel": "הנגב",
   "category": "israel",
   "difficulty": "medium",
   "fact": "הקיבוץ שאליו פרש דוד בן-גוריון, וליד הצריף שלו גם קברו."
@@ -513,6 +562,7 @@
   "name": "כנסיית הלחם והדגים",
   "city": "טבחה",
   "country": "ישראל",
+  "answerLabel": "חוף הכנרת",
   "category": "israel",
   "difficulty": "medium",
   "fact": "ברצפתה פסיפס מפורסם של סל לחם ושני דגים."
@@ -523,6 +573,7 @@
   "name": "הר האושר",
   "city": "חוף הכנרת",
   "country": "ישראל",
+  "answerLabel": "חוף הכנרת",
   "category": "israel",
   "difficulty": "medium",
   "fact": "לפי המסורת, כאן נשא ישו את \"הדרשה על ההר\".",
@@ -537,6 +588,7 @@
   "name": "אפולוניה",
   "city": "הרצליה",
   "country": "ישראל",
+  "answerLabel": "הרצליה",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מבצר צלבני על מצוק הכורכר מעל הים.",
@@ -549,6 +601,7 @@
   "name": "הגן הלאומי אשקלון",
   "city": "אשקלון",
   "country": "ישראל",
+  "answerLabel": "אשקלון",
   "category": "israel",
   "difficulty": "medium",
   "fact": "כאן נמצא אחד משערי הקשת העתיקים בעולם, בן כ-3,800 שנה."
@@ -559,6 +612,7 @@
   "name": "תל דן",
   "city": "הגליל העליון",
   "country": "ישראל",
+  "answerLabel": "הגליל העליון",
   "category": "israel",
   "difficulty": "medium",
   "fact": "בשמורה זורם מעיין דן, המקור הגדול של הירדן."
@@ -569,6 +623,7 @@
   "name": "חמת גדר",
   "city": "רמת הגולן",
   "country": "ישראל",
+  "answerLabel": "רמת הגולן",
   "category": "israel",
   "difficulty": "medium",
   "fact": "מעיינות חמים שהרומאים בנו לידם מרחצאות מפוארים."
@@ -579,6 +634,7 @@
   "name": "כיכר דיזנגוף",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "medium",
   "fact": "נקראת על שם צינה דיזנגוף, אשתו של ראש העיר הראשון."
@@ -589,6 +645,7 @@
   "name": "שער יפו",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "medium",
   "fact": "אחד משערי חומות העיר העתיקה; ממנו יצאה הדרך ליפו.",
@@ -600,6 +657,7 @@
   "name": "שער שכם",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "medium",
   "fact": "השער המפואר בחומות שבנה סולימאן המפואר במאה ה-16."
@@ -610,6 +668,7 @@
   "name": "שוק הכרמל",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "medium",
   "fact": "השוק הגדול בתל אביב, שהוקם בשנות ה-20 של המאה ה-20."
@@ -620,6 +679,7 @@
   "name": "ממשית",
   "city": "הנגב",
   "country": "ישראל",
+  "answerLabel": "הנגב",
   "category": "israel",
   "difficulty": "pro",
   "fact": "העיר הנבטית הקטנה ביותר, ובה כנסיות עם רצפות פסיפס."
@@ -630,6 +690,7 @@
   "name": "שבטה",
   "city": "הנגב",
   "country": "ישראל",
+  "answerLabel": "הנגב",
   "category": "israel",
   "difficulty": "pro",
   "fact": "עיר נבטית-ביזנטית במדבר, שחקלאיה אספו מי שיטפונות.",
@@ -641,6 +702,7 @@
   "name": "מערות נחל מערות",
   "city": "הכרמל",
   "country": "ישראל",
+  "answerLabel": "הכרמל",
   "category": "israel",
   "difficulty": "pro",
   "fact": "במערות נמצאו עדויות לחיי אדם לאורך כחצי מיליון שנה."
@@ -651,6 +713,7 @@
   "name": "כורזים",
   "city": "הגליל העליון",
   "country": "ישראל",
+  "answerLabel": "הגליל העליון",
   "category": "israel",
   "difficulty": "pro",
   "fact": "עיירה יהודית עתיקה שנבנתה כולה מבזלת שחורה.",
@@ -662,6 +725,7 @@
   "name": "תל ערד",
   "city": "הנגב",
   "country": "ישראל",
+  "answerLabel": "הנגב",
   "category": "israel",
   "difficulty": "pro",
   "fact": "במצודה נמצא מקדש קטן עם מזבח — נדיר בממלכת יהודה.",
@@ -673,6 +737,7 @@
   "name": "בית שערים",
   "city": "עמק יזרעאל",
   "country": "ישראל",
+  "answerLabel": "עמק יזרעאל",
   "category": "israel",
   "difficulty": "pro",
   "fact": "נקברו כאן רבי יהודה הנשיא ורבים מבני דורו, במערות קבורה חצובות."
@@ -683,6 +748,7 @@
   "name": "סטף",
   "city": "הרי ירושלים",
   "country": "ישראל",
+  "answerLabel": "הרי ירושלים",
   "category": "israel",
   "difficulty": "pro",
   "fact": "טרסות חקלאיות משוחזרות סביב שני מעיינות."
@@ -693,6 +759,7 @@
   "name": "עין כרם",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "pro",
   "fact": "כפר ציורי בין גבעות, ובו כנסיות המיוחסות ליוחנן המטביל."
@@ -703,6 +770,7 @@
   "name": "חורשת טל",
   "city": "הגליל העליון",
   "country": "ישראל",
+  "answerLabel": "הגליל העליון",
   "category": "israel",
   "difficulty": "pro",
   "fact": "חורשת אלונים עתיקים לצד בריכה בצורת קשת."
@@ -713,6 +781,7 @@
   "name": "הר ארבל",
   "city": "הגליל התחתון",
   "country": "ישראל",
+  "answerLabel": "הגליל התחתון",
   "category": "israel",
   "difficulty": "pro",
   "fact": "מצוק תלול מעל הכנרת, ובו מערות שנחצבו כמבצר."
@@ -723,6 +792,7 @@
   "name": "צפת",
   "city": "צפת",
   "country": "ישראל",
+  "answerLabel": "צפת",
   "category": "israel",
   "difficulty": "pro",
   "fact": "מרכז הקבלה במאה ה-16 ואחת מארבע ערי הקודש."
@@ -733,6 +803,7 @@
   "name": "מחנה המעפילים עתלית",
   "city": "עתלית",
   "country": "ישראל",
+  "answerLabel": "עתלית",
   "category": "israel",
   "difficulty": "pro",
   "fact": "הבריטים כלאו כאן עולים \"בלתי לגליים\" לפני קום המדינה.",
@@ -744,6 +815,7 @@
   "name": "עין הוד",
   "city": "הכרמל",
   "country": "ישראל",
+  "answerLabel": "הכרמל",
   "category": "israel",
   "difficulty": "pro",
   "fact": "כפר אמנים שנוסד ב-1953 על ידי מרסל ינקו."
@@ -754,6 +826,7 @@
   "name": "זכרון יעקב",
   "city": "זכרון יעקב",
   "country": "ישראל",
+  "answerLabel": "זכרון יעקב",
   "category": "israel",
   "difficulty": "pro",
   "fact": "נקראה על שם אביו של הברון רוטשילד, יעקב."
@@ -764,6 +837,7 @@
   "name": "ראש פינה",
   "city": "הגליל העליון",
   "country": "ישראל",
+  "answerLabel": "הגליל העליון",
   "category": "israel",
   "difficulty": "pro",
   "fact": "מהמושבות הראשונות בארץ, שנוסדה ב-1882."
@@ -774,6 +848,7 @@
   "name": "מטולה",
   "city": "הגליל העליון",
   "country": "ישראל",
+  "answerLabel": "הגליל העליון",
   "category": "israel",
   "difficulty": "pro",
   "fact": "הישוב הצפוני ביותר בישראל."
@@ -784,6 +859,7 @@
   "name": "חי-בר יטבתה",
   "city": "הערבה",
   "country": "ישראל",
+  "answerLabel": "הערבה",
   "category": "israel",
   "difficulty": "pro",
   "fact": "כאן מגדלים ומשיבים לטבע בעלי חיים מדבריים כמו ראם ופרא.",
@@ -796,6 +872,7 @@
   "name": "תל באר שבע",
   "city": "באר שבע",
   "country": "ישראל",
+  "answerLabel": "באר שבע",
   "category": "israel",
   "difficulty": "pro",
   "fact": "עיר מתוכננת מתקופת המקרא, עם מערכת מים חצובה מרשימה."
@@ -806,6 +883,7 @@
   "name": "מבצר יחיעם",
   "city": "הגליל המערבי",
   "country": "ישראל",
+  "answerLabel": "הגליל המערבי",
   "category": "israel",
   "difficulty": "pro",
   "fact": "מבצר צלבני ששוקם במאה ה-18 בידי השליט הבדואי דאהר אל-עמר."
@@ -816,6 +894,7 @@
   "name": "כפר כמא",
   "city": "הגליל התחתון",
   "country": "ישראל",
+  "answerLabel": "כפר כמא",
   "category": "israel",
   "difficulty": "pro",
   "fact": "כפר צ'רקסי — אחד משניים בלבד בישראל.",
@@ -830,6 +909,7 @@
   "name": "רמת הנדיב",
   "city": "זכרון יעקב",
   "country": "ישראל",
+  "answerLabel": "זכרון יעקב",
   "category": "israel",
   "difficulty": "pro",
   "fact": "גן הזיכרון שבו קבורים הברון רוטשילד ורעייתו."
@@ -840,6 +920,7 @@
   "name": "גן השלושה",
   "city": "עמק המעיינות",
   "country": "ישראל",
+  "answerLabel": "עמק המעיינות",
   "category": "israel",
   "difficulty": "pro",
   "fact": "הבריכות הטבעיות שומרות על טמפרטורה של כ-28 מעלות כל השנה."
@@ -850,6 +931,7 @@
   "name": "פארק הירקון",
   "city": "תל אביב",
   "country": "ישראל",
+  "answerLabel": "תל אביב-יפו",
   "category": "israel",
   "difficulty": "pro",
   "fact": "הפארק העירוני הגדול בתל אביב, לאורך נחל הירקון."
@@ -860,6 +942,7 @@
   "name": "דגניה א'",
   "city": "עמק הירדן",
   "country": "ישראל",
+  "answerLabel": "עמק הירדן",
   "category": "israel",
   "difficulty": "pro",
   "fact": "\"אם הקבוצות\" — הקבוצה הראשונה בארץ, שנוסדה ב-1910."
@@ -870,6 +953,7 @@
   "name": "המגדל הלבן",
   "city": "רמלה",
   "country": "ישראל",
+  "answerLabel": "רמלה",
   "category": "israel",
   "difficulty": "pro",
   "fact": "הצריח הגבוה הוא כמעט כל מה שנותר עומד מהמסגד הלבן מימי הביניים."
@@ -880,6 +964,7 @@
   "name": "נקבת השילוח",
   "city": "ירושלים",
   "country": "ישראל",
+  "answerLabel": "ירושלים",
   "category": "israel",
   "difficulty": "pro",
   "fact": "נחצבה בימי חזקיהו, ועל קירה נמצאה כתובת עברית עתיקה המתארת את סיום החציבה.",
@@ -891,6 +976,7 @@
   "name": "תל חצור",
   "city": "הגליל העליון",
   "country": "ישראל",
+  "answerLabel": "הגליל העליון",
   "category": "israel",
   "difficulty": "pro",
   "fact": "העיר הכנענית הגדולה בארץ, ואתר מורשת עולמית."

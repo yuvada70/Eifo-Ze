@@ -7,7 +7,6 @@
  * אחרי שהסיבוב נסגר.
  */
 
-import type { LatLng } from '../geo/coordinates.js';
 import type { ContentCategory, Difficulty, Place, PlaceImage } from '../content/places.js';
 
 /** שלבי מכונת המצבים של המשחק. */
@@ -66,7 +65,7 @@ export const SETTINGS_LIMITS = {
   countdownMs: { min: 0, max: 10_000 },
 } as const;
 
-/** תצוגת המפה ההתחלתית. */
+/** תצוגת הפתיחה של מפה (מפת החשיפה ומסך הניהול). */
 export type MapView = 'israel' | 'world';
 
 export function mapViewForCategory(category: ContentCategory): MapView {
@@ -90,34 +89,37 @@ export interface PlayerPublic {
   readonly joinedAt: number;
 }
 
-/** תיאור הסיבוב הפעיל — תמונה וקרדיט בלבד, בלי שם ובלי מיקום. */
+/** תיאור הסיבוב הפעיל — תמונה, קרדיט וארבע אפשרויות, בלי לסמן את הנכונה. */
 export interface RoundPrompt {
   /** אינדקס מבוסס-0. */
   readonly index: number;
   readonly total: number;
   readonly image: PlaceImage;
+  /** ארבע האפשרויות, בסדר אקראי. */
+  readonly options: readonly string[];
   readonly startsAt: number;
   readonly endsAt: number;
 }
 
-/** תוצאת ניחוש בודד. */
-export interface PlayerGuessResult {
+/** תשובה של שחקן בסיבוב. */
+export interface PlayerAnswerResult {
   readonly playerId: string;
-  /** הנקודה שסומנה, או null אם לא נענה. */
-  readonly guess: LatLng | null;
-  /** המרחק בק"מ, או null אם לא נענה. */
-  readonly distanceKm: number | null;
+  /** האינדקס שנבחר, או null אם לא ענה. */
+  readonly choice: number | null;
+  readonly correct: boolean;
   readonly points: number;
-  /** הזמן מתחילת הסיבוב ועד האישור (מ"ש), או null. */
+  /** הזמן מתחילת הסיבוב ועד הבחירה (מ"ש), או null. */
   readonly elapsedMs: number | null;
 }
 
-/** סיכום מלא של סיבוב — המקום האמיתי וכל הניחושים. */
+/** סיכום מלא של סיבוב — המקום, האפשרויות, התשובה הנכונה וכל הבחירות. */
 export interface RoundResult {
   readonly index: number;
   readonly place: Place;
   readonly image: PlaceImage;
-  readonly guesses: readonly PlayerGuessResult[];
+  readonly options: readonly string[];
+  readonly correctIndex: number;
+  readonly answers: readonly PlayerAnswerResult[];
 }
 
 /**
@@ -127,14 +129,12 @@ export interface PublicGameState {
   readonly code: string;
   readonly phase: GamePhase;
   readonly settings: GameSettings;
-  /** תצוגת המפה ההתחלתית (ממוקדת ישראל / עולם). */
-  readonly mapView: MapView;
   /** הסיבוב הפעיל (בזמן question, או paused מתוך question). */
   readonly round: RoundPrompt | null;
   /** תוצאות הסיבוב האחרון (בזמן reveal, או paused מתוך reveal). */
   readonly reveal: RoundResult | null;
   readonly players: readonly PlayerPublic[];
-  /** כמה שחקנים כבר אישרו בסיבוב הנוכחי. */
+  /** כמה שחקנים כבר ענו בסיבוב הנוכחי. */
   readonly answeredCount: number;
   readonly completedRounds: number;
   /** מספר הסיבובים בפועל במשחק (אחרי בחירת המקומות). */
@@ -152,10 +152,11 @@ export interface LeaderboardEntry {
   readonly rank: number;
   readonly player: PlayerPublic;
   readonly totalPoints: number;
-  readonly averageDistanceKm: number | null;
-  /** מספר הסיבובים שבהם הניחוש נפל ברדיוס "בול פגיעה". */
-  readonly bullseyes: number;
+  /** מספר התשובות הנכונות. */
+  readonly correctAnswers: number;
   readonly answeredRounds: number;
+  /** זמן ממוצע לתשובה נכונה (מ"ש), או null. */
+  readonly averageCorrectMs: number | null;
   readonly bestRoundIndex: number | null;
 }
 
@@ -175,8 +176,8 @@ export interface PlayerPrivateState {
   readonly score: number;
   readonly rank: number | null;
   readonly playerCount: number;
-  /** האם השחקן כבר אישר ניחוש בסיבוב הנוכחי. */
+  /** האם השחקן כבר בחר תשובה בסיבוב הנוכחי. */
   readonly hasAnswered: boolean;
-  /** הניחוש שאושר בסיבוב הנוכחי. */
-  readonly currentGuess: LatLng | null;
+  /** האינדקס שנבחר בסיבוב הנוכחי (נעול). */
+  readonly choice: number | null;
 }

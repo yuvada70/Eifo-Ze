@@ -2,12 +2,12 @@
  * טבלת הדירוג המלאה.
  *
  * מוצגת בסיום המשחק ומכילה את כל הנתונים שהוסתרו בזמן המשחק:
- * ניקוד, מרחק ממוצע ומספר "בולי פגיעה". השורות מופיעות בזו אחר זו
+ * ניקוד, מספר תשובות נכונות וזמן ממוצע לתשובה נכונה. השורות מופיעות בזו אחר זו
  * מלמטה למעלה — אפקט שמייצר ציפייה לקראת המקום הראשון.
  */
 
 import { motion } from 'framer-motion';
-import { formatDistance, medalFor, type LeaderboardEntry } from '@eifo/shared';
+import { formatSeconds, medalFor, type LeaderboardEntry } from '@eifo/shared';
 
 import { AvatarBadge } from '../ui/misc';
 import styles from './Leaderboard.module.css';
@@ -38,10 +38,10 @@ export function Leaderboard({
             נקודות
           </span>
           <span role="columnheader" className={styles.numeric}>
-            מרחק ממוצע
+            נכונות
           </span>
           <span role="columnheader" className={styles.numeric}>
-            בול
+            זמן ממוצע
           </span>
         </div>
       ) : null}
@@ -87,10 +87,10 @@ export function Leaderboard({
             {!compact ? (
               <>
                 <span className={`${styles.muted} ${styles.numeric} tabular`} role="cell">
-                  {entry.averageDistanceKm === null ? '—' : formatDistance(entry.averageDistanceKm)}
+                  {entry.correctAnswers > 0 ? `✓ ${entry.correctAnswers}` : '—'}
                 </span>
                 <span className={`${styles.muted} ${styles.numeric} tabular`} role="cell">
-                  {entry.bullseyes > 0 ? `🎯 ${entry.bullseyes}` : '—'}
+                  {entry.averageCorrectMs === null ? '—' : formatSeconds(entry.averageCorrectMs)}
                 </span>
               </>
             ) : null}

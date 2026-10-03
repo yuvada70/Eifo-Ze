@@ -280,3 +280,7 @@
     max-height: 30dvh;
   }
 }
+
+.hostOptions {
+  flex: none;
+}

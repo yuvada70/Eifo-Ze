@@ -1,14 +1,15 @@
 /**
  * מסך המארח במהלך המשחק — מתאים להקרנה על מסך גדול.
  *
- * בזמן סיבוב: התמונה בגדול, טיימר, וכמה שחקנים כבר אישרו. שם המקום
- * והמיקום שלו אינם מגיעים לדפדפן בשלב הזה כלל.
- * בזמן חשיפה: המפה עם המיקום האמיתי וכל הניחושים, המרחקים, ופרטי המקום.
+ * בזמן סיבוב: התמונה בגדול, ארבע האפשרויות (לתצוגה), טיימר, וכמה
+ * שחקנים כבר ענו. התשובה הנכונה אינה מגיעה לדפדפן בשלב הזה כלל.
+ * בזמן חשיפה: התשובה הנכונה, מי בחר מה, פרטי המקום ומפה קטנה.
  */
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import { OptionButtons } from '../../components/options/OptionButtons';
 import { RoundReveal } from '../../components/results/RoundReveal';
 import { PlacePhoto } from '../../components/place/PlacePhoto';
 import { Button } from '../../components/ui/Button';
@@ -111,6 +112,9 @@ export function HostRound(): JSX.Element {
               <div className={styles.photo}>
                 <PlacePhoto image={round.image} />
               </div>
+              <div className={styles.hostOptions}>
+                <OptionButtons options={round.options} size="md" />
+              </div>
               <div className={styles.questionBar}>
                 <span className={styles.prompt}>איפה זה? 🤔</span>
                 <TimerRing
@@ -129,7 +133,7 @@ export function HostRound(): JSX.Element {
                     />
                   </div>
                   <span className={`${styles.answeredText} tabular`} data-testid="answered-count">
-                    {answered} מתוך {total} אישרו
+                    {answered} מתוך {total} ענו
                   </span>
                 </div>
               </div>
@@ -145,7 +149,6 @@ export function HostRound(): JSX.Element {
               <RoundReveal
                 round={reveal}
                 players={room.players}
-                view={room.mapView}
                 category={room.settings.category}
                 showPhoto
               />

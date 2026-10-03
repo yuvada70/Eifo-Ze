@@ -1,34 +1,30 @@
 /**
- * חשיפת סיבוב: המקום האמיתי על המפה, הניחושים של כל השחקנים, המרחק
- * של כל אחד בק"מ, ופרטי המקום — שם, עיר, מדינה ושורת מידע.
+ * חשיפת סיבוב: התשובה הנכונה בירוק, הבחירות השגויות באדום, מי מהשחקנים
+ * בחר מה, שם המקום ושורת מידע — ומפה קטנה עם סמן על המיקום האמיתי
+ * (לתצוגה בלבד).
  *
- * משמש גם את מסך המארח (מוקרן) וגם את מסך השחקן (טלפון). בטלפון
- * הפריסה אנכית: כותרת → מפה → רשימה.
+ * משמש גם את מסך המארח (מוקרן) וגם את מסך השחקן (טלפון).
  */
 
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import {
-  ACCURACY_LABELS,
-  accuracyTier,
-  formatDistance,
+  formatSeconds,
+  mapViewForCategory,
   placePosition,
-  scoringForCategory,
   type ContentCategory,
-  type MapView,
   type PlayerPublic,
   type RoundResult,
 } from '@eifo/shared';
 
-import { WorldMap, type MapConnector, type MapMarker } from '../map/WorldMap';
+import { WorldMap } from '../map/WorldMap';
+import { OptionButtons } from '../options/OptionButtons';
 import { PlacePhoto } from '../place/PlacePhoto';
-import { AvatarBadge } from '../ui/misc';
 import styles from './RoundReveal.module.css';
 
 export interface RoundRevealProps {
   readonly round: RoundResult;
   readonly players: readonly PlayerPublic[];
-  readonly view: MapView;
   readonly category: ContentCategory;
   readonly highlightPlayerId?: string | null;
   /** האם להציג גם את התמונה (במסך המארח). */
@@ -39,55 +35,29 @@ export interface RoundRevealProps {
 export function RoundReveal({
   round,
   players,
-  view,
   category,
   highlightPlayerId = null,
   showPhoto = false,
   layout = 'wide',
 }: RoundRevealProps): JSX.Element {
   const playersById = useMemo(() => new Map(players.map((player) => [player.id, player])), [players]);
-  const scoring = scoringForCategory(category);
-  const truth = placePosition(round.place);
 
-  const sorted = useMemo(
-    () =>
-      [...round.guesses].sort(
-        (a, b) => (a.distanceKm ?? Number.POSITIVE_INFINITY) - (b.distanceKm ?? Number.POSITIVE_INFINITY),
-      ),
-    [round.guesses],
-  );
+  const pickedBy = useMemo(() => {
+    const map = new Map<number, PlayerPublic[]>();
+    for (const answer of round.answers) {
+      const player = playersById.get(answer.playerId);
+      if (answer.choice === null || !player) continue;
+      map.set(answer.choice, [...(map.get(answer.choice) ?? []), player]);
+    }
+    return map;
+  }, [playersById, round.answers]);
 
-  const markers: MapMarker[] = useMemo(
-    () =>
-      sorted
-        .filter((guess) => guess.guess !== null)
-        .map((guess) => {
-          const player = playersById.get(guess.playerId);
-          return {
-            id: guess.playerId,
-            position: guess.guess!,
-            hue: player?.avatar.hue,
-            label: player?.name,
-            emphasized: guess.playerId === highlightPlayerId,
-          };
-        }),
-    [highlightPlayerId, playersById, sorted],
-  );
-
-  const connectors: MapConnector[] = useMemo(
-    () =>
-      sorted
-        .filter((guess) => guess.guess !== null)
-        .map((guess) => ({
-          id: `line-${guess.playerId}`,
-          from: guess.guess!,
-          to: truth,
-          hue: playersById.get(guess.playerId)?.avatar.hue,
-        })),
-    [playersById, sorted, truth],
-  );
-
-  const mine = highlightPlayerId ? round.guesses.find((guess) => guess.playerId === highlightPlayerId) : undefined;
+  const mine = highlightPlayerId ? round.answers.find((answer) => answer.playerId === highlightPlayerId) : undefined;
+  const correctCount = round.answers.filter((answer) => answer.correct).length;
+  const fastest = round.answers
+    .filter((answer) => answer.correct && answer.elapsedMs !== null)
+    .sort((a, b) => a.elapsedMs! - b.elapsedMs!)[0];
+  const silent = round.answers.filter((answer) => answer.choice === null).map((a) => playersById.get(a.playerId)?.name).filter(Boolean);
 
   return (
     <div className={`${styles.reveal} ${layout === 'stacked' ? styles.stacked : styles.wide}`}>
@@ -97,7 +67,15 @@ export function RoundReveal({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.35 }}
       >
-        <span className={styles.badge}>התשובה</span>
+        {mine ? (
+          <div className={`${styles.verdict} ${mine.correct ? styles.verdictOk : styles.verdictBad}`} data-testid="my-verdict">
+            {mine.correct
+              ? `✓ נכון! +${mine.points.toLocaleString('he-IL')}`
+              : mine.choice === null
+                ? 'לא בחרת תשובה בסיבוב הזה'
+                : '✗ לא הפעם'}
+          </div>
+        ) : null}
         <h2 className={styles.name} data-testid="reveal-name">
           {round.place.name}
         </h2>
@@ -105,23 +83,22 @@ export function RoundReveal({
           📍 {round.place.city}, {round.place.country}
         </p>
         <p className={styles.fact}>💡 {round.place.fact}</p>
-
-        {mine ? (
-          <div className={styles.mine}>
-            {mine.distanceKm === null ? (
-              <span>לא אישרת ניחוש בסיבוב הזה</span>
-            ) : (
-              <>
-                <span className={`${styles.tier} ${styles[`tier_${accuracyTier(mine.distanceKm, scoring)}`]}`}>
-                  {ACCURACY_LABELS[accuracyTier(mine.distanceKm, scoring)]}
-                </span>
-                <span className="tabular">{formatDistance(mine.distanceKm)}</span>
-                <strong className={`${styles.minePoints} tabular`}>+{mine.points.toLocaleString('he-IL')}</strong>
-              </>
-            )}
-          </div>
-        ) : null}
       </motion.header>
+
+      <div className={styles.options}>
+        <OptionButtons
+          options={round.options}
+          correctIndex={round.correctIndex}
+          pickedBy={pickedBy}
+          size="md"
+          testIdPrefix="reveal-option"
+        />
+        <p className={styles.summary}>
+          {correctCount} מתוך {round.answers.length} צדקו
+          {fastest ? ` · הכי מהיר/ה: ${playersById.get(fastest.playerId)?.name ?? 'שחקן'} (${formatSeconds(fastest.elapsedMs!)})` : ''}
+          {silent.length > 0 ? ` · לא ענו: ${silent.join(', ')}` : ''}
+        </p>
+      </div>
 
       {showPhoto ? (
         <div className={styles.photo}>
@@ -131,39 +108,12 @@ export function RoundReveal({
 
       <div className={styles.mapPane}>
         <WorldMap
-          view={view}
-          truth={truth}
-          markers={markers}
-          connectors={connectors}
-          fitKey={`reveal-${round.index}-${round.place.id}`}
-          ariaLabel={`מפת התוצאות: ${round.place.name}`}
+          view={mapViewForCategory(category)}
+          truth={placePosition(round.place)}
+          focusKey={`reveal-${round.index}-${round.place.id}`}
+          ariaLabel={`המיקום של ${round.place.name} על המפה`}
         />
       </div>
-
-      <ul className={styles.list} aria-label="מרחקי השחקנים">
-        {sorted.map((guess, index) => {
-          const player = playersById.get(guess.playerId);
-          const tier = guess.distanceKm === null ? 'none' : accuracyTier(guess.distanceKm, scoring);
-          return (
-            <motion.li
-              key={guess.playerId}
-              className={`${styles.row} ${guess.playerId === highlightPlayerId ? styles.rowMe : ''}`}
-              initial={{ opacity: 0, x: -12 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.15 + index * 0.06 }}
-            >
-              <span className={`${styles.position} tabular`}>{guess.distanceKm === null ? '—' : index + 1}</span>
-              {player ? <AvatarBadge avatar={player.avatar} size={26} /> : null}
-              <span className={styles.rowName}>{player?.name ?? 'שחקן'}</span>
-              <span className={`${styles.tier} ${styles[`tier_${tier}`]}`}>{ACCURACY_LABELS[tier]}</span>
-              <span className={`${styles.distance} tabular`}>
-                {guess.distanceKm === null ? '—' : formatDistance(guess.distanceKm)}
-              </span>
-              <span className={`${styles.points} tabular`}>+{guess.points.toLocaleString('he-IL')}</span>
-            </motion.li>
-          );
-        })}
-      </ul>
     </div>
   );
 }

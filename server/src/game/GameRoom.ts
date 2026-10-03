@@ -2,8 +2,8 @@
  * חדר משחק — מכונת המצבים המלאה של משחק יחיד.
  *
  * החדר הוא מקור האמת היחיד: הוא מחזיק את השחקנים, את סדר השאלות,
- * את הניחושים ואת התוצאות, והוא היחיד שמודד זמן. הלקוחות מציגים
- * בלבד. גישה כזו מונעת רמאות (הזמן והמיקום האמיתי לעולם לא נמצאים
+ * את התשובות ואת התוצאות, והוא היחיד שמודד זמן. הלקוחות מציגים
+ * בלבד. גישה כזו מונעת רמאות (הזמן והתשובה הנכונה לעולם לא נמצאים
  * בצד הלקוח לפני הסיום) ומבטיחה שכל המשתתפים רואים אותו מצב.
  *
  * החדר אינו יודע דבר על Socket.IO או על HTTP — הוא מדווח על שינויים
@@ -20,29 +20,23 @@ import {
   NO_ANSWER_SCORE,
   SETTINGS_LIMITS,
   buildLeaderboard,
+  buildRoundOptions,
   createAvatar,
-  isValidLatLng,
-  mapViewForCategory,
   normalizeNameForComparison,
   placeImage,
-  placePosition,
-  roundLatLng,
   sanitizePlayerName,
-  scoreGuess,
-  scoringForCategory,
+  scoreAnswer,
   selectPlacePool,
   type ContentCategory,
   type Difficulty,
   type ErrorCode,
   type GameResults,
   type GameSettings,
-  type LatLng,
   type Place,
   type PlayerPrivateState,
   type PlayerPublic,
   type PublicGameState,
   type RoundResult,
-  type ScoringConfig,
 } from '@eifo/shared';
 
 import type { PlacesStore } from '../content/placesStore.js';
@@ -61,9 +55,17 @@ export interface PlayerRecord {
   socketId: string | null;
 }
 
-/** ניחוש שנקלט בסיבוב פעיל. */
-interface PendingGuess {
-  point: LatLng;
+/** סיבוב מתוכנן: המקום, האפשרויות והתשובה הנכונה (לא נשלחת ללקוח לפני החשיפה). */
+interface PlannedRound {
+  readonly place: Place;
+  readonly options: readonly string[];
+  readonly correctIndex: number;
+}
+
+/** תשובה שנקלטה בסיבוב פעיל. */
+interface PendingAnswer {
+  /** האינדקס שנבחר. */
+  choice: number;
   /** הזמן שחלף מפתיחת הסיבוב, במילישניות. */
   elapsedMs: number;
 }
@@ -117,8 +119,8 @@ export class GameRoom {
   private phase: PublicGameState['phase'] = 'lobby';
   private readonly players = new Map<string, PlayerRecord>();
 
-  /** המקומות שנבחרו לסיבובי המשחק, לפי הסדר. */
-  private questions: readonly Place[] = [];
+  /** הסיבובים שנבחרו למשחק, לפי הסדר — מקום + ארבע אפשרויות. */
+  private questions: readonly PlannedRound[] = [];
   private currentRoundIndex = -1;
   private roundStartsAt = 0;
   private roundEndsAt = 0;
@@ -128,7 +130,7 @@ export class GameRoom {
   private pausedRemainingMs: number | null = null;
   private phaseBeforePause: PublicGameState['phase'] | null = null;
 
-  private readonly guesses = new Map<string, PendingGuess>();
+  private readonly pendingAnswers = new Map<string, PendingAnswer>();
   private completedRounds: RoundResult[] = [];
   private results: GameResults | null = null;
 
@@ -155,18 +157,17 @@ export class GameRoom {
   //  קריאה
   // ────────────────────────────────────────────────────────────
 
-  /** מצב ציבורי — ללא מיקומים אמיתיים, מרחקים או ניחושים. */
+  /** מצב ציבורי — בלי התשובה הנכונה ובלי בחירות של שחקנים אחרים. */
   getPublicState(): PublicGameState {
     const pausedFrom = this.phase === 'paused' ? this.phaseBeforePause : this.phase;
     return {
       code: this.code,
       phase: this.phase,
       settings: this.settings,
-      mapView: mapViewForCategory(this.settings.category),
       round: pausedFrom === 'question' ? this.currentPrompt() : null,
       reveal: pausedFrom === 'reveal' ? (this.completedRounds.at(-1) ?? null) : null,
       players: this.listPlayers(),
-      answeredCount: this.guesses.size,
+      answeredCount: this.pendingAnswers.size,
       completedRounds: this.completedRounds.length,
       totalRounds: this.questions.length > 0 ? this.questions.length : Math.min(this.settings.roundCount, this.poolSize()),
       poolSize: this.poolSize(),
@@ -185,14 +186,14 @@ export class GameRoom {
     const player = this.players.get(playerId);
     if (!player) return null;
 
-    const guess = this.guesses.get(playerId);
+    const answer = this.pendingAnswers.get(playerId);
     return {
       playerId,
       score: player.score,
       rank: this.settings.showLiveRank ? this.rankOf(playerId) : null,
       playerCount: this.players.size,
-      hasAnswered: guess !== undefined,
-      currentGuess: guess?.point ?? null,
+      hasAnswered: answer !== undefined,
+      choice: answer?.choice ?? null,
     };
   }
 
@@ -318,7 +319,7 @@ export class GameRoom {
     if (!player) return null;
 
     this.players.delete(playerId);
-    this.guesses.delete(playerId);
+    this.pendingAnswers.delete(playerId);
     this.touch();
     this.emitState();
     this.closeRoundIfEveryoneAnswered();
@@ -344,7 +345,11 @@ export class GameRoom {
 
     const pool = selectPlacePool(this.places.all(), this.settings.category, this.settings.difficulty);
     if (pool.length === 0) throw new GameError('NO_PLACES');
-    this.questions = pickRounds(pool, this.settings.roundCount, this.settings.category === 'mixed');
+    const all = this.places.all();
+    this.questions = pickRounds(pool, this.settings.roundCount, this.settings.category === 'mixed').map((place) => ({
+      place,
+      ...buildRoundOptions(place, all, this.settings.difficulty, this.settings.category),
+    }));
     if (this.questions.length < this.settings.roundCount) {
       this.listeners.onNotice?.(
         this,
@@ -354,7 +359,7 @@ export class GameRoom {
     this.completedRounds = [];
     this.results = null;
     this.currentRoundIndex = -1;
-    this.guesses.clear();
+    this.pendingAnswers.clear();
     for (const player of this.players.values()) player.score = 0;
 
     this.touch();
@@ -463,7 +468,7 @@ export class GameRoom {
     this.questions = [];
     this.completedRounds = [];
     this.results = null;
-    this.guesses.clear();
+    this.pendingAnswers.clear();
     for (const player of this.players.values()) player.score = 0;
 
     this.touch();
@@ -476,23 +481,25 @@ export class GameRoom {
   // ────────────────────────────────────────────────────────────
 
   /**
-   * קולט סימון של שחקן. ניתן לעדכן את הסימון כל עוד הסיבוב פתוח;
-   * לאחר תום הזמן הסימון נדחה.
+   * קולט בחירה של שחקן. הבחירה ננעלת מיד — אין אפשרות לשנות.
    *
-   * @throws {GameError} כשהסיבוב סגור או הקלט אינו תקין.
+   * @throws {GameError} כשהסיבוב סגור, כבר נענה, או הקלט אינו תקין.
    */
-  submitGuess(playerId: string, roundIndex: number, point: unknown): void {
+  submitAnswer(playerId: string, roundIndex: number, choice: unknown): void {
     if (this.phase !== 'question') throw new GameError('ROUND_CLOSED');
     if (roundIndex !== this.currentRoundIndex) throw new GameError('ROUND_CLOSED');
     if (!this.players.has(playerId)) throw new GameError('NOT_AUTHORIZED');
-    if (!isValidLatLng(point)) throw new GameError('INVALID_INPUT');
-    if (this.guesses.has(playerId)) throw new GameError('ALREADY_ANSWERED');
+    const round = this.questions[this.currentRoundIndex];
+    if (!round || typeof choice !== 'number' || !Number.isInteger(choice) || choice < 0 || choice >= round.options.length) {
+      throw new GameError('INVALID_INPUT');
+    }
+    if (this.pendingAnswers.has(playerId)) throw new GameError('ALREADY_ANSWERED');
 
     const now = this.scheduler.now();
     if (now > this.roundEndsAt + NETWORK_GRACE_MS) throw new GameError('ROUND_CLOSED');
 
-    this.guesses.set(playerId, {
-      point: roundLatLng(point),
+    this.pendingAnswers.set(playerId, {
+      choice,
       elapsedMs: Math.max(0, Math.min(now - this.roundStartsAt, this.settings.roundDurationMs)),
     });
 
@@ -503,7 +510,7 @@ export class GameRoom {
     this.closeRoundIfEveryoneAnswered();
   }
 
-  /** כל השחקנים המחוברים אישרו — אין טעם לחכות לטיימר. */
+  /** כל השחקנים המחוברים ענו — אין טעם לחכות לטיימר. */
   private closeRoundIfEveryoneAnswered(): void {
     if (this.phase !== 'question' || !this.allConnectedAnswered()) return;
     this.clearTimer();
@@ -515,7 +522,7 @@ export class GameRoom {
     for (const player of this.players.values()) {
       if (!player.connected) continue;
       connected += 1;
-      if (!this.guesses.has(player.id)) return false;
+      if (!this.pendingAnswers.has(player.id)) return false;
     }
     return connected > 0;
   }
@@ -532,7 +539,7 @@ export class GameRoom {
     }
 
     this.currentRoundIndex = index;
-    this.guesses.clear();
+    this.pendingAnswers.clear();
     this.phase = 'question';
     this.roundStartsAt = this.scheduler.now();
     this.roundEndsAt = this.roundStartsAt + this.settings.roundDurationMs;
@@ -549,30 +556,29 @@ export class GameRoom {
    * @param advance האם להמשיך אוטומטית לסיבוב הבא.
    */
   private closeRound(advance: boolean): void {
-    const place = this.questions[this.currentRoundIndex];
-    if (!place) return;
+    const round = this.questions[this.currentRoundIndex];
+    if (!round) return;
 
-    const scoring = this.scoringConfig();
-    const target = placePosition(place);
-    const guesses = [...this.players.values()].map((player) => {
-      const guess = this.guesses.get(player.id);
-      if (!guess) {
-        return { playerId: player.id, guess: null, distanceKm: null, points: NO_ANSWER_SCORE.points, elapsedMs: null };
+    const answers = [...this.players.values()].map((player) => {
+      const answer = this.pendingAnswers.get(player.id);
+      if (!answer) {
+        return { playerId: player.id, choice: null, correct: false, points: NO_ANSWER_SCORE.points, elapsedMs: null };
       }
-
-      const score = scoreGuess(guess.point, target, { config: scoring });
+      const correct = answer.choice === round.correctIndex;
+      const score = scoreAnswer(correct, answer.elapsedMs, this.settings.roundDurationMs);
       player.score += score.points;
-      return {
-        playerId: player.id,
-        guess: guess.point,
-        distanceKm: Math.round(score.distanceKm * 100) / 100,
-        points: score.points,
-        elapsedMs: guess.elapsedMs,
-      };
+      return { playerId: player.id, choice: answer.choice, correct, points: score.points, elapsedMs: answer.elapsedMs };
     });
 
-    this.completedRounds.push({ index: this.currentRoundIndex, place, image: placeImage(place), guesses });
-    this.guesses.clear();
+    this.completedRounds.push({
+      index: this.currentRoundIndex,
+      place: round.place,
+      image: placeImage(round.place),
+      options: round.options,
+      correctIndex: round.correctIndex,
+      answers,
+    });
+    this.pendingAnswers.clear();
 
     if (!advance) return;
 
@@ -607,7 +613,7 @@ export class GameRoom {
       finishedAt: this.scheduler.now(),
       settings: this.settings,
       rounds: this.completedRounds,
-      leaderboard: buildLeaderboard(players, this.completedRounds, this.scoringConfig().perfectRadiusKm),
+      leaderboard: buildLeaderboard(players, this.completedRounds),
       endedEarly,
     };
 
@@ -621,13 +627,14 @@ export class GameRoom {
   // ────────────────────────────────────────────────────────────
 
   private currentPrompt(): PublicGameState['round'] {
-    const place = this.questions[this.currentRoundIndex];
-    if (!place) return null;
+    const round = this.questions[this.currentRoundIndex];
+    if (!round) return null;
 
     return {
       index: this.currentRoundIndex,
       total: this.questions.length,
-      image: placeImage(place),
+      image: placeImage(round.place),
+      options: round.options,
       startsAt: this.roundStartsAt,
       endsAt: this.roundEndsAt,
     };
@@ -658,10 +665,6 @@ export class GameRoom {
     return higher + 1;
   }
 
-  private scoringConfig(): ScoringConfig {
-    return scoringForCategory(this.settings.category);
-  }
-
   private scheduleIn(ms: number, handler: () => void): void {
     this.clearTimer();
     this.timerHandle = this.scheduler.setTimeout(() => {
@@ -689,7 +692,7 @@ export class GameRoom {
   dispose(): void {
     this.clearTimer();
     this.players.clear();
-    this.guesses.clear();
+    this.pendingAnswers.clear();
   }
 }
 

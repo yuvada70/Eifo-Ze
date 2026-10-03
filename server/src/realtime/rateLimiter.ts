@@ -25,11 +25,8 @@ export const RATE_LIMITS = {
   create: { capacity: 5, refillPerSecond: 0.1 },
   /** הצטרפות / חיבור מחדש. */
   join: { capacity: 10, refillPerSecond: 0.5 },
-  /**
-   * אישור ניחוש — פעם אחת בסיבוב. גרירה וזום של המפה הם מקומיים
-   * בלבד ואינם שולחים דבר לשרת, ולכן הסף כאן נמוך.
-   */
-  guess: { capacity: 6, refillPerSecond: 1 },
+  /** בחירת תשובה — פעם אחת בסיבוב, ולכן הסף נמוך. */
+  answer: { capacity: 6, refillPerSecond: 1 },
   /** פקודות מנהל. */
   host: { capacity: 30, refillPerSecond: 4 },
 } as const satisfies Record<string, BucketConfig>;

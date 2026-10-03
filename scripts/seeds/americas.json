@@ -5,6 +5,7 @@
   "name": "פסל החירות",
   "city": "ניו יורק",
   "country": "ארצות הברית",
+  "answerLabel": "ניו יורק, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "מתנה מצרפת ב-1886; צבעו הירוק הוא תחמוצת של נחושת."
@@ -15,6 +16,7 @@
   "name": "גשר שער הזהב",
   "city": "סן פרנסיסקו",
   "country": "ארצות הברית",
+  "answerLabel": "סן פרנסיסקו, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "צבעו הרשמי נקרא \"כתום בינלאומי\"."
@@ -25,6 +27,7 @@
   "name": "פסל ישו הגואל",
   "city": "ריו דה ז'ניירו",
   "country": "ברזיל",
+  "answerLabel": "ריו דה ז׳ניירו, ברזיל",
   "category": "americas",
   "difficulty": "easy",
   "fact": "עומד על פסגת הר קורקובדו בגובה כ-700 מטר."
@@ -35,6 +38,7 @@
   "name": "מאצ'ו פיצ'ו",
   "city": "קוסקו",
   "country": "פרו",
+  "answerLabel": "קוסקו, פרו",
   "category": "americas",
   "difficulty": "easy",
   "fact": "עיר אינקה בהרי האנדים שהתגלתה לעולם ב-1911."
@@ -45,6 +49,7 @@
   "name": "הגרנד קניון",
   "city": "אריזונה",
   "country": "ארצות הברית",
+  "answerLabel": "אריזונה, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "נהר הקולורדו חצב אותו במשך מיליוני שנים, עד עומק של כ-1.8 ק\"מ."
@@ -55,6 +60,7 @@
   "name": "מפלי הניאגרה",
   "city": "ניאגרה",
   "country": "ארצות הברית / קנדה",
+  "answerLabel": "ניאגרה, ארה״ב–קנדה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "המפלים יושבים על הגבול בין ארצות הברית לקנדה."
@@ -65,6 +71,7 @@
   "name": "בניין האמפייר סטייט",
   "city": "ניו יורק",
   "country": "ארצות הברית",
+  "answerLabel": "ניו יורק, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "נבנה בתוך כשנה בלבד ונפתח ב-1931."
@@ -75,6 +82,7 @@
   "name": "הבית הלבן",
   "city": "וושינגטון",
   "country": "ארצות הברית",
+  "answerLabel": "וושינגטון, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "כל נשיאי ארצות הברית גרו בו, חוץ מג'ורג' וושינגטון."
@@ -85,6 +93,7 @@
   "name": "הר ראשמור",
   "city": "דקוטה הדרומית",
   "country": "ארצות הברית",
+  "answerLabel": "דקוטה הדרומית, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "ראשי ארבעה נשיאים, כל אחד בגובה של כ-18 מטר."
@@ -95,6 +104,7 @@
   "name": "צ'יצ'ן איצה",
   "city": "יוקטן",
   "country": "מקסיקו",
+  "answerLabel": "יוקטן, מקסיקו",
   "category": "americas",
   "difficulty": "easy",
   "fact": "בימי השוויון, הצל על מדרגות הפירמידה נראה כמו נחש יורד."
@@ -105,6 +115,7 @@
   "name": "מגדל CN",
   "city": "טורונטו",
   "country": "קנדה",
+  "answerLabel": "טורונטו, קנדה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "במשך יותר מ-30 שנה היה המבנה העצמאי הגבוה בעולם."
@@ -115,6 +126,7 @@
   "name": "ספייס נידל",
   "city": "סיאטל",
   "country": "ארצות הברית",
+  "answerLabel": "סיאטל, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "נבנה ליריד העולמי של 1962."
@@ -125,6 +137,7 @@
   "name": "מפלי איגואסו",
   "city": "מיסיונס",
   "country": "ארגנטינה / ברזיל",
+  "answerLabel": "מיסיונס, ארגנטינה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "כ-275 מפלים על הגבול בין ארגנטינה לברזיל."
@@ -135,6 +148,7 @@
   "name": "הר סוכר",
   "city": "ריו דה ז'ניירו",
   "country": "ברזיל",
+  "answerLabel": "ריו דה ז׳ניירו, ברזיל",
   "category": "americas",
   "difficulty": "easy",
   "fact": "עולים אליו ברכבל מאז 1912."
@@ -145,6 +159,7 @@
   "name": "פסלי המואי",
   "city": "אי הפסחא",
   "country": "צ'ילה",
+  "answerLabel": "אי הפסחא, צ׳ילה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "כמעט 1,000 פסלים ענקיים שגילפו תושבי האי מאבן געשית.",
@@ -156,6 +171,7 @@
   "name": "תעלת פנמה",
   "city": "פנמה",
   "country": "פנמה",
+  "answerLabel": "אזור התעלה, פנמה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "תאי שיט מרימים את הספינות כ-26 מטר מעל פני הים."
@@ -166,6 +182,7 @@
   "name": "אנדרטת לינקולן",
   "city": "וושינגטון",
   "country": "ארצות הברית",
+  "answerLabel": "וושינגטון, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "כאן נשא מרטין לותר קינג את נאום \"יש לי חלום\"."
@@ -176,6 +193,7 @@
   "name": "הקפיטול",
   "city": "וושינגטון",
   "country": "ארצות הברית",
+  "answerLabel": "וושינגטון, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "בית הקונגרס של ארצות הברית."
@@ -186,6 +204,7 @@
   "name": "קשת השער",
   "city": "סנט לואיס",
   "country": "ארצות הברית",
+  "answerLabel": "סנט לואיס, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "הקשת הגבוהה בעולם — 192 מטר."
@@ -196,6 +215,7 @@
   "name": "פירמידת השמש",
   "city": "טאוטיהואקן",
   "country": "מקסיקו",
+  "answerLabel": "מדינת מקסיקו, מקסיקו",
   "category": "americas",
   "difficulty": "easy",
   "fact": "אחת הפירמידות הגדולות בעולם, ליד מקסיקו סיטי."
@@ -206,6 +226,7 @@
   "name": "חוף קופקבנה",
   "city": "ריו דה ז'ניירו",
   "country": "ברזיל",
+  "answerLabel": "ריו דה ז׳ניירו, ברזיל",
   "category": "americas",
   "difficulty": "easy",
   "fact": "הטיילת מרוצפת בדוגמת גלים בשחור-לבן."
@@ -216,6 +237,7 @@
   "name": "גייזר אולד פייתפול",
   "city": "ילוסטון",
   "country": "ארצות הברית",
+  "answerLabel": "ילוסטון, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "מתפרץ בערך כל שעה וחצי, בדיוק מפתיע."
@@ -226,6 +248,7 @@
   "name": "מפלי אנחל",
   "city": "קנאימה",
   "country": "ונצואלה",
+  "answerLabel": "קנאימה, ונצואלה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "המפל הגבוה בעולם — כ-979 מטר מהשפה ועד למטה."
@@ -236,6 +259,7 @@
   "name": "סלאר דה אויוני",
   "city": "פוטוסי",
   "country": "בוליביה",
+  "answerLabel": "פוטוסי, בוליביה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "מישור המלח הגדול בעולם הופך למראה ענקית אחרי גשם."
@@ -246,6 +270,7 @@
   "name": "קרחון פריטו מורנו",
   "city": "פטגוניה",
   "country": "ארגנטינה",
+  "answerLabel": "פטגוניה, ארגנטינה",
   "category": "americas",
   "difficulty": "easy",
   "fact": "קיר קרח בגובה כ-70 מטר שגושים ענקיים מתנתקים ממנו."
@@ -256,6 +281,7 @@
   "name": "אנדרטת וושינגטון",
   "city": "וושינגטון",
   "country": "ארצות הברית",
+  "answerLabel": "וושינגטון, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "האובליסק הגבוה בעולם, כ-169 מטר."
@@ -266,6 +292,7 @@
   "name": "גשר ברוקלין",
   "city": "ניו יורק",
   "country": "ארצות הברית",
+  "answerLabel": "ניו יורק, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "כשנפתח ב-1883 היה גשר התלייה הארוך בעולם."
@@ -276,6 +303,7 @@
   "name": "בניין קרייזלר",
   "city": "ניו יורק",
   "country": "ארצות הברית",
+  "answerLabel": "ניו יורק, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "יצירת מופת של סגנון הארט דקו."
@@ -286,6 +314,7 @@
   "name": "אלקטרז",
   "city": "סן פרנסיסקו",
   "country": "ארצות הברית",
+  "answerLabel": "סן פרנסיסקו, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "כלא פדרלי על אי במפרץ, שבו ישב אל קפונה."
@@ -296,6 +325,7 @@
   "name": "מזרקת בת׳סדה בסנטרל פארק",
   "city": "ניו יורק",
   "country": "ארצות הברית",
+  "answerLabel": "ניו יורק, ארה״ב",
   "category": "americas",
   "difficulty": "easy",
   "fact": "הפסל \"מלאך המים\" שבמרכז המזרקה פוסל בידי אמה סטבינס ב-1873."
@@ -306,6 +336,7 @@
   "name": "עמק המונומנטים",
   "city": "יוטה / אריזונה",
   "country": "ארצות הברית",
+  "answerLabel": "יוטה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "צוקי אבן חול אדומים שהופיעו באינספור מערבונים."
@@ -316,6 +347,7 @@
   "name": "קניון האנטילופה",
   "city": "אריזונה",
   "country": "ארצות הברית",
+  "answerLabel": "אריזונה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "קניון צר שקרני אור חודרות אליו מלמעלה."
@@ -326,6 +358,7 @@
   "name": "עיקול הפרסה",
   "city": "אריזונה",
   "country": "ארצות הברית",
+  "answerLabel": "אריזונה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "נהר הקולורדו מתפתל כאן בצורת פרסה, 300 מטר מתחת לשפה."
@@ -336,6 +369,7 @@
   "name": "חצי הכיפה",
   "city": "יוסמיטי",
   "country": "ארצות הברית",
+  "answerLabel": "קליפורניה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "כיפת גרניט שנראית כאילו נחתכה לשניים."
@@ -346,6 +380,7 @@
   "name": "הקשת העדינה",
   "city": "יוטה",
   "country": "ארצות הברית",
+  "answerLabel": "יוטה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "מופיעה על לוחיות הרישוי של יוטה."
@@ -356,6 +391,7 @@
   "name": "מגדל השטן",
   "city": "ויומינג",
   "country": "ארצות הברית",
+  "answerLabel": "ויומינג, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "המונומנט הלאומי הראשון של ארצות הברית (1906).",
@@ -367,6 +403,7 @@
   "name": "סכר הובר",
   "city": "נבדה / אריזונה",
   "country": "ארצות הברית",
+  "answerLabel": "נבדה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "יצר את אגם מיד, מאגר המים הגדול בארצות הברית."
@@ -377,6 +414,7 @@
   "name": "שאטו פרונטנאק",
   "city": "קוויבק סיטי",
   "country": "קנדה",
+  "answerLabel": "קוויבק סיטי, קנדה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "מכונה המלון המצולם ביותר בעולם."
@@ -387,6 +425,7 @@
   "name": "אגם מורן",
   "city": "אלברטה",
   "country": "קנדה",
+  "answerLabel": "אלברטה, קנדה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "צבעו הטורקיז נובע מאבקת סלע עדינה מהקרחונים."
@@ -397,6 +436,7 @@
   "name": "אגם לואיז",
   "city": "אלברטה",
   "country": "קנדה",
+  "answerLabel": "אלברטה, קנדה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "נקרא על שם בתה של המלכה ויקטוריה.",
@@ -408,6 +448,7 @@
   "name": "טיקל",
   "city": "פטן",
   "country": "גואטמלה",
+  "answerLabel": "פטן, גואטמלה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "עיר מאיה שפירמידותיה מזדקרות מעל הג'ונגל."
@@ -418,6 +459,7 @@
   "name": "פלנקה",
   "city": "צ'יאפס",
   "country": "מקסיקו",
+  "answerLabel": "צ׳יאפס, מקסיקו",
   "category": "americas",
   "difficulty": "medium",
   "fact": "עיר מאיה שבה נמצא קברו של המלך פקאל."
@@ -428,6 +470,7 @@
   "name": "העיר העתיקה של קרטחנה",
   "city": "קרטחנה",
   "country": "קולומביה",
+  "answerLabel": "קרטחנה, קולומביה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "עיר קולוניאלית מבוצרת עם מרפסות פרחים צבעוניות.",
@@ -439,6 +482,7 @@
   "name": "טורס דל פאינה",
   "city": "פטגוניה",
   "country": "צ'ילה",
+  "answerLabel": "פטגוניה, צ׳ילה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "שלושה מגדלי גרניט מעל אגם קרחוני."
@@ -449,6 +493,7 @@
   "name": "הר פיץ רוי",
   "city": "פטגוניה",
   "country": "ארגנטינה",
+  "answerLabel": "פטגוניה, ארגנטינה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "המקור לקו ההרים בלוגו של פטגוניה."
@@ -459,6 +504,7 @@
   "name": "עמק הירח",
   "city": "מדבר אטקמה",
   "country": "צ'ילה",
+  "answerLabel": "מדבר אטקמה, צ׳ילה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "באחד המדבריות היבשים בעולם, הנוף נראה כמו פני הירח."
@@ -469,6 +515,7 @@
   "name": "קמיניטו",
   "city": "בואנוס איירס",
   "country": "ארגנטינה",
+  "answerLabel": "בואנוס איירס, ארגנטינה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "רחוב הבתים הצבעוניים של שכונת לה בוקה.",
@@ -483,6 +530,7 @@
   "name": "הקפיטוליו",
   "city": "הוואנה",
   "country": "קובה",
+  "answerLabel": "הוואנה, קובה",
   "category": "americas",
   "difficulty": "medium",
   "fact": "נבנה ב-1929 בהשראת הקפיטול בוושינגטון."
@@ -493,6 +541,7 @@
   "name": "קניון בראיס",
   "city": "יוטה",
   "country": "ארצות הברית",
+  "answerLabel": "יוטה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "אלפי \"הודוס\" — עמודי סלע כתומים דקים."
@@ -503,6 +552,7 @@
   "name": "ארמון הצוק",
   "city": "מסה ורדה",
   "country": "ארצות הברית",
+  "answerLabel": "קולורדו, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "כפר של בני הפואבלו שנבנה בתוך מצוק לפני כ-800 שנה."
@@ -513,6 +563,7 @@
   "name": "בניין הפלטירון",
   "city": "ניו יורק",
   "country": "ארצות הברית",
+  "answerLabel": "ניו יורק, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "צורתו המשולשת מזכירה מגהץ."
@@ -523,6 +574,7 @@
   "name": "בית המפל",
   "city": "פנסילבניה",
   "country": "ארצות הברית",
+  "answerLabel": "פנסילבניה, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "פרנק לויד רייט בנה את הבית ממש מעל מפל מים."
@@ -533,6 +585,7 @@
   "name": "טירת צ'פולטפק",
   "city": "מקסיקו סיטי",
   "country": "מקסיקו",
+  "answerLabel": "מקסיקו סיטי, מקסיקו",
   "category": "americas",
   "difficulty": "medium",
   "fact": "הטירה היחידה בצפון אמריקה ששימשה מגורים למלכים."
@@ -543,6 +596,7 @@
   "name": "ארמון האמנויות היפות",
   "city": "מקסיקו סיטי",
   "country": "מקסיקו",
+  "answerLabel": "מקסיקו סיטי, מקסיקו",
   "category": "americas",
   "difficulty": "medium",
   "fact": "בתוכו ציורי קיר של דייגו ריברה."
@@ -553,6 +607,7 @@
   "name": "האיים הצפים של האורוס",
   "city": "אגם טיטיקקה",
   "country": "פרו",
+  "answerLabel": "פונו, פרו",
   "category": "americas",
   "difficulty": "medium",
   "fact": "איים מלאכותיים שנבנו מקני טוטורה.",
@@ -568,6 +623,7 @@
   "name": "הר הקשת",
   "city": "קוסקו",
   "country": "פרו",
+  "answerLabel": "קוסקו, פרו",
   "category": "americas",
   "difficulty": "medium",
   "fact": "פסים בצבעים שונים של מינרלים, בגובה יותר מ-5,000 מטר."
@@ -578,6 +634,7 @@
   "name": "פלורינו",
   "city": "סלבדור",
   "country": "ברזיל",
+  "answerLabel": "סלבדור, ברזיל",
   "category": "americas",
   "difficulty": "medium",
   "fact": "רובע קולוניאלי צבעוני בעיר הבירה הראשונה של ברזיל."
@@ -588,6 +645,7 @@
   "name": "הקתדרלה של ברזיליה",
   "city": "ברזיליה",
   "country": "ברזיל",
+  "answerLabel": "ברזיליה, ברזיל",
   "category": "americas",
   "difficulty": "medium",
   "fact": "תכנן אוסקר נימאייר — 16 עמודים מעוקלים כמו ידיים מושטות לשמיים."
@@ -598,6 +656,7 @@
   "name": "קרחון מנדנהול",
   "city": "ג'ונו",
   "country": "ארצות הברית",
+  "answerLabel": "ג׳ונו, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "קרחון באורך כ-20 ק\"מ שמגיע עד שולי ג'ונו, בירת אלסקה."
@@ -608,6 +667,7 @@
   "name": "מזח סנטה מוניקה",
   "city": "סנטה מוניקה",
   "country": "ארצות הברית",
+  "answerLabel": "לוס אנג׳לס, ארה״ב",
   "category": "americas",
   "difficulty": "medium",
   "fact": "כאן מסתיים רשמית כביש 66 ההיסטורי."
@@ -618,6 +678,7 @@
   "name": "אגם מונו",
   "city": "קליפורניה",
   "country": "ארצות הברית",
+  "answerLabel": "קליפורניה, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "מגדלי טופה לבנים שנוצרו מתחת למים ונחשפו כשהאגם ירד."
@@ -628,6 +689,7 @@
   "name": "הגל",
   "city": "אריזונה",
   "country": "ארצות הברית",
+  "answerLabel": "אריזונה, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "רק כמה עשרות מבקרים בהגרלה מקבלים אישור להגיע בכל יום."
@@ -638,6 +700,7 @@
   "name": "המעיין הפריזמטי הגדול",
   "city": "ילוסטון",
   "country": "ארצות הברית",
+  "answerLabel": "ילוסטון, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "צבעי הקשת נוצרים מחיידקים שחיים במים החמים."
@@ -648,6 +711,7 @@
   "name": "אגם הלוע",
   "city": "אורגון",
   "country": "ארצות הברית",
+  "answerLabel": "אורגון, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "האגם העמוק בארצות הברית, בתוך הר געש שקרס."
@@ -658,6 +722,7 @@
   "name": "הרייסטרק פלאיה",
   "city": "עמק המוות",
   "country": "ארצות הברית",
+  "answerLabel": "קליפורניה, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "סלעים \"נעים\" לבד ומשאירים שובל — בזכות שכבות קרח דקות."
@@ -668,6 +733,7 @@
   "name": "קניו קריסטלס",
   "city": "מטה",
   "country": "קולומביה",
+  "answerLabel": "מטה, קולומביה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "\"נהר חמשת הצבעים\" — צמח מים הופך אותו לאדום."
@@ -678,6 +744,7 @@
   "name": "מערות השיש",
   "city": "אגם חנרל קררה",
   "country": "צ'ילה",
+  "answerLabel": "אייסן, צ׳ילה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "מערות שיש שהמים החצובים בהן בצבע טורקיז.",
@@ -693,6 +760,7 @@
   "name": "מפלי קאיטור",
   "city": "פוטארו-סיפארוני",
   "country": "גיאנה",
+  "answerLabel": "פוטארו-סיפארוני, גיאנה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "מהמפלים החזקים בעולם בנפילה חד-שלבית."
@@ -703,6 +771,7 @@
   "name": "הר רוראימה",
   "city": "גראן סבנה",
   "country": "ונצואלה",
+  "answerLabel": "גראן סבנה, ונצואלה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "הר שולחן שטוח שהשראה ל\"העולם האבוד\" של קונן דויל."
@@ -713,6 +782,7 @@
   "name": "לנסואיס מרנייסס",
   "city": "מרניאו",
   "country": "ברזיל",
+  "answerLabel": "מרניאו, ברזיל",
   "category": "americas",
   "difficulty": "pro",
   "fact": "דיונות לבנות עם לגונות של מי גשמים ביניהן."
@@ -723,6 +793,7 @@
   "name": "צ'אן צ'אן",
   "city": "טרוחיו",
   "country": "פרו",
+  "answerLabel": "טרוחיו, פרו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "העיר הגדולה ביותר מבוץ באמריקה הקדם-קולומביאנית."
@@ -733,6 +804,7 @@
   "name": "קווי נסקה",
   "city": "נסקה",
   "country": "פרו",
+  "answerLabel": "נסקה, פרו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "ציורי ענק במדבר שנראים במלואם רק מהאוויר."
@@ -743,6 +815,7 @@
   "name": "ואקצ'ינה",
   "city": "איקה",
   "country": "פרו",
+  "answerLabel": "איקה, פרו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "נווה מדבר קטן מוקף דיונות ענק."
@@ -753,6 +826,7 @@
   "name": "סקסאיוואמן",
   "city": "קוסקו",
   "country": "פרו",
+  "answerLabel": "קוסקו, פרו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "אבני ענק משתלבות בדיוק כזה שאי אפשר להכניס ביניהן להב."
@@ -763,6 +837,7 @@
   "name": "יירבה אל אגואה",
   "city": "אואחקה",
   "country": "מקסיקו",
+  "answerLabel": "אואחקה, מקסיקו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "\"מפלים מאובנים\" של משקעי מינרלים על צלע ההר."
@@ -773,6 +848,7 @@
   "name": "סנוטה איק קיל",
   "city": "יוקטן",
   "country": "מקסיקו",
+  "answerLabel": "יוקטן, מקסיקו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "בור שקיעה טבעי עם מים שקופים ושורשים שמשתלשלים."
@@ -783,6 +859,7 @@
   "name": "האגם המנומר",
   "city": "קולומביה הבריטית",
   "country": "קנדה",
+  "answerLabel": "קולומביה הבריטית, קנדה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "בקיץ המים מתאדים ומשאירים עיגולים צבעוניים של מינרלים."
@@ -793,6 +870,7 @@
   "name": "סלעי הופוול",
   "city": "ניו ברנזוויק",
   "country": "קנדה",
+  "answerLabel": "ניו ברנזוויק, קנדה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "במפרץ פנדי — הגאות הגבוהה בעולם — הסלעים נראים כמו עציצים."
@@ -803,6 +881,7 @@
   "name": "פגיז קוב",
   "city": "נובה סקוטיה",
   "country": "קנדה",
+  "answerLabel": "נובה סקוטיה, קנדה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "כפר דייגים עם מגדלור על סלעי גרניט."
@@ -813,6 +892,7 @@
   "name": "ולפראיסו",
   "city": "ולפראיסו",
   "country": "צ'ילה",
+  "answerLabel": "ולפראיסו, צ׳ילה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "בתים צבעוניים על גבעות, ומעליות רכבל עתיקות."
@@ -823,6 +903,7 @@
   "name": "גואנחואטו",
   "city": "גואנחואטו",
   "country": "מקסיקו",
+  "answerLabel": "גואנחואטו, מקסיקו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "עיר מכרות כסף עם מנהרות תת-קרקעיות לתנועה."
@@ -833,6 +914,7 @@
   "name": "קופאן",
   "city": "קופאן",
   "country": "הונדורס",
+  "answerLabel": "קופאן, הונדורס",
   "category": "americas",
   "difficulty": "pro",
   "fact": "עיר מאיה עם מדרגות ההירוגליפים הארוכות ביותר."
@@ -843,6 +925,7 @@
   "name": "תיאטרון האמזונס",
   "city": "מנאוס",
   "country": "ברזיל",
+  "answerLabel": "מנאוס, ברזיל",
   "category": "americas",
   "difficulty": "pro",
   "fact": "בית אופרה מפואר בלב ג'ונגל האמזונס, מתקופת הגומי."
@@ -853,6 +936,7 @@
   "name": "שיפרוק",
   "city": "ניו מקסיקו",
   "country": "ארצות הברית",
+  "answerLabel": "ניו מקסיקו, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "שארית של צוואר געשי שמזדקרת מהמישור."
@@ -863,6 +947,7 @@
   "name": "אויאנטאיטמבו",
   "city": "העמק הקדוש",
   "country": "פרו",
+  "answerLabel": "העמק הקדוש, פרו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "עיירת אינקה עם טרסות ענק על צלע ההר."
@@ -873,6 +958,7 @@
   "name": "החולות הלבנים",
   "city": "ניו מקסיקו",
   "country": "ארצות הברית",
+  "answerLabel": "ניו מקסיקו, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "שדה הדיונות הגדול בעולם מגבס."
@@ -883,6 +969,7 @@
   "name": "גייזר פליי",
   "city": "נבדה",
   "country": "ארצות הברית",
+  "answerLabel": "נבדה, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "נוצר בטעות ב-1964 מקידוח באר, והפך לצבעוני."
@@ -893,6 +980,7 @@
   "name": "קתדרלת המלח",
   "city": "זיפקירה",
   "country": "קולומביה",
+  "answerLabel": "זיפקירה, קולומביה",
   "category": "americas",
   "difficulty": "pro",
   "fact": "כנסייה שנחצבה 200 מטר מתחת לאדמה במכרה מלח."
@@ -903,6 +991,7 @@
   "name": "טולום",
   "city": "קינטנה רו",
   "country": "מקסיקו",
+  "answerLabel": "קינטנה רו, מקסיקו",
   "category": "americas",
   "difficulty": "pro",
   "fact": "עיר מאיה מוקפת חומה על צוק מעל הים הקריבי."
@@ -913,6 +1002,7 @@
   "name": "בודי",
   "city": "קליפורניה",
   "country": "ארצות הברית",
+  "answerLabel": "קליפורניה, ארה״ב",
   "category": "americas",
   "difficulty": "pro",
   "fact": "עיירת רפאים מתקופת הבהלה לזהב, שנשמרה \"כמו שהייתה\"."

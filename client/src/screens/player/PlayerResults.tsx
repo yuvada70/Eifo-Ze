@@ -1,11 +1,11 @@
 /**
- * מסך הסיום של השחקן: המקום שלי, טבלת הניצחון, ופירוט הניחושים שלי
- * בכל סיבוב (מרחק ונקודות).
+ * מסך הסיום של השחקן: המקום שלי, טבלת הניצחון, ופירוט התשובות שלי
+ * בכל סיבוב.
  */
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ACCURACY_LABELS, accuracyTier, formatDistance, medalFor, scoringForCategory } from '@eifo/shared';
+import { formatSeconds, medalFor } from '@eifo/shared';
 
 import { Leaderboard } from '../../components/results/Leaderboard';
 import { Podium } from '../../components/results/Podium';
@@ -36,7 +36,6 @@ export function PlayerResults(): JSX.Element {
     );
   }
 
-  const scoring = scoringForCategory(results.settings.category);
   const medal = myEntry ? medalFor(myEntry.rank) : null;
 
   return (
@@ -58,11 +57,11 @@ export function PlayerResults(): JSX.Element {
         {myEntry ? (
           <div className={styles.heroStats}>
             <Stat label="נקודות" value={myEntry.totalPoints.toLocaleString('he-IL')} tone="primary" />
+            <Stat label="תשובות נכונות" value={`${myEntry.correctAnswers}/${results.rounds.length}`} tone="accent" />
             <Stat
-              label="מרחק ממוצע"
-              value={myEntry.averageDistanceKm === null ? '—' : formatDistance(myEntry.averageDistanceKm)}
+              label="זמן ממוצע"
+              value={myEntry.averageCorrectMs === null ? '—' : formatSeconds(myEntry.averageCorrectMs)}
             />
-            <Stat label="בולי פגיעה" value={myEntry.bullseyes} tone="accent" />
           </div>
         ) : null}
       </motion.header>
@@ -72,7 +71,7 @@ export function PlayerResults(): JSX.Element {
           טבלת הניצחון
         </button>
         <button className={`${styles.tab} ${tab === 'me' ? styles.tabActive : ''}`} onClick={() => setTab('me')} role="tab" aria-selected={tab === 'me'}>
-          הניחושים שלי
+          התשובות שלי
         </button>
       </div>
 
@@ -84,20 +83,21 @@ export function PlayerResults(): JSX.Element {
       ) : (
         <section className={styles.panel}>
           {results.rounds.map((round) => {
-            const mine = round.guesses.find((guess) => guess.playerId === playerId);
-            const tier = mine?.distanceKm == null ? 'none' : accuracyTier(mine.distanceKm, scoring);
+            const mine = round.answers.find((answer) => answer.playerId === playerId);
+            const picked = mine?.choice != null ? round.options[mine.choice] : null;
             return (
               <div key={round.index} className={styles.roundCard}>
                 <div className={styles.roundHead}>
                   <h2 className={styles.roundName}>
                     {round.index + 1}. {round.place.name}
                   </h2>
-                  <span className={`${styles.tier} ${styles[`tier_${tier}`]}`}>{ACCURACY_LABELS[tier]}</span>
+                  <span className={`${styles.tier} ${mine?.correct ? styles.tier_bullseye : picked ? styles.tier_far : styles.tier_none}`}>
+                    {mine?.correct ? '✓ נכון' : picked ? '✗ טעות' : 'לא ענית'}
+                  </span>
                 </div>
                 <p className={styles.fact}>
-                  {round.place.city}, {round.place.country} ·{' '}
-                  {mine?.distanceKm == null ? 'לא אושר ניחוש' : formatDistance(mine.distanceKm)} · +
-                  {(mine?.points ?? 0).toLocaleString('he-IL')}
+                  {round.options[round.correctIndex]}
+                  {picked && !mine?.correct ? ` · בחרת: ${picked}` : ''} · +{(mine?.points ?? 0).toLocaleString('he-IL')}
                 </p>
               </div>
             );

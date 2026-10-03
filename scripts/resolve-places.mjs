@@ -288,6 +288,7 @@ for (const { seed, wiki, wdCoord, candidates } of prepared) {
     name: seed.name,
     city: seed.city,
     country: seed.country,
+    answerLabel: seed.answerLabel ?? shared.suggestAnswerLabel(seed.city, seed.country, seed.category),
     category: seed.category,
     difficulty: seed.difficulty,
     lat: Math.round(coord.lat * 1e5) / 1e5,

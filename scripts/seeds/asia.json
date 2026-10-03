@@ -5,6 +5,7 @@
   "name": "טאג' מהאל",
   "city": "אגרה",
   "country": "הודו",
+  "answerLabel": "אגרה, הודו",
   "category": "asia",
   "difficulty": "easy",
   "fact": "מאוזוליאום משיש לבן שבנה הקיסר שאה ג'האן לזכר אשתו."
@@ -15,6 +16,7 @@
   "name": "החומה הסינית",
   "city": "בדאלינג",
   "country": "סין",
+  "answerLabel": "בייג׳ינג, סין",
   "category": "asia",
   "difficulty": "easy",
   "fact": "כל קטעי החומה יחד משתרעים על יותר מ-20,000 ק\"מ."
@@ -25,6 +27,7 @@
   "name": "הר פוג'י",
   "city": "הונשו",
   "country": "יפן",
+  "answerLabel": "שיזואוקה, יפן",
   "category": "asia",
   "difficulty": "easy",
   "fact": "ההר הגבוה ביפן (3,776 מ'), והוא הר געש פעיל."
@@ -35,6 +38,7 @@
   "name": "פטרה",
   "city": "ואדי מוסא",
   "country": "ירדן",
+  "answerLabel": "ואדי מוסא, ירדן",
   "category": "asia",
   "difficulty": "easy",
   "fact": "\"העיר הוורודה\" של הנבטים, חצובה בסלע אבן חול."
@@ -45,6 +49,7 @@
   "name": "בורג' ח'ליפה",
   "city": "דובאי",
   "country": "איחוד האמירויות",
+  "answerLabel": "דובאי, איחוד האמירויות",
   "category": "asia",
   "difficulty": "easy",
   "fact": "הבניין הגבוה בעולם — 828 מטר."
@@ -55,6 +60,7 @@
   "name": "אנגקור ואט",
   "city": "סיאם ריפ",
   "country": "קמבודיה",
+  "answerLabel": "סיאם ריפ, קמבודיה",
   "category": "asia",
   "difficulty": "easy",
   "fact": "המבנה הדתי הגדול בעולם, ומופיע על דגל קמבודיה."
@@ -65,6 +71,7 @@
   "name": "העיר האסורה",
   "city": "בייג'ינג",
   "country": "סין",
+  "answerLabel": "בייג׳ינג, סין",
   "category": "asia",
   "difficulty": "easy",
   "fact": "ארמון הקיסרים של סין במשך כ-500 שנה."
@@ -75,6 +82,7 @@
   "name": "מרינה ביי סנדס",
   "city": "סינגפור",
   "country": "סינגפור",
+  "answerLabel": "סינגפור",
   "category": "asia",
   "difficulty": "easy",
   "fact": "על שלושת המגדלים מונחת \"ספינה\" עם בריכת אינסוף."
@@ -85,6 +93,7 @@
   "name": "מגדלי פטרונס",
   "city": "קואלה לומפור",
   "country": "מלזיה",
+  "answerLabel": "קואלה לומפור, מלזיה",
   "category": "asia",
   "difficulty": "easy",
   "fact": "היו הבניינים הגבוהים בעולם בשנים 1998–2004."
@@ -95,6 +104,7 @@
   "name": "מקדש פושימי אינרי",
   "city": "קיוטו",
   "country": "יפן",
+  "answerLabel": "קיוטו, יפן",
   "category": "asia",
   "difficulty": "easy",
   "fact": "אלפי שערי טוריי כתומים יוצרים מנהרות על צלע ההר."
@@ -105,6 +115,7 @@
   "name": "מקדש ביתן הזהב",
   "city": "קיוטו",
   "country": "יפן",
+  "answerLabel": "קיוטו, יפן",
   "category": "asia",
   "difficulty": "easy",
   "fact": "שתי הקומות העליונות מצופות עלי זהב."
@@ -115,6 +126,7 @@
   "name": "צבא הטרקוטה",
   "city": "שיאן",
   "country": "סין",
+  "answerLabel": "שיאן, סין",
   "category": "asia",
   "difficulty": "easy",
   "fact": "אלפי לוחמי חרס בגודל טבעי, ולכל אחד פנים שונות."
@@ -125,6 +137,7 @@
   "name": "ארמון פוטלה",
   "city": "להסה",
   "country": "סין",
+  "answerLabel": "להסה, סין",
   "category": "asia",
   "difficulty": "easy",
   "fact": "מושבו של הדלאי לאמה, בגובה של כ-3,700 מטר."
@@ -135,6 +148,7 @@
   "name": "שער הודו",
   "city": "מומבאי",
   "country": "הודו",
+  "answerLabel": "מומבאי, הודו",
   "category": "asia",
   "difficulty": "easy",
   "fact": "נבנה לזכר ביקור המלך ג'ורג' החמישי ב-1911.",
@@ -146,6 +160,7 @@
   "name": "מקדש הזהב",
   "city": "אמריטסר",
   "country": "הודו",
+  "answerLabel": "אמריטסר, הודו",
   "category": "asia",
   "difficulty": "easy",
   "fact": "המקדש הקדוש ביותר לסיקים, והמטבח שלו מאכיל עשרות אלפים בחינם בכל יום."
@@ -156,6 +171,7 @@
   "name": "מסגד שייח' זאיד",
   "city": "אבו דאבי",
   "country": "איחוד האמירויות",
+  "answerLabel": "אבו דאבי, איחוד האמירויות",
   "category": "asia",
   "difficulty": "easy",
   "fact": "בו אחד משטיחי הקטיפה הגדולים בעולם שנארגו ביד.",
@@ -170,6 +186,7 @@
   "name": "בורג' אל-ערב",
   "city": "דובאי",
   "country": "איחוד האמירויות",
+  "answerLabel": "דובאי, איחוד האמירויות",
   "category": "asia",
   "difficulty": "easy",
   "fact": "בנוי על אי מלאכותי בצורת מפרש."
@@ -180,6 +197,7 @@
   "name": "מפרץ הא לונג",
   "city": "קוואנג נין",
   "country": "וייטנאם",
+  "answerLabel": "הא לונג, וייטנאם",
   "category": "asia",
   "difficulty": "easy",
   "fact": "כ-1,600 איים וצוקי גיר מזדקרים מהים."
@@ -190,6 +208,7 @@
   "name": "מגדל הפנינה המזרחית",
   "city": "שנגחאי",
   "country": "סין",
+  "answerLabel": "שנגחאי, סין",
   "category": "asia",
   "difficulty": "easy",
   "fact": "מגדל טלוויזיה עם כדורים ורודים, סמל של שנגחאי."
@@ -200,6 +219,7 @@
   "name": "נמל ויקטוריה",
   "city": "הונג קונג",
   "country": "סין",
+  "answerLabel": "הונג קונג, סין",
   "category": "asia",
   "difficulty": "easy",
   "fact": "מדי ערב מתקיים כאן מופע אורות על גורדי השחקים."
@@ -210,6 +230,7 @@
   "name": "הר האוורסט",
   "city": "הרי ההימלאיה",
   "country": "נפאל",
+  "answerLabel": "הימלאיה, נפאל",
   "category": "asia",
   "difficulty": "easy",
   "fact": "ההר הגבוה בעולם — 8,849 מטר."
@@ -220,6 +241,7 @@
   "name": "בורובודור",
   "city": "ג'אווה",
   "country": "אינדונזיה",
+  "answerLabel": "ג׳אווה, אינדונזיה",
   "category": "asia",
   "difficulty": "easy",
   "fact": "מקדש בודהיסטי ענק עם 72 סטופות בצורת פעמון."
@@ -230,6 +252,7 @@
   "name": "פגודת שוודגון",
   "city": "יאנגון",
   "country": "מיאנמר",
+  "answerLabel": "יאנגון, מיאנמר",
   "category": "asia",
   "difficulty": "easy",
   "fact": "הסטופה מצופה זהב, ובראשה אלפי יהלומים ואבני חן."
@@ -240,6 +263,7 @@
   "name": "הארמון המלכותי",
   "city": "בנגקוק",
   "country": "תאילנד",
+  "answerLabel": "בנגקוק, תאילנד",
   "category": "asia",
   "difficulty": "easy",
   "fact": "בו נמצא פסל בודהה האזמרגד, הקדוש ביותר בתאילנד."
@@ -250,6 +274,7 @@
   "name": "ואט ארון",
   "city": "בנגקוק",
   "country": "תאילנד",
+  "answerLabel": "בנגקוק, תאילנד",
   "category": "asia",
   "difficulty": "easy",
   "fact": "\"מקדש השחר\", מעוטר בחרסינה צבעונית."
@@ -260,6 +285,7 @@
   "name": "מקדש הלוטוס",
   "city": "ניו דלהי",
   "country": "הודו",
+  "answerLabel": "דלהי, הודו",
   "category": "asia",
   "difficulty": "easy",
   "fact": "בית תפילה בהאי בצורת פרח לוטוס.",
@@ -271,6 +297,7 @@
   "name": "מקדש איצוקושימה",
   "city": "מיאג'ימה",
   "country": "יפן",
+  "answerLabel": "הירושימה, יפן",
   "category": "asia",
   "difficulty": "easy",
   "fact": "שער הטוריי האדום \"צף\" על המים בזמן הגאות."
@@ -281,6 +308,7 @@
   "name": "גורמה",
   "city": "קפדוקיה",
   "country": "טורקיה",
+  "answerLabel": "קפדוקיה, טורקיה",
   "category": "asia",
   "difficulty": "easy",
   "fact": "\"ארובות פיות\" מסלע געשי, ומאות כדורים פורחים בזריחה."
@@ -291,6 +319,7 @@
   "name": "טוקיו סקיטרי",
   "city": "טוקיו",
   "country": "יפן",
+  "answerLabel": "טוקיו, יפן",
   "category": "asia",
   "difficulty": "easy",
   "fact": "מגדל השידור הגבוה בעולם — 634 מטר."
@@ -301,6 +330,7 @@
   "name": "גני המפרץ",
   "city": "סינגפור",
   "country": "סינגפור",
+  "answerLabel": "סינגפור",
   "category": "asia",
   "difficulty": "easy",
   "fact": "\"עצי-על\" מלאכותיים בגובה עד 50 מטר מכוסים בצמחים."
@@ -311,6 +341,7 @@
   "name": "באגאן",
   "city": "מנדליי",
   "country": "מיאנמר",
+  "answerLabel": "מנדליי, מיאנמר",
   "category": "asia",
   "difficulty": "medium",
   "fact": "במישור פזורים יותר מ-2,000 מקדשים ופגודות עתיקים."
@@ -321,6 +352,7 @@
   "name": "גבעות השוקולד",
   "city": "בוהול",
   "country": "הפיליפינים",
+  "answerLabel": "בוהול, הפיליפינים",
   "category": "asia",
   "difficulty": "medium",
   "fact": "יותר מ-1,200 גבעות שמשחימות בעונה היבשה."
@@ -331,6 +363,7 @@
   "name": "טרסות האורז של באנאואה",
   "city": "לוזון",
   "country": "הפיליפינים",
+  "answerLabel": "לוזון, הפיליפינים",
   "category": "asia",
   "difficulty": "medium",
   "fact": "טרסות שנחצבו בהרים לפני כאלפיים שנה."
@@ -341,6 +374,7 @@
   "name": "הבודהה הענק של לשאן",
   "city": "לשאן",
   "country": "סין",
+  "answerLabel": "סצ׳ואן, סין",
   "category": "asia",
   "difficulty": "medium",
   "fact": "פסל בגובה 71 מטר שנחצב בצוק מעל מפגש נהרות."
@@ -351,6 +385,7 @@
   "name": "ז'אנגג'יאג'יה",
   "city": "הונאן",
   "country": "סין",
+  "answerLabel": "הונאן, סין",
   "category": "asia",
   "difficulty": "medium",
   "fact": "עמודי אבן החול כאן היו השראה להרים המרחפים בסרט \"אווטאר\"."
@@ -361,6 +396,7 @@
   "name": "נהר לי",
   "city": "גווילין",
   "country": "סין",
+  "answerLabel": "גווילין, סין",
   "category": "asia",
   "difficulty": "medium",
   "fact": "הנוף שלו מופיע על השטר של 20 יואן.",
@@ -374,6 +410,7 @@
   "name": "הוי אן",
   "city": "קוואנג נאם",
   "country": "וייטנאם",
+  "answerLabel": "הוי אן, וייטנאם",
   "category": "asia",
   "difficulty": "medium",
   "fact": "עיר נמל עתיקה שמתמלאת בלילה בפנסי משי צבעוניים.",
@@ -386,6 +423,7 @@
   "name": "הווה מהאל",
   "city": "ג'איפור",
   "country": "הודו",
+  "answerLabel": "ג׳איפור, הודו",
   "category": "asia",
   "difficulty": "medium",
   "fact": "\"ארמון הרוחות\" — 953 חלונות קטנים שדרכם צפו נשות החצר ברחוב."
@@ -396,6 +434,7 @@
   "name": "קוטב מינאר",
   "city": "דלהי",
   "country": "הודו",
+  "answerLabel": "דלהי, הודו",
   "category": "asia",
   "difficulty": "medium",
   "fact": "צריח לבנים בגובה 73 מטר מהמאה ה-13."
@@ -406,6 +445,7 @@
   "name": "קבר הומאיון",
   "city": "דלהי",
   "country": "הודו",
+  "answerLabel": "דלהי, הודו",
   "category": "asia",
   "difficulty": "medium",
   "fact": "השראה לטאג' מהאל, שנבנה כשישים שנה אחריו."
@@ -416,6 +456,7 @@
   "name": "הרגיסטאן",
   "city": "סמרקנד",
   "country": "אוזבקיסטן",
+  "answerLabel": "סמרקנד, אוזבקיסטן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "כיכר שמוקפת בשלוש מדרסות מעוטרות באריחים כחולים."
@@ -426,6 +467,7 @@
   "name": "כיכר נקש-א-ג'האן",
   "city": "אספהאן",
   "country": "איראן",
+  "answerLabel": "אספהאן, איראן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "מהכיכרות הגדולות בעולם, מוקפת מסגדים וארמון."
@@ -436,6 +478,7 @@
   "name": "פרספוליס",
   "city": "פארס",
   "country": "איראן",
+  "answerLabel": "פארס, איראן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "בירת הטקסים של האימפריה הפרסית, שנשרפה בידי אלכסנדר מוקדון."
@@ -446,6 +489,7 @@
   "name": "טירת הימג'י",
   "city": "הימג'י",
   "country": "יפן",
+  "answerLabel": "הימג׳י, יפן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "מכונה \"טירת העגור הלבן\" ושרדה מלחמות ורעידות אדמה."
@@ -456,6 +500,7 @@
   "name": "מקדש טודאי-ג'י",
   "city": "נארה",
   "country": "יפן",
+  "answerLabel": "נארה, יפן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "בתוכו פסל בודהה מברונזה בגובה כ-15 מטר; צבאים מסתובבים בחצר."
@@ -466,6 +511,7 @@
   "name": "ארמון גיונגבוקגונג",
   "city": "סיאול",
   "country": "דרום קוריאה",
+  "answerLabel": "סיאול, דרום קוריאה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "הארמון הראשי של שושלת ג'וסון, מ-1395.",
@@ -477,6 +523,7 @@
   "name": "מגדל סיאול",
   "city": "סיאול",
   "country": "דרום קוריאה",
+  "answerLabel": "סיאול, דרום קוריאה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "זוגות תולים על הגדר שלו מנעולי אהבה.",
@@ -488,6 +535,7 @@
   "name": "פאמוקלה",
   "city": "דניזלי",
   "country": "טורקיה",
+  "answerLabel": "דניזלי, טורקיה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "\"טירת הכותנה\" — טרסות לבנות של משקעי סידן ממעיינות חמים."
@@ -498,6 +546,7 @@
   "name": "ספריית קלסוס",
   "city": "אפסוס",
   "country": "טורקיה",
+  "answerLabel": "איזמיר, טורקיה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "הספרייה החזיקה כ-12,000 מגילות; חזיתה שוחזרה בשנות ה-70."
@@ -508,6 +557,7 @@
   "name": "ואדי רם",
   "city": "עקבה",
   "country": "ירדן",
+  "answerLabel": "עקבה, ירדן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "\"עמק הירח\" — שם צולמו סרטים כמו \"המאדים\" ו\"חולית\"."
@@ -518,6 +568,7 @@
   "name": "סיגיריה",
   "city": "מחוז מרכזי",
   "country": "סרי לנקה",
+  "answerLabel": "מחוז מרכזי, סרי לנקה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "מבצר מלכותי על ראש סלע בגובה כ-200 מטר."
@@ -528,6 +579,7 @@
   "name": "טנה לוט",
   "city": "באלי",
   "country": "אינדונזיה",
+  "answerLabel": "באלי, אינדונזיה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "מקדש על סלע בים, שהופך לאי בגאות."
@@ -538,6 +590,7 @@
   "name": "מערות באטו",
   "city": "סלנגור",
   "country": "מלזיה",
+  "answerLabel": "סלנגור, מלזיה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "272 מדרגות צבעוניות עולות אל מקדש הינדי במערת גיר."
@@ -548,6 +601,7 @@
   "name": "המרליון",
   "city": "סינגפור",
   "country": "סינגפור",
+  "answerLabel": "סינגפור",
   "category": "asia",
   "difficulty": "medium",
   "fact": "יצור עם ראש אריה וגוף של דג — סמלה של סינגפור."
@@ -558,6 +612,7 @@
   "name": "מבצר מהרנגרה",
   "city": "ג'ודפור",
   "country": "הודו",
+  "answerLabel": "ג׳ודפור, הודו",
   "category": "asia",
   "difficulty": "medium",
   "fact": "מתנשא מעל \"העיר הכחולה\" של ג'ודפור."
@@ -568,6 +623,7 @@
   "name": "מקדש השמיים",
   "city": "בייג'ינג",
   "country": "סין",
+  "answerLabel": "בייג׳ינג, סין",
   "category": "asia",
   "difficulty": "medium",
   "fact": "כאן התפללו הקיסרים ליבול טוב."
@@ -578,6 +634,7 @@
   "name": "ארשיאמה",
   "city": "קיוטו",
   "country": "יפן",
+  "answerLabel": "קיוטו, יפן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "ידוע ביער הבמבוק הגבוה שלו."
@@ -588,6 +645,7 @@
   "name": "פורה אולון דנו בראטן",
   "city": "באלי",
   "country": "אינדונזיה",
+  "answerLabel": "באלי, אינדונזיה",
   "category": "asia",
   "difficulty": "medium",
   "fact": "מקדש מים על שפת אגם הרי."
@@ -598,6 +656,7 @@
   "name": "מבצר ג'איסלמר",
   "city": "ג'איסלמר",
   "country": "הודו",
+  "answerLabel": "ג׳איסלמר, הודו",
   "category": "asia",
   "difficulty": "medium",
   "fact": "\"מבצר הזהב\" — עדיין גרים בו אלפי אנשים."
@@ -608,6 +667,7 @@
   "name": "המסגד הגדול של סולטן קאבוס",
   "city": "מוסקט",
   "country": "עומאן",
+  "answerLabel": "מוסקט, עומאן",
   "category": "asia",
   "difficulty": "medium",
   "fact": "בו נברשת קריסטל ענקית באורך 14 מטר."
@@ -618,6 +678,7 @@
   "name": "מכתש הגז דרוואזה",
   "city": "דרוואזה",
   "country": "טורקמניסטן",
+  "answerLabel": "מדבר קרקום, טורקמניסטן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "מכונה \"שער הגיהינום\" — מכתש גז שבוער ברציפות מאז 1971."
@@ -628,6 +689,7 @@
   "name": "הר קאילש",
   "city": "טיבט",
   "country": "סין",
+  "answerLabel": "טיבט, סין",
   "category": "asia",
   "difficulty": "pro",
   "fact": "הר קדוש לארבע דתות, ואיש לא טיפס לפסגתו."
@@ -638,6 +700,7 @@
   "name": "סוקוטרה",
   "city": "סוקוטרה",
   "country": "תימן",
+  "answerLabel": "האי סוקוטרה, תימן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "כאן גדלים \"עצי דם הדרקון\" בצורת מטרייה."
@@ -648,6 +711,7 @@
   "name": "מערת סון דונג",
   "city": "קוואנג בין",
   "country": "וייטנאם",
+  "answerLabel": "קוואנג בין, וייטנאם",
   "category": "asia",
   "difficulty": "pro",
   "fact": "המערה הגדולה בעולם — יש בה ג'ונגל ועננים משלה.",
@@ -662,6 +726,7 @@
   "name": "ג'יוז'איגו",
   "city": "סצ'ואן",
   "country": "סין",
+  "answerLabel": "סצ׳ואן, סין",
   "category": "asia",
   "difficulty": "pro",
   "fact": "אגמים בצבעי טורקיז ואזמרגד בין הרים."
@@ -672,6 +737,7 @@
   "name": "מנזר קן הנמר",
   "city": "פארו",
   "country": "בהוטן",
+  "answerLabel": "פארו, בהוטן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "נבנה על צוק כ-900 מטר מעל העמק."
@@ -682,6 +748,7 @@
   "name": "איצ'אן קלעה",
   "city": "חיווה",
   "country": "אוזבקיסטן",
+  "answerLabel": "חיווה, אוזבקיסטן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "עיר פנימית מבוצרת על דרך המשי."
@@ -692,6 +759,7 @@
   "name": "שיבאם",
   "city": "חדרמאוט",
   "country": "תימן",
+  "answerLabel": "חדרמאוט, תימן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "\"מנהטן של המדבר\" — גורדי שחקים מבוץ מהמאה ה-16."
@@ -702,6 +770,7 @@
   "name": "קלימוטו",
   "city": "פלורס",
   "country": "אינדונזיה",
+  "answerLabel": "פלורס, אינדונזיה",
   "category": "asia",
   "difficulty": "pro",
   "fact": "שלושה אגמי לוע שמשנים את צבעם."
@@ -712,6 +781,7 @@
   "name": "הר ברומו",
   "city": "ג'אווה",
   "country": "אינדונזיה",
+  "answerLabel": "ג׳אווה, אינדונזיה",
   "category": "asia",
   "difficulty": "pro",
   "fact": "הר געש פעיל בתוך \"ים חול\" של קלדרה ענקית."
@@ -722,6 +792,7 @@
   "name": "מערות אלורה",
   "city": "מהרשטרה",
   "country": "הודו",
+  "answerLabel": "מהרשטרה, הודו",
   "category": "asia",
   "difficulty": "pro",
   "fact": "מקדש קאילסה נחצב כולו מגוש סלע אחד, מלמעלה למטה."
@@ -732,6 +803,7 @@
   "name": "מקדש מינאקשי",
   "city": "מדוראי",
   "country": "הודו",
+  "answerLabel": "מדוראי, הודו",
   "category": "asia",
   "difficulty": "pro",
   "fact": "מגדלי השער מכוסים באלפי פסלים צבעוניים."
@@ -742,6 +814,7 @@
   "name": "באר המדרגות ראני קי ואב",
   "city": "פטאן",
   "country": "הודו",
+  "answerLabel": "פטאן, הודו",
   "category": "asia",
   "difficulty": "pro",
   "fact": "באר מדרגות מעוטרת במאות פסלים, מופיעה על שטר של 100 רופי."
@@ -752,6 +825,7 @@
   "name": "מישור הכדים",
   "city": "שיאנג קוואנג",
   "country": "לאוס",
+  "answerLabel": "שיאנג קוואנג, לאוס",
   "category": "asia",
   "difficulty": "pro",
   "fact": "אלפי כדי אבן ענקיים, ואיש אינו יודע בדיוק למה שימשו."
@@ -762,6 +836,7 @@
   "name": "סונגסאן אילצ'ולבונג",
   "city": "ג'ג'ו",
   "country": "דרום קוריאה",
+  "answerLabel": "ג׳ג׳ו, דרום קוריאה",
   "category": "asia",
   "difficulty": "pro",
   "fact": "\"פסגת הזריחה\" — לוע געשי שעלה מהים."
@@ -772,6 +847,7 @@
   "name": "שיראקאווה-גו",
   "city": "גיפו",
   "country": "יפן",
+  "answerLabel": "גיפו, יפן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "בתי חווה עם גגות קש תלולים כמו כפות ידיים בתפילה."
@@ -782,6 +858,7 @@
   "name": "מקדש טושוגו",
   "city": "ניקו",
   "country": "יפן",
+  "answerLabel": "ניקו, יפן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "כאן מופיעים שלושת הקופים \"לא רואה, לא שומע, לא מדבר\"."
@@ -792,6 +869,7 @@
   "name": "טירת מטסומוטו",
   "city": "מטסומוטו",
   "country": "יפן",
+  "answerLabel": "מטסומוטו, יפן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "\"טירת העורב\" השחורה, מהטירות המקוריות ביפן."
@@ -802,6 +880,7 @@
   "name": "המסגד הוורוד",
   "city": "שיראז",
   "country": "איראן",
+  "answerLabel": "שיראז, איראן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "בבוקר האור דרך הוויטראז'ים צובע את השטיחים בכל הצבעים."
@@ -812,6 +891,7 @@
   "name": "בעל בכ",
   "city": "בעלבכ",
   "country": "לבנון",
+  "answerLabel": "בעלבכ, לבנון",
   "category": "asia",
   "difficulty": "pro",
   "fact": "במקדש הרומי שבו אבנים במשקל מאות טונות."
@@ -822,6 +902,7 @@
   "name": "חגרה (מדאין סאלח)",
   "city": "אל-עולא",
   "country": "ערב הסעודית",
+  "answerLabel": "אל-עולא, ערב הסעודית",
   "category": "asia",
   "difficulty": "pro",
   "fact": "קברים נבטיים חצובים, \"אחותה הדרומית\" של פטרה.",
@@ -833,6 +914,7 @@
   "name": "מגדלי כווית",
   "city": "כווית סיטי",
   "country": "כווית",
+  "answerLabel": "כווית סיטי, כווית",
   "category": "asia",
   "difficulty": "pro",
   "fact": "הכדורים מכוסים באלפי דיסקיות פלדה צבעוניות."
@@ -843,6 +925,7 @@
   "name": "הרי הקשת של ג'אנגיה",
   "city": "גאנסו",
   "country": "סין",
+  "answerLabel": "גאנסו, סין",
   "category": "asia",
   "difficulty": "pro",
   "fact": "שכבות אבן חול בצבעים של קשת בענן."
@@ -853,6 +936,7 @@
   "name": "המקדש התלוי",
   "city": "שאנשי",
   "country": "סין",
+  "answerLabel": "שאנשי, סין",
   "category": "asia",
   "difficulty": "pro",
   "fact": "מקדש בן 1,500 שנה שתלוי על צלע צוק."
@@ -863,6 +947,7 @@
   "name": "ההר הצהוב",
   "city": "אנחווי",
   "country": "סין",
+  "answerLabel": "אנחווי, סין",
   "category": "asia",
   "difficulty": "pro",
   "fact": "פסגות גרניט מעל ים עננים — השראה לציור הסיני."
@@ -873,6 +958,7 @@
   "name": "טרסות האורז של יואניאנג",
   "city": "יונאן",
   "country": "סין",
+  "answerLabel": "יונאן, סין",
   "category": "asia",
   "difficulty": "pro",
   "fact": "אלפי טרסות שמשקפות את השמיים כמו מראות."
@@ -883,6 +969,7 @@
   "name": "מערות אג'נטה",
   "city": "מהרשטרה",
   "country": "הודו",
+  "answerLabel": "מהרשטרה, הודו",
   "category": "asia",
   "difficulty": "pro",
   "fact": "ציורי קיר בודהיסטיים בני כאלפיים שנה בתוך מערות."
@@ -893,6 +980,7 @@
   "name": "מתחם פוי קליאן",
   "city": "בוכרה",
   "country": "אוזבקיסטן",
+  "answerLabel": "בוכרה, אוזבקיסטן",
   "category": "asia",
   "difficulty": "pro",
   "fact": "הצריח הגדול שרד את ג'ינגיס חאן, שהחריב את שאר העיר."
@@ -903,6 +991,7 @@
   "name": "הר אררט",
   "city": "אגרי",
   "country": "טורקיה",
+  "answerLabel": "אגרי, טורקיה",
   "category": "asia",
   "difficulty": "pro",
   "fact": "לפי המסורת, כאן נחה תיבת נח."

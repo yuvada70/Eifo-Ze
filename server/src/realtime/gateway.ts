@@ -88,8 +88,7 @@ export function createGateway(httpServer: HttpServer, config: ServerConfig, plac
     },
 
     onResults(room, results: GameResults) {
-      // התוצאות נשלחות רק כאן — זו הפעם הראשונה שבה המיקומים האמיתיים
-      // והמרחקים עוזבים את השרת.
+      // סיכום המשחק המלא (כל הסיבובים וטבלת הניצחון) נשלח רק כאן.
       flushState(room);
       io.to(roomChannel(room.code)).emit('game:results', results);
       logger.info('game.finished', {
@@ -303,15 +302,15 @@ export function createGateway(httpServer: HttpServer, config: ServerConfig, plac
       });
     });
 
-    socket.on('player:guess', (payload, ack) => {
-      handle('guess', ack, () => {
+    socket.on('player:answer', (payload, ack) => {
+      handle('answer', ack, () => {
         const { code, playerId } = socket.data;
         if (!code || !playerId) throw new GameError('NOT_AUTHORIZED');
 
         const room = registry.find(code);
         if (!room) throw new GameError('ROOM_NOT_FOUND');
 
-        room.submitGuess(playerId, Number(payload?.roundIndex), payload?.point);
+        room.submitAnswer(playerId, Number(payload?.roundIndex), payload?.choice);
         return { accepted: true as const };
       });
     });

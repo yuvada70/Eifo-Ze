@@ -5,6 +5,7 @@
   "name": "הפירמידה הגדולה של גיזה",
   "city": "גיזה",
   "country": "מצרים",
+  "answerLabel": "גיזה, מצרים",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "היחידה משבעת פלאי תבל העתיקים שעדיין עומדת."
@@ -15,6 +16,7 @@
   "name": "הספינקס הגדול",
   "city": "גיזה",
   "country": "מצרים",
+  "answerLabel": "גיזה, מצרים",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "פסל עם גוף אריה וראש אדם, שנחצב מסלע אחד."
@@ -25,6 +27,7 @@
   "name": "בית האופרה של סידני",
   "city": "סידני",
   "country": "אוסטרליה",
+  "answerLabel": "סידני, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "הגגות מכוסים ביותר ממיליון אריחים לבנים."
@@ -35,6 +38,7 @@
   "name": "גשר נמל סידני",
   "city": "סידני",
   "country": "אוסטרליה",
+  "answerLabel": "סידני, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "מכונה \"קולב הבגדים\"; אפשר לטפס על הקשת שלו."
@@ -45,6 +49,7 @@
   "name": "אולורו",
   "city": "הטריטוריה הצפונית",
   "country": "אוסטרליה",
+  "answerLabel": "הטריטוריה הצפונית, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "סלע אבן חול ענק שמשנה את צבעו בזריחה ובשקיעה, וקדוש לאבוריג'ינים."
@@ -55,6 +60,7 @@
   "name": "מפלי ויקטוריה",
   "city": "ליווינגסטון",
   "country": "זמביה / זימבבואה",
+  "answerLabel": "ליווינגסטון, זמביה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "המקומיים קוראים להם \"העשן שרועם\"."
@@ -65,6 +71,7 @@
   "name": "הר השולחן",
   "city": "קייפטאון",
   "country": "דרום אפריקה",
+  "answerLabel": "קייפטאון, דרום אפריקה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "בימים מסוימים ענן שטוח מכסה אותו כמו מפה על שולחן."
@@ -75,6 +82,7 @@
   "name": "הר קילימנג'רו",
   "city": "קילימנג'רו",
   "country": "טנזניה",
+  "answerLabel": "מושי, טנזניה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "ההר הגבוה באפריקה — 5,895 מטר."
@@ -85,6 +93,7 @@
   "name": "מקדשי אבו סימבל",
   "city": "אסואן",
   "country": "מצרים",
+  "answerLabel": "אסואן, מצרים",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "כל המקדש נחתך לגושים והועבר למקום גבוה יותר בשנות ה-60."
@@ -95,6 +104,7 @@
   "name": "שנים-עשר השליחים",
   "city": "ויקטוריה",
   "country": "אוסטרליה",
+  "answerLabel": "ויקטוריה, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "עמודי אבן גיר בים, שלמרות השם היו תמיד פחות משנים-עשר."
@@ -105,6 +115,7 @@
   "name": "מילפורד סאונד",
   "city": "פיורדלנד",
   "country": "ניו זילנד",
+  "answerLabel": "פיורדלנד, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "פיורד שרודיארד קיפלינג כינה \"הפלא השמיני\"."
@@ -115,6 +126,7 @@
   "name": "מסגד חסן השני",
   "city": "קזבלנקה",
   "country": "מרוקו",
+  "answerLabel": "קזבלנקה, מרוקו",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "הצריח שלו, כ-210 מטר, מהגבוהים בעולם; חלק מהמסגד בנוי מעל הים."
@@ -125,6 +137,7 @@
   "name": "כיכר ג'מע אל-פנא",
   "city": "מרקש",
   "country": "מרוקו",
+  "answerLabel": "מרקש, מרוקו",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "בערב הכיכר מתמלאת דוכני אוכל, מספרי סיפורים ומקסימי נחשים."
@@ -135,6 +148,7 @@
   "name": "שפשאוון",
   "city": "הרי הריף",
   "country": "מרוקו",
+  "answerLabel": "הרי הריף, מרוקו",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "\"העיר הכחולה\" — כמעט כל הבתים צבועים בגוני תכלת."
@@ -145,6 +159,7 @@
   "name": "קרנק",
   "city": "לוקסור",
   "country": "מצרים",
+  "answerLabel": "לוקסור, מצרים",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "באולם העמודים הגדול 134 עמודי אבן ענקיים."
@@ -155,6 +170,7 @@
   "name": "מכתש נגורונגורו",
   "city": "ארושה",
   "country": "טנזניה",
+  "answerLabel": "ארושה, טנזניה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "קלדרה ענקית שהפכה לביתם של אלפי בעלי חיים."
@@ -165,6 +181,7 @@
   "name": "בורה בורה",
   "city": "איי החברה",
   "country": "פולינזיה הצרפתית",
+  "answerLabel": "איי החברה, פולינזיה הצרפתית",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "לגונה טורקיז סביב הר געש כבוי."
@@ -175,6 +192,7 @@
   "name": "חוף בונדי",
   "city": "סידני",
   "country": "אוסטרליה",
+  "answerLabel": "סידני, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "החוף המפורסם באוסטרליה, עם בריכת מי ים על הסלעים."
@@ -185,6 +203,7 @@
   "name": "שדרת הבאובבים",
   "city": "מורונדבה",
   "country": "מדגסקר",
+  "answerLabel": "מורונדבה, מדגסקר",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "עצי באובב בני מאות שנים לצד דרך עפר."
@@ -195,6 +214,7 @@
   "name": "כף התקווה הטובה",
   "city": "קייפטאון",
   "country": "דרום אפריקה",
+  "answerLabel": "קייפטאון, דרום אפריקה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "ברתולומיאו דיאש הקיף אותו ב-1488."
@@ -205,6 +225,7 @@
   "name": "עמק המלכים",
   "city": "לוקסור",
   "country": "מצרים",
+  "answerLabel": "לוקסור, מצרים",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "כאן נמצא ב-1922 קברו של תות-ענח-אמון."
@@ -215,6 +236,7 @@
   "name": "מקדש לוקסור",
   "city": "לוקסור",
   "country": "מצרים",
+  "answerLabel": "לוקסור, מצרים",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "האובליסק שהיה לצדו עומד היום בכיכר הקונקורד בפריז."
@@ -225,6 +247,7 @@
   "name": "הר קוק (אאוראקי)",
   "city": "האלפים הדרומיים",
   "country": "ניו זילנד",
+  "answerLabel": "האלפים הדרומיים, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "ההר הגבוה בניו זילנד; אדמונד הילרי התאמן כאן."
@@ -235,6 +258,7 @@
   "name": "מגדל סקיי",
   "city": "אוקלנד",
   "country": "ניו זילנד",
+  "answerLabel": "אוקלנד, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "אפשר לקפוץ ממנו בחבל מגובה 192 מטר.",
@@ -246,6 +270,7 @@
   "name": "המסגד הגדול של ג'נה",
   "city": "ג'נה",
   "country": "מאלי",
+  "answerLabel": "ג׳נה, מאלי",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "המבנה הגדול בעולם מלבני בוץ, ששופץ כל שנה בחג קהילתי."
@@ -256,6 +281,7 @@
   "name": "שלוש האחיות",
   "city": "ההרים הכחולים",
   "country": "אוסטרליה",
+  "answerLabel": "ההרים הכחולים, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "שלושה צוקי אבן חול שלפי האגדה האבוריג'ינית היו אחיות."
@@ -266,6 +292,7 @@
   "name": "ערג שבי",
   "city": "מרזוגה",
   "country": "מרוקו",
+  "answerLabel": "מרזוגה, מרוקו",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "דיונות חול בגובה של עד כ-150 מטר בשולי הסהרה."
@@ -276,6 +303,7 @@
   "name": "גייזר פוהוטו",
   "city": "רוטורואה",
   "country": "ניו זילנד",
+  "answerLabel": "רוטורואה, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "הגייזר הפעיל הגדול בחצי הכדור הדרומי."
@@ -286,6 +314,7 @@
   "name": "סטון טאון",
   "city": "זנזיבר",
   "country": "טנזניה",
+  "answerLabel": "זנזיבר, טנזניה",
   "category": "africa-oceania",
   "difficulty": "easy",
   "fact": "דלתות עץ מגולפות מעטרות את סמטאות העיר העתיקה."
@@ -296,6 +325,7 @@
   "name": "דדוולי",
   "city": "נמיב",
   "country": "נמיביה",
+  "answerLabel": "מדבר נמיב, נמיביה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "עצים מתים בני מאות שנים על רקע דיונות אדומות שהן מהגבוהות בעולם."
@@ -306,6 +336,7 @@
   "name": "קניון פיש ריבר",
   "city": "קרס",
   "country": "נמיביה",
+  "answerLabel": "קרס, נמיביה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "הקניון הגדול באפריקה."
@@ -316,6 +347,7 @@
   "name": "כנסיית גיאורגיוס הקדוש",
   "city": "לליבלה",
   "country": "אתיופיה",
+  "answerLabel": "לליבלה, אתיופיה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "כנסייה בצורת צלב שנחצבה כלפי מטה בתוך הסלע."
@@ -326,6 +358,7 @@
   "name": "קסר איט בן חדו",
   "city": "וארזאזאת",
   "country": "מרוקו",
+  "answerLabel": "וארזאזאת, מרוקו",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "כפר מבוצר מבוץ שבו צולמו \"גלדיאטור\" ו\"משחקי הכס\"."
@@ -336,6 +369,7 @@
   "name": "לפטיס מגנה",
   "city": "ח'ומס",
   "country": "לוב",
+  "answerLabel": "ח׳ומס, לוב",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "מהערים הרומיות השמורות ביותר בים התיכון."
@@ -346,6 +380,7 @@
   "name": "מסגד ג'ינגריבר",
   "city": "טימבוקטו",
   "country": "מאלי",
+  "answerLabel": "טימבוקטו, מאלי",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "נבנה מבוץ ועץ ב-1327."
@@ -356,6 +391,7 @@
   "name": "דלתת האוקבנגו",
   "city": "נגמילנד",
   "country": "בוטסואנה",
+  "answerLabel": "נגמילנד, בוטסואנה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "נהר ששוקע במדבר קלהארי במקום להגיע לים."
@@ -366,6 +402,7 @@
   "name": "קניון בלייד ריבר",
   "city": "מפומלנגה",
   "country": "דרום אפריקה",
+  "answerLabel": "מפומלנגה, דרום אפריקה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "מהקניונים הגדולים בעולם, ומהירוקים שבהם."
@@ -376,6 +413,7 @@
   "name": "כנסיית הרועה הטוב",
   "city": "אגם טקאפו",
   "country": "ניו זילנד",
+  "answerLabel": "קנטרברי, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "כנסיית אבן קטנה מול אגם טורקיז והרי האלפים הדרומיים."
@@ -386,6 +424,7 @@
   "name": "אגמי האזמרגד",
   "city": "טונגרירו",
   "country": "ניו זילנד",
+  "answerLabel": "טונגרירו, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "אגמים ירוקים בתוך לועות געשיים, על המסלול הרגלי המפורסם בניו זילנד."
@@ -396,6 +435,7 @@
   "name": "מדבר הפינקלים",
   "city": "נאמבונג",
   "country": "אוסטרליה",
+  "answerLabel": "סרוונטס, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "אלפי עמודי אבן גיר מזדקרים מהחול הצהוב."
@@ -406,6 +446,7 @@
   "name": "סלע הגל",
   "city": "היידן",
   "country": "אוסטרליה",
+  "answerLabel": "היידן, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "צוק גרניט בצורת גל ענק שעומד להישבר."
@@ -416,6 +457,7 @@
   "name": "קטה ג'וטה",
   "city": "הטריטוריה הצפונית",
   "country": "אוסטרליה",
+  "answerLabel": "הטריטוריה הצפונית, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "36 כיפות סלע ענקיות, לא רחוק מאולורו."
@@ -426,6 +468,7 @@
   "name": "קינגס קניון",
   "city": "הטריטוריה הצפונית",
   "country": "אוסטרליה",
+  "answerLabel": "הטריטוריה הצפונית, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "קירות אבן חול אדומים בגובה יותר מ-100 מטר."
@@ -436,6 +479,7 @@
   "name": "חוף וייטהייבן",
   "city": "איי ויטסנדיי",
   "country": "אוסטרליה",
+  "answerLabel": "איי ויטסנדיי, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "החול הוא כמעט סיליקה טהורה — לבן ולא מתחמם."
@@ -446,6 +490,7 @@
   "name": "פורט ארתור",
   "city": "טסמניה",
   "country": "אוסטרליה",
+  "answerLabel": "טסמניה, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "מושבת עונשין בריטית מהמאה ה-19."
@@ -456,6 +501,7 @@
   "name": "מוראה",
   "city": "איי החברה",
   "country": "פולינזיה הצרפתית",
+  "answerLabel": "איי החברה, פולינזיה הצרפתית",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "אי בצורת לב עם פסגות חדות ומפרצים עמוקים.",
@@ -467,6 +513,7 @@
   "name": "בו-קאפ",
   "city": "קייפטאון",
   "country": "דרום אפריקה",
+  "answerLabel": "קייפטאון, דרום אפריקה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "שכונה של בתים בצבעים עזים למרגלות הר השולחן."
@@ -477,6 +524,7 @@
   "name": "המסגד הגדול של קירואן",
   "city": "קירואן",
   "country": "תוניסיה",
+  "answerLabel": "קירואן, תוניסיה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "מהמסגדים העתיקים בצפון אפריקה, מהמאה ה-7."
@@ -487,6 +535,7 @@
   "name": "האמפיתיאטרון של אל-ג'ם",
   "city": "אל-ג'ם",
   "country": "תוניסיה",
+  "answerLabel": "אל-ג׳ם, תוניסיה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "אמפיתיאטרון רומי ענק שעומד בלב עיירה קטנה."
@@ -497,6 +546,7 @@
   "name": "סידי בו סעיד",
   "city": "תוניס",
   "country": "תוניסיה",
+  "answerLabel": "תוניס, תוניסיה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "כפר לבן-כחול על צוק מעל הים התיכון."
@@ -507,6 +557,7 @@
   "name": "וולוביליס",
   "city": "מקנס",
   "country": "מרוקו",
+  "answerLabel": "מקנס, מרוקו",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "עיר רומית עם פסיפסים שנשארו במקומם."
@@ -517,6 +568,7 @@
   "name": "הפירמידה העקומה",
   "city": "דהשור",
   "country": "מצרים",
+  "answerLabel": "דהשור, מצרים",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "זווית הדפנות משתנה באמצע הגובה — אולי כדי שלא תקרוס."
@@ -527,6 +579,7 @@
   "name": "מקדש פילאה",
   "city": "אסואן",
   "country": "מצרים",
+  "answerLabel": "אסואן, מצרים",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "המקדש הועבר אבן אחר אבן לאי סמוך כדי להציל אותו מהצפה."
@@ -537,6 +590,7 @@
   "name": "פירמידת ג'וסר",
   "city": "סקארה",
   "country": "מצרים",
+  "answerLabel": "סקארה, מצרים",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "הפירמידה המדורגת היא הפירמידה העתיקה ביותר במצרים."
@@ -547,6 +601,7 @@
   "name": "צינגי דה במרהה",
   "city": "מהג'נגה",
   "country": "מדגסקר",
+  "answerLabel": "מהג׳נגה, מדגסקר",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "יער של מחטי אבן גיר חדות כתער.",
@@ -558,6 +613,7 @@
   "name": "סלעי הפנקייק",
   "city": "פונקאיקי",
   "country": "ניו זילנד",
+  "answerLabel": "פונקאיקי, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "שכבות אבן גיר שנראות כמו ערימות של פנקייקים."
@@ -568,6 +624,7 @@
   "name": "מפרץ וויינגלאס",
   "city": "טסמניה",
   "country": "אוסטרליה",
+  "answerLabel": "טסמניה, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "מפרץ מושלם בצורת חצי עיגול.",
@@ -581,6 +638,7 @@
   "name": "פארק קרוגר",
   "city": "מפומלנגה",
   "country": "דרום אפריקה",
+  "answerLabel": "מפומלנגה, דרום אפריקה",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "מהשמורות הגדולות באפריקה, ובה כל \"החמישייה הגדולה\"."
@@ -591,6 +649,7 @@
   "name": "הר טרנאקי",
   "city": "טרנאקי",
   "country": "ניו זילנד",
+  "answerLabel": "ניו פלימות׳, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "medium",
   "fact": "הר געש סימטרי כמעט לחלוטין, ש\"שיחק\" את הר פוג'י בסרט \"הסמוראי האחרון\"."
@@ -601,6 +660,7 @@
   "name": "עין הסהרה (מבנה ריצ'אט)",
   "city": "אדראר",
   "country": "מאוריטניה",
+  "answerLabel": "אדראר, מאוריטניה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מבנה מעגלי בקוטר כ-40 ק\"מ שנראה היטב מהחלל."
@@ -611,6 +671,7 @@
   "name": "דאלול",
   "city": "שקע דנקיל",
   "country": "אתיופיה",
+  "answerLabel": "שקע דנקיל, אתיופיה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מעיינות חומציים בצבעי צהוב וירוק, מהמקומות החמים בעולם.",
@@ -623,6 +684,7 @@
   "name": "קולמנסקופ",
   "city": "לודריץ",
   "country": "נמיביה",
+  "answerLabel": "לודריץ, נמיביה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "עיירת יהלומים נטושה שהחול ממלא את בתיה.",
@@ -637,6 +699,7 @@
   "name": "האגם הוורוד",
   "city": "דקר",
   "country": "סנגל",
+  "answerLabel": "דקר, סנגל",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "אצה מיוחדת צובעת את מי האגם בוורוד."
@@ -647,6 +710,7 @@
   "name": "שפיצקופה",
   "city": "ארונגו",
   "country": "נמיביה",
+  "answerLabel": "ארונגו, נמיביה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "\"המטרהורן של נמיביה\" — פסגות גרניט במדבר.",
@@ -658,6 +722,7 @@
   "name": "רמת אנדי",
   "city": "אנדי",
   "country": "צ'אד",
+  "answerLabel": "אנדי, צ׳אד",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "קשתות סלע וציורי סלע בלב הסהרה.",
@@ -669,6 +734,7 @@
   "name": "מצודת פאסיל גבי",
   "city": "גונדר",
   "country": "אתיופיה",
+  "answerLabel": "גונדר, אתיופיה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "טירות מהמאה ה-17 שזכו לכינוי \"קמלוט של אפריקה\".",
@@ -680,6 +746,7 @@
   "name": "זימבבואה הגדולה",
   "city": "מסווינגו",
   "country": "זימבבואה",
+  "answerLabel": "מסווינגו, זימבבואה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "חומות אבן ענקיות בלי טיט — והמדינה נקראה על שמן.",
@@ -691,6 +758,7 @@
   "name": "שינגטי",
   "city": "אדראר",
   "country": "מאוריטניה",
+  "answerLabel": "אדראר, מאוריטניה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "עיר מדברית עם ספריות של כתבי יד עתיקים."
@@ -701,6 +769,7 @@
   "name": "ע'דאמס",
   "city": "ע'דאמס",
   "country": "לוב",
+  "answerLabel": "ע׳דאמס, לוב",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "\"פנינת המדבר\" — עיר עם סמטאות מקורות שמגינות מהחום."
@@ -711,6 +780,7 @@
   "name": "נווה המדבר סיווה",
   "city": "מטרוח",
   "country": "מצרים",
+  "answerLabel": "מטרוח, מצרים",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "כאן, לפי המסורת, אלכסנדר מוקדון ביקר באורקל של אמון."
@@ -721,6 +791,7 @@
   "name": "המדבר הלבן",
   "city": "פראפרה",
   "country": "מצרים",
+  "answerLabel": "פראפרה, מצרים",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "סלעי גיר לבנים שהרוח פיסלה לצורות של פטריות."
@@ -731,6 +802,7 @@
   "name": "הר ניראגונגו",
   "city": "צפון קיבו",
   "country": "הרפובליקה הדמוקרטית של קונגו",
+  "answerLabel": "צפון קיבו, קונגו",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "בלוע שלו אחד מאגמי הלבה הגדולים בעולם."
@@ -741,6 +813,7 @@
   "name": "אגם הילייר",
   "city": "מערב אוסטרליה",
   "country": "אוסטרליה",
+  "answerLabel": "אספרנס, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "אגם ורוד-מסטיק לצד האוקיינוס הכחול."
@@ -751,6 +824,7 @@
   "name": "באנגל באנגל",
   "city": "קימברלי",
   "country": "אוסטרליה",
+  "answerLabel": "קימברלי, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "כיפות אבן חול עם פסים כתומים ושחורים כמו כוורות."
@@ -761,6 +835,7 @@
   "name": "המפלים האופקיים",
   "city": "קימברלי",
   "country": "אוסטרליה",
+  "answerLabel": "קימברלי, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "הגאות דוחפת מים דרך מצרים צרים ויוצרת \"מפלים\" אופקיים."
@@ -771,6 +846,7 @@
   "name": "קריג'יני",
   "city": "פילבארה",
   "country": "אוסטרליה",
+  "answerLabel": "פילבארה, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "ערוצים צרים עם בריכות שחייה בין סלעים אדומים."
@@ -781,6 +857,7 @@
   "name": "הפירמידה של בול",
   "city": "האי לורד האו",
   "country": "אוסטרליה",
+  "answerLabel": "האי לורד האו, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "שארית של הר געש בגובה 562 מטר שבולטת מהאוקיינוס."
@@ -791,6 +868,7 @@
   "name": "סלעי מוארקי",
   "city": "אוטגו",
   "country": "ניו זילנד",
+  "answerLabel": "אוטגו, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "סלעים כדוריים ענקיים פזורים על החוף."
@@ -801,6 +879,7 @@
   "name": "מערות וייטומו",
   "city": "וייטומו",
   "country": "ניו זילנד",
+  "answerLabel": "וואיקאטו, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "אלפי תולעים זוהרות מאירות את תקרת המערה."
@@ -811,6 +890,7 @@
   "name": "בריכת השמפניה",
   "city": "ואי-או-טאפו",
   "country": "ניו זילנד",
+  "answerLabel": "רוטורואה, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מעיין חם שמבעבע פחמן דו-חמצני כמו שמפניה."
@@ -821,6 +901,7 @@
   "name": "איי הסלע",
   "city": "קורור",
   "country": "פלאו",
+  "answerLabel": "קורור, פלאו",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מאות איי גיר קטנים בצורת פטריות."
@@ -831,6 +912,7 @@
   "name": "הר יאסור",
   "city": "טאנה",
   "country": "ונואטו",
+  "answerLabel": "טאנה, ונואטו",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "הר געש שמתפרץ ברציפות מאות שנים, ואפשר לעמוד על שפת הלוע."
@@ -841,6 +923,7 @@
   "name": "ננ מדול",
   "city": "פונפיי",
   "country": "מיקרונזיה",
+  "answerLabel": "פונפיי, מיקרונזיה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "עיר עתיקה שנבנתה על כמאה איים מלאכותיים מעמודי בזלת."
@@ -851,6 +934,7 @@
   "name": "סטרומטוליטים של המלין פול",
   "city": "מפרץ הכריש",
   "country": "אוסטרליה",
+  "answerLabel": "מפרץ הכריש, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "\"סלעים חיים\" של חיידקים — אחת מצורות החיים העתיקות על כדור הארץ."
@@ -861,6 +945,7 @@
   "name": "כף ריינגה",
   "city": "נורת'לנד",
   "country": "ניו זילנד",
+  "answerLabel": "נורת׳לנד, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "כאן נפגשים הים הטסמני והאוקיינוס השקט."
@@ -871,6 +956,7 @@
   "name": "ואדי אל-חיתאן",
   "city": "פאיום",
   "country": "מצרים",
+  "answerLabel": "פאיום, מצרים",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "\"עמק הלווייתנים\" — מאובנים של לווייתנים קדומים עם רגליים."
@@ -881,6 +967,7 @@
   "name": "סלע זומה",
   "city": "ניז'ר",
   "country": "ניגריה",
+  "answerLabel": "אבוג׳ה, ניגריה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מונוליט ענק שמופיע על שטר של 100 נאירה."
@@ -891,6 +978,7 @@
   "name": "קלבארי",
   "city": "מערב אוסטרליה",
   "country": "אוסטרליה",
+  "answerLabel": "קלבארי, אוסטרליה",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "\"חלון הטבע\" — קשת אבן חול שממסגרת את הנהר."
@@ -901,6 +989,7 @@
   "name": "חוף המנהרה",
   "city": "דנידין",
   "country": "ניו זילנד",
+  "answerLabel": "דנידין, ניו זילנד",
   "category": "africa-oceania",
   "difficulty": "pro",
   "fact": "מנהרה שנחצבה ביד במאה ה-19 מובילה לחוף נסתר."
