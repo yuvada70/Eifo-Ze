@@ -170,10 +170,10 @@ function BigCountdown({ endsAt }: { endsAt: number }): JSX.Element {
   );
 }
 
-/** תקתוק בכל אחת מחמש השניות האחרונות, כל עוד לא נבחרה תשובה. */
+/** תקתוק בכל אחת משלוש השניות האחרונות, כל עוד לא נבחרה תשובה. */
 function useTickingSound(endsAt: number, active: boolean): void {
   const playSound = useSound();
-  const { remainingMs } = useCountdown(endsAt - 5_000, endsAt, !active);
+  const { remainingMs } = useCountdown(endsAt - 3_000, endsAt, !active);
   const lastSecondRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -182,7 +182,7 @@ function useTickingSound(endsAt: number, active: boolean): void {
       return;
     }
     const second = Math.ceil(remainingMs / 1_000);
-    if (second > 5 || second <= 0 || lastSecondRef.current === second) return;
+    if (second > 3 || second <= 0 || lastSecondRef.current === second) return;
     lastSecondRef.current = second;
     playSound('tick');
   }, [active, playSound, remainingMs]);

@@ -19,6 +19,16 @@ import type { ServerConfig } from '../config.js';
 import type { PlacesStore } from '../content/placesStore.js';
 import { logger } from '../logger.js';
 
+/** מקורות התמונות המותרים ב-CSP (מיוצא לבדיקות). */
+export const IMAGE_SOURCES = [
+  "'self'",
+  'data:',
+  'blob:',
+  'https://commons.wikimedia.org',
+  'https://*.wikimedia.org',
+  'https://tile.openstreetmap.org',
+] as const;
+
 /** מידע שהשרת חושף לצורך ניטור. */
 export interface HealthProvider {
   activeRooms(): number;
@@ -39,16 +49,11 @@ export function createApp(config: ServerConfig, health: HealthProvider, places: 
           // הלקוח נבנה עם Vite ומזריק סגנונות בזמן ריצה (אנימציות).
           styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
           fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
-          // תמונות המקומות מ-Wikimedia Commons (Special:FilePath מפנה
-          // ל-upload.wikimedia.org) ואריחי המפה מ-OpenStreetMap.
-          imgSrc: [
-            "'self'",
-            'data:',
-            'blob:',
-            'https://commons.wikimedia.org',
-            'https://upload.wikimedia.org',
-            'https://tile.openstreetmap.org',
-          ],
+          // תמונות המקומות מ-Wikimedia Commons, ואריחי המפה מ-OpenStreetMap.
+          // Special:FilePath מפנה לשרתי תמונות ש-Wikimedia מחליפה מעת לעת
+          // (upload.wikimedia.org, ומאז 2026 thumb.wikimedia.org) — לכן כל
+          // תת-הדומיינים של wikimedia.org מותרים, ולא רשימה סגורה.
+          imgSrc: [...IMAGE_SOURCES],
           scriptSrc: ["'self'"],
           // WebSocket לאותו מקור.
           // מסך הניהול שולף קרדיט תמונה מה-API הציבורי של Commons.

@@ -91,7 +91,7 @@ export function HostLobby(): JSX.Element {
             </h1>
             <p className={styles.playersHint}>
               {CATEGORY_LABELS[room.settings.category]} · {DIFFICULTY_LABELS[room.settings.difficulty]} ·{' '}
-              {room.totalRounds} סיבובים · {room.settings.roundDurationMs / 1000} שניות לכל סיבוב
+              {room.totalRounds} סיבובים · {room.settings.roundDurationMs / 1000} שניות לכל שאלה
             </p>
             {room.poolSize < room.settings.roundCount ? (
               <p className={styles.poolWarning} role="status">

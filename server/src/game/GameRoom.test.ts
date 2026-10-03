@@ -85,9 +85,12 @@ describe('normalizeSettings', () => {
 
   it('rejects unknown categories and clamps numbers', () => {
     const settings = normalizeSettings({ category: 'mars' as never, roundCount: 999, roundDurationMs: 1 });
+    assert.equal(normalizeSettings({ roundDurationMs: 60_000 }).roundDurationMs, 10_000);
+    assert.equal(normalizeSettings({ roundDurationMs: 5_000 }).roundDurationMs, 5_000);
+    assert.equal(normalizeSettings({}).roundDurationMs, 10_000);
     assert.equal(settings.category, 'mixed');
     assert.equal(settings.roundCount, 20);
-    assert.equal(settings.roundDurationMs, 10_000);
+    assert.equal(settings.roundDurationMs, 3_000);
   });
 });
 
@@ -134,7 +137,7 @@ describe('GameRoom', () => {
       const aliceAnswer = reveal.reveal.answers.find((a) => a.playerId === alice.id)!;
       const bobAnswer = reveal.reveal.answers.find((a) => a.playerId === bob.id)!;
       assert.equal(aliceAnswer.correct, true);
-      assert.equal(aliceAnswer.points, 940); // 400 + 600 × (1 − 3/30)
+      assert.equal(aliceAnswer.points, 820); // 400 + 600 × (1 − 3/10)
       assert.equal(bobAnswer.correct, false);
       assert.equal(bobAnswer.points, 0);
 
@@ -167,7 +170,7 @@ describe('GameRoom', () => {
     room.submitAnswer(alice.id, 0, 0);
     assert.equal(room.getPublicState().phase, 'question');
 
-    clock.advance(30_000);
+    clock.advance(10_000);
     const state = room.getPublicState();
     assert.equal(state.phase, 'reveal');
     const bob = state.reveal!.answers.find((answer) => answer.playerId !== alice.id)!;

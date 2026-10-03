@@ -1,7 +1,7 @@
 /**
  * יצירת חדר חדש: קטגוריה, דרגת קושי, מספר סיבובים וזמן לסיבוב.
  *
- * ברירות המחדל: מעורב · קל · 10 סיבובים · 30 שניות. ליד כל בחירה
+ * ברירות המחדל: מעורב · קל · 10 סיבובים · 10 שניות לשאלה (אפשר 3 עד 10). ליד כל בחירה
  * מוצג כמה מקומות יש במאגר, ואם יש פחות מהמבוקש — מופיעה הודעה
  * שהמשחק יכלול רק את מה שיש.
  */
@@ -134,7 +134,7 @@ export function HostSetup(): JSX.Element {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>זמן לכל סיבוב</h2>
+          <h2 className={styles.sectionTitle}>זמן לכל שאלה</h2>
           <div className={styles.chips}>
             {ROUND_DURATION_OPTIONS.map((seconds) => (
               <button
@@ -142,6 +142,7 @@ export function HostSetup(): JSX.Element {
                 className={`${styles.chip} ${settings.roundDurationMs === seconds * 1_000 ? styles.chipActive : ''}`}
                 onClick={() => update('roundDurationMs', seconds * 1_000)}
                 aria-pressed={settings.roundDurationMs === seconds * 1_000}
+                data-testid={`duration-${seconds}`}
               >
                 {seconds} שנ׳
               </button>

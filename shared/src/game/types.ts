@@ -27,8 +27,8 @@ export type GamePhase =
 /** אפשרויות מספר הסיבובים. */
 export const ROUND_COUNT_OPTIONS = [5, 10, 15, 20] as const;
 
-/** אפשרויות זמן לסיבוב (שניות). */
-export const ROUND_DURATION_OPTIONS = [20, 30, 45, 60] as const;
+/** אפשרויות זמן לשאלה (שניות): 3 עד 10. */
+export const ROUND_DURATION_OPTIONS = [3, 4, 5, 6, 7, 8, 9, 10] as const;
 
 /** הגדרות משחק הנקבעות על ידי המארח. */
 export interface GameSettings {
@@ -51,7 +51,7 @@ export const DEFAULT_SETTINGS: GameSettings = {
   category: 'mixed',
   difficulty: 'easy',
   roundCount: 10,
-  roundDurationMs: 30_000,
+  roundDurationMs: 10_000,
   revealMs: 15_000,
   countdownMs: 3_000,
   showLiveRank: true,
@@ -60,7 +60,7 @@ export const DEFAULT_SETTINGS: GameSettings = {
 /** גבולות תקינות להגדרות — נאכפים בשרת. */
 export const SETTINGS_LIMITS = {
   roundCount: { min: 1, max: 20 },
-  roundDurationMs: { min: 10_000, max: 120_000 },
+  roundDurationMs: { min: 3_000, max: 10_000 },
   revealMs: { min: 3_000, max: 60_000 },
   countdownMs: { min: 0, max: 10_000 },
 } as const;
