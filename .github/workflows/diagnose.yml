@@ -1,0 +1,34 @@
+# אבחון המשחק הפרוס בדפדפן אמיתי (Actions → Diagnose live → Run workflow).
+# התוצאות (לוג וצילומי מסך) נדחפות לענף content-bot.
+name: Diagnose live
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: כתובת המשחק הפרוס
+        required: true
+        default: https://eifo-ze.onrender.com
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save playwright@1.56.1 && npx playwright install --with-deps chromium
+      - run: node scripts/diagnose-live.mjs "${{ inputs.url }}" diagnose
+      - name: push results to content-bot
+        if: always()
+        run: |
+          git config user.name "eifo-content-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -B content-bot
+          git add -f diagnose
+          git commit -m "diagnose live (${{ github.run_id }})" || true
+          git push -f origin content-bot
